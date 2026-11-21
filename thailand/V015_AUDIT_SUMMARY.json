@@ -1,0 +1,110 @@
+{
+  "base_version": "V014",
+  "new_version": "V015",
+  "base_records": 324,
+  "added_records": 3,
+  "total_records": 327,
+  "verified_updates": [
+    {
+      "en": "ibis Styles Bangkok Silom",
+      "old": {
+        "stars": "3.5",
+        "address": "289 Silom Road, Bang Rak, Bangkok 10500, Thailand",
+        "metro": null
+      },
+      "new": {
+        "stars": "3",
+        "address": "289 Silom Road, Silom Sub-district, Bang Rak, Bangkok 10500, Thailand",
+        "metro": "BTS Sala Daeng / MRT Silom (موقع قريب؛ المخرج غير موثق)"
+      },
+      "source": "https://www.ibisstylesbangkoksilom.com/welcome-to-ibis-styles-bangkok-silom/contact-us/",
+      "note": "النجوم وفقا للموقع الرسمي الخاص بالفندق؛ تظهر درجة 3.5 في بعض قوائم أكور الثانوية"
+    },
+    {
+      "en": "ibis Bangkok Riverside",
+      "old": {
+        "stars": "غير موثق",
+        "address": "Charoen Nakhon, Khlong San, Bangkok, Thailand",
+        "metro": null
+      },
+      "new": {
+        "stars": "3",
+        "address": "27 Soi Charoen Nakhon 17, Charoen Nakhon Road, Bang Lamphu Lang, Khlong San, Bangkok 10600, Thailand",
+        "metro": "BTS Krung Thonburi (تتوفر خدمة نقل للفندق؛ المخرج غير موثق)"
+      },
+      "source": "https://all.accor.com/hotel/7026/index.en.shtml",
+      "note": "تصنيف فندقي رسمي وعنوان مؤكد"
+    },
+    {
+      "en": "ibis Bangkok Sukhumvit 4",
+      "old": {
+        "stars": "غير موثق",
+        "address": "Sukhumvit Soi 4, Watthana, Bangkok, Thailand",
+        "metro": null
+      },
+      "new": {
+        "stars": "3",
+        "address": "41 Sukhumvit Road Soi 4, Khlong Toei, Bangkok 10110, Thailand",
+        "metro": "BTS Nana (محطة قريبة؛ المخرج غير موثق)"
+      },
+      "source": "https://all.accor.com/hotel/7295/index.en.shtml",
+      "note": "تصنيف رسمي وعنوان الفندق لا يخلط مع ibis Styles Sukhumvit 4 رقم 27"
+    },
+    {
+      "en": "Rutnin Eye Hospital",
+      "old": {
+        "address": "80/1 Sukhumvit 21 Road, Watthana, Bangkok 10110",
+        "metro": null
+      },
+      "new": {
+        "address": "80/1 Sukhumvit 21 Road (Asoke), Watthana, Bangkok 10110, Thailand",
+        "metro": "MRT Phetchaburi مخرجا 2 و4 بحسب المستشفى؛ BTS Asok وARL Makkasan أيضًا"
+      },
+      "source": "https://www.rutnin.com/en/contact/",
+      "note": "عنوان والمواصلات وفق موقع المستشفى الرسمي"
+    },
+    {
+      "en": "Thantakit International Dental Center",
+      "old": {
+        "address": "1939 New Phetchaburi Road, Huai Khwang, Bangkok 10310"
+      },
+      "new": {
+        "address": "1939 New Phetchaburi Road, Bang Kapi, Huai Khwang, Bangkok 10310, Thailand"
+      },
+      "source": "https://www.thantakit.com/location-maps/",
+      "note": "عنوان المقر الرئيسي كما في موقع المركز"
+    },
+    {
+      "en": "Thantakit Dental All Seasons Place",
+      "old": {
+        "address": "3rd Floor, CRC Tower, 87/2 Wireless Road, Pathum Wan, Bangkok 10330"
+      },
+      "new": {
+        "address": "Unit 301, 3rd Floor, CRC Tower, 87/2 Wireless Road, Pathum Wan, Bangkok 10330, Thailand"
+      },
+      "source": "https://www.thantakit.com/location-maps/",
+      "note": "عنوان الفرع الموثق"
+    }
+  ],
+  "duplicate_exact_english_by_category": [],
+  "missing_fields": {
+    "thai_name": 95,
+    "opening_year": 260,
+    "specific_address": 128,
+    "hotel_star": 7,
+    "metro_not_verified": 306
+  },
+  "new_restaurants": [
+    "Praya Dining",
+    "Chakrabongse Dining",
+    "Riva del Fiume"
+  ],
+  "checked_date": "2026-11-15",
+  "limitations": [
+    "No universal real-time opening-status verification",
+    "Thai-language names and years remain unverified where blank",
+    "Only a targeted subset has had official addresses and ratings confirmed",
+    "Similar names of separate branches require manual review rather than auto merging",
+    "No live website publication performed"
+  ]
+}

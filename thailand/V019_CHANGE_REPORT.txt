@@ -1,0 +1,6 @@
+V019 — Guangzhou-inspired place card control layout
+Base: V018. No modification to site home or saved records.
+New card structure: text block aligned right, favorite heart separated top left, compact service icon buttons beneath it: copy address / Grab / Bolt / Maps.
+Copy Thai name retained as a subtle link. Ride actions open official web pages and attempt to copy the address; they do not request/book a car automatically.
+Favorites continue to use browser localStorage; they are not synchronized across devices.
+All filters and place data are inherited unchanged from V018.

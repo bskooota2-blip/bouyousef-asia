@@ -1,0 +1,29 @@
+BOUYOUSEF 4 — V081 CHIANG MAI CONTENT EXPANSION REPORT
+
+Original records: 37
+Added: 96
+Result: 133
+
+Added counts:
+الأسواق: +13
+المجمعات التجارية: +5
+المطاعم: +16
+الكافيهات: +5
+السياحة والمعالم: +24
+الفنادق: +14
+المستشفيات: +6
+العيادات: +1
+السبا والمساج: +12
+
+Key notes:
+- Chiang Mai is inland; lake-shore, freshwater reservoirs, riverside walks, and a water park were added instead of imaginary ocean beaches.
+- No added ratings, unverified hotel stars, or invented Thai names.
+- New records with area-level addresses are marked for verification in the original card renderer.
+- Restaurant listings do not claim halal certification without evidence.
+- The existing 37 Chiang Mai records are retained in original order.
+- No Bangkok records or other pages changed.
+- Static JS syntax check: passed (node --check).
+- Browser interaction test: not completed, local pages blocked by browser administrator.
+- No publication to GitHub performed.
+
+Data sources per record: field 'source' in V081_CHIANGMAI_ADDITION_AUDIT.json.

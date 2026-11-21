@@ -1,0 +1,38 @@
+/* BouYousef0 V046 — progressive Guangzhou-derived common theme.
+   Source: BouYousef2 V041.36 main index.html; CSS adapted to preserve existing JS.
+   No external assets, font files, or third-party dependencies. */
+:root{--by046-ink:#062a59;--by046-deep:#0b4c88;--by046-blue:#0788d8;--by046-gold:#daa94a;--by046-line:#b7def8;--by046-soft:#eaf7ff;--by046-radius:22px;--by046-radius-card:25px;--by046-shadow:0 4px 16px #236a9f27}
+html.by046{scroll-behavior:smooth}
+html.by046 body{background-color:#eaf7ff;color:var(--by046-ink);font-family:Tahoma,'Segoe UI',Arial,sans-serif}
+html.by046 button,html.by046 select,html.by046 input{font-family:inherit}
+html.by046 a:focus-visible,html.by046 button:focus-visible,html.by046 input:focus-visible{outline:3px solid #0076d7;outline-offset:3px}
+html.by046 :is(.wrap,.main-wrap){max-width:1250px}
+html.by046 :is(.regions,.cities,.by-islands-grid){display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:17px;align-items:stretch;direction:rtl}
+html.by046 :is(.regions,.cities,.by-islands-grid)>*{min-width:0}
+/* Uniform landmark/city tiles: ref Guangzhou .city-card and .city-card img */
+html.by046 :is(.regions>.region,.cities>.city-card,.by-islands-grid>.by-island-card){min-width:0;overflow:hidden;border:2px solid var(--by046-gold);border-radius:25px;background:linear-gradient(#fff,#ecf6ff);box-shadow:var(--by046-shadow),0 0 0 2px #ffffffbb inset;transition:transform .15s,box-shadow .15s;color:var(--by046-ink)}
+html.by046 :is(.regions>.region,.cities>.city-card,.by-islands-grid>.by-island-card):hover{transform:translateY(-4px);box-shadow:0 12px 23px #135a8e3c}
+html.by046 :is(.region .mc-region-photo,.region .hk-region-photo,.city-card img,.by-island-card>img,.by-island-card .by-island-image){width:100%;aspect-ratio:1.5;object-fit:cover;display:block;border-radius:18px 18px 3px 3px;height:auto}
+html.by046 :is(.region .region-copy,.region .hk-region-copy,.city-card .city-text,.by-island-card-info){padding:10px 10px 13px;text-align:center;color:var(--by046-ink)}
+html.by046 :is(.region h2,.region-copy h2,.city-text strong,.by-island-card-info h3){font-size:clamp(17px,2vw,24px);font-weight:900;color:var(--by046-ink);line-height:1.4}
+/* Content cards, filters, inputs — scope narrowly enough to avoid modifying logic */
+html.by046 :is(.item,.place-card,.hk-place-card,.attraction,.district,.card,.tile){border-radius:20px;border-color:var(--by046-line);box-shadow:0 4px 14px #236a9f16}
+html.by046 :is(.filters button,.filters .filter,.filter-bar button,.filter-bar .filter-btn,.quick-search button,.filter-btn,.by-island-filter){min-height:40px;border:1px solid #9fcfe9;border-radius:13px;background:linear-gradient(150deg,#fff,#ecf7ff);color:var(--by046-ink);font-size:13px;font-weight:700;padding:8px 13px;line-height:1.4;box-shadow:0 2px 7px #12649b0c;white-space:normal}
+html.by046 :is(.filters button.active,.filters .filter.active,.filter-bar button.active,.filter-btn.active,.by-island-filter.active,[aria-pressed="true"]){background:linear-gradient(125deg,#075d9b,#0788d8);color:white;border-color:#0675b5}
+html.by046 :is(input[type="search"],input.search,.search){border:1px solid #95cfea;border-radius:12px;background:#fff;color:var(--by046-ink);min-height:44px}
+html.by046 :is(.hero,.head,.intro-card){border-radius:22px;border-color:var(--by046-line)}
+html.by046 :is(.mc-ah-banner,.hk-ah-banner,.by4-banner,.by-island-banner) img{max-width:100%;height:auto}
+html.by046 :is(.mc-v040-prayer,.hk-v032-prayer){border-color:var(--by046-gold)}
+html.by046 :is(.mc-v040-weather,.hk-v032-weather){border-color:var(--by046-line)}
+/* Nav/social toolbar is the same on eligible city and country listing pages */
+html.by046 .by046-actions{direction:rtl;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px;margin:12px auto;padding:10px 12px;max-width:1250px;border:1px solid var(--by046-line);border-radius:17px;background:linear-gradient(120deg,#e7f5ff,#fff);box-shadow:0 4px 13px #0c5e8b16}
+html.by046 .by046-actions a,html.by046 .by046-actions button{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:40px;padding:8px 14px;border:1px solid #8ec6eb;border-radius:13px;background:linear-gradient(120deg,#fff,#edf8ff);color:var(--by046-ink);font-size:13px;font-weight:800;text-decoration:none;cursor:pointer;box-shadow:0 2px 7px #1d68a313}
+html.by046 .by046-actions .by046-store{border-color:#d7ae60;background:linear-gradient(#fff,#fff5df)}
+html.by046 .by046-actions .by046-social{min-width:45px}
+html.by046 .by046-actions a:hover,html.by046 .by046-actions button:hover{background:#dff2ff}
+html.by046 .by046-actions .by046-top{margin-right:auto}
+html.by046 .by046-actions .by046-label{font-weight:800}
+@media(max-width:1100px){html.by046 :is(.regions,.cities,.by-islands-grid){grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}}
+@media(max-width:760px){html.by046 :is(.regions,.cities,.by-islands-grid){grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}html.by046 .by046-actions{margin:10px;padding:8px;gap:6px}html.by046 .by046-actions a,html.by046 .by046-actions button{font-size:12px;padding:7px 10px;min-height:38px}html.by046 :is(.region .mc-region-photo,.region .hk-region-photo,.city-card img,.by-island-card>img){aspect-ratio:1.25}html.by046 :is(.region h2,.region-copy h2,.city-text strong,.by-island-card-info h3){font-size:16px}}
+@media(max-width:360px){html.by046 :is(.regions,.cities,.by-islands-grid){gap:7px}html.by046 .by046-actions{gap:5px}html.by046 .by046-actions .by046-label{display:none}}
+@media(prefers-reduced-motion:reduce){html.by046 *{transition:none!important;scroll-behavior:auto!important}}

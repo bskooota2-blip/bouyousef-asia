@@ -1,0 +1,13 @@
+{
+  "restaurants": 79,
+  "groups": {
+    "other": 31,
+    "western": 19,
+    "arab": 16,
+    "turkish": 2,
+    "indian": 11
+  },
+  "cafes": 25,
+  "source": "V038",
+  "changes": "Seven restaurant filters, no restaurant cuisine labels, cafe view retained, halal cautious"
+}

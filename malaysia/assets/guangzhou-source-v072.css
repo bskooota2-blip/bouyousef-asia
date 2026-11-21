@@ -1,0 +1,63 @@
+/* Verbatim declaration bodies from BouYousef2 Guangzhou original index.html; selectors re-scoped. */
+body.v072-guangzhou-source .gz-overview{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(280px,.78fr);gap:18px;align-items:stretch;margin-bottom:18px}
+body.v072-guangzhou-source .city-banner{max-width:none;margin:0;min-height:164px;border:2px solid #dca62c;border-radius:26px;padding:18px 22px;background:linear-gradient(135deg,#d7f0ff 0%,#ffffff 54%,#bfe6ff 100%);box-shadow:0 8px 22px #1f689618;display:flex;flex-direction:row-reverse;justify-content:space-between;align-items:center}
+body.v072-guangzhou-source .city-banner img{width:230px;height:132px;border-radius:20px;border:3px solid #f0fbff;box-shadow:0 8px 18px #1d60911c;order:2}
+body.v072-guangzhou-source .city-banner h1{font-size:clamp(42px,4vw,60px);margin:6px 0 4px;color:#073a67}
+body.v072-guangzhou-source .city-banner p{font-size:18px;margin:0;color:#274c70;font-weight:800}
+body.v072-guangzhou-source .city-banner .city-kicker{display:inline-block;background:#eff7ff;border:1px solid #b6d9f0;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:800;color:#27608f;margin-bottom:10px}
+body.v072-guangzhou-source #globalPrayer{margin:0}
+body.v072-guangzhou-source .prayer-title{min-width:178px;background:linear-gradient(180deg,#edf8ff,#dbf0ff);font-size:22px;font-weight:900;padding:16px 14px;gap:9px}
+body.v072-guangzhou-source .prayer-title select{width:150px;font-size:14px;border-radius:10px;padding:6px}
+body.v072-guangzhou-source .prayer-cells{grid-template-columns:repeat(6,minmax(0,1fr));align-items:stretch}
+body.v072-guangzhou-source .prayer-item{padding:16px 8px}
+body.v072-guangzhou-source .prayer-item strong{font-size:20px;color:#083767}
+body.v072-guangzhou-source .prayer-item span{font-size:22px;font-weight:900;color:#0e3a64}
+body.v072-guangzhou-source .qibla{min-width:210px;padding:14px 10px;border-right:1px solid #c9deeb;background:linear-gradient(180deg,#f9fdff,#eef7ff)}
+body.v072-guangzhou-source .qibla b{font-size:22px;color:#083766}
+body.v072-guangzhou-source .qibla strong{font-size:34px;color:#074b86}
+body.v072-guangzhou-source .qibla .compass{width:118px;height:118px;margin:8px auto}
+body.v072-guangzhou-source .qibla small{font-size:13px;line-height:1.35;max-width:140px}
+body.v072-guangzhou-source .section-cards{max-width:none;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+body.v072-guangzhou-source .section-card{min-height:138px;padding:20px 14px;border:2px solid #d7a538;border-radius:24px;background:linear-gradient(180deg,#fafdff,#eef8ff);box-shadow:0 8px 18px #2b6f9f16;align-items:center;justify-content:center}
+body.v072-guangzhou-source .section-card img{display:none!important}
+body.v072-guangzhou-source .section-card .section-icon{width:auto;height:auto;margin:0 0 12px;border:0;background:transparent;box-shadow:none;font-size:52px}
+body.v072-guangzhou-source .section-card strong{font-size:22px;line-height:1.3;text-align:center}
+body.v072-guangzhou-source .section-card small{display:none}
+body.v072-guangzhou-source .section-card.active{background:linear-gradient(180deg,#d8f0ff,#ffffff);box-shadow:0 8px 22px #1d6a9d22;border-color:#ddaa37}
+body.v072-guangzhou-source .gz-overview{direction:rtl;display:grid;grid-template-columns:minmax(0,1.03fr) minmax(0,.79fr) minmax(0,1.12fr);grid-template-areas:"city qibla prayers";gap:16px;align-items:stretch;margin-bottom:18px}
+body.v072-guangzhou-source .city-banner{grid-area:city;min-width:0;min-height:175px;max-height:215px;display:flex;flex-direction:row;direction:rtl;align-items:center;justify-content:space-between;gap:12px;margin:0;padding:12px 15px;border-radius:24px;background:linear-gradient(118deg,#caebff,#f9fdff 68%,#d7f1ff);border:1.8px solid #e3a91d;box-shadow:0 3px 8px #1e578514}
+body.v072-guangzhou-source .city-banner img{order:2;flex:0 0 40%;min-width:0;max-width:40%;width:40%;height:150px;object-fit:cover;border-radius:19px;border:1px solid #e0f6ff}
+body.v072-guangzhou-source .city-banner>div{min-width:0;flex:1;text-align:right}
+body.v072-guangzhou-source .city-banner h1{font-size:clamp(32px,3.4vw,51px);line-height:1.22;margin:6px 0 3px;white-space:nowrap}
+body.v072-guangzhou-source .city-banner p{font-size:16px}
+body.v072-guangzhou-source .gz-qibla-panel{grid-area:qibla;min-width:0;background:linear-gradient(135deg,#f8fcff,#e9f7ff);border:1.8px solid #e2a91f;border-radius:24px;box-shadow:0 3px 8px #1e578514;display:flex;align-items:center;justify-content:center;overflow:hidden}
+body.v072-guangzhou-source .gz-qibla-panel .qibla{border:0;min-width:0;width:100%;min-height:175px;padding:12px 10px;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto auto;align-items:center;gap:3px 8px;direction:ltr;text-align:center;background:transparent}
+body.v072-guangzhou-source .gz-qibla-panel .qibla b{grid-column:2;grid-row:1;font-size:20px;color:#092f58}
+body.v072-guangzhou-source .gz-qibla-panel .qibla .compass{grid-column:1;grid-row:1/4;width:min(140px,100%);height:auto;aspect-ratio:1;margin:0 auto}
+body.v072-guangzhou-source .gz-qibla-panel .qibla strong{grid-column:2;grid-row:2;font-size:32px;color:#0e4d8b}
+body.v072-guangzhou-source .gz-qibla-panel .qibla small{grid-column:2;grid-row:3;font-size:11px;line-height:1.4;max-width:none;direction:rtl}
+body.v072-guangzhou-source #globalPrayer{grid-area:prayers;min-width:0;width:100%;margin:0}
+body.v072-guangzhou-source #globalPrayer .prayer{height:100%;min-height:175px;max-height:215px;border:1.8px solid #e2a91f;border-radius:24px;background:linear-gradient(120deg,#f8fcff,#e5f5ff);display:flex;flex-direction:column;gap:0;box-shadow:0 3px 8px #1e578514;overflow:hidden}
+body.v072-guangzhou-source .prayer-title{flex:0 0 auto;min-width:0;width:100%;height:auto;display:flex;flex-direction:row;justify-content:center;gap:12px;align-items:center;padding:15px 10px 8px;background:transparent;font-size:18px}
+body.v072-guangzhou-source .prayer-title select{display:none}
+body.v072-guangzhou-source .prayer-title [data-i18n="prayerHeading"]:after{content:" — " attr(data-active-city)}
+body.v072-guangzhou-source .prayer-cells{flex:1;min-width:0;width:100%;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));align-items:stretch;align-content:stretch;order:unset;gap:0;direction:rtl;padding:12px 10px 20px}
+body.v072-guangzhou-source .prayer-item{min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:4px 1px;border-left:1px solid #bad7e9;white-space:nowrap;overflow:visible}
+body.v072-guangzhou-source .prayer-item:last-child{border-left:0}
+body.v072-guangzhou-source .prayer-item strong{font-size:clamp(10px,1vw,14px);line-height:1.2;letter-spacing:-.25px}
+body.v072-guangzhou-source .prayer-item span{font-size:clamp(11px,1.12vw,17px);line-height:1.2;font-variant-numeric:tabular-nums;margin:0;font-weight:900}
+body.v072-guangzhou-source #globalPrayer .prayer-note{display:none}
+body.v072-guangzhou-source .gz-overview:after{content:"مواقيت فلكية تقديرية بتوقيت الصين UTC+8؛ راجع التقاويم المحلية. القبلة اتجاه جغرافي محسوب وليست بوصلة حية.";grid-column:1/-1;font-size:10px;line-height:1.2;text-align:center;color:#5b7a91;margin:-9px 0 -7px}
+body.v072-guangzhou-source .section-cards{direction:rtl;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:0 0 20px}
+body.v072-guangzhou-source .section-card{border:1.8px solid #dca626;border-radius:24px;min-height:139px;max-height:none;padding:16px 10px 12px;background:linear-gradient(180deg,#fbfeff,#ecf7ff);box-shadow:0 4px 7px #205d871e;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px}
+body.v072-guangzhou-source .section-card .section-icon{font-size:49px;line-height:1.1;display:block;width:auto;height:auto;margin:0;white-space:nowrap}
+body.v072-guangzhou-source .section-card[data-section-id="transport"] .section-icon{font-size:30px;letter-spacing:-8px;padding-right:8px}
+body.v072-guangzhou-source .section-card strong{font-size:clamp(17px,1.55vw,24px);margin:0;line-height:1.35}
+body.v072-guangzhou-source .section-card.active{background:linear-gradient(180deg,#f8fdff,#e7f5ff);box-shadow:0 3px 8px #1a5d8a27}
+body.v072-guangzhou-source .section-card:not(.active){background:linear-gradient(180deg,#fbfeff,#ecf7ff)}
+body.v072-guangzhou-source .section-card.active{background:linear-gradient(180deg,#e7f6ff,#cfeaff)}
+body.v072-guangzhou-source .section-card.gz-information-important{position:relative;isolation:isolate}
+body.v072-guangzhou-source .section-card.gz-information-important .section-icon{background:linear-gradient(160deg,#108cde,#04518f);color:white;border-radius:50%;width:54px;height:54px;display:grid;place-items:center;box-shadow:0 3px 10px #0c72b144;font-size:34px}
+body.v072-guangzhou-source .section-card.gz-information-important .gz-important-badge{position:absolute;top:0;left:0;background:linear-gradient(115deg,#fa3431,#c21416);color:#fff;padding:6px 15px;border-radius:0 0 16px 0;font-weight:900;font-size:14px;box-shadow:0 3px 8px #5d13162c}
+body.v072-guangzhou-source #sectionCards .section-card{position:relative;min-width:0;height:100%;}
+body.v072-guangzhou-source #sectionCards .section-card strong{overflow-wrap:break-word;text-align:center}

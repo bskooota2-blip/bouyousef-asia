@@ -1,0 +1,1 @@
+V044: Unified Macau quick-search and category button sizes, fonts, icons and responsive wrapping in four region pages. Removed duplicate quick-search offers and views buttons; corresponding category filters remain. All search/filter behavior preserved.

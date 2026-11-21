@@ -1,0 +1,50 @@
+{
+  "project": "بويوسف ٤ – بانكوك",
+  "version": "V034",
+  "source_zip": "BouYousef4_V033_Bangkok_53_Malls_No_Filters.zip",
+  "previous_restaurants": 74,
+  "added_count": 5,
+  "new_restaurants_count": 79,
+  "previous_all_places": 413,
+  "new_all_places": 418,
+  "added": [
+    {
+      "ar": "مطعم علي الهندي والتايلندي – MBK",
+      "en": "Ali’s Indian & Thai Cuisine – MBK",
+      "floor_note": "هندي وتايلندي • حلال • داخل مجمع MBK – الدور الأرضي G، المنطقة D",
+      "source": "https://www.mbk-center.co.th/en/zone/dining-zone/"
+    },
+    {
+      "ar": "لونغست غريل من علي – MBK",
+      "en": "Longest Grill by Ali’s – MBK",
+      "floor_note": "مشويات هندية • حلال • داخل مجمع MBK – الدور الأرضي G، المنطقة B",
+      "source": "https://www.mbk-center.co.th/directory/shop/LONGEST-GRILL-by-Ali-s/"
+    },
+    {
+      "ar": "بومباي ديلايت – MBK",
+      "en": "Bombay Delite – MBK",
+      "floor_note": "هندي • داخل مجمع MBK • موقع الفرع والطابق بحاجة تأكيد قبل الاعتماد",
+      "source": "https://www.mbk-center.co.th/blog/nearby-bts-department-store/"
+    },
+    {
+      "ar": "سلطانة للمأكولات الهندية – MBK",
+      "en": "Sultana Indian Food – MBK",
+      "floor_note": "مأكولات هندية • داخل مجمع MBK – الطابق السادس",
+      "source": "https://www.aliscuisines.com/ourrestaurants"
+    },
+    {
+      "ar": "برياني بونص دوسا – MBK",
+      "en": "Biryani Bonus Dosa – MBK",
+      "floor_note": "برياني ودوسا • حلال • داخل مجمع MBK – الطابق الثالث، المنطقة A",
+      "source": "https://www.mbk-center.co.th/en/zone/dining-zone/"
+    }
+  ],
+  "skipped_duplicates": [],
+  "notes": [
+    "المطاعم الخمسة المشار إليها في طلب المستخدم الأخير فقط.",
+    "اسم الطابق وموقع بومباي ديلايت بحاجة تدقيق؛ لم يوصف بأنه حلال دون توثيق.",
+    "الأسماء التايلندية الجديدة كتابة صوتية مساعدة وليست توثيقاً للاسم الرسمي.",
+    "سنة الافتتاح غير موثقة، ولم تُخترع.",
+    "لم تتغير الملفات الأصلية الأخرى، ولم يُعدل مشروع بويوسف ٢."
+  ]
+}

@@ -1,0 +1,52 @@
+بويوسف ٤ – V014 توسيع بحثي أولي؛ النسخة V013: 279 موقعًا؛ الإضافات: 45؛ الإجمالي: 324.
+المواقع الجديدة مستقاة من أدلة بلدية بانكوك وهيئة السياحة والحكومة التايلندية وميشلان وأكور ومواقع المؤسسات؛ وجود المنشأة لا يؤكد دقة عنوان المنطقة أو حالة التشغيل الآنية.
+ليست قاعدة بيانات شاملة لجميع أماكن بانكوك؛ توجد أسماء تايلندية وعناوين وسنوات افتتاح ونجوم ناقصة، ولم نخترعها.
+الحماية: لم تُعدل بيانات السجلات السابقة أو فلاتر V013 أو الصفحة الرئيسية أو بانر AH.
+التوزيع: {'الأسواق': 6, 'المجمعات التجارية': 4, 'السياحة والمعالم': 8, 'المطاعم': 1, 'الفنادق': 7, 'المستشفيات': 10, 'المواصلات': 5, 'السبا والمساج': 4}
+
+قائمة الإضافات:
+1. الأسواق | سوق نانغ لونغ الشعبي | Nang Loeng Market | Nang Loeng, Pom Prap Sattru Phai, Bangkok, Thailand | https://www.am2026thailand.go.th/explore-bangkok
+2. الأسواق | سوق كلونغ توم للإلكترونيات والسلع | Khlong Thom Market | Khlong Thom, Pom Prap Sattru Phai, Bangkok, Thailand | https://policy.bangkok.go.th/expat/shopping-mall
+3. الأسواق | سوق وات سافان العائم | Wat Saphan Floating Market | Taling Chan, Bangkok, Thailand | https://thailand.go.th/public/issue-focus-detail/001_02_059
+4. الأسواق | سوق بونغ فرايا العائم | Bueng Phraya Floating Market | Khlong Sam Wa, Bangkok, Thailand | https://thailand.go.th/public/issue-focus-detail/001_02_022
+5. الأسواق | سوق ثالات بلو المحلي | Talat Phlu Market | Talat Phlu, Thon Buri, Bangkok, Thailand | https://visit.bangkok.go.th/plan-your-visit
+6. الأسواق | سوق كلونغ سان | Khlong San Market | Khlong San, Bangkok, Thailand | https://www.tourismthailand.org/Experiences/Details/shopping/33
+7. المجمعات التجارية | سنترال بينكلاو | Central Pinklao | Borommaratchachonnani Road, Bangkok Noi, Bangkok, Thailand | https://policy.bangkok.go.th/expat/shopping-mall
+8. المجمعات التجارية | سنترال بانغنا | Central Bangna | Bang Na-Trat Road, Bang Na, Bangkok, Thailand | https://policy.bangkok.go.th/expat/shopping-mall
+9. المجمعات التجارية | فاشن آيلاند | Fashion Island Bangkok | Ram Inthra Road, Khan Na Yao, Bangkok, Thailand | https://policy.bangkok.go.th/expat/shopping-mall
+10. المجمعات التجارية | سنترال إيست فيل | Central EastVille | Pradit Manutham Road, Lat Phrao, Bangkok, Thailand | https://policy.bangkok.go.th/expat/shopping-mall
+11. السياحة والمعالم | بيت الفنان – كلونغ بانغ لوانغ | Artist House Khlong Bang Luang | Khlong Bang Luang, Phasi Charoen, Bangkok, Thailand | https://thailand.go.th/issue-focus-detail/002_006?hl=en
+12. السياحة والمعالم | الأرجوحة العملاقة | Giant Swing Bangkok | Bamrung Mueang Road, Phra Nakhon, Bangkok, Thailand | https://policy.bangkok.go.th/expat/important-areas
+13. السياحة والمعالم | وات راتشاناتدارام | Wat Ratchanatdaram | Maha Chai Road, Phra Nakhon, Bangkok, Thailand | https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+14. السياحة والمعالم | ضريح إيراوان | Erawan Shrine | Ratchaprasong, Pathum Wan, Bangkok, Thailand | https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+15. السياحة والمعالم | حي سونغ وات التاريخي | Song Wat Road Heritage Area | Song Wat Road, Samphanthawong, Bangkok, Thailand | https://policy.bangkok.go.th/expat/important-areas
+16. السياحة والمعالم | مجتمع كودي تشين | Kudi Chin Community | Thon Buri, Bangkok, Thailand | https://visit.bangkok.go.th/plan-your-visit
+17. السياحة والمعالم | حي بانغ لومفو | Bang Lamphu Heritage Quarter | Bang Lamphu, Phra Nakhon, Bangkok, Thailand | https://visit.bangkok.go.th/plan-your-visit
+18. السياحة والمعالم | شارع الفن شارون كرونغ | Charoen Krung Street Art | Charoen Krung Road, Bang Rak, Bangkok, Thailand | https://policy.bangkok.go.th/expat/important-areas
+19. المطاعم | كوت باي ماورو كولاغريكو – كابيلا | Côte by Mauro Colagreco | 2F, Capella Bangkok, 300/2 Charoenkrung Road, Yan Nawa, Sathon, Bangkok 10120, Thailand | https://guide.michelin.com/th/en/best-of/bangkok-s-best-riverside-restaurants
+20. الفنادق | إيبيس ستايلز بانكوك سيلوم | ibis Styles Bangkok Silom | 289 Silom Road, Bang Rak, Bangkok 10500, Thailand | https://all.accor.com/hotel/B6N1/index.en.shtml
+21. الفنادق | إيبيس بانكوك ريفرسايد | ibis Bangkok Riverside | Charoen Nakhon, Khlong San, Bangkok, Thailand | https://all.accor.com/a/en/destination/city/hotels-bangkok-v4991.html
+22. الفنادق | إيبيس بانكوك ساثورن | ibis Bangkok Sathorn | Sathon, Bangkok, Thailand | https://all.accor.com/a/en/destination/city/hotels-bangkok-v4991.html
+23. الفنادق | إيبيس بانكوك سوخومفيت 4 | ibis Bangkok Sukhumvit 4 | Sukhumvit Soi 4, Watthana, Bangkok, Thailand | https://all.accor.com/a/en/destination/city/hotels-bangkok-v4991.html
+24. الفنادق | نوفوتيل بانكوك بلاتينيوم براتونام | Novotel Bangkok Platinum Pratunam | Phetchaburi Road, Ratchathewi, Bangkok, Thailand | https://all.accor.com/a/en/destination/city/hotels-bangkok-v4991.html
+25. الفنادق | نوفوتيل بانكوك سيام سكوير | Novotel Bangkok on Siam Square | Siam Square, Pathum Wan, Bangkok, Thailand | https://all.accor.com/a/en/destination/city/hotels-bangkok-v4991.html
+26. الفنادق | بولمان بانكوك هوتيل جي | Pullman Bangkok Hotel G | Silom Road, Bang Rak, Bangkok, Thailand | https://all.accor.com/a/en/destination/city/hotels-bangkok-v4991.html
+27. المستشفيات | مستشفى تاكسين | Taksin Hospital | Khlong San, Bangkok, Thailand | https://policy.bangkok.go.th/expat/health-hospitals
+28. المستشفيات | مستشفى راجافيثي | Rajavithi Hospital | Ratchathewi, Bangkok, Thailand | https://policy.bangkok.go.th/expat/health-hospitals
+29. المستشفيات | مستشفى سيريراج بياماهاراجكارون | Siriraj Piyamaharajkarun Hospital | Bangkok Noi, Bangkok, Thailand | https://policy.bangkok.go.th/expat/health-hospitals
+30. المستشفيات | مستشفى بانغباكوك 9 الدولي | Bangpakok 9 International Hospital | Chom Thong, Bangkok, Thailand | https://policy.bangkok.go.th/expat/health-hospitals
+31. المستشفيات | مستشفى تشاو فرايا | Chaophya Hospital | Bangkok Noi, Bangkok, Thailand | https://policy.bangkok.go.th/expat/health-hospitals
+32. المستشفيات | مستشفى بياويت | Piyavate Hospital | Huai Khwang, Bangkok, Thailand | https://policy.bangkok.go.th/expat/health-hospitals
+33. المستشفيات | مستشفى سيكارين | Sikarin Hospital | Bang Na, Bangkok, Thailand | https://policy.bangkok.go.th/expat/health-hospitals
+34. المستشفيات | مستشفى سوخومفيت | Sukumvit Hospital | Sukhumvit Road, Bangkok, Thailand | https://policy.bangkok.go.th/expat/health-hospitals
+35. المستشفيات | مستشفى بانكوك للقلب | Bangkok Heart Hospital | 2 Soi Soonvijai 7, New Petchburi Road, Huay Khwang, Bangkok 10310, Thailand | https://www.bangkokhospital.com/en/directory
+36. المستشفيات | مستشفى واتانوسوت للسرطان | Wattanosoth Cancer Hospital | 2 Soi Soonvijai 7, New Petchburi Road, Huay Khwang, Bangkok 10310, Thailand | https://www.bangkokhospital.com/en/directory
+37. المواصلات | محطة حافلات ساي تاي ماي الجنوبية | Sai Tai Mai Southern Bus Terminal | Taling Chan, Bangkok, Thailand | https://policy.bangkok.go.th/expat/transportation
+38. المواصلات | محطة سالا دينغ BTS | BTS Sala Daeng Station | Silom, Bang Rak, Bangkok, Thailand | https://policy.bangkok.go.th/expat/transportation
+39. المواصلات | محطة سافان تاكسين BTS | BTS Saphan Taksin Station | Bang Rak, Bangkok, Thailand | https://policy.bangkok.go.th/expat/transportation
+40. المواصلات | رصيف ثا تيان | Tha Tien Pier | Phra Nakhon, Bangkok, Thailand | https://policy.bangkok.go.th/expat/transportation
+41. المواصلات | رصيف فرا آثيت | Phra Arthit Pier | Phra Nakhon, Bangkok, Thailand | https://policy.bangkok.go.th/expat/transportation
+42. السبا والمساج | هيلث لاند بينكلاو | Health Land Pinklao | Pinklao, Bangkok, Thailand | https://www.healthlandspa.com/en/home
+43. السبا والمساج | هيلث لاند تشاينغ واتانا | Health Land Chaeng Wattana | Chaeng Watthana, Bangkok, Thailand | https://www.healthlandspa.com/en/home
+44. السبا والمساج | هيلث لاند براديت مانوثام | Health Land Praditmanutham | Praditmanutham Road, Bangkok, Thailand | https://www.healthlandspa.com/en/home
+45. السبا والمساج | هيلث لاند راما 2 | Health Land Rama II | Rama II Road, Bangkok, Thailand | https://www.healthlandspa.com/en/home

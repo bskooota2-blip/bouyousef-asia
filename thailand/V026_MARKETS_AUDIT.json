@@ -1,0 +1,71 @@
+{
+  "version": "V026",
+  "status": "تم التنفيذ في نسخة عمل محلية؛ فحص JavaScript ناجح، اختبار المتصفح الفعلي متعذر، التدقيق النهائي معلق",
+  "base": "V025",
+  "existing_markets": 31,
+  "added_market_records": 15,
+  "after_markets": 46,
+  "market_main_filters": [
+    "الكل",
+    "الأسواق",
+    "أسواق متعددة"
+  ],
+  "market_regular_subfilters": [
+    "الكل",
+    "أسواق تغلق مبكرًا",
+    "أسواق الجملة",
+    "أسواق تفتح ليلًا",
+    "أسواق الملابس",
+    "أسواق الإلكترونيات والكمبيوتر",
+    "أسواق الأجهزة الكهربائية",
+    "أسواق الأحذية"
+  ],
+  "market_special_subfilters": [
+    "الكل",
+    "أسواق الطيور",
+    "أسواق الحيوانات",
+    "أسواق الزهور",
+    "أسواق الجمعة",
+    "أسواق السبت",
+    "أسواق الأحد",
+    "أسواق البخور",
+    "أسواق مستحضرات التجميل والأناقة والبشرة",
+    "أسواق الصيدليات الكبيرة",
+    "أسواق الجمعيات الكبيرة",
+    "أسواق الخضار والفواكه",
+    "أسواق اللحوم الحلال",
+    "أسواق المستعمل"
+  ],
+  "new_entries": [
+    "Bobae Market",
+    "Bobae Tower",
+    "Fortune Town IT Mall",
+    "Ban Moh Plaza",
+    "Power Buy CentralWorld",
+    "Pattavikorn Market",
+    "JJ Pet Market",
+    "Pak Khlong Talat Mai Flower Center",
+    "EVEANDBOY The Underground Siam Square One",
+    "Fascino Pharmacy Siriraj Tha Nam",
+    "Big C Supercenter Ratchadamri",
+    "Makro Sathorn",
+    "City Complex Pratunam",
+    "Mega Plaza Saphan Lek",
+    "Saiyud Muslim Market"
+  ],
+  "notes": [
+    "لم تتغير ملفات بويوسف ٢",
+    "لم يتغير أي ملف من بويوسف ٤ سوى bangkok.html",
+    "التصنيفات القديمة محفوظة بالكود القديم",
+    "الأسواق المتشابهة من V025 تحتاج تدقيقًا نهائيًا للازدواج (سامبينغ/سامفينغ) قبل الاعتماد",
+    "الأماكن ذات عنوان منطقة فقط تحتاج التحقق من موقع دقيق قبل اعتماد الملاحة"
+  ],
+  "tests": {
+    "javascript_syntax": "passed",
+    "record_count": "passed",
+    "exact_english_duplicate": "passed",
+    "browser_ui": "blocked_by_environment",
+    "old_city_data": "preserved",
+    "source_recheck_for_unverified_detail": "pending"
+  }
+}

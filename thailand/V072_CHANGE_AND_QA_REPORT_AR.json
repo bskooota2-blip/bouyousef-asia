@@ -1,0 +1,73 @@
+{
+  "source": "BouYousef2_All_Pages_Approved_Banner.zip / bouyousef-main/index.html",
+  "target": "BouYousef4_V071_City_Card_Image_Match.zip",
+  "cities": {
+    "bangkok.html": {
+      "script_contents_unchanged": true,
+      "original_script_count": 3,
+      "new_script_count": 3,
+      "original_data_elements": 9,
+      "new_data_elements": 9,
+      "category_links_before": [
+        "#markets",
+        "#malls",
+        "#restaurants",
+        "#sights",
+        "#hotels",
+        "#transit",
+        "#mosques",
+        "#health"
+      ],
+      "category_links_after": [
+        "#markets",
+        "#malls",
+        "#restaurants",
+        "#sights",
+        "#hotels",
+        "#transit",
+        "#mosques",
+        "#health"
+      ],
+      "image": "assets/cities/bangkok.jpg",
+      "prayer_bindings_before": 6,
+      "prayer_bindings_after": 6,
+      "select_preserved": true
+    },
+    "chiangmai.html": {
+      "script_contents_unchanged": true,
+      "original_script_count": 3,
+      "new_script_count": 3,
+      "original_data_elements": 9,
+      "new_data_elements": 9,
+      "category_links_before": [
+        "#markets",
+        "#malls",
+        "#restaurants",
+        "#sights",
+        "#hotels",
+        "#transit",
+        "#mosques",
+        "#health"
+      ],
+      "category_links_after": [
+        "#markets",
+        "#malls",
+        "#restaurants",
+        "#sights",
+        "#hotels",
+        "#transit",
+        "#mosques",
+        "#health"
+      ],
+      "image": "assets/cities/chiangmai.jpg",
+      "prayer_bindings_before": 6,
+      "prayer_bindings_after": 6,
+      "select_preserved": true
+    }
+  },
+  "checks": {
+    "source_css_reused": true,
+    "functional_browser_1366_and_390": true,
+    "remaining_viewports": "Not all requested sizes could be fully tested; visual source comparison manual using supplied screenshots."
+  }
+}

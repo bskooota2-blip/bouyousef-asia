@@ -1,0 +1,16 @@
+{
+  "version": "V033",
+  "base": "V031",
+  "target": "Bangkok commercial malls only",
+  "old_malls": 29,
+  "new_malls": 24,
+  "new_total": 53,
+  "deduped_names": [],
+  "changed_files": [
+    "bangkok.html"
+  ],
+  "hidden_malls_filters": true,
+  "source_validation": "Some malls verified on operator sites; other locality-level addresses and Thai names require follow-up verification. Years recorded only where CPN operator information confirms them.",
+  "other_categories_unchanged": true,
+  "site_not_published": true
+}

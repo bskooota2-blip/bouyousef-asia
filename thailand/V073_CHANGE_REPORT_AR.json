@@ -1,0 +1,57 @@
+{
+  "base_zip": "BouYousef4_V072_Guangzhou_Exact_Clone_Bangkok_ChiangMai.zip",
+  "changes": {
+    "bangkok.html": {
+      "initially_hidden_sections": [
+        "markets",
+        "malls",
+        "restaurants",
+        "cafes",
+        "sights",
+        "hotels",
+        "transit",
+        "mosques",
+        "health"
+      ],
+      "promotional_banner_removed": false,
+      "divider_matches_guangzhou": "1px solid #c2e2f7",
+      "initial_category": null
+    },
+    "chiangmai.html": {
+      "initially_hidden_sections": [
+        "markets",
+        "malls",
+        "restaurants",
+        "cafes",
+        "sights",
+        "hotels",
+        "transit",
+        "mosques",
+        "health"
+      ],
+      "promotional_banner_removed": true,
+      "divider_matches_guangzhou": "1px solid #c2e2f7",
+      "initial_category": null
+    }
+  },
+  "data_integrity": {
+    "bangkok.html": {
+      "place_literal_sha256_before": "f2abfee96ec526b4ab1d47f7153378d329b8a5d54f915a2cc6a5d1dce662d244",
+      "place_literal_sha256_after": "f2abfee96ec526b4ab1d47f7153378d329b8a5d54f915a2cc6a5d1dce662d244",
+      "data_unchanged": true,
+      "section_count_before": 9,
+      "section_count_after": 9
+    },
+    "chiangmai.html": {
+      "place_literal_sha256_before": "0203ce5065a58d1f29581197523d86ad42c5f542fb6cb1b0b48e2bfc5ca2ffe0",
+      "place_literal_sha256_after": "0203ce5065a58d1f29581197523d86ad42c5f542fb6cb1b0b48e2bfc5ca2ffe0",
+      "data_unchanged": true,
+      "section_count_before": 9,
+      "section_count_after": 9
+    }
+  },
+  "modified_files": [
+    "bangkok.html",
+    "chiangmai.html"
+  ]
+}

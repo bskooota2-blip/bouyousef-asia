@@ -1,0 +1,328 @@
+﻿index,category,arabic_name,english_name,missing_thai,missing_specific_address,missing_opening_year,hotel_stars_missing_or_unverified,metro_not_verified,duplicate_exact_name_in_category,source
+1,الأسواق,سوق تشاتوشاك,Chatuchak Weekend Market,0,1,1,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+2,الأسواق,سوق براتونام,Pratunam Market,0,1,1,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+3,الأسواق,سوق سامبينغ,Sampeng Market,0,0,1,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+4,الأسواق,سوق باهورات للأقمشة,Phahurat Textile Market,0,1,1,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+5,الأسواق,سوق كلونغ توي,Khlong Toei Market,0,1,1,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+6,الأسواق,سوق أور تور كور,Or Tor Kor Market,0,1,1,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+7,الأسواق,سوق وانغ لانغ,Wang Lang Market,0,1,1,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+8,الأسواق,سوق روت فاي سريناكارين,Srinagarindra Train Night Market,0,1,1,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+9,الأسواق,سوق جود فيرز راما 9,JODD FAIRS Rama 9,0,1,1,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+10,الأسواق,سوق ثونبوري,Thonburi Market Place,0,1,1,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+11,الأسواق,سوق الزهور باك كلونغ تالات,Pak Khlong Talat Flower Market,0,1,1,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+12,الأسواق,سوق تالات نوي,Talat Noi,0,1,1,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+13,الأسواق,سوق كوان رييام العائم,Kwan Riam Floating Market,0,0,1,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+14,الأسواق,سوق تالينغ تشان العائم,Taling Chan Floating Market,0,1,1,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+15,الأسواق,سوق خلونغ لات مايووم العائم,Khlong Lat Mayom Floating Market,0,1,1,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+16,الأسواق,سوق بانغ نام فوينغ العائم,Bang Nam Phueng Floating Market,0,1,1,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+17,الأسواق,سوق يواراج الليلي,Yaowarat Night Market,0,1,1,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+18,الأسواق,سوق هواي خوانغ الليلي,Huai Khwang Night Market,0,1,1,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+19,المجمعات التجارية,أيكون سيام,ICONSIAM,0,0,0,0,1,0,https://policy.bangkok.go.th/expat/shopping-mall
+20,المجمعات التجارية,سيام باراغون,Siam Paragon,0,0,0,0,1,0,https://policy.bangkok.go.th/expat/shopping-mall
+21,المجمعات التجارية,سنترال وورلد,CentralWorld,0,0,0,0,1,0,https://policy.bangkok.go.th/expat/shopping-mall
+22,المجمعات التجارية,إم بي كيه,MBK Center,0,0,0,0,1,0,https://policy.bangkok.go.th/expat/shopping-mall
+23,المجمعات التجارية,ترمينال 21 آسوكي,Terminal 21 Asok,0,0,0,0,1,0,https://policy.bangkok.go.th/expat/shopping-mall
+24,المجمعات التجارية,سنترال إمباسي,Central Embassy,0,0,0,0,1,0,https://policy.bangkok.go.th/expat/shopping-mall
+25,المجمعات التجارية,إم كوارتير,EmQuartier,0,1,0,0,1,0,https://policy.bangkok.go.th/expat/shopping-mall
+26,المجمعات التجارية,إم سفير,EMSPHERE,0,1,0,0,1,0,https://policy.bangkok.go.th/expat/shopping-mall
+27,المجمعات التجارية,إمبوريوم,Emporium,0,0,0,0,1,0,https://policy.bangkok.go.th/expat/shopping-mall
+28,المجمعات التجارية,سيام سنتر,Siam Center,0,1,0,0,1,0,https://policy.bangkok.go.th/expat/shopping-mall
+29,المجمعات التجارية,سيام ديسكفري,Siam Discovery,0,1,0,0,1,0,https://policy.bangkok.go.th/expat/shopping-mall
+30,المجمعات التجارية,سيام سكوير ون,Siam Square One,0,1,0,0,1,0,https://policy.bangkok.go.th/expat/shopping-mall
+31,المجمعات التجارية,وان بانكوك,One Bangkok,0,1,0,0,1,0,https://policy.bangkok.go.th/expat/shopping-mall
+32,المجمعات التجارية,ساميان ميترتاون,Samyan Mitrtown,0,0,0,0,1,0,https://policy.bangkok.go.th/expat/shopping-mall
+33,المجمعات التجارية,سنترال راما 9,Central Rama 9,0,0,0,0,1,0,https://policy.bangkok.go.th/expat/shopping-mall
+34,المجمعات التجارية,سنترال لادبراو,Central Ladprao,0,0,0,0,1,0,https://policy.bangkok.go.th/expat/shopping-mall
+35,المجمعات التجارية,آسياتيك ذا ريفرفرونت,Asiatique The Riverfront,0,0,0,0,1,0,https://policy.bangkok.go.th/expat/shopping-mall
+36,المجمعات التجارية,غايسورن فيليج,Gaysorn Village,0,0,1,0,1,0,https://policy.bangkok.go.th/expat/shopping-mall
+37,المجمعات التجارية,سيكون سكوير,Seacon Square Srinakarin,0,0,0,0,1,0,https://policy.bangkok.go.th/expat/shopping-mall
+38,المجمعات التجارية,ذا مول بانغكابي,The Mall Lifestore Bangkapi,0,0,1,0,1,0,https://policy.bangkok.go.th/expat/shopping-mall
+39,المطاعم,جاي فاي,Jay Fai,0,0,1,0,1,0,https://guide.michelin.com/en/th/bangkok-region/bangkok/restaurants/thai
+40,المطاعم,ثيب ساماي,Thipsamai Pad Thai,0,0,0,0,1,0,https://guide.michelin.com/en/th/bangkok-region/bangkok/restaurants/thai
+41,المطاعم,كروا أبسورن,Krua Apsorn Dusit,0,1,1,0,1,0,https://guide.michelin.com/en/th/bangkok-region/bangkok/restaurants/thai
+42,المطاعم,ناهـم,Nahm,0,0,1,0,1,0,https://guide.michelin.com/en/th/bangkok-region/bangkok/restaurants/thai
+43,المطاعم,سانيه جان,Saneh Jaan,0,1,1,0,1,0,https://guide.michelin.com/en/th/bangkok-region/bangkok/restaurants/thai
+44,المطاعم,سوبانيغا,Supanniga Eating Room Tha Tien,0,1,1,0,1,0,https://guide.michelin.com/en/th/bangkok-region/bangkok/restaurants/thai
+45,المطاعم,رونغروس,Rongros,0,1,1,0,1,0,https://guide.michelin.com/en/th/bangkok-region/bangkok/restaurants/thai
+46,المطاعم,ذا لوكال,The Local,0,0,1,0,1,0,https://guide.michelin.com/en/th/bangkok-region/bangkok/restaurants/thai
+47,المطاعم,باست,Paste Bangkok,0,1,1,0,1,0,https://guide.michelin.com/en/th/bangkok-region/bangkok/restaurants/thai
+48,المطاعم,كيم باي سيام ويزدوم,Chim by Siam Wisdom,0,0,1,0,1,0,https://guide.michelin.com/en/th/bangkok-region/bangkok/restaurants/thai
+49,المطاعم,جا بانيتش,K. Panich,0,0,1,0,1,0,https://guide.michelin.com/en/th/bangkok-region/bangkok/restaurants/thai
+50,المطاعم,سومساك بو أوب,Somsak Pu Ob,0,1,1,0,1,0,https://guide.michelin.com/en/th/bangkok-region/bangkok/restaurants/thai
+51,المطاعم,أهيشا روددي,Aheesah Roddee,0,1,1,0,1,0,https://guide.michelin.com/en/th/bangkok-region/bangkok/restaurants/thai
+52,المطاعم,بلو باي آلان دوكاس,Blue by Alain Ducasse,0,1,1,0,1,0,https://guide.michelin.com/en/th/bangkok-region/bangkok/restaurants/thai
+53,المطاعم,جاو بون روست داك,Prachak Roasted Duck,0,0,0,0,1,0,https://guide.michelin.com/en/th/bangkok-region/bangkok/restaurants/thai
+54,المطاعم,سافوي,Savoey Seafood,0,1,1,0,1,0,https://guide.michelin.com/en/th/bangkok-region/bangkok/restaurants/thai
+55,المطاعم,بان خانيتا,Baan Khanitha,0,1,1,0,1,0,https://guide.michelin.com/en/th/bangkok-region/bangkok/restaurants/thai
+56,المطاعم,أكسورن,Aksorn,0,1,1,0,1,0,https://guide.michelin.com/en/th/bangkok-region/bangkok/restaurants/thai
+57,الكافيهات,أفتر يو سيام باراغون,After You Dessert Café Siam Paragon,0,1,0,0,1,0,https://au.listedcompany.com/misc/presentation/20181127-au-sitevisit-nov2018-01.pdf
+58,الكافيهات,أفتر يو ثونغلور,After You Dessert Café Thonglor,0,0,0,0,1,0,https://au.listedcompany.com/misc/presentation/20181127-au-sitevisit-nov2018-01.pdf
+59,الكافيهات,ستاربكس ريزيرف سنترال وورلد,Starbucks Reserve CentralWorld,0,1,1,0,1,0,https://policy.bangkok.go.th/expat/shopping-mall
+60,الكافيهات,كافيه أمازون,Café Amazon,0,1,1,0,1,0,https://policy.bangkok.go.th/expat/shopping-mall
+61,الكافيهات,ترو كوفي,TrueCoffee,0,1,1,0,1,0,https://policy.bangkok.go.th/expat/shopping-mall
+62,الكافيهات,باكاريف سان لوران,PAUL Bakery & Café,0,1,1,0,1,0,https://policy.bangkok.go.th/expat/shopping-mall
+63,الكافيهات,بلو وايل كافيه,Blue Whale Café,0,1,1,0,1,0,https://policy.bangkok.go.th/expat/shopping-mall
+64,الكافيهات,آيسديا,Icedea,0,1,1,0,1,0,https://policy.bangkok.go.th/expat/shopping-mall
+65,الكافيهات,أودري كافيه,Audrey Café,0,1,1,0,1,0,https://policy.bangkok.go.th/expat/shopping-mall
+66,الكافيهات,فكتوري بيكري,Factory Coffee Bangkok,0,1,1,0,1,0,https://policy.bangkok.go.th/expat/shopping-mall
+67,السياحة والمعالم,القصر الكبير,The Grand Palace,0,1,0,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+68,السياحة والمعالم,معبد بوذا الزمردي,Wat Phra Kaew,0,1,0,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+69,السياحة والمعالم,معبد وات فو,Wat Pho,0,0,1,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+70,السياحة والمعالم,معبد وات آرون,Wat Arun,0,0,1,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+71,السياحة والمعالم,معبد وات ساكيت,Wat Saket / Golden Mount,0,0,1,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+72,السياحة والمعالم,معبد وات ترايميت,Wat Traimit,0,0,1,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+73,السياحة والمعالم,معبد وات بينشابوفيت,Wat Benchamabophit,0,0,0,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+74,السياحة والمعالم,معبد وات سوثات,Wat Suthat,0,1,1,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+75,السياحة والمعالم,المتحف الوطني في بانكوك,Bangkok National Museum,0,1,0,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+76,السياحة والمعالم,متحف سيام,Museum Siam,0,0,0,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+77,السياحة والمعالم,مركز بانكوك للفنون والثقافة,Bangkok Art and Culture Centre,0,0,0,0,1,0,https://www.bacc.or.th/en/about
+78,السياحة والمعالم,مبنى كينغ باور ماهاناخون,King Power Mahanakhon,0,0,0,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+79,السياحة والمعالم,حديقة لومبيني,Lumphini Park,0,1,0,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+80,السياحة والمعالم,حديقة بنجاكيتي,Benjakitti Park,0,1,0,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+81,السياحة والمعالم,حي الصين ياوارات,Yaowarat Chinatown,0,1,1,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+82,السياحة والمعالم,شارع خاو سان,Khao San Road,0,1,1,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+83,السياحة والمعالم,بيت جيم تومبسون,Jim Thompson House,0,0,0,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+84,السياحة والمعالم,آسياتيك النهر,Asiatique The Riverfront,0,0,0,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+85,الفنادق,ماندارين أورينتال بانكوك,Mandarin Oriental Bangkok,0,0,0,0,1,0,https://www.mandarinoriental.com/en/bangkok/chao-phraya-river/contact-us
+86,الفنادق,ذا بيننسولا بانكوك,The Peninsula Bangkok,0,0,0,0,1,0,https://www.innpedia.com/cities/bangkok
+87,الفنادق,سيام كمبنسكي,Siam Kempinski Hotel Bangkok,0,0,0,0,1,0,https://www.innpedia.com/cities/bangkok
+88,الفنادق,غراند حياة إيراوان,Grand Hyatt Erawan Bangkok,0,0,0,0,1,0,https://www.innpedia.com/cities/bangkok
+89,الفنادق,شانغريلا بانكوك,Shangri-La Bangkok,0,0,0,0,1,0,https://www.innpedia.com/cities/bangkok
+90,الفنادق,بارك حياة بانكوك,Park Hyatt Bangkok,0,0,0,0,1,0,https://www.innpedia.com/cities/bangkok
+91,الفنادق,والدورف أستوريا بانكوك,Waldorf Astoria Bangkok,0,0,0,0,1,0,https://www.innpedia.com/cities/bangkok
+92,الفنادق,كابيلّا بانكوك,Capella Bangkok,0,0,0,0,1,0,https://www.innpedia.com/cities/bangkok
+93,الفنادق,فور سيزونز بانكوك,Four Seasons Hotel Bangkok at Chao Phraya River,0,0,0,0,1,0,https://www.innpedia.com/cities/bangkok
+94,الفنادق,أنانتارا سيام,Anantara Siam Bangkok Hotel,0,0,1,0,1,0,https://www.innpedia.com/cities/bangkok
+95,الفنادق,إيستن غراند ساثورن,Eastin Grand Hotel Sathorn,0,0,0,0,1,0,https://www.innpedia.com/cities/bangkok
+96,الفنادق,ميلينيوم هيلتون,Millennium Hilton Bangkok,0,0,0,0,1,0,https://www.innpedia.com/cities/bangkok
+97,الفنادق,بانكوك ماريوت ماركيز,Bangkok Marriott Marquis Queen’s Park,0,0,0,0,1,0,https://www.innpedia.com/cities/bangkok
+98,الفنادق,إيبيس بانكوك سيام,ibis Bangkok Siam,0,1,1,0,1,0,https://www.innpedia.com/cities/bangkok
+99,الفنادق,هوليداي إن إكسبرس سيام,Holiday Inn Express Bangkok Siam,0,1,1,0,1,0,https://www.innpedia.com/cities/bangkok
+100,المواصلات,مطار سوفارنابومي,Suvarnabhumi Airport (BKK),0,0,0,0,1,0,https://policy.bangkok.go.th/expat/transportation
+101,المواصلات,مطار دون موينغ,Don Mueang International Airport (DMK),0,0,0,0,1,0,https://policy.bangkok.go.th/expat/transportation
+102,المواصلات,محطة بانكوك المركزية كرونغ ثيب أبيوات,Krung Thep Aphiwat Central Terminal,0,1,0,0,1,0,https://policy.bangkok.go.th/expat/transportation
+103,المواصلات,محطة هوا لامفونغ,Hua Lamphong Railway Station,0,1,0,0,1,0,https://policy.bangkok.go.th/expat/transportation
+104,المواصلات,محطة بي تي إس سيام,BTS Siam Station,0,1,0,0,1,0,https://policy.bangkok.go.th/expat/transportation
+105,المواصلات,محطة بي تي إس آسوكي,BTS Asok Station,0,1,0,0,1,0,https://policy.bangkok.go.th/expat/transportation
+106,المواصلات,محطة مترو سوخومفيت,MRT Sukhumvit Station,0,1,0,0,1,0,https://policy.bangkok.go.th/expat/transportation
+107,المواصلات,محطة مترو سانام تشاي,MRT Sanam Chai Station,0,1,0,0,1,0,https://policy.bangkok.go.th/expat/transportation
+108,المواصلات,محطة فايا تاي,Phaya Thai BTS / Airport Rail Link,0,1,1,0,1,0,https://policy.bangkok.go.th/expat/transportation
+109,المواصلات,محطة ماكاسان,Makkasan Airport Rail Link,0,1,0,0,1,0,https://policy.bangkok.go.th/expat/transportation
+110,المواصلات,رصيف ساثورن المركزي,Sathorn Central Pier,0,1,1,0,1,0,https://policy.bangkok.go.th/expat/transportation
+111,المواصلات,محطة حافلات إيكاماي,Ekkamai Eastern Bus Terminal,0,1,1,0,1,0,https://policy.bangkok.go.th/expat/transportation
+112,المساجد,مسجد هارون,Haroon Mosque,0,0,1,0,1,0,https://masjid.islamicbangkok.or.th/masjid/id/10129
+113,المساجد,مسجد تون سون,Ton Son Mosque,0,1,1,0,1,0,https://api.tat.or.th/upload/multimedia/ebrochure/file/live/halal.pdf
+114,المساجد,مسجد بانغ لوانغ,Bang Luang Mosque,0,1,1,0,1,0,https://api.tat.or.th/upload/multimedia/ebrochure/file/live/halal.pdf
+115,المساجد,مسجد بانغ أو,Bang Aor Mosque,0,0,1,0,1,0,https://api.tat.or.th/upload/multimedia/ebrochure/file/live/halal.pdf
+116,المساجد,مسجد دار الإحسان,Darul Ehsan Mosque,0,0,1,0,1,0,https://api.tat.or.th/upload/multimedia/ebrochure/file/live/halal.pdf
+117,المساجد,مسجد نور المبين,Nurul Mubeen Mosque,0,1,1,0,1,0,https://api.tat.or.th/upload/multimedia/ebrochure/file/live/halal.pdf
+118,المساجد,مسجد سوان فلو,Suan Phlu Mosque,0,0,1,0,1,0,https://api.tat.or.th/upload/multimedia/ebrochure/file/live/halal.pdf
+119,المساجد,مسجد مهاجرين,Muhayireen Mosque,0,0,1,0,1,0,https://api.tat.or.th/upload/multimedia/ebrochure/file/live/halal.pdf
+120,المستشفيات,مستشفى بمرونغراد الدولي,Bumrungrad International Hospital,0,0,1,0,1,0,https://www.gov.uk/guidance/healthcare-and-medical-services-in-thailand
+121,المستشفيات,مستشفى بانكوك,Bangkok Hospital,0,0,1,0,1,0,https://www.gov.uk/guidance/healthcare-and-medical-services-in-thailand
+122,المستشفيات,مستشفى ساميتيويت سوخومفيت,Samitivej Sukhumvit Hospital,0,0,1,0,1,0,https://www.gov.uk/guidance/healthcare-and-medical-services-in-thailand
+123,المستشفيات,مستشفى ساميتيويت سريناكارين,Samitivej Srinakarin Hospital,0,0,1,0,1,0,https://www.gov.uk/guidance/healthcare-and-medical-services-in-thailand
+124,المستشفيات,مستشفى بي إن إتش,BNH Hospital,0,0,1,0,1,0,https://www.gov.uk/guidance/healthcare-and-medical-services-in-thailand
+125,المستشفيات,مستشفى فيجثاني,Vejthani Hospital,0,0,1,0,1,0,https://www.gov.uk/guidance/healthcare-and-medical-services-in-thailand
+126,المستشفيات,مستشفى باياتاي 2,Phyathai 2 International Hospital,0,0,1,0,1,0,https://www.gov.uk/guidance/healthcare-and-medical-services-in-thailand
+127,المستشفيات,مستشفى سيريراج,Siriraj Hospital,0,0,1,0,1,0,https://www.gov.uk/guidance/healthcare-and-medical-services-in-thailand
+128,المستشفيات,مستشفى راماثيبودي,Ramathibodi Hospital,0,0,1,0,1,0,https://www.gov.uk/guidance/healthcare-and-medical-services-in-thailand
+129,المستشفيات,مستشفى تشولالونغكورن,King Chulalongkorn Memorial Hospital,0,0,1,0,1,0,https://www.gov.uk/guidance/healthcare-and-medical-services-in-thailand
+130,المستشفيات,مستشفى سانت لويس,Saint Louis Hospital,0,0,1,0,1,0,https://www.gov.uk/guidance/healthcare-and-medical-services-in-thailand
+131,المستشفيات,مستشفى برارام 9,Praram 9 Hospital,0,0,1,0,1,0,https://www.gov.uk/guidance/healthcare-and-medical-services-in-thailand
+132,العيادات,ميد كونسلت كلينيك,MedConsult Clinic,0,0,1,0,1,0,https://invest.bangkok.go.th/about-us-duplicate-12990/
+133,العيادات,بي دي إم إس ويلنس كلينيك,BDMS Wellness Clinic,0,1,1,0,1,0,https://invest.bangkok.go.th/about-us-duplicate-12990/
+134,العيادات,فيتالايف ويلنس,VitalLife Scientific Wellness Center,0,0,1,0,1,0,https://invest.bangkok.go.th/about-us-duplicate-12990/
+135,العيادات,ساميتيويت ويلنس,Samitivej Wellness Center,0,1,1,0,1,0,https://invest.bangkok.go.th/about-us-duplicate-12990/
+136,العيادات,مركز الفحص في فيموت,Vimut Hospital Wellness Check-up Center,0,1,1,0,1,0,https://invest.bangkok.go.th/about-us-duplicate-12990/
+137,العلاج الطبيعي,فريش للعلاج الطبيعي فايا تاي,FRESH Physical Therapy Clinic Phaya Thai,0,1,1,0,1,0,https://www.medicalclinicbangkok.com/physiotherapy-rehab-clinics
+138,العلاج الطبيعي,ريبوست للعلاج الطبيعي آري,Reboost Physiotherapy Clinic Ari,0,1,1,0,1,0,https://www.medicalclinicbangkok.com/physiotherapy-rehab-clinics
+139,العلاج الطبيعي,فورم للتعافي آسوكي,Form Recovery & Wellness Asoke,0,1,1,0,1,0,https://www.medicalclinicbangkok.com/physiotherapy-rehab-clinics
+140,العلاج الطبيعي,كلينيك ريبلانس,Rebalance Physiotherapy Clinic Pradipat,0,1,1,0,1,0,https://www.medicalclinicbangkok.com/physiotherapy-rehab-clinics
+141,العلاج الطبيعي,موشن كير للعلاج الطبيعي,Motion Care Clinic,0,1,1,0,1,0,https://www.medicalclinicbangkok.com/physiotherapy-rehab-clinics
+142,العلاج الطبيعي,فليكس ريهاب لادبراو,Flex Rehab Clinic Lat Phrao,0,1,1,0,1,0,https://www.medicalclinicbangkok.com/physiotherapy-rehab-clinics
+143,الطب التايلندي والبديل,مدرسة ومساج وات فو التقليدي,Wat Pho Thai Traditional Medical School,0,1,0,0,1,0,https://www.thailandmassage.org/massage-directory-1/wat-pho-thai-traditional-massage-temple-pavilion
+144,الطب التايلندي والبديل,قسم الطب التايلندي في مستشفى أبهايبوبيجيتر,Abhaibhubejhr Traditional Medicine (Bangkok retail presence),0,1,1,0,1,0,https://www.medicalclinicbangkok.com/physiotherapy-rehab-clinics
+145,الطب التايلندي والبديل,عيادة غرينبيل متعددة التخصصات,Greenbell Medical Clinic,0,1,1,0,1,0,https://www.medicalclinicbangkok.com/physiotherapy-rehab-clinics
+146,الطب التايلندي والبديل,عيادة بيرا للطب الصيني والعلاج الطبيعي,Peera Poly Clinic,0,1,1,0,1,0,https://www.medicalclinicbangkok.com/physiotherapy-rehab-clinics
+147,السبا والمساج,هيلث لاند آسوكي,Health Land Asoke,0,0,1,0,1,0,https://www.healthlandspa.com/en/location
+148,السبا والمساج,هيلث لاند ساثورن,Health Land Sathorn,0,0,1,0,1,0,https://www.healthlandspa.com/en/location
+149,السبا والمساج,هيلث لاند إيكاماي,Health Land Ekkamai,0,0,1,0,1,0,https://www.healthlandspa.com/en/location
+150,السبا والمساج,ليتس ريلاكس سوخومفيت 31,Let’s Relax Spa Sukhumvit 31,0,0,1,0,1,0,https://letsrelaxspa.com/branches/bangkok-sukhumvit-31/
+151,السبا والمساج,ليتس ريلاكس ترمينال 21,Let’s Relax Spa Terminal 21 Asok,0,0,1,0,1,0,https://bangkokmassagespa.com/spas
+152,السبا والمساج,أواسيس سبا سوخومفيت 31,Oasis Spa Sukhumvit 31,0,0,1,0,1,0,https://bangkokmassagespa.com/spas
+153,السبا والمساج,بانين تري سبا,Banyan Tree Spa Bangkok,0,1,1,0,1,0,https://bangkokmassagespa.com/spas
+154,السبا والمساج,ديفانا نيرتشر,Divana Nurture Spa,0,0,1,0,1,0,https://bangkokmassagespa.com/spas
+155,السبا والمساج,وات فو للمساج التايلندي,Wat Pho Thai Traditional Massage,0,1,1,0,1,0,https://bangkokmassagespa.com/spas
+156,المطاعم,السراي – سيلوم,Al Saray Silom,0,0,1,0,1,0,https://www.alsarayrestaurant.com/
+157,المطاعم,السراي – ساثورن,Al Saray Sathorn,0,0,1,0,1,0,https://www.alsarayrestaurant.com/
+158,المطاعم,السراي – سونفيجاي,Al Saray Soonvijai,0,0,1,0,1,0,https://www.alsarayrestaurant.com/
+159,المطاعم,بيروت – سيلوم,Beirut Silom,0,0,1,0,1,0,https://meatmarketplanner.com/bangkok/cuisines/lebanese
+160,المطاعم,بيروت – بلونشيت,Beirut Ploenchit Center,0,0,1,0,1,0,https://meatmarketplanner.com/bangkok/cuisines/lebanese
+161,المطاعم,بيروت – سوخومفيت,Beirut Sukhumvit 39,0,0,1,0,1,0,https://meatmarketplanner.com/bangkok/cuisines/lebanese
+162,المطاعم,نديموس اللبناني,Nadimos Lebanese Restaurant,0,0,1,0,1,0,https://meatmarketplanner.com/bangkok/cuisines/lebanese
+163,المطاعم,الباشا – آسوكي,Elbasha Asok,0,0,1,0,1,0,https://meatmarketplanner.com/bangkok/cuisines/lebanese
+164,المطاعم,الباشا – سيلوم,Elbasha Silom,0,0,1,0,1,0,https://meatmarketplanner.com/bangkok/cuisines/lebanese
+165,المطاعم,كبادوكيا التركي,Cappadocia Turkish Restaurant,0,0,1,0,1,0,https://www.google.com/maps/search/?api=1&query=Cappadocia+Turkish+Restaurant+Bangkok
+166,المطاعم,ريد إسطنبول,Red Istanbul Turkish Restaurant,0,0,1,0,1,0,https://www.google.com/maps/search/?api=1&query=Red+Istanbul+Turkish+Bangkok
+167,المطاعم,أمريتسر – سوخومفيت 22,Amritsr Restaurant Sukhumvit Soi 22,0,0,1,0,1,0,https://www.google.com/maps/search/?api=1&query=Amritsr+Restaurant+Sukhumvit+22
+168,المطاعم,أمريتسر – سوخومفيت 11,Amritsr Restaurant Sukhumvit Soi 11,0,0,1,0,1,0,https://www.google.com/maps/search/?api=1&query=Amritsr+Sukhumvit+11
+169,المطاعم,إندوس الهندي,Indus,0,0,1,0,1,0,https://www.google.com/maps/search/?api=1&query=Indus+Indian+Restaurant+Bangkok
+170,المطاعم,إنديا غيت – ووترغيت,Indiagate Watergate,0,0,1,0,1,0,https://www.google.com/maps/search/?api=1&query=India+Gate+Watergate+Bangkok
+171,المطاعم,إنديا غيت – سوخومفيت 47,Indiagate Sukhumvit 47,0,0,1,0,1,0,https://www.google.com/maps/search/?api=1&query=Indiagate+Sukhumvit+47
+172,المطاعم,مدراس دربار,Madras Darbar,0,0,1,0,1,0,https://www.google.com/maps/search/?api=1&query=Madras+Darbar+Bangkok
+173,المطاعم,إنديك الهندي,Indique,0,0,1,0,1,0,https://www.google.com/maps/search/?api=1&query=Indique+Bangkok
+174,المطاعم,بيبينا – سوخومفيت 33,Peppina Sukhumvit 33,0,0,1,0,1,0,https://www.peppinabkk.com/
+175,المطاعم,بيتزا مازي – إيكاماي,Pizzeria Mazzie Ekkamai,0,0,1,0,1,0,https://pizzeriamazzie.com/bangkok/
+176,المطاعم,ماسيليا الإيطالي,Massilia Italian Restaurant,0,0,1,0,1,0,https://www.google.com/maps/search/?api=1&query=Massilia+Ruamrudee+Bangkok
+177,المطاعم,إل بولونيز,Il Bolognese,0,0,1,0,1,0,https://www.google.com/maps/search/?api=1&query=Il+Bolognese+Bangkok
+178,المطاعم,براسيري 9 الفرنسي,Brasserie 9,0,0,1,0,1,0,https://www.brasserie9.com/
+179,المطاعم,لو نورماندي,Anne-Sophie Pic at Le Normandie,0,0,1,0,1,0,https://guide.michelin.com/th/en/bangkok-region/bangkok/restaurant/le-normandie
+180,المطاعم,بيزو الفرنسي,Bisou Bangkok,0,0,1,0,1,0,https://www.google.com/maps/search/?api=1&query=Bisou+Bangkok
+181,المطاعم,زانوتي الإيطالي,Zanotti IL Ristorante Italiano,0,0,1,0,1,0,https://www.google.com/maps/search/?api=1&query=Zanotti+Bangkok
+182,المطاعم,دا ميكيلي – سيام باراغون,L’Antica Pizzeria Da Michele Siam Paragon,0,0,1,0,1,0,https://www.google.com/maps/search/?api=1&query=Da+Michele+Siam+Paragon+Bangkok
+183,المطاعم,رودهاوس باربكيو,Roadhouse Barbecue,0,0,1,0,1,0,https://www.roadhousebarbecue.com/
+184,المطاعم,25 ديغريز برغر,25 Degrees Burger Bar,0,0,1,0,1,0,https://pullman.accor.com/en/hotels/bangkok/3616/restaurants/r003.html
+185,المطاعم,فيو آرون – إطلالة المعبد,View ARUN Restaurant & Bar,0,0,1,0,1,0,https://www.google.com/maps/search/?api=1&query=View+Arun+Restaurant+Bangkok
+186,المطاعم,سين ريفرسايد,SEEN Restaurant & Bar Bangkok,0,0,1,0,1,0,https://www.google.com/maps/search/?api=1&query=SEEN+Restaurant+Avani+Bangkok
+187,المطاعم,نام 1608,NAAM 1608,0,0,1,0,1,0,https://www.google.com/maps/search/?api=1&query=NAAM+1608+Bangkok
+188,الكافيهات,فيفي ذا كوفي بليس,ViVi The Coffee Place,0,0,1,0,1,0,https://thairanked.com/en/rankings/best-riverside-cafes-bangkok/
+189,الكافيهات,إن 10 كافيه,N10 Café,0,0,1,0,1,0,https://thairanked.com/en/rankings/best-riverside-cafes-bangkok/
+190,الكافيهات,ذا كوفي كلوب – ريفر سيتي,THE COFFEE CLUB River City,0,0,1,0,1,0,https://thairanked.com/en/rankings/best-riverside-cafes-bangkok/
+191,الكافيهات,هونغ سيينغ كونغ,Hong Sieng Kong,0,0,0,0,1,0,https://siamgood.com/bangkok/cafes/riverside-cafes/
+192,الكافيهات,وودبروك,Woodbrook Bangkok,0,0,0,0,1,0,https://siamgood.com/bangkok/cafes/riverside-cafes/
+193,السبا والمساج,ليتس ريلاكس – سيام سكوير ون,Let’s Relax Spa Siam Square One,0,0,1,0,1,0,https://letsrelaxspa.com/locations/bangkok/
+194,السبا والمساج,ليتس ريلاكس – سنترال وورلد,Let’s Relax Spa CentralWorld,0,0,1,0,1,0,https://letsrelaxspa.com/locations/bangkok/
+195,السبا والمساج,ليتس ريلاكس – سنترال إمباسي,Let’s Relax Spa Central Embassy,0,0,1,0,1,0,https://www.muangthai.co.th/assets/88b52e11-36c2-4bb4-884b-74c3013a97e4/LetsRelax_Branches2026.pdf
+196,السبا والمساج,ليتس ريلاكس – سوخومفيت 39,Let’s Relax Spa Sukhumvit 39,0,0,1,0,1,0,https://letsrelaxspa.com/locations/bangkok/
+197,السبا والمساج,ليتس ريلاكس – آيكون تشاروين ناخون,Let’s Relax Spa ICON Charoen Nakhon,0,0,1,0,1,0,https://letsrelaxspa.com/locations/bangkok/
+198,السبا والمساج,ليتس ريلاكس – إيمكوارتير,Let’s Relax Spa EMQUARTIER,0,0,1,0,1,0,https://letsrelaxspa.com/locations/bangkok/?at=4
+199,السبا والمساج,ليتس ريلاكس – إم بي كيه,Let’s Relax Spa MBK,0,0,1,0,1,0,https://letsrelaxspa.com/locations/bangkok/
+200,السبا والمساج,ليتس ريلاكس – آي إم تشاينا تاون,Let’s Relax Spa I’m Chinatown,0,0,1,0,1,0,https://www.muangthai.co.th/assets/88b52e11-36c2-4bb4-884b-74c3013a97e4/LetsRelax_Branches2026.pdf
+201,السبا والمساج,ليتس ريلاكس أونسن – ثونغلور,Let’s Relax Onsen and Spa Thonglor,0,0,1,0,1,0,https://letsrelaxspa.com/onsen/
+202,السبا والمساج,هيلث لاند – آسوكي,Health Land Spa Asoke,0,0,1,0,1,0,https://www.healthlandspa.com/en/location
+203,السبا والمساج,هيلث لاند – ساثورن,Health Land Spa Sathorn,0,0,1,0,1,0,https://www.healthlandspa.com/en/location
+204,السبا والمساج,هيلث لاند – إيكاماي,Health Land Spa Ekkamai,0,0,1,0,1,0,https://www.healthlandspa.com/en/location
+205,السبا والمساج,ديفانا فيرتشو,Divana Virtue Spa,0,0,1,0,1,0,https://www.divanawellness.com/spa-location/
+206,السبا والمساج,ديفانا ديفاين,Divana Divine Spa,0,0,1,0,1,0,https://www.divanawellness.com/spa-location/
+207,العيادات,رومراوين – سيام باراغون,Romrawin Clinic Siam Paragon,0,0,1,0,1,0,https://en.romrawinclinic.com/contact-us
+208,العيادات,رومراوين – سنترال تشيدلوم,Romrawin Clinic Central Chidlom,0,0,1,0,1,0,https://en.romrawinclinic.com/contact-us
+209,العيادات,ذا كلينيك – سيام باراغون,THE KLINIQUE Siam Paragon,0,0,1,0,1,0,https://thekliniquethailand.com/contact-us/
+210,العيادات,ذا كلينيك – سيام سكوير,THE KLINIQUE Siam Square,0,0,1,0,1,0,https://thekliniquethailand.com/contact-us/
+211,العيادات,دي آي آي ويلنس – سنترال إمباسي,Dii Wellness Med Spa Central Embassy,0,0,1,0,1,0,https://www.divanawellness.com/spa-location/
+212,الأسواق,حي فاهورات – محلات البخور,Phahurat Incense & Spice Shops,0,0,1,0,1,0,https://todobangkok.com/pahurat
+213,الأسواق,سوق سامفينغ الصيني,Sampeng Lane Market,0,0,1,0,1,0,https://visit.bangkok.go.th/place/2231
+214,الأسواق,السوق الصيني – ياوارات,Yaowarat Chinatown Market Area,0,0,1,0,1,0,https://www.google.com/maps/search/?api=1&query=Yaowarat+Bangkok
+215,الأسواق,سوق فاهورات الهندي,Phahurat Market Little India,0,0,1,0,1,0,https://todobangkok.com/pahurat
+216,المطاعم,سيروكو – إطلالة سطح,Sirocco,0,0,1,0,1,0,https://lebua.com/restaurants/sirocco/
+217,المطاعم,أبوف إليفن – مطعم بإطلالة,Above Eleven,1,0,1,0,1,0,https://aboveeleven.com/
+218,المطاعم,نوبو بانكوك – إمباير تاور,Nobu Bangkok,1,0,1,0,1,0,https://www.noburestaurants.com/bangkok/home/
+219,المطاعم,لو دو كان – مطعم تايلندي علوي,Le Du Kaan,1,0,1,0,1,0,https://www.ea-rooftop.com/
+220,المطاعم,بانكوك هايتز – ذا كونتيننت,Bangkok Heightz,1,0,1,0,1,0,https://thecontinenthotel.com/
+221,المطاعم,فيو روف توب – براتونام,View Rooftop Bangkok,1,0,1,0,1,0,https://www.novotelbangkokplatinum.com/
+222,المطاعم,فيرتيغو – بانيان تري (مغلق مؤقتًا),Vertigo Banyan Tree Bangkok,1,0,1,0,1,0,https://www.banyantree.com/thailand/bangkok/dining/vertigo
+223,الكافيهات,أرابيكا – إمباير تاور الطابق 55,% Arabica Bangkok Empire Tower,0,0,0,0,1,0,https://siamgood.com/bangkok/cafes/rooftop-cafes/
+224,الكافيهات,ستاربكس ريزيرف – أيكون سيام,Starbucks Reserve Chao Phraya Riverfront,0,0,0,0,1,0,https://siamgood.com/bangkok/cafes/rooftop-cafes/
+225,الكافيهات,ستولن سالا – بلونشيت,Stolen Sala,1,0,0,0,1,0,https://siamgood.com/bangkok/cafes/rooftop-cafes/
+226,الكافيهات,بوليت – البلدة القديمة,Paulette,1,1,0,0,1,0,https://siamgood.com/bangkok/cafes/cafes-with-a-view/
+227,الكافيهات,سيتي كب – الطابق 11,City Cup,1,0,0,0,1,0,https://siamgood.com/bangkok/cafes/cafes-with-a-view/
+228,الكافيهات,بلو بوتل – إم كوارتير,Blue Bottle Coffee EmQuartier,1,1,0,0,1,0,https://siamgood.com/bangkok/cafes/instagrammable-cafes/
+229,الكافيهات,ذا كاسيت كوفي بار – سيام,The Cassette Coffee Bar,1,1,0,0,1,0,https://siamgood.com/bangkok/cafes/instagrammable-cafes/
+230,الكافيهات,إيتش بانكوك – إيكاماي,Eich Bangkok,1,0,0,0,1,0,https://siamgood.com/bangkok/cafes/instagrammable-cafes/
+231,الكافيهات,بلو بوتل – دوسيت سنترال بارك,Blue Bottle Coffee Dusit Central Park,1,0,0,0,1,0,https://siamgood.com/bangkok/cafes/instagrammable-cafes/
+232,الكافيهات,ميفانا أورغانيك فورست كوفي,MiVana Organic Forest Coffee,1,1,0,0,1,0,https://siamgood.com/bangkok/cafes/instagrammable-cafes/
+233,الفنادق,نوفوتيل سوخومفيت 4,Novotel Bangkok Sukhumvit 4,1,0,1,0,1,0,https://all.accor.com/hotel/A246/index.en.shtml
+234,الفنادق,ميركيور بانكوك سيام,Mercure Bangkok Siam,1,0,1,0,1,0,https://all.accor.com/hotel/8015/index.en.shtml
+235,الفنادق,ميركيور بانكوك سوراونغ,Mercure Bangkok Surawong,1,0,1,0,1,0,https://all.accor.com/hotel/C0Q6/index.en.shtml
+236,الفنادق,ميركيور بانكوك مكاسان,Mercure Bangkok Makkasan,1,0,1,0,1,0,https://all.accor.com/hotel/8422/index.en.shtml
+237,الفنادق,نوفوتيل سوخومفيت 20,Novotel Bangkok Sukhumvit 20,1,0,1,0,1,0,https://all.accor.com/hotel/9343/index.en.shtml
+238,الفنادق,ميركيور سوخومفيت 11,Mercure Bangkok Sukhumvit 11,1,0,1,0,1,0,https://all.accor.com/hotel/A247/index.en.shtml
+239,الفنادق,ميركيور سوخومفيت 24,Mercure Bangkok Sukhumvit 24,1,0,1,0,1,0,https://all.accor.com/hotel/B0M2/index.en.shtml
+240,الفنادق,إيبيس ستايلز سوخومفيت 4,ibis Styles Bangkok Sukhumvit 4,1,0,1,0,1,0,https://all.accor.com/hotel/A237/index.en.shtml
+241,الفنادق,نوفوتيل بانغنا,Novotel Bangkok Bangna,1,0,1,0,1,0,https://all.accor.com/hotel/1738/index.en.shtml
+242,الفنادق,بولمان بانكوك كينغ باور,Pullman Bangkok King Power,1,0,1,0,1,0,https://all.accor.com/hotel/6323/index.en.shtml
+243,الفنادق,أنانتارا ريفرسايد بانكوك ريزورت,Anantara Riverside Bangkok Resort,1,0,1,1,1,0,https://www.anantara.com/en/riverside-bangkok
+244,الفنادق,أفاني ريفرسايد بانكوك,Avani Riverside Bangkok Hotel,1,0,1,1,1,0,https://www.minorhotels.com/ar/destinations/thailand/bangkok/avani-riverside-bangkok-hotel
+245,الفنادق,سنتارا ووترغيت بافيليون,Centara Watergate Pavilion Hotel Bangkok,1,0,1,1,1,0,https://www.centarahotelsresorts.com/centara/CWB/contact
+246,المجمعات التجارية,دوسيت سنترال بارك,Dusit Central Park,1,1,1,0,1,0,https://www.am2026thailand.go.th/food-shopping-activities
+247,المجمعات التجارية,ذا بلاتينيوم فاشن مول,The Platinum Fashion Mall,0,0,1,0,1,0,https://invest.bangkok.go.th/shopping-mall/
+248,المجمعات التجارية,جيتواي إيكاماي,Gateway Ekkamai,0,0,1,0,1,0,https://invest.bangkok.go.th/shopping-mall/
+249,المجمعات التجارية,ذا ريد بيلدينغ – تشاتوشاك,Red Building Chatuchak,1,1,1,0,1,0,https://invest.bangkok.go.th/shopping-mall/
+250,المجمعات التجارية,سنترال تشيدلوم,Central Chidlom,0,0,1,0,1,0,https://www.am2026thailand.go.th/food-shopping-activities
+251,الأسواق,سوق إندي – بينكلاو,Indy Market Pinklao,1,1,1,0,1,0,https://invest.bangkok.go.th/shopping-mall/
+252,الأسواق,تشانغ تشوي كرييتف بارك,Chang Chui Creative Park,0,1,1,0,1,0,https://invest.bangkok.go.th/shopping-mall/
+253,الأسواق,سوق بلاتينيوم للملابس,Platinum Wholesale Fashion Market Area,1,1,1,0,1,0,https://invest.bangkok.go.th/shopping-mall/
+254,المستشفيات,مستشفى روتنين للعيون,Rutnin Eye Hospital,0,0,1,0,0,0,https://www.rutnin.com/en/contact/
+255,المستشفيات,مستشفى يانهي,Yanhee International Hospital,1,0,1,0,1,0,https://www.yanhee.net/
+256,المستشفيات,مستشفى بانكوك الدولي للأسنان,Bangkok International Dental Hospital BIDH,1,0,1,0,1,0,https://dentalcorpthailand.com/ir/en/about-us/policy-overall-business/
+257,العيادات,تي آر إس سي – مركز العيون,TRSC International Eye and Vision Center,1,0,1,0,1,0,https://www.trsclasik.com/en/contactus
+258,العيادات,ثانتاكيت – المركز الرئيسي للأسنان,Thantakit International Dental Center,1,0,1,0,1,0,https://www.thantakit.com/location-maps/
+259,العيادات,ثانتاكيت – أول سيزنز بليس,Thantakit Dental All Seasons Place,1,0,1,0,1,0,https://www.thantakit.com/location-maps/
+260,العيادات,بي آي دي سي – راتشادابيسيك,Bangkok International Dental Center BIDC Ratchadapisek,1,0,1,0,1,0,https://dentalcorpthailand.com/ir/en/about-us/policy-overall-business/
+261,العيادات,بي آي دي سي – إم كوارتير,BIDC Dental Clinic EmQuartier,1,0,1,0,1,0,https://dentalcorpthailand.com/ir/en/about-us/policy-overall-business/
+262,العيادات,بي آي دي سي – سيام باراغون,BIDC Dental Clinic Siam Paragon,1,0,1,0,1,0,https://dentalcorpthailand.com/ir/en/about-us/policy-overall-business/
+263,العيادات,إس إل سي – سنترال وورلد,SLC Clinic CentralWorld,1,0,1,0,1,0,https://www.slcclinic.com/en/contact-us/
+264,العيادات,إس إل سي – سيام باراغون,SLC Clinic Siam Paragon,1,0,1,0,1,0,https://www.slcclinic.com/en/contact-us/
+265,العيادات,إس إل سي – ون بانكوك,SLC Clinic One Bangkok,1,0,1,0,1,0,https://www.slcclinic.com/en/contact-us/
+266,العيادات,إس إل سي – تشيدلوم,SLC Clinic Central Chidlom,1,0,1,0,1,0,https://www.slcclinic.com/en/contact-us/
+267,المطاعم,مطعم باب اليمن,Bab Al-Yemen Restaurants,1,0,1,0,1,0,https://hadramoutglobal.com/locations/
+268,المطاعم,مطعم بترا – أبو دبة اليمني,Petra Restaurant / Abu Dabaa Yemeni Restaurant,1,0,1,0,1,0,https://www.abudabaa.com/
+269,المطاعم,مطعم اليمن السعيد,Al-Yemen Al-Saeed Restaurant,1,0,1,0,1,0,https://restosora.com/en/al-yemen-al-saeed-restaurant-bangkok/menu
+270,المطاعم,مطعم الرومانسية اليمني,Al-Romansiyah Yemeni Restaurant,1,0,1,0,1,0,https://www.google.com/maps/search/?api=1&query=Al-Romansiyah+Yemeni+Restaurant+Bangkok
+271,المطاعم,مطعم شيبا العربي,Sheba Arabic Restaurant,1,0,1,0,1,0,https://www.thainuman.com/
+272,المطاعم,مطعم المجلس اليمني,Al Majlis Al Yamani,1,0,1,0,1,0,https://restosora.com/en/al-majlis-al-yamani-restaurant-bangkok/menu
+273,المطاعم,مطعم حضرموت اليمن – نانا,Hadramaut Al Yemen Halal Restaurant,1,0,1,0,1,0,https://t-list.com/en/thailand/bangkok/restaurants/hadramaut-al-yemen-halal-restaurant
+274,المطاعم,المطعم العراقي – نانا هايسو,Iraqi Restaurant (Halal),1,0,1,0,1,0,https://www.openrice.com/en/bangkok/restaurants/cuisine/middle-eastern
+275,المطاعم,مطعم أبو علي العراقي,Abu-Ali Cuisine by Iraqi Restaurant,1,0,1,0,1,0,https://www.google.com/maps/search/?api=1&query=ABU+ALI+CUISINE+BY+IRAQI+RESTAURANT+Bangkok
+276,المطاعم,مطعم الغواص – نانا,Al Ghawas Restaurant,1,0,1,0,1,0,https://www.google.com/maps/search/?api=1&query=Al+Ghawas+Restaurant+Bangkok
+277,المطاعم,مطعم الخيمة اللبناني,Al-Khayma Lebanese Restaurant,1,0,1,0,1,0,https://www.thainuman.com/
+278,المطاعم,مطعم أرابيسك المصري,Arabesque Restaurant,1,0,1,0,1,0,https://www.openrice.com/en/bangkok/restaurants/cuisine/middle-eastern
+279,المطاعم,مطعم ديليش – بطابع إماراتي,Dlish BKK,1,0,1,0,1,0,https://www.corner.inc/place/pcHTTvoDwuUR
+280,الأسواق,سوق نانغ لونغ الشعبي,Nang Loeng Market,0,1,1,0,1,0,https://www.am2026thailand.go.th/explore-bangkok
+281,الأسواق,سوق كلونغ توم للإلكترونيات والسلع,Khlong Thom Market,1,1,1,0,1,0,https://policy.bangkok.go.th/expat/shopping-mall
+282,الأسواق,سوق وات سافان العائم,Wat Saphan Floating Market,1,1,1,0,1,0,https://thailand.go.th/public/issue-focus-detail/001_02_059
+283,الأسواق,سوق بونغ فرايا العائم,Bueng Phraya Floating Market,1,1,1,0,1,0,https://thailand.go.th/public/issue-focus-detail/001_02_022
+284,الأسواق,سوق ثالات بلو المحلي,Talat Phlu Market,1,1,1,0,1,0,https://visit.bangkok.go.th/plan-your-visit
+285,الأسواق,سوق كلونغ سان,Khlong San Market,1,1,1,0,1,0,https://www.tourismthailand.org/Experiences/Details/shopping/33
+286,المجمعات التجارية,سنترال بينكلاو,Central Pinklao,1,1,1,0,1,0,https://policy.bangkok.go.th/expat/shopping-mall
+287,المجمعات التجارية,سنترال بانغنا,Central Bangna,1,1,1,0,1,0,https://policy.bangkok.go.th/expat/shopping-mall
+288,المجمعات التجارية,فاشن آيلاند,Fashion Island Bangkok,1,1,1,0,1,0,https://policy.bangkok.go.th/expat/shopping-mall
+289,المجمعات التجارية,سنترال إيست فيل,Central EastVille,1,1,1,0,1,0,https://policy.bangkok.go.th/expat/shopping-mall
+290,السياحة والمعالم,بيت الفنان – كلونغ بانغ لوانغ,Artist House Khlong Bang Luang,0,1,1,0,1,0,https://thailand.go.th/issue-focus-detail/002_006?hl=en
+291,السياحة والمعالم,الأرجوحة العملاقة,Giant Swing Bangkok,0,1,1,0,1,0,https://policy.bangkok.go.th/expat/important-areas
+292,السياحة والمعالم,وات راتشاناتدارام,Wat Ratchanatdaram,0,1,1,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+293,السياحة والمعالم,ضريح إيراوان,Erawan Shrine,0,1,1,0,1,0,https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219
+294,السياحة والمعالم,حي سونغ وات التاريخي,Song Wat Road Heritage Area,0,1,1,0,1,0,https://policy.bangkok.go.th/expat/important-areas
+295,السياحة والمعالم,مجتمع كودي تشين,Kudi Chin Community,0,1,1,0,1,0,https://visit.bangkok.go.th/plan-your-visit
+296,السياحة والمعالم,حي بانغ لومفو,Bang Lamphu Heritage Quarter,0,1,1,0,1,0,https://visit.bangkok.go.th/plan-your-visit
+297,السياحة والمعالم,شارع الفن شارون كرونغ,Charoen Krung Street Art,0,1,1,0,1,0,https://policy.bangkok.go.th/expat/important-areas
+298,المطاعم,كوت باي ماورو كولاغريكو – كابيلا,Côte by Mauro Colagreco,1,0,1,0,1,0,https://guide.michelin.com/th/en/best-of/bangkok-s-best-riverside-restaurants
+299,الفنادق,إيبيس ستايلز بانكوك سيلوم,ibis Styles Bangkok Silom,1,0,1,0,0,0,https://www.ibisstylesbangkoksilom.com/welcome-to-ibis-styles-bangkok-silom/contact-us/
+300,الفنادق,إيبيس بانكوك ريفرسايد,ibis Bangkok Riverside,1,0,1,0,0,0,https://all.accor.com/hotel/7026/index.en.shtml
+301,الفنادق,إيبيس بانكوك ساثورن,ibis Bangkok Sathorn,1,1,1,1,1,0,https://all.accor.com/a/en/destination/city/hotels-bangkok-v4991.html
+302,الفنادق,إيبيس بانكوك سوخومفيت 4,ibis Bangkok Sukhumvit 4,1,0,1,0,0,0,https://all.accor.com/hotel/7295/index.en.shtml
+303,الفنادق,نوفوتيل بانكوك بلاتينيوم براتونام,Novotel Bangkok Platinum Pratunam,1,1,1,1,1,0,https://all.accor.com/a/en/destination/city/hotels-bangkok-v4991.html
+304,الفنادق,نوفوتيل بانكوك سيام سكوير,Novotel Bangkok on Siam Square,1,1,1,1,1,0,https://all.accor.com/a/en/destination/city/hotels-bangkok-v4991.html
+305,الفنادق,بولمان بانكوك هوتيل جي,Pullman Bangkok Hotel G,1,1,1,1,1,0,https://all.accor.com/a/en/destination/city/hotels-bangkok-v4991.html
+306,المستشفيات,مستشفى تاكسين,Taksin Hospital,1,1,1,0,1,0,https://policy.bangkok.go.th/expat/health-hospitals
+307,المستشفيات,مستشفى راجافيثي,Rajavithi Hospital,1,1,1,0,1,0,https://policy.bangkok.go.th/expat/health-hospitals
+308,المستشفيات,مستشفى سيريراج بياماهاراجكارون,Siriraj Piyamaharajkarun Hospital,1,1,1,0,1,0,https://policy.bangkok.go.th/expat/health-hospitals
+309,المستشفيات,مستشفى بانغباكوك 9 الدولي,Bangpakok 9 International Hospital,1,1,1,0,1,0,https://policy.bangkok.go.th/expat/health-hospitals
+310,المستشفيات,مستشفى تشاو فرايا,Chaophya Hospital,1,1,1,0,1,0,https://policy.bangkok.go.th/expat/health-hospitals
+311,المستشفيات,مستشفى بياويت,Piyavate Hospital,1,1,1,0,1,0,https://policy.bangkok.go.th/expat/health-hospitals
+312,المستشفيات,مستشفى سيكارين,Sikarin Hospital,1,1,1,0,1,0,https://policy.bangkok.go.th/expat/health-hospitals
+313,المستشفيات,مستشفى سوخومفيت,Sukumvit Hospital,1,1,1,0,1,0,https://policy.bangkok.go.th/expat/health-hospitals
+314,المستشفيات,مستشفى بانكوك للقلب,Bangkok Heart Hospital,1,0,1,0,1,0,https://www.bangkokhospital.com/en/directory
+315,المستشفيات,مستشفى واتانوسوت للسرطان,Wattanosoth Cancer Hospital,1,0,1,0,1,0,https://www.bangkokhospital.com/en/directory
+316,المواصلات,محطة حافلات ساي تاي ماي الجنوبية,Sai Tai Mai Southern Bus Terminal,1,1,1,0,1,0,https://policy.bangkok.go.th/expat/transportation
+317,المواصلات,محطة سالا دينغ BTS,BTS Sala Daeng Station,1,1,1,0,1,0,https://policy.bangkok.go.th/expat/transportation
+318,المواصلات,محطة سافان تاكسين BTS,BTS Saphan Taksin Station,1,1,1,0,1,0,https://policy.bangkok.go.th/expat/transportation
+319,المواصلات,رصيف ثا تيان,Tha Tien Pier,1,1,1,0,1,0,https://policy.bangkok.go.th/expat/transportation
+320,المواصلات,رصيف فرا آثيت,Phra Arthit Pier,1,1,1,0,1,0,https://policy.bangkok.go.th/expat/transportation
+321,السبا والمساج,هيلث لاند بينكلاو,Health Land Pinklao,1,1,1,0,1,0,https://www.healthlandspa.com/en/home
+322,السبا والمساج,هيلث لاند تشاينغ واتانا,Health Land Chaeng Wattana,1,1,1,0,1,0,https://www.healthlandspa.com/en/home
+323,السبا والمساج,هيلث لاند براديت مانوثام,Health Land Praditmanutham,1,1,1,0,1,0,https://www.healthlandspa.com/en/home
+324,السبا والمساج,هيلث لاند راما 2,Health Land Rama II,1,1,1,0,1,0,https://www.healthlandspa.com/en/home
+325,المطاعم,برايا دايننغ – برايا بالازو,Praya Dining,1,0,1,0,1,0,https://guide.michelin.com/th/en/best-of/bangkok-s-best-riverside-restaurants
+326,المطاعم,تشاكرابونغسي دايننغ – إطلالة وات آرون,Chakrabongse Dining,1,0,1,0,1,0,https://guide.michelin.com/th/en/best-of/bangkok-s-best-riverside-restaurants
+327,المطاعم,ريفا ديل فيومي – فور سيزونز,Riva del Fiume,1,0,1,0,1,0,https://guide.michelin.com/th/en/best-of/bangkok-s-best-riverside-restaurants

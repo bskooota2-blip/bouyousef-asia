@@ -1,0 +1,5 @@
+V084 implementation: created four new city pages from the V083 Chiang Mai layout (same Bangkok-derived structure); existing bangkok.html and chiangmai.html content maintained except global sidebar navigation links.
+All entries are preliminary curated venue leads: city/area-level only, no made-up Thai name, full Thai address, star rating or opening year.
+Important: source URL is city-level TAT introduction, not individual verification of every venue. Do not claim comprehensive verification or current opening status.
+Dynamic interactive browser UI testing not completed; HTML and JS syntax checked separately.
+Cities: بوكيت=64, باتايا=50, كرابي=50, هوا هين=46

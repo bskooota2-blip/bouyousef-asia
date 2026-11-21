@@ -1,0 +1,14 @@
+بويوسف ٤ – V015 | تدقيق البيانات وأولويات الاستكمال
+
+الأساس: V014 عدد 324 سجلًا.
+السجلات الجديدة الموثقة: 3 مطاعم نهرية (Praya Dining، Chakrabongse Dining، Riva del Fiume).
+العدد الكلي: 327.
+تحديث 6 سجلات موجودة من مصادر رسمية: 3 فنادق، مستشفى عيون، فرعا مركز أسنان.
+إصلاح ربط فلاتر أسواق V014 الستة بفلاتر V009 متعددة المستويات.
+لا حذف أو تعديل بيانات أصلية أخرى؛ لا نشر على الإنترنت.
+
+نواقص متبقية: {'thai_name': 95, 'opening_year': 260, 'specific_address': 128, 'hotel_star': 7, 'metro_not_verified': 306}
+
+راجع CSV المرفق لكل سجل. تحقق حالة التشغيل وقت الزيارة، خصوصا الفروع والأسواق المتغيرة. لا تعني الإضافة تزكية علاجية.
+
+مصادر التحقق: https://www.ibisstylesbangkoksilom.com/welcome-to-ibis-styles-bangkok-silom/contact-us/ | https://all.accor.com/hotel/7026/index.en.shtml | https://all.accor.com/hotel/7295/index.en.shtml | https://www.rutnin.com/en/contact/ | https://www.thantakit.com/location-maps/ | https://guide.michelin.com/th/en/best-of/bangkok-s-best-riverside-restaurants

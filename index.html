@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#eaf8ff"><meta name="description" content="بويوسف الصبر – دليلك إلى آسيا: بوابة الصين وتايلند وماليزيا وهونغ كونغ ومكاو">
+<title>بويوسف 0 – دليلك إلى آسيا</title>
+<style>
+:root{--navy:#0b3463;--blue:#067ec9;--sky:#dbf3ff;--border:#9bd5f5;--white:#fff;--shadow:0 7px 24px rgba(18,92,145,.11)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(155deg,#f5fcff 0%,#eaf8ff 52%,#fff 100%);color:var(--navy);font-family:Tahoma,'Segoe UI',Arial,sans-serif;line-height:1.6}button,a{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #ffb526;outline-offset:3px}
+.shell{max-width:1510px;margin:0 auto;display:grid;grid-template-columns:220px minmax(0,1fr);gap:17px;padding:14px 18px 36px}
+.sidebar{position:sticky;top:14px;align-self:start;height:max-content;border:1px solid var(--border);border-radius:19px;background:#fff;box-shadow:var(--shadow);padding:14px 11px}
+.side-brand{text-align:center;background:linear-gradient(180deg,#c7eeff,#f7fcff);border-radius:14px;padding:12px 5px;margin-bottom:12px}.side-brand strong{display:block;font-size:19px}.side-brand small{font-size:12px;color:#54738d}
+.side-list{display:grid;gap:8px}.side-link{display:flex;align-items:center;gap:9px;width:100%;border:1px solid #a8def7;background:white;border-radius:12px;padding:11px 10px;font-size:14px;font-weight:bold;text-align:right;min-height:46px;transition:.15s}.side-link:hover,.side-link.active{background:#dff5ff;border-color:#36a6e7;transform:translateY(-1px)}.side-icon{font-size:20px;width:25px;text-align:center}
+.main{min-width:0}.topbar{background:#fff;border:1px solid var(--border);border-radius:17px;box-shadow:var(--shadow);padding:10px 14px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.top-name{font-size:16px;font-weight:900}.top-name small{display:block;font-size:11px;font-weight:normal;color:#6187a2}.social{display:flex;gap:7px;flex-wrap:wrap}.chip{border-radius:10px;border:1px solid #b4dff6;background:#f6fcff;padding:7px 10px;font-size:12px;font-weight:bold}.chip:hover{background:#ddf3ff}.mobile-menu-btn{display:none}
+.hero{margin-top:15px;border:1px solid var(--border);border-radius:20px;background:#fff;box-shadow:var(--shadow);padding:10px}.hero img{display:block;width:100%;height:auto;max-height:340px;object-fit:contain;border-radius:13px}.hero-note{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap;padding:12px 10px 5px}.hero-note b{font-size:19px}.hero-note span{font-size:13px;color:#56738b}
+.section{margin-top:16px;background:#fff;border-radius:19px;border:1px solid var(--border);box-shadow:var(--shadow);padding:18px}.section h2{font-size:20px;margin:0 0 5px}.section .intro{font-size:13px;color:#5c7c95;margin:0 0 15px}.title-line{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}.mini-pill{display:inline-block;background:#ecf9ff;color:#0567a4;border:1px solid #c4e8fa;border-radius:99px;font-size:12px;padding:4px 11px}
+.countries{display:grid;grid-template-columns:repeat(3,minmax(0,280px));justify-content:center;gap:18px}.country{position:relative;overflow:hidden;background:linear-gradient(155deg,#fff 0%,#f5fbff 100%);border:1px solid #b6dff6;border-radius:22px;padding:14px 14px 16px;min-height:0;aspect-ratio:1/1;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;transition:.16s;box-shadow:0 7px 20px rgba(18,92,145,.10)}.country:hover{transform:translateY(-3px);box-shadow:0 10px 26px rgba(17,111,170,.15)}.flag{display:grid;place-items:center;width:72px;height:72px;background:#fff;border:1px solid #c2e7fc;border-radius:20px;box-shadow:0 4px 10px #dbeff8;font-size:47px;line-height:1}.country h3{margin:10px 0 0;font-size:24px}.en{font-size:12px;color:#6487a0;letter-spacing:.7px}.country p{font-size:12px;color:#5e7b91;margin:7px 0 12px;max-width:260px}.action{display:inline-flex;align-items:center;justify-content:center;gap:8px;margin-top:auto;border-radius:13px;background:#0878c5;color:#fff;padding:10px 14px;min-width:140px;font-weight:700;font-size:14px;border:1px solid #0878c5}.action:hover{background:#075d9a}.action.disabled{background:#f0f5f8;color:#657d8c;border-color:#cfdee7;cursor:default}.status{position:absolute;top:10px;left:10px;background:#e0f8ef;border:1px solid #a6dfc7;color:#13704c;font-size:10px;border-radius:20px;padding:2px 8px}.status.pending{background:#fff8e8;color:#986312;border-color:#f1d7a0}
+.info-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.info{background:#f8fcff;border:1px solid #c8e8fa;border-radius:13px;padding:13px}.info strong{display:block;font-size:14px;margin-bottom:5px}.info p{margin:0;color:#55738b;font-size:12px}.notice{background:#fff8e8;border:1px solid #efdcb9;border-radius:12px;padding:11px 13px;color:#775a23;font-size:12px;margin-top:13px}
+footer{text-align:center;color:#67859b;padding:22px 10px;font-size:12px}.float-top{position:fixed;bottom:18px;left:17px;border:none;background:#0b457a;color:white;border-radius:14px;box-shadow:var(--shadow);padding:10px 13px;z-index:30}.overlay{display:none}
+@media(max-width:950px){.shell{grid-template-columns:190px minmax(0,1fr);padding:9px;gap:10px}.countries{grid-template-columns:repeat(2,minmax(0,260px));justify-content:center}.sidebar{padding:9px}.side-link{font-size:12px}}
+@media(max-width:700px){.shell{display:block;padding:9px}.sidebar{position:fixed;top:0;right:0;height:100dvh;overflow:auto;z-index:100;width:min(290px,85vw);border-radius:0;transform:translateX(105%);transition:transform .2s}.sidebar.open{transform:translateX(0)}.overlay.show{display:block;position:fixed;inset:0;background:#092b46aa;z-index:90}.mobile-menu-btn{display:inline-flex;align-items:center;gap:5px;background:#e5f7ff;border:1px solid #a1dcf7;border-radius:10px;padding:7px 10px;font-weight:bold}.topbar{padding:10px}.top-name{font-size:14px}.top-name small{font-size:10px}.hero{padding:6px}.hero img{max-height:none}.hero-note b{font-size:16px}.section{padding:13px}.section h2{font-size:17px}.countries{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.country{aspect-ratio:1/1;padding:10px 10px 12px;border-radius:18px}.country h3{font-size:18px}.country p{display:none}.country-art{width:100%;height:108px;margin-top:20px}.art-flag{font-size:18px;width:30px;height:24px}.flag{width:60px;height:60px;font-size:40px}.action{min-width:110px;font-size:12px}.info-grid{grid-template-columns:1fr}.social{gap:5px}.chip{font-size:11px;padding:6px}}
+@media(max-width:370px){.countries{grid-template-columns:1fr}.country{aspect-ratio:auto;min-height:300px}}
+
+/* V002 refinements – layout, country cards, dropdown and searchable navigation */
+.topbar{justify-content:space-between;min-height:49px}.hero{padding:5px;overflow:hidden}.hero img{width:100%;max-height:none;height:auto;object-fit:contain;border-radius:0}.hero-note{padding:6px 10px 7px}.hero-note b{font-size:17px}
+.dropdown-toggle{justify-content:flex-start;color:var(--navy)}.chevron{margin-right:auto;font-size:18px;transition:transform .18s}.dropdown-toggle[aria-expanded=true] .chevron{transform:rotate(180deg)}
+.side-dropdown{background:#f1faff;border:1px solid #c6eafb;border-radius:12px;padding:5px;display:grid;gap:4px}.side-dropdown[hidden]{display:none}.side-dropdown a{padding:8px 10px;font-weight:700;font-size:12px;border-radius:9px}.side-dropdown a:hover{background:#d7f0ff}
+.country{padding:14px 14px 16px;border-radius:22px}.country-art{width:100%;height:170px;margin:24px auto 0;border-radius:18px;position:relative;overflow:hidden;border:1px solid #bce4fa;box-shadow:inset 0 2px 7px #ffffff,0 4px 13px #b7ddf34d;background:#e8f7ff}.country-art img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.01)}.country-art:after{content:"";position:absolute;inset:auto 0 0 0;height:28px;background:linear-gradient(0deg,#06345f38,transparent)}.art-flag{position:absolute;right:10px;bottom:8px;z-index:1;background:#fff;border:1px solid #c3e6f7;border-radius:10px;font-size:20px;width:35px;height:28px;display:grid;place-items:center;box-shadow:0 2px 5px #9ed0ec66}.country h3{margin-top:12px}.country .en{font-weight:700;margin-bottom:10px}.country p{display:none}.action{width:100%;margin-top:auto}.action.pending-link{background:#fff6ea;color:#8a5a06;border-color:#f0cf98}.action.pending-link:hover{background:#fff0d9}
+.float-top{display:none}.float-store{position:fixed;bottom:18px;left:17px;background:#0b457a;color:white;border:1px solid #60c1f4;border-radius:13px;box-shadow:0 6px 20px #153d6380;padding:10px 14px;z-index:29;font-weight:800}.float-store:hover{background:#086aaa}.float-search{position:fixed;bottom:18px;right:18px;border:2px solid #6ecfff;background:#0a3562;color:white;border-radius:30px;padding:11px 15px;font-weight:800;z-index:40;box-shadow:0 6px 20px #153d6380}.float-search:hover{background:#086aaa}
+.search-overlay{position:fixed;inset:0;background:#031c32b8;z-index:110}.search-overlay[hidden],.search-dialog[hidden]{display:none}.search-dialog{position:fixed;z-index:111;top:11vh;left:50%;transform:translateX(-50%);width:min(600px,calc(100vw - 28px));max-height:78vh;overflow:auto;border-radius:19px;border:2px solid #91d8f9;padding:20px;background:white;box-shadow:0 20px 65px #002e5577;direction:rtl}.search-head{display:flex;align-items:center;justify-content:space-between;gap:15px;font-size:18px}.search-close{border:1px solid #b5dff4;background:#eaf9ff;border-radius:10px;width:35px;height:35px;font-weight:bold}.search-help{display:block;font-size:13px;color:#5f7d94;margin:6px 0 9px}.search-dialog input{width:100%;border:2px solid #9cd9f6;border-radius:12px;padding:12px;font-size:15px;outline:none;background:#f7fcff;color:#0b3463}.search-dialog input:focus{border-color:#037ab9}.search-results{display:grid;gap:8px;margin-top:13px}.search-hit{display:flex;flex-direction:column;padding:10px 12px;background:#f1faff;border:1px solid #c7e6f7;border-radius:10px}.search-hit:hover{background:#dff2ff}.search-hit small{color:#5a7990}.no-results{color:#64788a;text-align:center}.search-open{overflow:hidden}
+@media(max-width:700px){.topbar{min-height:43px}.hero img{width:100%}.country-art{height:82px}.art-sky{font-size:48px}.country{min-height:244px;padding:9px}.float-search{right:11px;bottom:12px}.float-store{left:11px;bottom:12px}}
+
+/* V005: visible primary home search */
+.home-search{margin-top:15px;background:#fff;border:1px solid var(--border);border-radius:19px;box-shadow:var(--shadow);padding:15px 17px}.home-search-title{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:9px;color:#0b3463;font-size:17px}.home-search-title span{font-size:12px;color:#6586a0;font-weight:normal;margin-right:auto}.home-search-launch{display:flex;width:100%;align-items:center;justify-content:space-between;gap:10px;border:2px solid #96d7f6;border-radius:13px;background:#f5fcff;padding:11px 13px;text-align:right;color:#587991;font-size:14px}.home-search-launch:hover{background:#e5f6ff;border-color:#2b9edb}.home-search-launch b{background:#0b457a;border-radius:10px;padding:7px 18px;color:#fff;white-space:nowrap}.home-search-launch span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}@media(max-width:700px){.home-search{padding:12px}.home-search-title{font-size:14px}.home-search-title span{width:100%;margin-right:0}.home-search-launch{font-size:12px;padding:8px}.home-search-launch b{padding:7px 11px}}
+/* V006 – full-width single-column portal, no sidebar or mobile menu */
+.shell{display:block;max-width:1510px;padding:12px 16px 36px;margin:0 auto}
+.main{width:100%;min-width:0}
+.topbar{justify-content:space-between}
+.mobile-menu-btn,.sidebar,.overlay{display:none!important}
+@media(max-width:700px){.shell{display:block;padding:8px}.main{width:100%}}
+
+/* V007 – feature image cards */
+.feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:14px}
+.feature-card{display:flex;align-items:center;gap:12px;background:linear-gradient(140deg,#f5fcff,#eaf7ff);border:1px solid #9cd8f8;border-radius:18px;padding:12px;min-width:0;box-shadow:0 5px 16px #1e7cba16}
+.feature-card>img{width:42%;height:150px;object-fit:cover;border-radius:14px;border:1px solid #b7e2f7;flex-shrink:0}
+.feature-content{min-width:0;flex:1}.feature-content h3{font-size:19px;margin:0 0 7px}.feature-content p{font-size:13px;color:#54738d;margin:0 0 9px}
+.feature-content summary,.feature-soon{display:inline-block;background:#fff;border:1px solid #9cd7f6;border-radius:10px;padding:6px 10px;font-weight:bold;font-size:12px;color:#075b93}.feature-content summary{cursor:pointer}.feature-content details[open] summary{background:#d7f2ff}.feature-content details p{margin-top:8px}
+@media(max-width:1000px){.feature-grid{grid-template-columns:1fr}.feature-card>img{width:38%;height:145px}}
+@media(max-width:500px){.feature-card>img{height:115px;width:39%}.feature-content h3{font-size:16px}.feature-content p{font-size:12px}.feature-card{gap:9px;padding:9px}}
+
+/* V010 – square landmark-led country cards; whole linked card replaces separate button */
+.countries{grid-template-columns:repeat(3,minmax(0,280px));justify-content:center;gap:18px}
+.country{aspect-ratio:1 / 1;min-height:0!important;padding:9px!important;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;border-radius:19px;gap:0}
+.country-art{width:100%!important;height:auto!important;min-height:0;flex:1 1 auto;max-height:none;margin:0!important;border-radius:14px;overflow:hidden}
+.country-art img{width:100%;height:100%;object-fit:cover}
+.country h3{margin:8px 0 0!important;font-size:21px;line-height:1.2}
+.country .en{font-size:10px;line-height:1.3;margin:2px 0 3px!important}
+.country .status{z-index:3;top:14px;left:14px}
+.country-clickable{cursor:pointer}
+.country-clickable:hover,.country-clickable:focus-visible{border-color:#24a3e9;box-shadow:0 9px 28px rgba(12,116,183,.2)}
+@media(max-width:950px){.countries{grid-template-columns:repeat(2,minmax(0,260px))}}
+@media(max-width:700px){.countries{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.country{aspect-ratio:1 / 1;min-height:0!important;padding:6px!important}.country-art{height:auto!important;margin:0!important}.country h3{font-size:16px;line-height:1.2;margin:5px 0 0!important}.country .en{font-size:9px;margin:1px 0 2px!important}.country .status{top:9px;left:9px;font-size:9px;padding:1px 5px}}
+@media(max-width:370px){.countries{grid-template-columns:repeat(2,minmax(0,1fr))}.country{min-height:0!important}}
+
+/* V011: authentication entry in place of the portal heading */
+.login-trigger{display:inline-flex;align-items:center;justify-content:center;gap:7px;border:1px solid #4faee9;border-radius:12px;background:#0b457a;color:#fff;font-weight:800;font-size:14px;padding:10px 18px;box-shadow:0 4px 12px #0c6ea22a;cursor:pointer}.login-trigger:hover{background:#0876b7}
+.login-dialog{border:1px solid #91d8f9;border-radius:18px;padding:24px;max-width:min(420px,calc(100vw - 28px));width:100%;color:#0b3463;background:white;box-shadow:0 14px 50px #123a5f44;text-align:right}.login-dialog::backdrop{background:#082b48a8}.login-dialog h2{font-size:20px;margin:0 0 10px}.login-dialog p{font-size:14px;line-height:1.9;margin:0 0 18px}.login-close{border:1px solid #69bbea;border-radius:10px;padding:8px 18px;background:#e6f6ff;color:#0b3463;font-weight:bold;cursor:pointer}
+@media(max-width:700px){.login-trigger{font-size:13px;padding:8px 12px}}
+</style>
+
+<style id="asia-v018-splash-css">
+/* Unified three-second entry screen */
+.asia-v017-intro{display:none!important}
+#asia-v018-splash{position:fixed!important;inset:0!important;z-index:2147483647!important;display:flex!important;align-items:center!important;justify-content:center!important;padding:20px!important;box-sizing:border-box!important;background:radial-gradient(circle at center,#ffffff 0%,#f4fbff 63%,#dceffb 100%)!important;opacity:1;visibility:visible;animation:asia-v018-screen 3s linear both!important;pointer-events:auto!important}
+#asia-v018-splash img{display:block!important;width:min(76vw,530px)!important;max-height:78vh!important;height:auto!important;object-fit:contain!important;filter:drop-shadow(0 14px 25px rgba(9,52,98,.13));animation:asia-v018-zoom 3s cubic-bezier(.15,.68,.22,1) both!important}
+@keyframes asia-v018-zoom{0%{transform:scale(.65);opacity:0}17%{opacity:1}78%{transform:scale(1.06);opacity:1}100%{transform:scale(1.13);opacity:1}}
+@keyframes asia-v018-screen{0%,84%{opacity:1;visibility:visible}99%{opacity:0;visibility:visible}100%{opacity:0;visibility:hidden;pointer-events:none}}
+@media(max-width:600px){#asia-v018-splash img{width:min(86vw,420px)!important}}
+</style>
+</head>
+<body>
+<div id="asia-v018-splash" role="presentation" aria-hidden="true"><img src="assets/asia-ah-logo.png" alt="" width="1254" height="1254" fetchpriority="high" decoding="sync"></div>
+
+<div class="shell">
+<main class="main" id="home">
+ <div class="topbar"><button type="button" class="login-trigger" onclick="document.getElementById('loginDialog').showModal()" aria-label="تسجيل الدخول">🔐 تسجيل الدخول</button><div class="social"><span class="chip" title="يتم ربط الحساب الرسمي بعد اعتماد بياناته">واتساب</span><span class="chip" title="يتم ربط الحساب الرسمي بعد اعتماد بياناته">سناب شات</span><span class="chip" title="يتم ربط الحساب الرسمي بعد اعتماد بياناته">WeChat</span></div></div>
+ <header class="hero"><img src="assets/asia-banner.png" alt="بويوسف الصبر – دليلك إلى آسيا، بانر AH للوجهات الخمس" width="2048" height="682"><div class="hero-note"><b>مرحبًا بك في بويوسف الصبر</b><span>دليلك السياحي إلى خمس وجهات آسيوية</span></div></header>
+ <section class="home-search" aria-label="محرك البحث الرئيسي">
+  <div class="home-search-title">🔎 <strong>محرك البحث – بويوسف 0</strong><span>ابحث عن دولة أو مدينة أو منطقة داخل الأدلة</span></div>
+  <button type="button" class="home-search-launch" onclick="openSearch()" aria-label="افتح البحث في الصفحة الرئيسية"><span>🔍 ابحث هنا عن الصين، تايلند، ماليزيا، هونغ كونغ، مكاو...</span><b>بحث</b></button>
+ </section>
+ <section class="section" id="countries"><div class="title-line"><h2>🌏 اختر الدولة</h2><span class="mini-pill">5 وجهات</span></div><p class="intro">اضغط على بطاقة الدولة للدخول إلى دليلها. أدلة تايلند وماليزيا وهونغ كونغ ومكاو مدمجة داخل هذه النسخة. تُفتح جميع بطاقات الدول في نفس التبويب.</p>
+ <div class="countries">
+  <a class="country country-clickable" id="country-cn" href="./china/index.html" target="_self" aria-label="الدخول إلى دليل الصين داخل بوابة آسيا"><span class="status">متاح</span><div class="country-art cn"><img src="assets/china-landmark.png" alt="معالم الصين"><span class="art-flag">🇨🇳</span></div><h3>الصين</h3><div class="en">CHINA</div></a>
+  <a class="country country-clickable" id="country-th" href="./thailand/index.html" target="_self" aria-label="الدخول إلى دليل تايلند بويوسف ٤ في نفس التبويب"><span class="status">متاح</span><div class="country-art th"><img src="assets/thailand-landmark.png" alt="معالم تايلند"><span class="art-flag">🇹🇭</span></div><h3>تايلند</h3><div class="en">THAILAND · BANGKOK</div></a>
+  <a class="country country-clickable" id="country-my" href="malaysia/index.html" aria-label="الدخول إلى دليل ماليزيا"><span class="status">متاح</span><div class="country-art my"><img src="assets/malaysia-landmark.png" alt="معالم ماليزيا"><span class="art-flag">🇲🇾</span></div><h3>ماليزيا</h3><div class="en">MALAYSIA</div></a>
+  <a class="country country-clickable" id="country-hk" href="hong-kong/index.html" aria-label="الدخول إلى دليل هونغ كونغ"><span class="status">متاح</span><div class="country-art hk"><img src="assets/hk-landmark.png" alt="معالم هونغ كونغ"><span class="art-flag">🇭🇰</span></div><h3>هونغ كونغ</h3><div class="en">HONG KONG</div></a>
+  <a class="country country-clickable" id="country-mo" href="macau/index.html" aria-label="الدخول إلى دليل مكاو"><span class="status">متاح</span><div class="country-art mo"><img src="assets/macau-landmark.png" alt="معالم مكاو"><span class="art-flag">🇲🇴</span></div><h3>مكاو</h3><div class="en">MACAU</div></a>
+ </div></section>
+ <section class="section" id="features" aria-label="خدمات بويوسف 0">
+   <h2>خدمات الموقع</h2>
+   <div class="feature-grid">
+     <article class="feature-card" id="updates">
+       <img src="assets/updates-feature.webp" alt="مكبر صوت وإشارة جديد" loading="lazy">
+       <div class="feature-content"><h3>✨ جديد الموقع</h3><p>تابع آخر الإضافات والتحديثات في أدلة الدول.</p><details><summary>عرض الجديد</summary><p>النسخة الحالية: بويوسف 0، واجهة تجمع خمس وجهات آسيوية.</p></details></div>
+     </article>
+     <article class="feature-card" id="currency">
+       <img src="assets/currency-feature.webp" alt="عملات وآلة حاسبة" loading="lazy">
+       <div class="feature-content"><h3>💱 صرف العملات</h3><p>خدمة تحويل العملات ستُفعّل بعد اعتماد مصدر موثوق للأسعار.</p><span class="feature-soon">بانتظار التفعيل</span></div>
+     </article>
+     <article class="feature-card" id="store">
+       <img src="assets/store-feature.webp" alt="حقائب تسوق وهدايا" loading="lazy">
+       <div class="feature-content"><h3>🛍️ متجرنا</h3><p>بوابة المتجر، وسيتم ربطها بالمتجر المعتمد دون تغيير بياناته.</p><span class="feature-soon">بانتظار الربط</span></div>
+     </article>
+   </div>
+ </section>
+ <footer>© بويوسف الصبر · بويوسف 0 – دليلك إلى آسيا<br>نسخة تطويرية قابلة للتحديث والربط مع مواقع بويوسف</footer>
+</main>
+</div>
+<a class="float-store" href="#store" aria-label="الانتقال إلى متجرنا">🛍️ متجرنا</a>
+
+<dialog class="login-dialog" id="loginDialog" aria-labelledby="loginTitle" dir="rtl">
+  <h2 id="loginTitle">🔐 تسجيل الدخول</h2>
+  <p>زر تسجيل الدخول جاهز في الواجهة. يلزم ربطه بنظام العضوية المعتمد قبل أن يتمكن الزائر من تسجيل الدخول فعليًا.</p>
+  <form method="dialog"><button class="login-close" type="submit">إغلاق</button></form>
+</dialog>
+<div class="search-overlay" id="searchOverlay" hidden onclick="closeSearch()"></div>
+<section class="search-dialog" id="searchDialog" role="dialog" aria-modal="true" aria-label="البحث في بويوسف 0" hidden>
+ <div class="search-head"><strong>🔎 البحث في بويوسف 0</strong><button type="button" class="search-close" onclick="closeSearch()" aria-label="إغلاق البحث">✕</button></div>
+ <label for="searchInput" class="search-help">ابحث عن دولة أو مدينة أو منطقة</label>
+ <input id="searchInput" type="search" placeholder="مثال: الصين، تايلند، ماليزيا، صرف العملات..." autocomplete="off" oninput="renderSearch()">
+ <div class="search-results" id="searchResults" aria-live="polite"></div>
+</section>
+<script>
+const searchData=[
+ {name:'🇨🇳 الصين',description:'دليل بويوسف ٢ – الأسواق والمطاعم والمدن',url:'./china/index.html'},
+ {name:'🇹🇭 تايلند – بانكوك',description:'بويوسف ٤ – دليل مدن تايلند',url:'./thailand/index.html'},
+ {name:'🇲🇾 ماليزيا',description:'دليل ماليزيا – خمس مدن',url:'malaysia/index.html'},
+ {name:'🇭🇰 هونغ كونغ',description:'دليل هونغ كونغ – ست مناطق',url:'hong-kong/index.html'},
+ {name:'🇲🇴 مكاو',description:'دليل مكاو – أربع مناطق',url:'macau/index.html'},
+
+ {name:"🇲🇾 كوالالمبور – Kuala Lumpur",description:"ماليزيا، الأسواق والمجمعات والمطاعم والفنادق",url:"malaysia/kualalumpur.html"},
+ {name:"🇲🇾 بوتراجايا – Putrajaya",description:"ماليزيا، المدينة الإدارية والسياحة",url:"malaysia/putrajaya.html"},
+ {name:"🇲🇾 ملقا – Melaka",description:"ماليزيا، الأسواق والتراث والفنادق",url:"malaysia/melaka.html"},
+ {name:"🇲🇾 إيبوه – Ipoh",description:"ماليزيا، الأسواق والمطاعم والسياحة",url:"malaysia/ipoh.html"},
+ {name:"🇲🇾 جوهور باهرو – Johor Bahru",description:"ماليزيا، المجمعات والأسواق",url:"malaysia/johorbahru.html"},
+ {name:"🇭🇰 تسيم شا تسوي – Tsim Sha Tsui",description:"هونغ كونغ، الفنادق والمولات والميناء",url:"hong-kong/tsim-sha-tsui.html"},
+ {name:"🇭🇰 مونغ كوك – Mong Kok",description:"هونغ كونغ، سوق الحريم والأسواق",url:"hong-kong/mong-kok.html"},
+ {name:"🇭🇰 سنترال – Central",description:"هونغ كونغ، الأسواق والمطاعم",url:"hong-kong/central.html"},
+ {name:"🇭🇰 كوزواي باي – Causeway Bay",description:"هونغ كونغ، التسوق والمولات",url:"hong-kong/causeway-bay.html"},
+ {name:"🇭🇰 شا تين – Sha Tin",description:"هونغ كونغ، التسوق والسياحة",url:"hong-kong/sha-tin.html"},
+ {name:"🇭🇰 لانتاو – Lantau Island",description:"هونغ كونغ، ديزني لاند والطبيعة",url:"hong-kong/lantau.html"},
+ {name:"🇲🇴 شبه جزيرة ماكاو – Macau Peninsula",description:"مكاو، الأسواق والفنادق والمطاعم",url:"macau/macau-peninsula.html"},
+ {name:"🇲🇴 تايبا – Taipa",description:"مكاو، المطاعم والبيتزا",url:"macau/taipa.html"},
+ {name:"🇲🇴 كوتاي – Cotai",description:"مكاو، الفنادق والعروض والمولات",url:"macau/cotai.html"},
+ {name:"🇲🇴 كولوان – Coloane",description:"مكاو، الطبيعة والمطاعم",url:"macau/coloane.html"},
+ {name:'✨ جديد الموقع',description:'آخر إضافات الموقع',url:'#updates'},
+ {name:'💱 صرف العملات',description:'العملات ومعلومات التحويل',url:'#currency'},
+ {name:'🛍️ متجرنا',description:'بوابة المتجر',url:'#store'}
+];
+function norm(s){return s.toLowerCase().normalize('NFKD').replace(/[\u064b-\u065f\u0670]/g,'').replace(/[أإآ]/g,'ا').replace(/ى/g,'ي').replace(/ة/g,'ه').replace(/\s+/g,' ').trim()}
+function renderSearch(){const q=norm(document.getElementById('searchInput').value);const results=document.getElementById('searchResults');const found=searchData.filter(x=>!q||norm(x.name+' '+x.description).includes(q));results.replaceChildren();if(!found.length){const p=document.createElement('p');p.className='no-results';p.textContent='لا توجد نتائج مطابقة في فهرس الدول والمدن والمناطق.';results.append(p);return}found.forEach(item=>{const link=document.createElement('a');link.href=item.url;link.target='_self';if(item.external){link.target='_blank';link.rel='noopener noreferrer'}link.className='search-hit';const strong=document.createElement('strong');strong.textContent=item.name;const small=document.createElement('small');small.textContent=item.description;link.append(strong,small);if(item.onclick){link.addEventListener('click',e=>{e.preventDefault();closeSearch();window[item.onclick.replace(/\(\)$/,'')]?.();});}else{link.addEventListener('click',closeSearch);}results.append(link)})}
+function openSearch(){document.getElementById('searchOverlay').hidden=false;document.getElementById('searchDialog').hidden=false;document.body.classList.add('search-open');document.getElementById('searchInput').value='';renderSearch();document.getElementById('searchInput').focus()}
+function closeSearch(){document.getElementById('searchOverlay').hidden=true;document.getElementById('searchDialog').hidden=true;document.body.classList.remove('search-open')}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeSearch();if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();openSearch()}});
+</script>
+</body></html>

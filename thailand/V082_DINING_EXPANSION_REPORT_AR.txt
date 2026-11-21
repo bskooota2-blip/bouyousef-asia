@@ -1,0 +1,32 @@
+V082 - توسعة مطاعم شيانغ ماي
+عدد الأماكن قبل: 133
+عدد الأماكن بعد: 156
+إضافات جديدة: 23
+العدد داخل الفلاتر: {'indian': 17, 'turkish': 4, 'arab': 8, 'other': 14, 'western': 2}
+
+مطعم الخليج | Gulf Restaurant | arab | 149/12 Anusarn Market, Chang Khlan Road, Mueang Chiang Mai, Chiang Mai 50100, Thailand | https://chiangmailocal.org/listing/gulf-restaurant/
+مطعم الملوك المصري | Egyptian Kings Restaurant | arab | 95 Charoen Prathet Road, Chang Khlan, Mueang Chiang Mai, Chiang Mai 50100, Thailand | https://chiangmailocal.org/listing/egyptian-kings/
+حمص غاردن | Hummus Garden | arab | 11/1 Charoen Prathet Lane 12, Chang Khlan, Mueang Chiang Mai, Chiang Mai 50100, Thailand | https://hummuscm.com/
+مطعم أرابيا | Arabia Restaurant | arab | Anusarn Market, Chang Khlan, Mueang Chiang Mai, Chiang Mai 50100, Thailand | https://www.chiangmailocator.com/chiang-mai-restaurants-2017:arabia-restaurant-anusarn-market
+حبيبي للمأكولات العربية والبيتزا الحلال | Habibi Arabic Food and Halal Pizza | arab | Mueang Chiang Mai, Chiang Mai, Thailand | https://www.tripadvisor.com/Restaurants-g293917-c11744-Chiang_Mai.html
+كافيه أناضوليا التركي | Cafe Anatolia Authentic Turkish Cuisine | turkish | 234/222 Siri Watthana Niwet Alley, Nong Hoi, Mueang Chiang Mai, Chiang Mai 50000, Thailand | https://www.tripadvisor.com/Restaurant_Review-g293917-d24638810-Reviews-Cafe_Anotolia_Authentic_Turkish_Cuisine-Chiang_Mai.html
+أناضوليا المدينة القديمة | Anatolia Old Town Restaurant | turkish | Old Town, Mueang Chiang Mai, Chiang Mai, Thailand | https://www.tripadvisor.com/Restaurant_Review-g293917-d25577494-Reviews-Anatolia_Old_Town_Restaurant-Chiang_Mai.html
+كباب هاوس | Kebab House | turkish | Mueang Chiang Mai, Chiang Mai, Thailand | https://chiangmailocal.org/listing/kebab-house/
+تشاي إن تاي | Chai N Thai | indian | 20 Nimmanhaemin Road Soi 9, Suthep, Mueang Chiang Mai, Chiang Mai 50200, Thailand | https://chiangmailocal.org/category/indian-restaurants/
+إنديان بايتس كافيه | Indian Bites Cafe | indian | 93/4 Wua Lai Road, Hai Ya, Mueang Chiang Mai, Chiang Mai 50100, Thailand | https://chiangmailocal.org/category/indian-restaurants/
+ليتل إنديان كيتشن | Little Indian Kitchen | indian | Pavilion Night Bazaar, Chang Khlan Road, Mueang Chiang Mai, Chiang Mai 50100, Thailand | https://chiangmailocal.org/listing/little-indian-kitchen/
+بومباي كيتشن | Bombay Kitchen | indian | 69 Kotchasarn Road, Chang Khlan, Mueang Chiang Mai, Chiang Mai 50100, Thailand | https://chiangmailocal.org/category/indian-restaurants/
+ماسالا ماجيك | Masala Magic | indian | 4 Ratchamanka Road, Si Phum, Mueang Chiang Mai, Chiang Mai 50200, Thailand | https://chiangmailocal.org/category/indian-restaurants/
+كانشان للأكل الهندي | Kanchan Indian Food | indian | 75/5 Muang Samut Road, Chang Moi, Mueang Chiang Mai, Chiang Mai 50300, Thailand | https://chiangmailocal.org/category/indian-restaurants/
+تاج محل الهندي | Taj Mahal | indian | Loi Kroh Road, Chang Moi, Mueang Chiang Mai, Chiang Mai 50100, Thailand | https://chiangmailocal.org/category/indian-restaurants/
+أتشا إنديان دابا | Accha Indian Dhaba | indian | 6 Chaiyapoom Road, Si Phum, Mueang Chiang Mai, Chiang Mai 50300, Thailand | https://chiangmailocal.org/listing/accha-indian-dhaba/
+أتشا للمأكولات الهندية الأصيلة | Accha Authentic Indian Cuisine | indian | Nimmanhaemin Soi 5, Suthep, Mueang Chiang Mai, Chiang Mai 50200, Thailand | https://www.tripadvisor.com/Restaurant_Review-g293917-d6975913-Reviews-Accha_Authentic_Indian_Cuisine-Chiang_Mai.html
+دلهي دربار الهندي | Delhi Darbar Indian Restaurant | indian | Old City, Mueang Chiang Mai, Chiang Mai, Thailand | https://chiangmairestaurants.com/restaurant/delhi-darbar-indian-restaurant-best-indian-restaurant-in-chiang-mai
+جريل أوف إنديا | Grill of India | indian | Old City, Mueang Chiang Mai, Chiang Mai, Thailand | https://chiangmailocal.org/category/indian-restaurants/page/2/
+يومي إنديا | Yummy India | indian | Mueang Chiang Mai, Chiang Mai, Thailand | https://chiangmailocal.org/category/indian-restaurants/page/2/
+رويال إنديا | Royal India Restaurant | indian | Night Bazaar area, Chang Khlan, Mueang Chiang Mai, Chiang Mai, Thailand | https://chiangmailocal.org/category/indian-restaurants/chang-klan-night-bazaar/
+ناماستي للمأكولات الهندية | Namaste Indian Cuisine | indian | Mueang Chiang Mai, Chiang Mai, Thailand | https://chiangmailocal.org/listing/namaste-indian-cuisine/
+تشيناي تو رانغون | Chennai To Rangoon | indian | 141/8 Ratchadamnoen Road, Si Phum, Mueang Chiang Mai, Chiang Mai 50200, Thailand | https://chiangmailocal.org/category/indian-restaurants/
+
+بعض المواقع تحدد المنطقة لا عنوان المبنى. الحلال لا يفترض من جنسية المطبخ. قبل الزيارة تأكد من العمل والفروع.
+استُبعد الموقع السابق لـ Hummus Chiang Mai لتجنب احتمالية تكرار اسم Hummus Garden، كما استُبعد اسم مطعم/بار غير ملائم لقائمة المطاعم العائلية.

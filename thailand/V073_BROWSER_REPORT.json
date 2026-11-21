@@ -1,0 +1,376 @@
+{
+  "bangkok": {
+    "1920x1080": {
+      "initial": {
+        "sections": [],
+        "divider": "1px",
+        "buttons": 8,
+        "cityPhoto": true,
+        "overflows": false
+      },
+      "buttons": {
+        "markets": [
+          "markets"
+        ],
+        "malls": [
+          "malls"
+        ],
+        "restaurants": [
+          "restaurants",
+          "cafes"
+        ],
+        "sights": [
+          "sights"
+        ],
+        "hotels": [
+          "hotels"
+        ],
+        "transit": [
+          "transit"
+        ],
+        "mosques": [
+          "mosques"
+        ],
+        "health": [
+          "health"
+        ]
+      },
+      "js_errors": []
+    },
+    "1366x768": {
+      "initial": {
+        "sections": [],
+        "divider": "1px",
+        "buttons": 8,
+        "cityPhoto": true,
+        "overflows": false
+      },
+      "buttons": {
+        "markets": [
+          "markets"
+        ],
+        "malls": [
+          "malls"
+        ],
+        "restaurants": [
+          "restaurants",
+          "cafes"
+        ],
+        "sights": [
+          "sights"
+        ],
+        "hotels": [
+          "hotels"
+        ],
+        "transit": [
+          "transit"
+        ],
+        "mosques": [
+          "mosques"
+        ],
+        "health": [
+          "health"
+        ]
+      },
+      "js_errors": []
+    },
+    "1280x720": {
+      "initial": {
+        "sections": [],
+        "divider": "1px",
+        "buttons": 8,
+        "cityPhoto": true,
+        "overflows": false
+      },
+      "buttons": {
+        "markets": [
+          "markets"
+        ],
+        "malls": [
+          "malls"
+        ],
+        "restaurants": [
+          "restaurants",
+          "cafes"
+        ],
+        "sights": [
+          "sights"
+        ],
+        "hotels": [
+          "hotels"
+        ],
+        "transit": [
+          "transit"
+        ],
+        "mosques": [
+          "mosques"
+        ],
+        "health": [
+          "health"
+        ]
+      },
+      "js_errors": []
+    },
+    "390x844": {
+      "initial": {
+        "sections": [],
+        "divider": "1px",
+        "buttons": 8,
+        "cityPhoto": true,
+        "overflows": false
+      },
+      "buttons": {
+        "markets": [
+          "markets"
+        ],
+        "malls": [
+          "malls"
+        ],
+        "restaurants": [
+          "restaurants",
+          "cafes"
+        ],
+        "sights": [
+          "sights"
+        ],
+        "hotels": [
+          "hotels"
+        ],
+        "transit": [
+          "transit"
+        ],
+        "mosques": [
+          "mosques"
+        ],
+        "health": [
+          "health"
+        ]
+      },
+      "js_errors": []
+    },
+    "375x812": {
+      "initial": {
+        "sections": [],
+        "divider": "1px",
+        "buttons": 8,
+        "cityPhoto": true,
+        "overflows": false
+      },
+      "buttons": {
+        "markets": [
+          "markets"
+        ],
+        "malls": [
+          "malls"
+        ],
+        "restaurants": [
+          "restaurants",
+          "cafes"
+        ],
+        "sights": [
+          "sights"
+        ],
+        "hotels": [
+          "hotels"
+        ],
+        "transit": [
+          "transit"
+        ],
+        "mosques": [
+          "mosques"
+        ],
+        "health": [
+          "health"
+        ]
+      },
+      "js_errors": []
+    }
+  },
+  "chiangmai": {
+    "1920x1080": {
+      "initial": {
+        "sections": [],
+        "divider": "1px",
+        "buttons": 8,
+        "cityPhoto": true,
+        "overflows": false
+      },
+      "buttons": {
+        "markets": [
+          "markets"
+        ],
+        "malls": [
+          "malls"
+        ],
+        "restaurants": [
+          "restaurants",
+          "cafes"
+        ],
+        "sights": [
+          "sights"
+        ],
+        "hotels": [
+          "hotels"
+        ],
+        "transit": [
+          "transit"
+        ],
+        "mosques": [
+          "mosques"
+        ],
+        "health": [
+          "health"
+        ]
+      },
+      "js_errors": []
+    },
+    "1366x768": {
+      "initial": {
+        "sections": [],
+        "divider": "1px",
+        "buttons": 8,
+        "cityPhoto": true,
+        "overflows": false
+      },
+      "buttons": {
+        "markets": [
+          "markets"
+        ],
+        "malls": [
+          "malls"
+        ],
+        "restaurants": [
+          "restaurants",
+          "cafes"
+        ],
+        "sights": [
+          "sights"
+        ],
+        "hotels": [
+          "hotels"
+        ],
+        "transit": [
+          "transit"
+        ],
+        "mosques": [
+          "mosques"
+        ],
+        "health": [
+          "health"
+        ]
+      },
+      "js_errors": []
+    },
+    "1280x720": {
+      "initial": {
+        "sections": [],
+        "divider": "1px",
+        "buttons": 8,
+        "cityPhoto": true,
+        "overflows": false
+      },
+      "buttons": {
+        "markets": [
+          "markets"
+        ],
+        "malls": [
+          "malls"
+        ],
+        "restaurants": [
+          "restaurants",
+          "cafes"
+        ],
+        "sights": [
+          "sights"
+        ],
+        "hotels": [
+          "hotels"
+        ],
+        "transit": [
+          "transit"
+        ],
+        "mosques": [
+          "mosques"
+        ],
+        "health": [
+          "health"
+        ]
+      },
+      "js_errors": []
+    },
+    "390x844": {
+      "initial": {
+        "sections": [],
+        "divider": "1px",
+        "buttons": 8,
+        "cityPhoto": true,
+        "overflows": false
+      },
+      "buttons": {
+        "markets": [
+          "markets"
+        ],
+        "malls": [
+          "malls"
+        ],
+        "restaurants": [
+          "restaurants",
+          "cafes"
+        ],
+        "sights": [
+          "sights"
+        ],
+        "hotels": [
+          "hotels"
+        ],
+        "transit": [
+          "transit"
+        ],
+        "mosques": [
+          "mosques"
+        ],
+        "health": [
+          "health"
+        ]
+      },
+      "js_errors": []
+    },
+    "375x812": {
+      "initial": {
+        "sections": [],
+        "divider": "1px",
+        "buttons": 8,
+        "cityPhoto": true,
+        "overflows": false
+      },
+      "buttons": {
+        "markets": [
+          "markets"
+        ],
+        "malls": [
+          "malls"
+        ],
+        "restaurants": [
+          "restaurants",
+          "cafes"
+        ],
+        "sights": [
+          "sights"
+        ],
+        "hotels": [
+          "hotels"
+        ],
+        "transit": [
+          "transit"
+        ],
+        "mosques": [
+          "mosques"
+        ],
+        "health": [
+          "health"
+        ]
+      },
+      "js_errors": []
+    }
+  }
+}
