@@ -1,0 +1,82 @@
+/* V053: coherent vertical rhythm only for Thailand / Malaysia. No content or logic removal. */
+body.by051-active.by053-spacing{--by053-gap:10px;--by053-max:1250px}
+/* One compact flow: banner -> prayer / weather -> local search -> section cards */
+body.by051-active.by053-spacing .by051-chrome .site-hero{padding-bottom:0!important}
+body.by051-active.by053-spacing .by051-chrome .approved-header{margin:2px auto!important}
+body.by051-active.by053-spacing .by051-header-home{margin:4px auto 0!important;padding:7px 13px!important}
+body.by051-active.by053-spacing .by051-live-row{width:min(100%,var(--by053-max))!important;box-sizing:border-box!important;margin:7px auto 7px!important;padding:0 12px!important;gap:7px!important}
+body.by051-active.by053-spacing .by051-live-row > *{margin-top:0!important;margin-bottom:0!important}
+body.by051-active.by053-spacing .by051-live-row>.gz-overview.by4-prayer{min-height:0!important;box-sizing:border-box!important}
+body.by051-active.by053-spacing .by051-live-row .prayer-cells.by4-times{min-width:0!important}
+body.by051-active.by053-spacing .by051-live-row .gz-qibla-panel{min-width:0!important;overflow-wrap:anywhere!important}
+body.by051-active.by053-spacing .by051-live-row .gz-qibla-panel strong{max-width:100%!important;font-size:clamp(19px,2vw,29px)!important}
+/* Legacy empty header retained for handlers: do not allow it to reserve spacing. */
+body.by051-active.by053-spacing .shell>main>.by4-header{min-height:0!important;height:auto!important;margin:0!important;padding:0!important;border:0!important}
+body.by051-active.by053-spacing .shell>main>.by4-header>.by4-prayer-note{display:none!important}
+body.by051-active.by053-spacing .shell>main{padding-top:0!important}
+body.by051-active.by053-spacing .shell>main>#by4-local-search{box-sizing:border-box!important;width:100%!important;max-width:var(--by053-max)!important;margin:6px auto 10px!important;padding:12px 14px!important}
+body.by051-active.by053-spacing #by4-local-search label{margin-bottom:6px!important;line-height:1.35!important}
+body.by051-active.by053-spacing #by4-local-search .by4-local-search-row{gap:8px!important}
+body.by051-active.by053-spacing .shell>main>.section-cards{box-sizing:border-box!important;width:100%!important;max-width:var(--by053-max)!important;margin:0 auto 13px!important;padding:0!important;gap:12px!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;align-items:stretch!important}
+body.by051-active.by053-spacing .shell>main>.section-cards>.section-card{box-sizing:border-box!important;margin:0!important;min-width:0!important;height:auto!important;min-height:125px!important}
+body.by051-active.by053-spacing .shell>main>.directory{margin-top:12px!important}
+body.by051-active.by053-spacing .shell>main>.directory>.directory-header{margin-bottom:12px!important}
+/* Malaysian islands use a distinct listing system; keep it and remove only excessive empty space. */
+body.by051-active.by053-spacing main.wrap{padding-top:0!important}
+body.by051-active.by053-spacing main.wrap>.crumb{margin-top:6px!important;margin-bottom:8px!important}
+body.by051-active.by053-spacing main.wrap>.hero{margin-top:4px!important;margin-bottom:10px!important}
+body.by051-active.by053-spacing main.wrap>.directory-overview{margin-top:8px!important;margin-bottom:12px!important}
+body.by051-active.by053-spacing main.wrap>.directory-group{margin-top:10px!important;margin-bottom:12px!important}
+@media(max-width:950px){body.by051-active.by053-spacing .shell>main>.section-cards{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}body.by051-active.by053-spacing .shell>main>.section-cards>.section-card{min-height:110px!important}}
+@media(max-width:680px){body.by051-active.by053-spacing .by051-live-row{padding:0 7px!important;margin:5px auto 6px!important}body.by051-active.by053-spacing .shell>main>#by4-local-search{margin:5px auto 8px!important;padding:10px!important}body.by051-active.by053-spacing .shell>main>.section-cards{gap:8px!important;margin-bottom:10px!important}body.by051-active.by053-spacing .shell>main>.section-cards>.section-card{min-height:96px!important}}
+/* Match prayer/compass and city block to the compact Guangzhou-style single row on desktops. */
+@media(min-width:1101px){
+body.by051-active.by053-spacing.v072-guangzhou-source .by051-live-row>.gz-overview.by4-prayer{display:grid!important;grid-template-columns:minmax(175px,.8fr) minmax(145px,.65fr) minmax(400px,1.7fr)!important;grid-template-areas:'city qibla prayers'!important;min-height:155px!important;max-height:none!important;align-items:stretch!important;gap:8px!important}
+body.by051-active.by053-spacing.v072-guangzhou-source .by051-live-row>.gz-overview.by4-prayer>.city-banner{grid-area:city!important;min-width:0!important;height:auto!important;min-height:150px!important}
+body.by051-active.by053-spacing.v072-guangzhou-source .by051-live-row>.gz-overview.by4-prayer>.gz-qibla-panel{grid-area:qibla!important;min-height:150px!important}
+body.by051-active.by053-spacing.v072-guangzhou-source .by051-live-row>.gz-overview.by4-prayer>#globalPrayer{grid-area:prayers!important;min-height:150px!important;height:auto!important}
+body.by051-active.by053-spacing.v072-guangzhou-source .by051-live-row #globalPrayer>.prayer{min-height:150px!important;height:100%!important}
+body.by051-active.by053-spacing.v072-guangzhou-source .by051-live-row #globalPrayer .prayer-cells.by4-times{grid-template-columns:repeat(6,minmax(0,1fr))!important;padding:5px 2px!important}
+body.by051-active.by053-spacing.v072-guangzhou-source .by051-live-row #globalPrayer .prayer-item.by4-time{padding:3px 1px!important;min-width:0!important}
+body.by051-active.by053-spacing.v072-guangzhou-source .by051-live-row #globalPrayer .prayer-item.by4-time strong{font-size:clamp(9px,.85vw,12px)!important;white-space:nowrap!important}
+body.by051-active.by053-spacing.v072-guangzhou-source .by051-live-row #globalPrayer .prayer-item.by4-time span{font-size:clamp(12px,1vw,15px)!important;white-space:nowrap!important}
+}
+@media(max-width:1100px){body.by051-active.by053-spacing .shell,body.by051-active.by053-spacing .by051-live-row{padding:0 10px!important}}
+@media(max-width:700px){
+body.by051-active.by053-spacing.v072-guangzhou-source .by051-live-row>.gz-overview.by4-prayer{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-template-areas:'city qibla' 'prayers prayers'!important;gap:5px!important;min-height:0!important}
+body.by051-active.by053-spacing.v072-guangzhou-source .by051-live-row>.gz-overview.by4-prayer>.city-banner{grid-area:city!important;min-height:105px!important;height:auto!important;max-height:135px!important;min-width:0!important}
+body.by051-active.by053-spacing.v072-guangzhou-source .by051-live-row>.gz-overview.by4-prayer>.gz-qibla-panel{grid-area:qibla!important;min-height:105px!important;height:auto!important;max-height:135px!important;min-width:0!important}
+body.by051-active.by053-spacing.v072-guangzhou-source .by051-live-row>.gz-overview.by4-prayer>#globalPrayer{grid-area:prayers!important;min-height:0!important;height:auto!important;width:100%!important}
+body.by051-active.by053-spacing.v072-guangzhou-source .by051-live-row #globalPrayer>.prayer{min-height:0!important;height:auto!important}
+body.by051-active.by053-spacing.v072-guangzhou-source .by051-live-row #globalPrayer .prayer-cells.by4-times{grid-template-columns:repeat(3,minmax(0,1fr))!important;padding:5px 3px!important}
+}
+body.by051-active.by053-spacing .shell .prayer-note{display:none!important}
+@media(max-width:680px){body.by051-active.by053-spacing .shell{padding:0 7px!important}body.by051-active.by053-spacing .by051-live-row{margin:5px 0 6px!important;padding:0 7px!important}}
+
+
+/* V055: Single layout owner. The RIGHT sidebar takes exactly one 210px slot.
+   V051 CSS previously reserved sidebar in body, page-shell, shell and live-row
+   independently. Do NOT reserve it again in content descendants. */
+@media (min-width:901px){
+ body.by051-active.by053-spacing{padding-right:210px!important;margin:0!important;box-sizing:border-box!important}
+ body.by051-active.by053-spacing .by051-chrome{margin:0!important;width:100%!important;max-width:100%!important}
+ body.by051-active.by053-spacing .by051-chrome .page-shell{margin:0!important;width:100%!important;max-width:100%!important}
+ body.by051-active.by053-spacing .by051-chrome>.sidebar{width:210px!important;max-width:210px!important;transform:none!important;right:0!important}
+}
+body.by051-active.by053-spacing .shell,
+body.by051-active.by053-spacing .by051-live-row{
+ width:100%!important;max-width:100%!important;min-width:0!important;
+ margin-right:0!important;margin-left:0!important;box-sizing:border-box!important;
+}
+body.by051-active.by053-spacing .shell{display:block!important;grid-template-columns:none!important}
+body.by051-active.by053-spacing .shell>.side{display:none!important}
+body.by051-active.by053-spacing .shell>main{display:block!important;width:100%!important;max-width:100%!important;min-width:0!important;padding:0!important;margin:0!important;box-sizing:border-box!important}
+body.by051-active.by053-spacing .shell>main>#by4-local-search,
+body.by051-active.by053-spacing .shell>main>.section-cards{width:100%!important;max-width:100%!important;min-width:0!important;box-sizing:border-box!important}
+@media (max-width:900px){
+ body.by051-active.by053-spacing{padding-right:0!important;margin:0!important}
+ body.by051-active.by053-spacing .by051-chrome,
+ body.by051-active.by053-spacing .by051-chrome .page-shell{width:100%!important;max-width:100%!important;margin:0!important}
+ body.by051-active.by053-spacing .by051-chrome>.sidebar{position:fixed!important;right:0!important;transform:translateX(110%)!important;pointer-events:none!important}
+ body.by051-active.by053-spacing .by051-chrome.by051-open>.sidebar{transform:translateX(0)!important;pointer-events:auto!important}
+}

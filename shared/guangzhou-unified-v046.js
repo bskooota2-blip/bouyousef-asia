@@ -7,7 +7,7 @@ const ready=()=>{
  const folder=location.pathname.split('/').filter(Boolean).slice(-2,-1)[0]||'';
  const country=['thailand','malaysia','hong-kong','macau'].includes(folder)?folder:'';
  const make=(label,href,klass,external)=>{
-   let a=document.createElement('a');a.textContent=label;a.href=href;a.className=klass||'';
+   let a=document.createElement('a');const m=label.match(/^([^\s]+)\s+(.+)$/u);if(m){const ico=document.createElement('span');ico.className='by046-ico';ico.setAttribute('aria-hidden','true');ico.textContent=m[1];const txt=document.createElement('span');txt.textContent=m[2];a.append(ico,txt)}else a.textContent=label;a.href=href;a.className=klass||'';
    if(external){a.target='_blank';a.rel='noopener noreferrer'}else a.target='_self';return a;
  };
  const bar=document.createElement('nav');bar.id='by046-actions';bar.className='by046-actions';bar.setAttribute('aria-label','روابط وتواصل بويوسف');
@@ -21,7 +21,7 @@ const ready=()=>{
  bar.appendChild(make('👻 سناب','https://www.snapchat.com/add/bskooota2','by046-social',true));
  bar.appendChild(make('📷 إنستغرام','https://www.instagram.com/bskooota22/','by046-social',true));
  // WeChat remains available only through existing approved QR, never an invented URL.
- const top=document.createElement('button');top.type='button';top.className='by046-top';top.textContent='↑ أعلى الصفحة';top.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));bar.appendChild(top);
+ const top=document.createElement('button');top.type='button';top.className='by046-top';top.innerHTML='<span class="by046-ico" aria-hidden="true">↑</span><span>أعلى الصفحة</span>';top.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));bar.appendChild(top);
  const nav=document.querySelector('.asia-v019-navrow,.navrow,.topbar,.top')||document.body.firstElementChild;
  if(nav&&nav.parentNode)nav.insertAdjacentElement('afterend',bar);else root.prepend(bar);
 };

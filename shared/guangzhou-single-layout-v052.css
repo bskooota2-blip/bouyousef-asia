@@ -1,0 +1,42 @@
+/* V052 corrective layout layer, loaded after original rules. No hidden data is deleted. */
+body.by051-active .by051-chrome,body.by051-active .by051-chrome .page-shell{min-height:0!important;height:auto!important;max-height:none!important;overflow:visible!important}
+body.by051-active .by051-chrome .site-hero{min-height:0!important;height:auto!important;max-height:none!important;padding:0 0 10px!important;margin:0!important;display:flex!important;justify-content:flex-start!important;align-items:stretch!important}
+body.by051-active .by051-chrome .approved-header{width:min(calc(100% - 24px),1250px)!important;max-height:none!important;height:auto!important;aspect-ratio:2452/424!important;object-fit:cover!important;margin:4px auto!important;border-radius:22px!important}
+body.by051-active .by051-chrome .header-tools{min-height:0!important;margin:0!important;position:static!important;padding:7px 12px!important}
+body.by051-active .by051-header-home{display:block!important;align-self:center!important;margin:5px auto 0!important;padding:9px 15px!important;border:1px solid #a5d5f2!important;border-radius:12px!important;background:#eff9ff!important;color:#063668!important;text-decoration:none!important;font-size:14px!important;font-weight:800!important}
+body.by051-active .by051-live-row{max-width:1250px;margin:7px auto 12px;padding:0 12px;display:grid;gap:10px;direction:rtl;min-width:0}
+body.by051-active .by051-live-row:empty{display:none!important}
+body.by051-active .by051-live-row > *{position:relative!important;min-width:0!important;max-width:100%!important;width:100%!important;margin:0!important;box-sizing:border-box!important}
+body.by051-active .by051-live-row .by4-prayer{border-radius:18px!important;overflow:hidden!important}
+body.by051-active .by051-live-row .qibla, body.by051-active .by051-live-row .by4-compass{min-width:145px!important;max-width:100%!important;overflow-wrap:break-word!important;white-space:normal!important}
+body.by051-active .by051-live-row .by4-compass strong,body.by051-active .by051-live-row .by4-compass b{font-size:clamp(17px,2.2vw,28px)!important;line-height:1.2!important;white-space:normal!important}
+body.by051-active .by4-header:empty{display:none!important}
+body.by051-active .by4-header{min-height:0!important;max-height:none!important;height:auto!important;padding:0!important;margin:0!important;background:transparent!important}
+body.by051-active .by4-header .by4-toolbar,body.by051-active .by4-header .by4-banner,body.by051-active .by4-header .by4-prayer-note{display:none!important}
+/* Country intro text and duplicated artwork do not exist in Guangzhou reference. Keep informative data in DOM, omit redundant presentation. */
+body.by051-active .home-shell>.hero,body.by051-active .home-shell>.hk-ah-banner,body.by051-active .home-shell>.mc-ah-banner,body.by051-active .home-shell>.home-social{display:none!important}
+body.by051-active .home-shell>.hk-v038-show-notice{margin-top:12px!important}
+body.by051-active .home-shell>.search-panel{margin-top:10px!important}
+body.by051-active .home-shell>.v048-main-heading{margin:14px auto!important}
+body.by051-active .home-shell, body.by051-active .shell>main, body.by051-active main.wrap{padding-top:0!important;margin-top:0!important}
+body.by051-active .by051-live-row .hk-v032-prayer,body.by051-active .by051-live-row .mc-v040-prayer,body.by051-active .by051-live-row .hk-v032-weather,body.by051-active .by051-live-row .mc-v040-weather{border:1px solid #b7def8!important;border-radius:17px!important;background:#f4fbff!important;box-shadow:0 3px 10px #154c7617!important;padding:11px!important}
+body.by051-active .by051-live-row .by051-dynamic-status{margin:0!important;color:#456783;font-size:12px;text-align:center}
+/* Uniform city listing and filter surface, preserving JS handlers & original records. */
+body.by051-active .controls,body.by051-active .search-panel{max-width:1250px!important;margin-inline:auto!important;border-radius:18px!important;box-sizing:border-box!important}
+body.by051-active .controls .filters,body.by051-active .search-panel .filters{display:flex!important;flex-wrap:wrap!important;gap:8px!important;align-items:center!important;justify-content:center!important;margin:10px auto!important}
+body.by051-active .controls .filters button,body.by051-active .search-panel .filters button{border:1px solid #9acde9!important;border-radius:12px!important;padding:9px 13px!important;min-height:42px!important;background:linear-gradient(#fff,#e7f5ff)!important;color:#103c69!important;font-size:14px!important;font-weight:800!important;cursor:pointer!important}
+body.by051-active .controls .filters button.active,body.by051-active .search-panel .filters button.active{background:#ccecff!important;border-color:#1582c6!important}
+body.by051-active .results article.place,body.by051-active .items article.item{background:linear-gradient(110deg,#fff,#f3faff)!important;border:1.5px solid #d9ae4b!important;border-radius:17px!important;padding:14px!important;box-shadow:0 3px 10px #17568615!important;margin-bottom:10px!important;box-sizing:border-box!important;min-width:0!important}
+body.by051-active .results article.place .hk-actions,body.by051-active .items article.item .actions{display:flex!important;flex-wrap:wrap!important;gap:7px!important;align-items:center!important}
+body.by051-active .results article.place a,body.by051-active .items article.item a{overflow-wrap:anywhere}
+/* Ensure the same number of columns in the source-China city and region cards */
+body.by051-active #regions.by051-country-cards,body.by051-active #cities .cities.by051-country-cards{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important}
+@media(max-width:900px){body.by051-active #regions.by051-country-cards,body.by051-active #cities .cities.by051-country-cards{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:680px){body.by051-active .by051-chrome .approved-header{width:calc(100% - 12px)!important;border-radius:14px!important}body.by051-active .by051-live-row{padding:0 7px!important}body.by051-active .by051-live-row .by4-prayer{overflow:visible!important}body.by051-active .by051-live-row .by4-compass{min-width:0!important}}
+/* Prevent inherited Thai/Malaysian global .sidebar{position:sticky} from consuming a whole screen. */
+body.by051-active .by051-chrome>.sidebar{position:fixed!important;top:0!important;right:0!important;bottom:0!important;left:auto!important;height:100dvh!important;max-height:100dvh!important;overflow-y:auto!important;width:204px!important;margin:0!important;z-index:55!important}
+body.by051-active .by051-chrome>.page-shell{height:auto!important;min-height:0!important}
+@media(max-width:900px){body.by051-active .by051-chrome>.sidebar{width:204px!important}}
+@media(max-width:680px){body.by051-active .by051-chrome>.sidebar{width:232px!important;right:0!important;transform:translateX(110%)!important}body.by051-active .by051-chrome.by051-open>.sidebar{transform:translateX(0)!important}}
+
+body.by051-active .by052-local-highlights{max-width:1250px;margin:12px auto;padding:10px 15px;border:1px solid #b5d8ef;border-radius:14px;background:#f7fcff}body.by051-active .by052-local-highlights>summary{cursor:pointer;font-size:15px;font-weight:800;color:#0b4577}body.by051-active .by052-local-highlights>.hk-v038-show-notice{margin:10px 0 0!important}

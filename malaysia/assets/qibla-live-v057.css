@@ -1,0 +1,12 @@
+/* V057 - Malaysian city qibla sizing and interactive sensor control */
+body.v072-guangzhou-source .gz-overview.by4-prayer .gz-qibla-panel .by4-compass{gap:4px!important;padding:5px 7px!important;overflow:hidden!important;box-sizing:border-box!important;min-width:0!important}
+body.v072-guangzhou-source .gz-overview.by4-prayer .gz-qibla-panel .qibla-name{font-size:16px!important;line-height:1.15!important}
+body.v072-guangzhou-source .gz-overview.by4-prayer .gz-qibla-panel .by4-dial{height:102px!important;width:102px!important;min-width:102px!important;flex:none!important;border-width:4px!important}
+body.v072-guangzhou-source .gz-overview.by4-prayer .gz-qibla-panel .by4-needle{font-size:43px!important;transition:transform .16s linear;will-change:transform}
+body.v072-guangzhou-source .gz-overview.by4-prayer .gz-qibla-panel .by4-compass .direction{font-size:19px!important;line-height:1.15!important;white-space:nowrap!important;font-weight:800!important;direction:ltr!important;unicode-bidi:isolate!important}
+body.v072-guangzhou-source .gz-overview.by4-prayer .gz-qibla-panel .by4-compass small{font-size:10px!important;line-height:1.2!important;font-weight:500!important;text-align:center!important}
+body.v072-guangzhou-source .gz-overview.by4-prayer .gz-qibla-panel .by4-qibla-enable{background:#0b81b8;color:#fff;border:1px solid #056895;border-radius:10px;padding:5px 9px;min-height:27px;font:700 11px Tahoma,Arial,sans-serif;cursor:pointer;max-width:100%}
+body.v072-guangzhou-source .gz-overview.by4-prayer .gz-qibla-panel .by4-qibla-enable:hover{background:#095d88}
+body.v072-guangzhou-source .gz-overview.by4-prayer .gz-qibla-panel .by4-qibla-status{max-width:100%;font:500 10px/1.25 Tahoma,Arial,sans-serif;color:#245679;text-align:center;overflow-wrap:anywhere}
+body.v072-guangzhou-source .gz-overview.by4-prayer .gz-qibla-panel .by4-compass .n{font-size:10px!important;z-index:1}
+@media(max-width:700px){body.v072-guangzhou-source .by4-header>.gz-overview.by4-prayer>.gz-qibla-panel{height:auto!important;min-height:195px!important}body.v072-guangzhou-source .gz-overview.by4-prayer .gz-qibla-panel .by4-dial{width:98px!important;height:98px!important;min-width:98px!important}}

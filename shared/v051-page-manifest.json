@@ -1,0 +1,254 @@
+[
+  {
+    "path": "thailand/bangkok.html",
+    "type": "city",
+    "size": 302525,
+    "sidebar_links": 7,
+    "banner": "../thailand/assets/cities/bangkok.jpg"
+  },
+  {
+    "path": "thailand/chiangmai.html",
+    "type": "city",
+    "size": 184471,
+    "sidebar_links": 7,
+    "banner": "../thailand/assets/cities/chiangmai.jpg"
+  },
+  {
+    "path": "thailand/huahin.html",
+    "type": "city",
+    "size": 131619,
+    "sidebar_links": 7,
+    "banner": "../thailand/assets/cities/huahin.jpg"
+  },
+  {
+    "path": "thailand/index.html",
+    "type": "country",
+    "size": 62695,
+    "sidebar_links": 3,
+    "banner": "../assets/thailand-landmark.png"
+  },
+  {
+    "path": "thailand/kohsamui.html",
+    "type": "city",
+    "size": 147608,
+    "sidebar_links": 7,
+    "banner": "../assets/thailand-landmark.png"
+  },
+  {
+    "path": "thailand/krabi.html",
+    "type": "city",
+    "size": 132408,
+    "sidebar_links": 7,
+    "banner": "../thailand/assets/cities/krabi.jpg"
+  },
+  {
+    "path": "thailand/pattaya.html",
+    "type": "city",
+    "size": 133266,
+    "sidebar_links": 7,
+    "banner": "../thailand/assets/cities/pattaya.jpg"
+  },
+  {
+    "path": "thailand/phuket.html",
+    "type": "city",
+    "size": 136158,
+    "sidebar_links": 7,
+    "banner": "../thailand/assets/cities/phuket.jpg"
+  },
+  {
+    "path": "malaysia/index.html",
+    "type": "country",
+    "size": 69553,
+    "sidebar_links": 5,
+    "banner": "../assets/malaysia-landmark.png"
+  },
+  {
+    "path": "malaysia/ipoh.html",
+    "type": "city",
+    "size": 149780,
+    "sidebar_links": 11,
+    "banner": "../malaysia/assets/cities/ipoh.jpg"
+  },
+  {
+    "path": "malaysia/island-langkawi.html",
+    "type": "city",
+    "size": 29184,
+    "sidebar_links": 11,
+    "banner": "../assets/malaysia-landmark.png"
+  },
+  {
+    "path": "malaysia/island-pangkor.html",
+    "type": "city",
+    "size": 24747,
+    "sidebar_links": 11,
+    "banner": "../assets/malaysia-landmark.png"
+  },
+  {
+    "path": "malaysia/island-penang.html",
+    "type": "city",
+    "size": 26907,
+    "sidebar_links": 11,
+    "banner": "../assets/malaysia-landmark.png"
+  },
+  {
+    "path": "malaysia/island-perhentian.html",
+    "type": "city",
+    "size": 26446,
+    "sidebar_links": 11,
+    "banner": "../assets/malaysia-landmark.png"
+  },
+  {
+    "path": "malaysia/island-redang.html",
+    "type": "city",
+    "size": 25230,
+    "sidebar_links": 11,
+    "banner": "../assets/malaysia-landmark.png"
+  },
+  {
+    "path": "malaysia/island-tioman.html",
+    "type": "city",
+    "size": 25132,
+    "sidebar_links": 11,
+    "banner": "../assets/malaysia-landmark.png"
+  },
+  {
+    "path": "malaysia/islands.html",
+    "type": "country",
+    "size": 6631,
+    "sidebar_links": 1,
+    "banner": "../assets/malaysia-landmark.png"
+  },
+  {
+    "path": "malaysia/johorbahru.html",
+    "type": "city",
+    "size": 159999,
+    "sidebar_links": 11,
+    "banner": "../malaysia/assets/cities/johorbahru.jpg"
+  },
+  {
+    "path": "malaysia/kualalumpur.html",
+    "type": "city",
+    "size": 220033,
+    "sidebar_links": 11,
+    "banner": "../malaysia/assets/cities/kualalumpur.jpg"
+  },
+  {
+    "path": "malaysia/melaka.html",
+    "type": "city",
+    "size": 147173,
+    "sidebar_links": 11,
+    "banner": "../malaysia/assets/cities/melaka.jpg"
+  },
+  {
+    "path": "malaysia/putrajaya.html",
+    "type": "city",
+    "size": 146788,
+    "sidebar_links": 11,
+    "banner": "../malaysia/assets/cities/putrajaya.jpg"
+  },
+  {
+    "path": "hong-kong/causeway-bay.html",
+    "type": "city",
+    "size": 19432,
+    "sidebar_links": 9,
+    "banner": "../hong-kong/assets/regions/causeway-bay.jpg"
+  },
+  {
+    "path": "hong-kong/central.html",
+    "type": "city",
+    "size": 27836,
+    "sidebar_links": 9,
+    "banner": "../hong-kong/assets/regions/central.jpg"
+  },
+  {
+    "path": "hong-kong/hong-kong-island.html",
+    "type": "city",
+    "size": 45807,
+    "sidebar_links": 9,
+    "banner": "../hong-kong/assets/regions/hong-kong-island-main.png"
+  },
+  {
+    "path": "hong-kong/index.html",
+    "type": "country",
+    "size": 134141,
+    "sidebar_links": 2,
+    "banner": "../assets/hk-landmark.png"
+  },
+  {
+    "path": "hong-kong/kowloon.html",
+    "type": "city",
+    "size": 56855,
+    "sidebar_links": 9,
+    "banner": "../hong-kong/assets/regions/kowloon.jpg"
+  },
+  {
+    "path": "hong-kong/lantau.html",
+    "type": "city",
+    "size": 21189,
+    "sidebar_links": 9,
+    "banner": "../hong-kong/assets/regions/lantau.jpg"
+  },
+  {
+    "path": "hong-kong/mong-kok.html",
+    "type": "city",
+    "size": 19757,
+    "sidebar_links": 9,
+    "banner": "../hong-kong/assets/regions/mong-kok.jpg"
+  },
+  {
+    "path": "hong-kong/new-territories.html",
+    "type": "city",
+    "size": 34798,
+    "sidebar_links": 9,
+    "banner": "../hong-kong/assets/regions/new-territories-main.png"
+  },
+  {
+    "path": "hong-kong/sha-tin.html",
+    "type": "city",
+    "size": 18646,
+    "sidebar_links": 9,
+    "banner": "../hong-kong/assets/regions/sha-tin.jpg"
+  },
+  {
+    "path": "hong-kong/tsim-sha-tsui.html",
+    "type": "city",
+    "size": 36326,
+    "sidebar_links": 9,
+    "banner": "../hong-kong/assets/regions/tsim-sha-tsui.jpg"
+  },
+  {
+    "path": "macau/coloane.html",
+    "type": "city",
+    "size": 7984,
+    "sidebar_links": 4,
+    "banner": "../macau/assets/regions/coloane-main.png"
+  },
+  {
+    "path": "macau/cotai.html",
+    "type": "city",
+    "size": 8028,
+    "sidebar_links": 4,
+    "banner": "../macau/assets/regions/cotai-main.png"
+  },
+  {
+    "path": "macau/index.html",
+    "type": "country",
+    "size": 20930,
+    "sidebar_links": 3,
+    "banner": "../assets/macau-landmark.png"
+  },
+  {
+    "path": "macau/macau-peninsula.html",
+    "type": "city",
+    "size": 8142,
+    "sidebar_links": 4,
+    "banner": "../macau/assets/regions/macau-peninsula-main.png"
+  },
+  {
+    "path": "macau/taipa.html",
+    "type": "city",
+    "size": 8092,
+    "sidebar_links": 4,
+    "banner": "../macau/assets/regions/taipa-main.png"
+  }
+]

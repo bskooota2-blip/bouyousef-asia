@@ -1,0 +1,67 @@
+/* V061 - Hong Kong/Macau reuse Malaysia's country/region design vocabulary.
+   Scoped to the two destinations; no data or function overrides. */
+:root{--by061-navy:#062e60;--by061-sky:#eaf7ff;--by061-line:#a9d6f2;--by061-gold:#d7a43f}
+body.by061-malaysia-style{background:#eaf7ff!important;color:var(--by061-navy)!important;font-family:Tahoma,"Segoe UI",Arial,sans-serif!important}
+/* COUNTRY MAIN: same Malaysia order: header, services, area cards, search */
+body.by061-country main.home-shell{width:auto!important;max-width:none!important;padding:0 12px 38px!important;margin:0!important;display:flex!important;flex-direction:column!important;gap:0!important;min-width:0!important}
+body.by061-country .by051-live-row{max-width:1250px!important;width:100%!important;margin:6px auto 4px!important;gap:7px!important}
+body.by061-country .by051-live-row .hk-v032-prayer,
+body.by061-country .by051-live-row .mc-v040-prayer{border:1.5px solid var(--by061-gold)!important;border-radius:19px!important;background:linear-gradient(110deg,#f4faff,#fff)!important;padding:10px!important;box-sizing:border-box!important;min-width:0!important}
+body.by061-country .by051-live-row .hk-v032-weather,
+body.by061-country .by051-live-row .mc-v040-weather{background:#eef8ff!important;border:1px solid #abd7f4!important;border-radius:17px!important;padding:10px!important;margin:4px 0!important}
+body.by061-country .by051-live-row .hk-v032-weathergrid,
+body.by061-country .by051-live-row .mc-v040-weathergrid{display:grid!important;grid-template-columns:repeat(auto-fit,minmax(125px,1fr))!important;gap:8px!important}
+body.by061-country .by051-live-row .hk-v032-weatheritem,
+body.by061-country .by051-live-row .mc-v040-weatheritem{background:#fff!important;border:1px solid #c3e1f6!important;border-radius:11px!important;min-width:0!important;padding:8px!important}
+body.by061-country .by051-chrome .site-hero{min-height:0!important;max-height:none!important}
+body.by061-country #by051-chrome .approved-header{width:min(1100px,96%)!important;max-height:255px!important;object-fit:cover!important;border-radius:22px!important;margin:6px auto!important}
+/* The Malaysia-style heading is intentionally not an extra introduction block. */
+body.by061-country main.home-shell>.hero{display:none!important}
+body.by061-country .by061-country-cards{order:0!important;display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:16px!important;width:min(1150px,100%)!important;max-width:100%!important;margin:10px auto 14px!important;direction:rtl!important;align-items:stretch!important}
+body.by061-country .by061-country-cards>.region{display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:0!important;overflow:hidden!important;min-width:0!important;padding:6px 6px 12px!important;border:2px solid var(--by061-gold)!important;border-radius:25px!important;background:linear-gradient(#fff,#e9f5ff)!important;box-shadow:0 4px 14px #0c537321!important;text-decoration:none!important;color:var(--by061-navy)!important;transition:transform .16s,box-shadow .16s!important}
+body.by061-country .by061-country-cards>.region:hover{transform:translateY(-3px)!important;box-shadow:0 9px 23px #0c537331!important}
+body.by061-country .by061-country-cards>.region>img,
+body.by061-country .by061-country-cards .hk-disney-photo-wrap,
+body.by061-country .by061-country-cards .mc-landmark-visual{display:block!important;width:100%!important;aspect-ratio:1.65!important;min-width:0!important;margin:0!important;overflow:hidden!important;position:relative!important}
+body.by061-country .by061-country-cards>.region>img{height:auto!important;object-fit:cover!important;border-radius:19px 19px 5px 5px!important}
+body.by061-country .by061-country-cards .hk-disney-photo-wrap img,
+body.by061-country .by061-country-cards .mc-landmark-visual img{display:block!important;width:100%!important;height:100%!important;object-fit:cover!important;border-radius:19px 19px 5px 5px!important}
+body.by061-country .by061-country-cards>.region h2{font-size:clamp(18px,2vw,23px)!important;line-height:1.4!important;margin:9px 3px 3px!important;text-align:center!important;color:var(--by061-navy)!important}
+body.by061-country .by061-country-cards>.region small{font-size:13px!important;color:#37688b!important;font-weight:700!important;min-height:20px!important;text-align:center!important}
+body.by061-country .by061-country-cards>.region p{font-size:13px!important;color:#52728d!important;line-height:1.6!important;min-height:40px!important;text-align:center!important;margin:6px 4px!important}
+body.by061-country .by061-country-cards>.region .count{margin:auto auto 0!important;padding:7px 12px!important;border-radius:12px!important;background:#0c84bf!important;color:#fff!important;font-size:12px!important;font-weight:800!important}
+body.by061-country .by061-country-cards .region-copy{display:contents!important}
+body.by061-country .by061-country-cards .hk-disney-emblem,
+body.by061-country .by061-country-cards .mc-landmark-chip{font-size:11px!important;max-width:90%!important;white-space:normal!important}
+body.by061-country .by061-main-search{width:min(1150px,100%)!important;max-width:100%!important;box-sizing:border-box!important;margin:6px auto 16px!important;padding:14px!important;border:1px solid #a9d9f6!important;border-radius:17px!important;background:#f4fbff!important;box-shadow:0 3px 10px #1a67951c!important;order:1!important}
+body.by061-country .by061-main-search .search{width:100%!important;max-width:100%!important;min-height:42px!important;border-radius:12px!important;border:1px solid #acd7ee!important;padding:10px!important;box-sizing:border-box!important}
+body.by061-country .v048-main-heading{order:-1!important;margin:8px auto!important;font-size:22px!important}
+body.by061-country .by061-extra-info{order:2!important;max-width:1150px!important;width:100%!important;margin:5px auto 18px!important;background:#f6fbff!important;border:1px solid #c3e1f6!important;border-radius:15px!important;padding:12px!important}
+body.by061-country .by061-extra-info summary{cursor:pointer;font-size:14px;font-weight:800}
+
+/* V063 gap repair: Hong Kong / Macau pages already live inside the shared China shell.
+   Therefore the region/country content must not reserve an extra right margin for the sidebar,
+   otherwise a blank strip appears between content and the sidebar at several viewport widths. */
+/* REGION PAGE: same Guangzhou/Malaysia section sequence, preserve search handlers. */
+body.by061-region .by051-live-row{margin-top:5px!important;margin-bottom:7px!important}
+body.by061-region .by052-live-widget{max-width:1250px!important;margin-inline:auto!important}
+body.by061-region .by058-region-identity{border:1.5px solid var(--by061-gold)!important;background:#f6fbff!important;border-radius:17px!important}
+body.by061-region .by061-region-main{margin:0!important;max-width:none!important;width:auto!important;min-width:0!important;padding:7px 13px 32px!important;box-sizing:border-box!important;display:block!important}
+body.by061-region .by061-region-main .controls,
+body.by061-region .by061-region-main .search-panel{max-width:1250px!important;width:100%!important;margin:4px auto 13px!important;box-sizing:border-box!important;background:#f7fbff!important;border:1px solid #a9d9f6!important;border-radius:17px!important;padding:14px!important;box-shadow:0 3px 10px #16548113!important}
+body.by061-region .by061-region-main .search{width:100%!important;max-width:100%!important;box-sizing:border-box!important;min-height:42px!important;border:1px solid #abd7f4!important;border-radius:12px!important;padding:9px!important}
+body.by061-region .by061-region-main .filters{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:9px!important;margin:12px 0!important;align-items:stretch!important}
+body.by061-region .by061-region-main .filters button{width:100%!important;min-width:0!important;min-height:54px!important;white-space:normal!important;line-height:1.45!important;border-radius:15px!important;border:1.5px solid #d9ad50!important;background:linear-gradient(#fff,#ecf6ff)!important;color:#073963!important;font-weight:800!important;box-shadow:0 2px 8px #0c53731a!important;padding:8px!important}
+body.by061-region .by061-region-main .filters button[aria-pressed="true"],
+body.by061-region .by061-region-main .filters button.active{background:#0a8bc3!important;color:white!important;border-color:#0a8bc3!important}
+body.by061-region .by061-region-main #results,
+body.by061-region .by061-region-main .results{max-width:1250px!important;margin-left:auto!important;margin-right:auto!important;min-width:0!important}
+body.by061-region .by061-region-main .hero{display:none!important}
+@media(max-width:1100px){body.by061-country .by061-country-cards{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:900px){body.by061-country .by061-country-cards{grid-template-columns:repeat(2,minmax(0,1fr))!important}body.by061-country main.home-shell,body.by061-region .by061-region-main{padding-right:10px!important;padding-left:10px!important}}
+@media(max-width:680px){body.by061-country main.home-shell,body.by061-region .by061-region-main{margin-right:0!important;padding:7px 10px 28px!important}}
+@media(max-width:680px){body.by061-country .by061-country-cards{gap:9px!important}body.by061-country .by061-country-cards>.region{padding:4px 4px 9px!important;border-radius:17px!important}body.by061-country .by061-country-cards>.region h2{font-size:16px!important}body.by061-country .by061-country-cards>.region p{font-size:11px!important;min-height:0!important}body.by061-region .by061-region-main .filters{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:7px!important}body.by061-region .by061-region-main .filters button{min-height:51px!important;font-size:12px!important}body.by061-region .by061-region-main{padding:7px 8px 25px!important}}
+@media(max-width:430px){body.by061-country .by061-country-cards{grid-template-columns:repeat(2,minmax(0,1fr))!important}body.by061-country .by051-live-row .hk-v032-weathergrid,body.by061-country .by051-live-row .mc-v040-weathergrid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+
+/* V061 retains only the shared China-origin sidebar; obsolete Hong Kong/Macau sidebar is removed from layout. */
+body.by061-country>.home-sidebar,body.by061-country>.home-mobile-menu,body.by061-country>.home-mobile-shade{display:none!important}
