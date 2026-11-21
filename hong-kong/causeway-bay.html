@@ -18,7 +18,7 @@
 .asia-v019-navrow .asia-v017-return{position:relative!important;inset:auto!important;top:auto!important;left:auto!important;right:auto!important;bottom:auto!important;display:inline-flex!important;padding:9px 16px!important;font-size:14px!important;max-width:100%!important;margin:0!important}
 @media(max-width:640px){.asia-v019-navrow{min-height:58px!important;padding:8px 10px!important}.asia-v019-navrow .asia-v017-return{padding:8px 13px!important;font-size:13px!important}}
 </style>
-<link rel="stylesheet" href="../shared/guangzhou-unified-v046.css" data-by046-theme="guangzhou"></head><body>
+</head><body>
 <div class="asia-v019-navrow"><a class="asia-v017-return" href="../index.html" target="_self" aria-label="العودة إلى دليل آسيا"><span class="asia-v017-symbol" aria-hidden="true">🌏</span><span>دليل آسيا</span></a></div>
 
 <header class="top"><div class="wrap topinner"><a class="brand" href="index.html">🇭🇰 بويوسف – دليلك إلى هونغ كونغ</a><a class="navlink" href="index.html">العودة للمناطق</a></div></header><main class="wrap"><section class="hero"><span class="eyebrow">🏬 دليل المنطقة</span><h1>كوزواي باي</h1><p>Causeway Bay — التسوق والمجمعات التجارية، مع محرك بحث خاص بالمنطقة والفلاتر والمفضلة.</p></section><section class="panel"><input class="search" id="q" type="search" placeholder="ابحث عن سوق، مطعم، بيتزا، فندق، مجمع أو معلم..." aria-label="البحث في المنطقة"><div id="filters" class="filters"></div><div id="count" class="stat"></div></section><section id="places" class="places" aria-live="polite"></section><button id="more" class="more" hidden>عرض المزيد</button><p class="note">تنبيه: القائمة بحثية؛ أغلب عناوين الأماكن ومحطات MTR غير موثقة بعد. رابط الخرائط يبحث باسم المكان، ولا يضمن موقع فرع بعينه.</p></main><footer class="wrap foot">بويوسف – هونغ كونغ | نسخة أولية للبحث والمراجعة | لا توجد بيانات مختلقة للعناوين أو تصنيف الفنادق</footer><script>
@@ -38,4 +38,4 @@ document.getElementById('filters').addEventListener('click',e=>{let b=e.target.c
 document.getElementById('q').addEventListener('input',e=>{query=e.target.value.trim();visible=20;render()});
 document.getElementById('more').addEventListener('click',()=>{visible+=20;render()});
 list.addEventListener('click',async e=>{const fav=e.target.closest('[data-fav]');if(fav){saveFav(Number(fav.dataset.fav));return}const cp=e.target.closest('[data-copy]');if(cp){const p=areaData.find(x=>x.id===Number(cp.dataset.copy));if(!p)return;try{await navigator.clipboard.writeText([p.en,p.zh].filter(Boolean).join(' | '));cp.textContent='تم النسخ ✓'}catch{prompt('انسخ اسم المكان:',p.en)}}});const startQ=new URLSearchParams(location.search).get('q');if(startQ){document.getElementById('q').value=startQ;query=startQ;render()}
-</script><script defer src="../shared/guangzhou-unified-v046.js"></script></body></html>
+</script></body></html>
