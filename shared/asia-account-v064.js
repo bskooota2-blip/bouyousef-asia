@@ -15,7 +15,10 @@ const admin=$('by33Admin');if(admin)admin.hidden=true;
 if(session){$('by33MemberEmail').textContent=session.user?.email||'عضو مسجّل';loadAdminStats();}
 else{$('by33MemberEmail').textContent='';if($('by33AdminStats'))$('by33AdminStats').replaceChildren();} }
 function selectMode(m){mode=m;$('by33LoginForm').hidden=m!=='login';$('by33SignupForm').hidden=m!=='signup';$('by33RecoverForm').hidden=m!=='recover';$('by33ShowLogin').classList.toggle('is-active',m==='login');$('by33ShowSignup').classList.toggle('is-active',m==='signup');$('by33ShowLogin').setAttribute('aria-pressed',String(m==='login'));$('by33ShowSignup').setAttribute('aria-pressed',String(m==='signup'));message('');}
-async function restore(){let saved=null;try{saved=JSON.parse(localStorage.getItem(storeKey)||'null')}catch(_){}if(!saved?.refresh_token){persist(null);displaySession(null);return}if(refreshInProgress)return;refreshInProgress=true;try{const renewed=await api('/auth/v1/token?grant_type=refresh_token','POST',{refresh_token:saved.refresh_token});if(!renewed?.access_token)throw Error('Invalid refresh');persist(renewed);displaySession(renewed)}catch(e){persist(null);displaySession(null);console.warn('BouYousef account refresh unavailable:',e.message)}finally{refreshInProgress=false}}
+async function restore(){let saved=null;try{saved=JSON.parse(localStorage.getItem(storeKey)||'null')}catch(_){}
+if(!saved?.refresh_token){for(const otherKey of ['bouyousef2_auth_session','bouyousef4_auth_session','bouyousef3_auth_session']){
+ try{const candidate=JSON.parse(localStorage.getItem(otherKey)||'null');if(candidate?.refresh_token){saved=candidate;break}}catch(_){}
+}}if(!saved?.refresh_token){persist(null);displaySession(null);return}if(refreshInProgress)return;refreshInProgress=true;try{const renewed=await api('/auth/v1/token?grant_type=refresh_token','POST',{refresh_token:saved.refresh_token});if(!renewed?.access_token)throw Error('Invalid refresh');persist(renewed);displaySession(renewed)}catch(e){persist(null);displaySession(null);console.warn('BouYousef account refresh unavailable:',e.message)}finally{refreshInProgress=false}}
 
 // Admin-only statistics: the Supabase RPC and Edge Function must enforce authorization server-side.
 // Never infer administrator privileges from an email or local role flag.

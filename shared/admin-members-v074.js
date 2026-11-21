@@ -6,19 +6,20 @@ const el=id=>document.getElementById(id);
 const loginHref='login.html?next='+encodeURIComponent(new URL('admin-members.html',location.href).href);
 const loginLink=el('loginCurrent');if(loginLink)loginLink.href=loginHref;
 let page=1,hasMore=false,all=[],token=null,busy=false;
+const sessionHelp=el('sessionHelp');
 const say=(s,kind='')=>{el('status').textContent=s;el('status').dataset.kind=kind};
 function readSessions(){const arr=[];for(const k of keys){try{const s=JSON.parse(localStorage.getItem(k)||'null');if(s?.access_token||s?.refresh_token)arr.push({key:k,session:s})}catch(_){}}return arr}
 async function refresh(candidate){
  // First use the active access token, to avoid consuming a refresh token unnecessarily.
  if(candidate.session.access_token){
   try{const r=await fetch(URL+'/auth/v1/user',{headers:{apikey:KEY,Authorization:'Bearer '+candidate.session.access_token},cache:'no-store'});
-    if(r.ok){const u=await r.json();if(u?.id){el('currentAccount').textContent='الحساب المسجّل: '+(u.email||'حساب Supabase');return candidate.session.access_token}}}catch(_){}
+    if(r.ok){const u=await r.json();if(u?.id){el('currentAccount').textContent='الحساب المسجّل حاليًا: '+(u.email||'حساب Supabase');return candidate.session.access_token}}}catch(_){}
  }
  if(!candidate.session.refresh_token)return null;
  const resp=await fetch(URL+'/auth/v1/token?grant_type=refresh_token',{method:'POST',headers:{'apikey':KEY,'Content-Type':'application/json'},body:JSON.stringify({refresh_token:candidate.session.refresh_token}),cache:'no-store'});
  if(!resp.ok)return null;const obj=await resp.json();if(!obj.access_token)return null;
  try{localStorage.setItem(candidate.key,JSON.stringify(obj))}catch(_){}
- el('currentAccount').textContent='الحساب المسجّل: '+(obj.user?.email||'حساب Supabase');
+ el('currentAccount').textContent='الحساب المسجّل حاليًا: '+(obj.user?.email||'حساب Supabase');
  return obj.access_token;
 }
 async function request(candidateToken,p){
@@ -39,6 +40,7 @@ function render(){
 }
 function date(v){if(!v)return '—';const d=new Date(v);return Number.isNaN(d.getTime())?'—':new Intl.DateTimeFormat('ar-KW',{dateStyle:'medium'}).format(d)}
 async function load(p=1){
+ if(sessionHelp)sessionHelp.hidden=true;
  if(busy)return;busy=true;el('next').disabled=true;el('refresh').disabled=true;
  say('جارٍ تحميل بيانات الأعضاء…');
  try{
@@ -48,7 +50,7 @@ async function load(p=1){
     const t=await refresh(candidate).catch(()=>null);if(!t)continue;
     try{data=await request(t,p);token=t;break}
     catch(e){if(e.status===403)forbidden=true;else if(e.status===404||e.status===503)notReady=true;}}
-   if(!data)throw Error(notReady?'وظيفة admin-members غير منشورة أو غير مهيأة في Supabase؛ لا تحتاج إلى إنشاء حساب جديد.':forbidden?'تم التعرف على حسابك، لكن صلاحية إدارة الأعضاء غير مفعّلة له في جدول by3_admin_members. لا تسجّل حسابًا جديدًا؛ فعّل صلاحية حسابك الحالي في Supabase.':'لم يُعثر على جلسة دخول صالحة. سجّل دخولك بحسابك الحالي، وليس بحساب مدير جديد.');
+   if(!data){if(sessionHelp){sessionHelp.hidden=false;sessionHelp.textContent=readSessions().length?'عُثر على بيانات جلسة سابقة، لكن لا توجد جلسة صالحة أو لم تؤكد الخدمة صلاحية المدير. يمكنك الدخول بالحساب الحالي مرة واحدة على رابط الموقع نفسه.':'لم يتم العثور على جلسة مسجّلة في هذا الموقع. إذا سجلت الدخول عبر رابط آخر، فجلسة المتصفح لا تنتقل تلقائيًا بين النطاقات. افتح تسجيل الدخول هنا باستخدام حسابك نفسه.';}throw Error(notReady?'وظيفة admin-members غير منشورة أو غير مهيأة في Supabase؛ لا تحتاج إلى إنشاء حساب جديد.':forbidden?'تم التعرف على حسابك، لكن صلاحية إدارة الأعضاء غير مفعّلة له في جدول by3_admin_members. لا تسجّل حسابًا جديدًا؛ فعّل صلاحية حسابك الحالي في Supabase.':'لم يُعثر على جلسة دخول صالحة في هذا الموقع. افتح تسجيل الدخول بحسابك الحالي.');}
   }else data=await request(token,p);
   const users=Array.isArray(data.users)?data.users:[];
   if(p===1)all=[];
