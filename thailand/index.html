@@ -185,8 +185,8 @@ main.content.page-shell{margin:0 var(--sidebar) 0 0!important;min-height:100vh;o
 .cities.china-home-cities{margin-top:8px!important}
 </style><style id="V079_slight_banner_reduction">
 /* Reduce only the rendered banner size; preserve source image and all functions. */
-.site-hero.by4-header>.by4-banner{width:95%!important;max-width:1100px!important;margin-left:auto!important;margin-right:auto!important}
-body.v072-guangzhou-source .by4-header>.by4-banner{width:min(1025px,95%)!important;max-width:100%!important;margin-left:auto!important;margin-right:auto!important}
+.site-hero.by4-header>.by4-banner{width:min(100%,1280px)!important;max-width:1280px!important;margin-left:auto!important;margin-right:auto!important}
+body.v072-guangzhou-source .by4-header>.by4-banner{width:min(100%,1280px)!important;max-width:1280px!important;margin-left:auto!important;margin-right:auto!important}
 .by4-header>.by4-banner img[src="assets/banner-v067.png"]{width:100%!important;height:auto!important;object-fit:contain!important}
 </style>
 <style id="asia-portal-home-style">
@@ -209,9 +209,151 @@ body.v072-guangzhou-source .by4-header>.by4-banner{width:min(1025px,95%)!importa
 @media(max-width:640px){.asia-v019-navrow{min-height:58px!important;padding:8px 10px!important}.asia-v019-navrow .asia-v017-return{padding:8px 13px!important;font-size:13px!important}}
 </style>
 <link rel="stylesheet" href="../shared/guangzhou-unified-v046.css" data-by046-theme="guangzhou"><link rel="stylesheet" href="../shared/china-exact-shell-v051.css">
-<link rel="stylesheet" href="../shared/guangzhou-single-layout-v052.css"/><link rel="stylesheet" href="../shared/guangzhou-single-layout-v052-prayer.css"/><link rel="stylesheet" href="../shared/city-spacing-v053.css"/><link rel="stylesheet" href="../shared/asia-nav-v060.css"></head><body class="by053-spacing">
+<link rel="stylesheet" href="../shared/guangzhou-single-layout-v052.css"/><link rel="stylesheet" href="../shared/guangzhou-single-layout-v052-prayer.css"/><link rel="stylesheet" href="../shared/city-spacing-v053.css"/><link rel="stylesheet" href="../shared/asia-nav-v060.css"><style id="by081-thailand-home-banner-size">
+/* Only Thailand's country home: expand the visible banner without cropping. */
+body.by051-active .by051-chrome .site-hero img.approved-header.by41-compact-header,
+body.by051-active .by051-chrome .site-hero img.approved-header {
+  display:block!important;
+  width: min(100%, 1280px)!important;
+  max-width:1280px!important;
+  height:auto!important;
+  max-height:none!important;
+  aspect-ratio:auto!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  margin:4px auto 8px!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+}
+body:not(.by051-active) .site-hero.by4-header>.by4-banner {
+  width:min(100%,1280px)!important;
+  max-width:1280px!important;
+  margin:4px auto 8px!important;
+  padding:0 8px!important;
+}
+body:not(.by051-active) .site-hero.by4-header>.by4-banner img {
+  width:100%!important;
+  max-width:1280px!important;
+  max-height:none!important;
+  height:auto!important;
+  aspect-ratio:auto!important;
+  object-fit:contain!important;
+}
+@media(max-width:680px) {
+  body.by051-active .by051-chrome .site-hero img.approved-header.by41-compact-header,
+  body.by051-active .by051-chrome .site-hero img.approved-header {
+    width:calc(100% - 8px)!important;
+    margin:2px auto 5px!important;
+  }
+}
+</style><style id="by084-malaysia-thailand-match-macau-banner">
+/* V084 – use the identical visible banner width as Macau's country home. */
+body.by051-active .by051-chrome .site-hero img.approved-header.by41-compact-header,
+body.by051-active .by051-chrome .site-hero img.approved-header {
+ display:block!important;width:min(100%,1280px)!important;max-width:1280px!important;
+ height:auto!important;max-height:none!important;aspect-ratio:auto!important;
+ object-fit:contain!important;object-position:center!important;
+ margin:4px auto 8px!important;border-radius:0!important;box-shadow:none!important;
+}
+/* HTML fallback if the shared navigation chrome does not load. */
+body:not(.by051-active) .site-hero.by4-header > .by4-banner {
+ display:block!important;width:min(100%,1280px)!important;max-width:1280px!important;
+ margin:4px auto 8px!important;padding:0!important;text-align:center!important;
+ box-sizing:border-box!important;overflow:visible!important;
+}
+body:not(.by051-active) .site-hero.by4-header > .by4-banner img {
+ display:block!important;width:100%!important;max-width:1280px!important;
+ height:auto!important;max-height:none!important;aspect-ratio:auto!important;
+ object-fit:contain!important;object-position:center!important;
+ margin:0 auto!important;border-radius:0!important;box-shadow:none!important;
+}
+@media(max-width:680px){
+ body.by051-active .by051-chrome .site-hero img.approved-header.by41-compact-header,
+ body.by051-active .by051-chrome .site-hero img.approved-header {
+  width:calc(100% - 8px)!important;margin:2px auto 5px!important;
+ }
+ body:not(.by051-active) .site-hero.by4-header > .by4-banner {
+  width:calc(100% - 8px)!important;margin:2px auto 5px!important;
+ }
+}
+</style><style id="by086-thailand-prayer-order">
+/* Thailand home only: keep city at right and compass at left */
+.by4-header .prayer.by4-prayer{direction:rtl!important;flex-direction:row!important}
+.by4-header .prayer.by4-prayer>.by4-prayer-city{order:0!important;border-left:1px solid #bad7ea;border-right:0}
+.by4-header .prayer.by4-prayer>.by4-times{order:1!important}
+.by4-header .prayer.by4-prayer>.by4-compass{order:2!important;border-right:1px solid #bad7ea;border-left:0!important}
+@media(max-width:800px){
+ .by4-header .prayer.by4-prayer{flex-wrap:wrap!important}
+ .by4-header .prayer.by4-prayer>.by4-prayer-city{order:0!important}
+ .by4-header .prayer.by4-prayer>.by4-compass{order:1!important;border-right:0!important}
+ .by4-header .prayer.by4-prayer>.by4-times{order:2!important;flex-basis:100%;width:100%}
+}
+</style><style id="by087-thailand-prayer-fixed">
+/* V087: target actual live widget moved by guangzhou-single-layout-v052.js. */
+body .by4-prayer.prayer,
+body.by051-active .by051-live-row .by4-prayer.prayer {
+  display: flex !important;
+  direction: ltr !important;
+  flex-direction: row !important;
+  align-items: stretch !important;
+  flex-wrap: nowrap !important;
+}
+body .by4-prayer.prayer > .by4-compass,
+body.by051-active .by051-live-row .by4-prayer.prayer > .by4-compass {
+  order: 0 !important;
+  flex: 0 0 145px !important;
+  min-width: 0 !important;
+  border-right: 1px solid #bad7ea !important;
+  border-left: 0 !important;
+}
+body .by4-prayer.prayer > .by4-times,
+body.by051-active .by051-live-row .by4-prayer.prayer > .by4-times {
+  order: 1 !important;
+  flex: 1 1 0% !important;
+  min-width: 0 !important;
+  width: auto !important;
+}
+body .by4-prayer.prayer > .by4-prayer-city,
+body.by051-active .by051-live-row .by4-prayer.prayer > .by4-prayer-city {
+  order: 2 !important;
+  flex: 0 0 155px !important;
+  min-width: 0 !important;
+  border-left: 1px solid #bad7ea !important;
+  border-right: 0 !important;
+}
+@media (max-width: 800px) {
+ body .by4-prayer.prayer,
+ body.by051-active .by051-live-row .by4-prayer.prayer {
+   display: flex !important;
+   direction: ltr !important;
+   flex-wrap: wrap !important;
+ }
+ body .by4-prayer.prayer > .by4-compass,
+ body.by051-active .by051-live-row .by4-prayer.prayer > .by4-compass {
+   order: 0 !important;
+   flex: 1 1 50% !important;
+   width: 50% !important;
+   min-width: 0 !important;
+ }
+ body .by4-prayer.prayer > .by4-prayer-city,
+ body.by051-active .by051-live-row .by4-prayer.prayer > .by4-prayer-city {
+   order: 1 !important;
+   flex: 1 1 50% !important;
+   width: 50% !important;
+   min-width: 0 !important;
+ }
+ body .by4-prayer.prayer > .by4-times,
+ body.by051-active .by051-live-row .by4-prayer.prayer > .by4-times {
+   order: 2 !important;
+   flex: 0 0 100% !important;
+   width: 100% !important;
+   min-width: 0 !important;
+   grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+ }
+}
+</style><link rel="stylesheet" href="../shared/prayer-layout-v088.css"/></head><body class="by053-spacing">
 <div class="asia-v019-navrow"><a class="asia-v017-return" href="../index.html" target="_self" aria-label="العودة إلى دليل آسيا"><span class="asia-v017-symbol" aria-hidden="true">🌏</span><span>دليل آسيا</span></a></div>
-<div class="wrap"><aside aria-label="الأقسام الرئيسية" class="sidebar" id="by4-sideNav"><button aria-label="إغلاق القائمة" class="by4-menu-close" id="by4-menu-close" type="button">✕ إغلاق</button><div class="by4-nav-list"><nav aria-label="القائمة الرئيسية" class="nav"><details class="by4-city-dropdown"><summary><span class="by4-nav-icon">📍</span><span class="by4-nav-label">اختر المدينة</span><span class="by4-city-arrow">⌄</span></summary><div class="by4-city-options"><a href="bangkok.html">🇹🇭 بانكوك</a><a href="chiangmai.html">🇹🇭 شيانغ ماي</a><span class="by4-city-locked" aria-disabled="true">🇹🇭 بوكيت<small>قريبًا</small></span><span class="by4-city-locked" aria-disabled="true">🇹🇭 باتايا<small>قريبًا</small></span><span class="by4-city-locked" aria-disabled="true">🇹🇭 كرابي<small>قريبًا</small></span><span class="by4-city-locked" aria-disabled="true">🇹🇭 هوا هين<small>قريبًا</small></span><a href="kohsamui.html">🇹🇭 كوه ساموي</a></div></details><a class="nav-button" href="login.html"><span class="by4-nav-icon">👤</span><span class="by4-nav-label" data-by4-label="1">تسجيل الدخول / حسابي</span></a><button class="nav-button" data-by4-unconfigured="" type="button"><span class="by4-nav-icon">✨</span><span class="by4-nav-label" data-by4-label="7">جديد التطبيق</span></button><a class="nav-button" href="tdac-guide.html"><span class="by4-nav-icon">🛂</span><span class="by4-nav-label" data-by4-label="2">بطاقة دخول تايلند</span></a><a class="nav-button" href="apps.html"><span class="by4-nav-icon">▦</span><span class="by4-nav-label" data-by4-label="3">تطبيقات مهمة</span></a><a class="nav-button" href="currency.html"><span class="by4-nav-icon">⇄</span><span class="by4-nav-label" data-by4-label="5">صرف العملات</span></a><a class="nav-button" href="travel-info.html"><span class="by4-nav-icon">✈️</span><span class="by4-nav-label" data-by4-label="6">معلومات السفر</span></a><a class="nav-button" href="store.html" aria-label="فتح متجرنا وخدماتنا"><span class="by4-nav-icon">🛍️</span><span class="by4-nav-label" data-by4-label="4">متجرنا</span></a></nav></div></aside><main class="content page-shell"><div class="by4-header site-hero"><div class="by4-toolbar header-tools"><div class="by4-toolbar-actions"><button class="by4-logout" data-by4-signout type="button"><span data-by4-label="8">تسجيل الخروج</span> ▣</button><div aria-label="اللغة" class="by4-lang"><button aria-pressed="true" data-lang="ar" type="button">ع</button><button aria-pressed="false" data-lang="en" type="button">E</button><button aria-pressed="false" data-lang="th" type="button">ท</button></div><button class="by4-menu-button" id="by4-open-menu" type="button"><span data-by4-label="9">القائمة</span> ☰</button></div></div><div class="by4-banner"><img alt="بويوسف الصبر – صديقك في تايلند" loading="eager" src="assets/banner-v067.png"/></div><div aria-label="مواقيت الصلاة والقبلة" class="by4-prayer prayer"><div class="by4-compass"><strong>القبلة</strong><div class="by4-dial"><span class="n">ش</span><span class="by4-needle" id="by4-needle">➤</span></div><b class="direction" id="by4-bearing">—</b><small>اتجاه جغرافي محسوب من الشمال</small></div><div class="by4-times"><div class="by4-time"><span>الفجر</span><b data-by4-time="fajr">—</b></div><div class="by4-time"><span>الشروق</span><b data-by4-time="sunrise">—</b></div><div class="by4-time"><span>الظهر</span><b data-by4-time="dhuhr">—</b></div><div class="by4-time"><span>العصر</span><b data-by4-time="asr">—</b></div><div class="by4-time"><span>المغرب</span><b data-by4-time="maghrib">—</b></div><div class="by4-time"><span>العشاء</span><b data-by4-time="isha">—</b></div></div><div class="by4-prayer-city"><label for="by4-city-prayer">🕌 مواقيت الصلاة<br/>مدينة الحساب</label><select id="by4-city-prayer"><option value="bangkok">بانكوك</option><option value="chiangmai">شيانغ ماي</option><option value="phuket">بوكيت</option><option value="pattaya">باتايا</option><option value="krabi">كرابي</option><option value="huahin">هوا هين</option></select></div></div><section aria-label="حالة الطقس في مدن تايلند" class="by4-weather-strip" id="by4Weather">
+<div class="wrap"><aside aria-label="الأقسام الرئيسية" class="sidebar" id="by4-sideNav"><button aria-label="إغلاق القائمة" class="by4-menu-close" id="by4-menu-close" type="button">✕ إغلاق</button><div class="by4-nav-list"><nav aria-label="القائمة الرئيسية" class="nav"><details class="by4-city-dropdown"><summary><span class="by4-nav-icon">📍</span><span class="by4-nav-label">اختر المدينة</span><span class="by4-city-arrow">⌄</span></summary><div class="by4-city-options"><a href="bangkok.html">🇹🇭 بانكوك</a><a href="chiangmai.html">🇹🇭 شيانغ ماي</a><span class="by4-city-locked" aria-disabled="true">🇹🇭 بوكيت<small>قريبًا</small></span><span class="by4-city-locked" aria-disabled="true">🇹🇭 باتايا<small>قريبًا</small></span><span class="by4-city-locked" aria-disabled="true">🇹🇭 كرابي<small>قريبًا</small></span><span class="by4-city-locked" aria-disabled="true">🇹🇭 هوا هين<small>قريبًا</small></span><a href="kohsamui.html">🇹🇭 كوه ساموي</a></div></details><a class="nav-button" href="login.html"><span class="by4-nav-icon">👤</span><span class="by4-nav-label" data-by4-label="1">تسجيل الدخول / حسابي</span></a><a class="nav-button" href="updates.html" aria-label="جديد التطبيق – تحديثات تايلند"><span class="by4-nav-icon">✨</span><span class="by4-nav-label" data-by4-label="7">جديد التطبيق</span></a><a class="nav-button" href="tdac-guide.html"><span class="by4-nav-icon">🛂</span><span class="by4-nav-label" data-by4-label="2">بطاقة دخول تايلند</span></a><a class="nav-button" href="apps.html"><span class="by4-nav-icon">▦</span><span class="by4-nav-label" data-by4-label="3">تطبيقات مهمة</span></a><a class="nav-button" href="currency.html"><span class="by4-nav-icon">⇄</span><span class="by4-nav-label" data-by4-label="5">صرف العملات</span></a><a class="nav-button" href="travel-info.html"><span class="by4-nav-icon">✈️</span><span class="by4-nav-label" data-by4-label="6">معلومات السفر</span></a><a class="nav-button" href="store.html" aria-label="فتح متجرنا وخدماتنا"><span class="by4-nav-icon">🛍️</span><span class="by4-nav-label" data-by4-label="4">متجرنا</span></a></nav></div></aside><main class="content page-shell"><div class="by4-header site-hero"><div class="by4-toolbar header-tools"><div class="by4-toolbar-actions"><button class="by4-logout" data-by4-signout type="button"><span data-by4-label="8">تسجيل الخروج</span> ▣</button><div aria-label="اللغة" class="by4-lang"><button aria-pressed="true" data-lang="ar" type="button">ع</button><button aria-pressed="false" data-lang="en" type="button">E</button><button aria-pressed="false" data-lang="th" type="button">ท</button></div><button class="by4-menu-button" id="by4-open-menu" type="button"><span data-by4-label="9">القائمة</span> ☰</button></div></div><div class="by4-banner"><img alt="بويوسف الصبر – صديقك في تايلند" loading="eager" src="assets/banner-v067.png"/></div><div aria-label="مواقيت الصلاة والقبلة" class="by4-prayer prayer"><div class="by4-compass"><strong>القبلة</strong><div class="by4-dial"><span class="n">ش</span><span class="by4-needle" id="by4-needle">➤</span></div><b class="direction" id="by4-bearing">—</b><small>اتجاه جغرافي محسوب من الشمال</small></div><div class="by4-times"><div class="by4-time"><span>الفجر</span><b data-by4-time="fajr">—</b></div><div class="by4-time"><span>الشروق</span><b data-by4-time="sunrise">—</b></div><div class="by4-time"><span>الظهر</span><b data-by4-time="dhuhr">—</b></div><div class="by4-time"><span>العصر</span><b data-by4-time="asr">—</b></div><div class="by4-time"><span>المغرب</span><b data-by4-time="maghrib">—</b></div><div class="by4-time"><span>العشاء</span><b data-by4-time="isha">—</b></div></div><div class="by4-prayer-city"><label for="by4-city-prayer">🕌 مواقيت الصلاة<br/>مدينة الحساب</label><select id="by4-city-prayer"><option value="bangkok">بانكوك</option><option value="chiangmai">شيانغ ماي</option><option value="phuket">بوكيت</option><option value="pattaya">باتايا</option><option value="krabi">كرابي</option><option value="huahin">هوا هين</option></select></div></div><section aria-label="حالة الطقس في مدن تايلند" class="by4-weather-strip" id="by4Weather">
 <div class="by4-weather-heading"><h2>🌤️ حالة الطقس</h2><button aria-label="تحديث حالة الطقس" id="by4-weather-refresh" type="button">↻ تحديث</button></div>
 <div aria-live="polite" class="by4-weather-list" id="by4-weather-list">
 <div class="by4-weather-item"><strong>بانكوك</strong><span data-weather-key="bangkok">—</span></div>
@@ -264,4 +406,4 @@ document.getElementById('by4-weather-refresh')?.addEventListener('click',update)
 </script>
 <script>window.BY051_PAGE={"kind": "country", "country": "thailand", "title": "تايلند", "countryRoot": "", "banner": "../shared/v051-banners/thailand-index.webp", "places": [{"label": "بانكوك", "href": "bangkok.html"}, {"label": "باتايا", "href": "pattaya.html"}, {"label": "شيانغ ماي", "href": "chiangmai.html"}, {"label": "بوكيت", "href": "phuket.html"}, {"label": "كرابي", "href": "krabi.html"}, {"label": "هوا هين", "href": "huahin.html"}, {"label": "كوه ساموي", "href": "kohsamui.html"}], "availableServices": ["login.html", "tdac-guide.html", "apps.html", "store.html", "currency.html", "travel-info.html"]};</script>
 <script src="../shared/china-chrome-v051.js"></script>
-<script src="../shared/guangzhou-single-layout-v052.js"></script><script defer src="../shared/asia-nav-v060.js"></script></body></html>
+<script src="../shared/guangzhou-single-layout-v052.js"></script><script defer src="../shared/asia-nav-v060.js"></script><script defer src="../shared/prayer-layout-v088.js"></script></body></html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>جديد التطبيق | بويوسف ٠ – تايلند</title>
+<link rel="stylesheet" href="../shared/member-gate-v071.css"><script src="../shared/member-gate-v071.js"></script>
+<style>
+:root{color-scheme:light;--ink:#083e70;--sky:#dff4ff;--border:#a8dbfa;--blue:#07669a}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#e7f6ff,#fff 460px);color:var(--ink);font-family:Tahoma,"Segoe UI",Arial,sans-serif;line-height:1.7}
+a{color:inherit}.wrap{max-width:1110px;margin:auto;padding:18px 16px 40px}
+header{background:linear-gradient(100deg,#f4fcff,#def2ff);border-bottom:2px solid var(--border)}
+.head{max-width:1110px;margin:auto;padding:17px 16px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px}
+.headerlink{border:1px solid #8bcaf0;border-radius:12px;background:white;text-decoration:none;font-weight:bold;padding:9px 17px}
+h1{font-size:clamp(23px,3vw,34px);margin:0}h2{font-size:20px}.intro{font-size:15px;color:#526e88;margin:4px 0 18px}
+.toolbar{display:grid;grid-template-columns:1.7fr 1fr 1fr;gap:9px;margin:15px 0 12px}.toolbar input,.toolbar select{min-width:0;width:100%;padding:13px;border:1px solid var(--border);border-radius:12px;color:var(--ink);font:inherit;background:#fff}
+.toolbar input:focus,.toolbar select:focus{outline:2px solid #62b7e7}
+#summary{font-size:14px;color:#52758e;margin:10px 0}.entries{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.entry{border:1px solid var(--border);border-radius:17px;padding:17px;background:#fff;box-shadow:0 5px 16px #0b4b7310}
+.entry .meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:12px;font-weight:bold}.entry .meta span{background:#e9f7ff;border:1px solid #b8dff4;border-radius:100px;padding:3px 9px}
+.entry h2{margin:12px 0 5px}.entry p{margin:0 0 10px;font-size:14px;color:#3d5c76}.entry a{display:inline-flex;text-decoration:none;border-radius:10px;background:#076aa7;color:white;padding:7px 14px;font-size:13px;font-weight:bold}
+.empty{background:#fff;border:1px dashed #9dd2ee;border-radius:12px;padding:20px;text-align:center}
+.note{margin-top:25px;padding:14px 18px;background:#f3faff;border-right:4px solid #56b1e6;border-radius:12px;color:#3d627f;font-size:13px}
+@media(max-width:680px){.wrap{padding:14px 10px 35px}.head{padding:13px 10px}.toolbar{grid-template-columns:1fr;gap:7px}.entries{grid-template-columns:1fr}.entry{padding:14px}}
+</style><link rel="stylesheet" href="../shared/by106-layout.css"/></head>
+<body>
+<header><div class="head"><div><h1>✨ جديد التطبيق – تايلند</h1><div>آخر الإضافات والتحديثات على دليل تايلند</div></div><nav><a class="headerlink" href="index.html">🏠 الصفحة الرئيسية لتايلند</a> <a class="headerlink" href="../index.html">🌏 دليل آسيا</a></nav></div></header>
+<main class="wrap"><p class="intro">يمكنك متابعة تحديثات المدن والأماكن والخدمات والبحث والبطاقات من هنا. ترتيب الأخبار من الأحدث إلى الأقدم.</p>
+<div class="toolbar"><input id="search" type="search" placeholder="ابحث في التحديثات..." aria-label="ابحث في التحديثات"><select id="area" aria-label="تصفية حسب المدينة"><option value="">جميع المدن والمناطق</option></select><select id="category" aria-label="تصفية حسب نوع التحديث"><option value="">جميع أنواع التحديث</option></select></div>
+<div id="summary" role="status" aria-live="polite">جارٍ تحميل التحديثات...</div><div id="entries" class="entries"></div>
+<p class="note">تُضاف التحديثات إلى هذا السجل عند إصدار نسخة جديدة من المشروع. التحديثات الأقدم التي لم يُوثَّق تاريخها تُعرض برقم إصدارها دون اختراع تاريخ. لا تُنشر الإضافات تلقائيًا بمجرد تغيير ملف على الكمبيوتر.</p></main>
+<script>
+(()=>{'use strict';
+const search=document.getElementById('search'),area=document.getElementById('area'),category=document.getElementById('category'),list=document.getElementById('entries'),summary=document.getElementById('summary');
+let entries=[];
+function normalize(s){return String(s||'').toLocaleLowerCase('ar').normalize('NFKC').replace(/[\u064b-\u065f]/g,'')}
+function render(){const q=normalize(search.value.trim()),a=area.value,c=category.value;
+ const rows=entries.filter(x=>(!a||x.area===a)&&(!c||x.category===c)&&normalize([x.title,x.description,x.area,x.category,x.version].join(' ')).includes(q));
+ list.replaceChildren();summary.textContent='عدد التحديثات المعروضة: '+rows.length;
+ if(!rows.length){const p=document.createElement('p');p.className='empty';p.textContent='لا توجد تحديثات مطابقة للبحث.';list.append(p);return;}
+ for(const x of rows){const card=document.createElement('article');card.className='entry';const meta=document.createElement('div');meta.className='meta';
+  for(const text of [x.version,x.category,x.area,...(x.date?[x.date]:[])]){const el=document.createElement('span');el.textContent=text;meta.append(el)}
+  const title=document.createElement('h2');title.textContent=x.title;
+  const desc=document.createElement('p');desc.textContent=x.description;
+  card.append(meta,title,desc);
+  if(x.url && /^(?!\/|\.|https?:|javascript:)[a-z0-9_-]+\.html$/i.test(x.url)){const a=document.createElement('a');a.href=x.url;a.textContent='فتح الصفحة المرتبطة';card.append(a)}
+  list.append(card);
+ }
+}
+function options(select,key){for(const value of [...new Set(entries.map(x=>x[key]).filter(Boolean))]){const opt=document.createElement('option');opt.value=value;opt.textContent=value;select.append(opt)}}
+fetch('updates.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('unavailable');return r.json()}).then(data=>{
+ if(!Array.isArray(data.updates))throw Error('invalid');entries=data.updates;options(area,'area');options(category,'category');render();
+}).catch(()=>{summary.textContent='تعذّر تحميل سجل التحديثات. تأكد من فتح الموقع عبر خادم الويب.'});
+for(const el of [search,area,category])el.addEventListener(el===search?'input':'change',render);
+})();
+</script><script defer src="../shared/by106-thailand.js"></script></body></html>

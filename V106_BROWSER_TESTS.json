@@ -1,0 +1,182 @@
+[
+  {
+    "file": "hong-kong/currency.html",
+    "width": 390,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/hong-kong/currency.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/hong-kong/currency.html\", waiting until \"domc"
+  },
+  {
+    "file": "hong-kong/store.html",
+    "width": 390,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/hong-kong/store.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/hong-kong/store.html\", waiting until \"domcontent"
+  },
+  {
+    "file": "macau/store.html",
+    "width": 390,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/macau/store.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/macau/store.html\", waiting until \"domcontentloaded\"\n"
+  },
+  {
+    "file": "thailand/store.html",
+    "width": 390,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/thailand/store.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/thailand/store.html\", waiting until \"domcontentlo"
+  },
+  {
+    "file": "malaysia/store.html",
+    "width": 390,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/malaysia/store.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/malaysia/store.html\", waiting until \"domcontentlo"
+  },
+  {
+    "file": "thailand/bangkok.html",
+    "width": 390,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/thailand/bangkok.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/thailand/bangkok.html\", waiting until \"domconte"
+  },
+  {
+    "file": "malaysia/kualalumpur.html",
+    "width": 390,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/malaysia/kualalumpur.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/malaysia/kualalumpur.html\", waiting until \""
+  },
+  {
+    "file": "macau/apps.html",
+    "width": 390,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/macau/apps.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/macau/apps.html\", waiting until \"domcontentloaded\"\n"
+  },
+  {
+    "file": "hong-kong/central.html",
+    "width": 390,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/hong-kong/central.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/hong-kong/central.html\", waiting until \"domcon"
+  },
+  {
+    "file": "hong-kong/currency.html",
+    "width": 768,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/hong-kong/currency.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/hong-kong/currency.html\", waiting until \"domc"
+  },
+  {
+    "file": "hong-kong/store.html",
+    "width": 768,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/hong-kong/store.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/hong-kong/store.html\", waiting until \"domcontent"
+  },
+  {
+    "file": "macau/store.html",
+    "width": 768,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/macau/store.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/macau/store.html\", waiting until \"domcontentloaded\"\n"
+  },
+  {
+    "file": "thailand/store.html",
+    "width": 768,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/thailand/store.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/thailand/store.html\", waiting until \"domcontentlo"
+  },
+  {
+    "file": "malaysia/store.html",
+    "width": 768,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/malaysia/store.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/malaysia/store.html\", waiting until \"domcontentlo"
+  },
+  {
+    "file": "thailand/bangkok.html",
+    "width": 768,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/thailand/bangkok.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/thailand/bangkok.html\", waiting until \"domconte"
+  },
+  {
+    "file": "malaysia/kualalumpur.html",
+    "width": 768,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/malaysia/kualalumpur.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/malaysia/kualalumpur.html\", waiting until \""
+  },
+  {
+    "file": "macau/apps.html",
+    "width": 768,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/macau/apps.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/macau/apps.html\", waiting until \"domcontentloaded\"\n"
+  },
+  {
+    "file": "hong-kong/central.html",
+    "width": 768,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/hong-kong/central.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/hong-kong/central.html\", waiting until \"domcon"
+  },
+  {
+    "file": "hong-kong/currency.html",
+    "width": 1024,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/hong-kong/currency.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/hong-kong/currency.html\", waiting until \"domc"
+  },
+  {
+    "file": "hong-kong/store.html",
+    "width": 1024,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/hong-kong/store.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/hong-kong/store.html\", waiting until \"domcontent"
+  },
+  {
+    "file": "macau/store.html",
+    "width": 1024,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/macau/store.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/macau/store.html\", waiting until \"domcontentloaded\"\n"
+  },
+  {
+    "file": "thailand/store.html",
+    "width": 1024,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/thailand/store.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/thailand/store.html\", waiting until \"domcontentlo"
+  },
+  {
+    "file": "malaysia/store.html",
+    "width": 1024,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/malaysia/store.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/malaysia/store.html\", waiting until \"domcontentlo"
+  },
+  {
+    "file": "thailand/bangkok.html",
+    "width": 1024,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/thailand/bangkok.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/thailand/bangkok.html\", waiting until \"domconte"
+  },
+  {
+    "file": "malaysia/kualalumpur.html",
+    "width": 1024,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/malaysia/kualalumpur.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/malaysia/kualalumpur.html\", waiting until \""
+  },
+  {
+    "file": "macau/apps.html",
+    "width": 1024,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/macau/apps.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/macau/apps.html\", waiting until \"domcontentloaded\"\n"
+  },
+  {
+    "file": "hong-kong/central.html",
+    "width": 1024,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/hong-kong/central.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/hong-kong/central.html\", waiting until \"domcon"
+  },
+  {
+    "file": "hong-kong/currency.html",
+    "width": 1366,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/hong-kong/currency.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/hong-kong/currency.html\", waiting until \"domc"
+  },
+  {
+    "file": "hong-kong/store.html",
+    "width": 1366,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/hong-kong/store.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/hong-kong/store.html\", waiting until \"domcontent"
+  },
+  {
+    "file": "macau/store.html",
+    "width": 1366,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/macau/store.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/macau/store.html\", waiting until \"domcontentloaded\"\n"
+  },
+  {
+    "file": "thailand/store.html",
+    "width": 1366,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/thailand/store.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/thailand/store.html\", waiting until \"domcontentlo"
+  },
+  {
+    "file": "malaysia/store.html",
+    "width": 1366,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/malaysia/store.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/malaysia/store.html\", waiting until \"domcontentlo"
+  },
+  {
+    "file": "thailand/bangkok.html",
+    "width": 1366,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/thailand/bangkok.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/thailand/bangkok.html\", waiting until \"domconte"
+  },
+  {
+    "file": "malaysia/kualalumpur.html",
+    "width": 1366,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/malaysia/kualalumpur.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/malaysia/kualalumpur.html\", waiting until \""
+  },
+  {
+    "file": "macau/apps.html",
+    "width": 1366,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/macau/apps.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/macau/apps.html\", waiting until \"domcontentloaded\"\n"
+  },
+  {
+    "file": "hong-kong/central.html",
+    "width": 1366,
+    "FAIL": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/v106_work/hong-kong/central.html\nCall log:\n  - navigating to \"file:///mnt/data/v106_work/hong-kong/central.html\", waiting until \"domcon"
+  }
+]

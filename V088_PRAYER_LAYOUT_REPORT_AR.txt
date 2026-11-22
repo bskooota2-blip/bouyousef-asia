@@ -1,0 +1,48 @@
+بويوسف ٠ – V088: توحيد ترتيب مواقيت الصلاة والقبلة
+
+المرجع: تصميم تايلند V087.
+الكمبيوتر: البوصلة يسارًا، المواقيت وسطًا، اختيار المدينة/المنطقة يمينًا.
+الهاتف: البوصلة يسارًا، اختيار المدينة يمينًا، المواقيت أسفلهما.
+
+صفحات تم إدراج التنسيق بها:
+malaysia/island-penang.html
+malaysia/island-perhentian.html
+malaysia/putrajaya.html
+malaysia/island-pangkor.html
+malaysia/johorbahru.html
+malaysia/index.html
+malaysia/ipoh.html
+malaysia/islands.html
+malaysia/island-redang.html
+malaysia/kualalumpur.html
+malaysia/melaka.html
+malaysia/island-langkawi.html
+malaysia/island-tioman.html
+hong-kong/causeway-bay.html
+hong-kong/tsim-sha-tsui.html
+hong-kong/sha-tin.html
+hong-kong/index.html
+hong-kong/kowloon.html
+hong-kong/central.html
+hong-kong/hong-kong-island.html
+hong-kong/mong-kok.html
+hong-kong/lantau.html
+hong-kong/new-territories.html
+thailand/bangkok.html
+thailand/krabi.html
+thailand/pattaya.html
+thailand/index.html
+thailand/phuket.html
+thailand/chiangmai.html
+thailand/kohsamui.html
+thailand/huahin.html
+macau/macau-peninsula.html
+macau/cotai.html
+macau/index.html
+macau/coloane.html
+macau/taipa.html
+
+المحافظة على حسابات الصلاة الحالية دون تغيير مفاتيح البيانات أو الخدمات.
+في مدن تايلند وماليزيا يظهر اختيار المدينة من بيانات القائمة الموجودة.
+في مناطق هونغ كونغ ومكاو يحتفظ النظام بحساب الصلاة الحالي، وتضاف قائمة الانتقال للمناطق.
+ملاحظة: هذا توحيد للمظهر؛ لم تُضف خدمات صلاة جديدة للصفحات التي لا يوجد بها أصلًا مستطيل صلاة.
