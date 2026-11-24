@@ -1,0 +1,237 @@
+{
+  "base": "V167",
+  "version": "V168",
+  "added": [
+    {
+      "city": "shanghai",
+      "category": "dining",
+      "name": "Yalla Shawarma",
+      "source": "https://ehalal.co/fr/restaurant/H2710I3F9A40292B084 | https://note.com/saito_kaiki/n/nc8a9881287fd?hl=en"
+    },
+    {
+      "city": "shenzhen",
+      "category": "dining",
+      "name": "Ottoman Palace Turkish Restaurant",
+      "source": "Ottoman Palace Shenzhen official contact page; local Chinese dining directories; checked 2026-11-19"
+    },
+    {
+      "city": "shenzhen",
+      "category": "dining",
+      "name": "Opalaa Halal Restaurant",
+      "source": "OpenRice Shenzhen (Middle Eastern cuisine listing) + photo provided by user, reviewed 2026-11-19"
+    },
+    {
+      "city": "yiwu",
+      "category": "dining",
+      "name": "YAFA Restaurant",
+      "source": "YAFA Restaurant Yiwu / Yalla China restaurant listing (verified 2026-11-19)"
+    },
+    {
+      "city": "shanghai",
+      "category": "tourism",
+      "name": "The Louis – Louis Vuitton Ship",
+      "source": "https://english.shanghai.gov.cn/en-UniqueExperience-travelinshanghai/20250627/757000fc8d1244588593d86188153ba4.html"
+    },
+    {
+      "city": "shanghai",
+      "category": "malls",
+      "name": "Park Avenue Central (PAC)",
+      "source": "https://english.shanghai.gov.cn/en-ShoppingCenters/20250218/1c8032ba6c7a437f8a968970206040dc.html"
+    },
+    {
+      "city": "shanghai",
+      "category": "malls",
+      "name": "L+City",
+      "source": "https://english.shanghai.gov.cn/en-ShoppingCenters/20251226/75864de79c7c4079bfdd4283eb39e7ed.html"
+    },
+    {
+      "city": "shanghai",
+      "category": "malls",
+      "name": "Hongqiao Qianwan Incity Mega",
+      "source": "https://english.shanghai.gov.cn/en-ShoppingCenters/20251226/75864de79c7c4079bfdd4283eb39e7ed.html"
+    },
+    {
+      "city": "beijing",
+      "category": "malls",
+      "name": "JD MALL South 3rd Ring Road",
+      "source": "https://english.beijing.gov.cn/consuminginbeijing/wheretobuy/commercialareas/updatesofcommercialareas/202506/t20250604_4105962.html"
+    },
+    {
+      "city": "beijing",
+      "category": "malls",
+      "name": "Wangjing V-HUB",
+      "source": "https://english.beijing.gov.cn/consuminginbeijing/wheretobuy/commercialareas/updatesofcommercialareas/202608/t20260827_4838982.html"
+    },
+    {
+      "city": "shenzhen",
+      "category": "malls",
+      "name": "Huaide MixC One (MixC Hood)",
+      "source": "https://www.baoan.gov.cn/en/travel/shoppingparadise/index.html"
+    },
+    {
+      "city": "shenzhen",
+      "category": "malls",
+      "name": "Shenzhen Joy City",
+      "source": "https://www.baoan.gov.cn/en/travel/shoppingparadise/index.html"
+    },
+    {
+      "city": "shenzhen",
+      "category": "malls",
+      "name": "Bao’an Huaqiang Plaza",
+      "source": "https://www.baoan.gov.cn/en/travel/shoppingparadise/index.html"
+    },
+    {
+      "city": "yiwu",
+      "category": "markets",
+      "name": "Yiwu Global Digital Trade Center",
+      "source": "https://www.ezhejiang.gov.cn/jinhua/2025-10/14/c_1132074.htm"
+    },
+    {
+      "city": "hainan",
+      "category": "malls",
+      "name": "SANYA ONE",
+      "source": "https://www.visitsanya.com/experiences/shopping/top-shopping-hotspots/shopping-malls/no-1-sanya-bay"
+    },
+    {
+      "city": "thailand/phuket",
+      "category": "السياحة والمعالم",
+      "name": "Andamanda Phuket",
+      "source": "https://www.andamandaphuket.com/contact-us"
+    },
+    {
+      "city": "thailand/pattaya",
+      "category": "السياحة والمعالم",
+      "name": "Columbia Pictures Aquaverse",
+      "source": "https://www.tourismthailand.org/Entertainment/columbia-pictures-aquaverse"
+    },
+    {
+      "city": "thailand/krabi",
+      "category": "الفنادق",
+      "name": "Banyan Tree Krabi",
+      "source": "https://www.banyantree.com/contact-us"
+    },
+    {
+      "city": "thailand/kohsamui",
+      "category": "الفنادق",
+      "name": "Four Seasons Resort Koh Samui",
+      "source": "https://www.fourseasons.com/kohsamui/contact-us/"
+    },
+    {
+      "city": "malaysia/melaka",
+      "category": "الأماكن السياحية",
+      "name": "Encore Melaka",
+      "source": "https://www.visitmelaka.com.my/index.php/nature-adventure/recreation/133-encore-melaka"
+    },
+    {
+      "city": "malaysia/island-langkawi",
+      "category": "المجمعات التجارية",
+      "name": "The Zone @ Underwater World Langkawi",
+      "source": "https://ebrochures.malaysia.travel/en/langkawi/shopping-dining/"
+    },
+    {
+      "city": "malaysia/island-langkawi",
+      "category": "المجمعات التجارية",
+      "name": "Cenang Mall",
+      "source": "https://ebrochures.malaysia.travel/en/langkawi/shopping-dining/"
+    },
+    {
+      "city": "hong-kong/kowloon",
+      "category": "المجمعات التجارية",
+      "name": "Kai Tak Mall",
+      "source": "https://www.discoverhongkong.com/eng/place-to-go/travel.guide-kai-tak-mall.html"
+    },
+    {
+      "city": "hong-kong/kowloon",
+      "category": "المجمعات التجارية",
+      "name": "AIRSIDE",
+      "source": "https://www.discoverhongkong.com/eng/place-to-go/travel.guide-airside.html"
+    },
+    {
+      "city": "hong-kong/kowloon",
+      "category": "المجمعات التجارية",
+      "name": "Cullinan Sky Mall",
+      "source": "https://www.discoverhongkong.com/eng/place-to-go/travel.guide-cullinan-sky-mall.html"
+    },
+    {
+      "city": "hong-kong/kowloon",
+      "category": "الأماكن السياحية",
+      "name": "Kai Tak Sports Park",
+      "source": "https://www.discoverhongkong.com/eng/place-to-go/travel.guide-kai-tak-sports-park.html"
+    },
+    {
+      "city": "hong-kong/kowloon",
+      "category": "الأسواق",
+      "name": "Kowloon City Market",
+      "source": "https://www.discoverhongkong.com/eng/neighbourhoods/kowloon-city.html"
+    },
+    {
+      "city": "hong-kong/kowloon",
+      "category": "الأماكن السياحية",
+      "name": "Cattle Depot Artist Village",
+      "source": "https://www.discoverhongkong.com/eng/neighbourhoods/kowloon-city.html"
+    },
+    {
+      "city": "hong-kong/central",
+      "category": "المطاعم والكافيهات",
+      "name": "22 Ships",
+      "source": "https://www.discoverhongkong.com/eng/place-to-go/travel.guide-22-ships.html"
+    },
+    {
+      "city": "macau/taipa",
+      "category": "المطاعم والكافيهات",
+      "name": "Tai Lei Loi Kei Restaurant",
+      "source": "https://www.dsedt.gov.mo/lcp/en_US/store_detail.jsp?id=53"
+    },
+    {
+      "city": "macau/coloane",
+      "category": "الأماكن السياحية",
+      "name": "Pavilion of Animal Specimens in Macao",
+      "source": "https://www.macaotourism.gov.mo/en/events/whatson/11748/"
+    }
+  ],
+  "updated": [
+    {
+      "city": "shanghai",
+      "id": "sha-0002",
+      "name": "STC Mall – Kaixuancheng Clothing Wholesale Market"
+    },
+    {
+      "city": "shenzhen",
+      "id": "she-0068",
+      "name": "Shenzhen Museum of Contemporary Art and Urban Planning"
+    }
+  ],
+  "duplicates_skipped": [
+    [
+      "thailand/chiangmai",
+      "Jing Jai Market Chiang Mai"
+    ],
+    [
+      "hong-kong/central",
+      "Louise"
+    ]
+  ],
+  "changed_paths": [
+    "china/site/data/other-cities.js",
+    "china/site/data/global-search.js",
+    "china/site/data/city-local-search-v04125.js",
+    "china/site/data/search-index-v04140.js",
+    "china/site/index.html",
+    "china/site/offline-files-v04120.json",
+    "thailand/phuket.html",
+    "thailand/pattaya.html",
+    "thailand/krabi.html",
+    "thailand/kohsamui.html",
+    "malaysia/melaka.html",
+    "malaysia/island-langkawi.html",
+    "hong-kong/kowloon.html",
+    "hong-kong/central.html",
+    "hong-kong/hong-kong-island.html",
+    "macau/taipa.html",
+    "macau/coloane.html",
+    "hong-kong/places.json",
+    "macau/places.json",
+    "macau/data.js"
+  ],
+  "note": "دفعة أولى؛ ليست مراجعة شاملة لجميع المدن. عناوين المنطقة موضحة عند عدم توفر الرقم. لا يوجد تحقق من التشغيل اللحظي."
+}

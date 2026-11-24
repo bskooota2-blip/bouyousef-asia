@@ -2338,5 +2338,31 @@
     "lrt": "",
     "notes": "مكان مرشح للمراجعة؛ تحقق من العنوان الدقيق وحالة التشغيل قبل النشر",
     "source": "https://www.macaotourism.gov.mo/en/shopping/shopping-malls"
+  },
+  {
+    "id": 196,
+    "area": "تايبا",
+    "category": "المطاعم والكافيهات",
+    "name_ar": "مطعم تاي لي لوي كي",
+    "name_en": "Tai Lei Loi Kei Restaurant",
+    "name_zh": "大利來記餐廳",
+    "address_en": "Taipa, Macau",
+    "lrt": "",
+    "notes": "مطعم محلي معروف بسندويتش لحم الخنزير؛ ليس خيارًا حلالًا. عنوان المنطقة.",
+    "source": "https://www.dsedt.gov.mo/lcp/en_US/store_detail.jsp?id=53",
+    "addedOn": "2026-11-24"
+  },
+  {
+    "id": 197,
+    "area": "كولوان",
+    "category": "الأماكن السياحية",
+    "name_ar": "جناح عينات الحيوانات في ماكاو",
+    "name_en": "Pavilion of Animal Specimens in Macao",
+    "name_zh": "",
+    "address_en": "Rua da Cordoaria, Coloane, Macau",
+    "lrt": "",
+    "notes": "متحف تعليمي عن الحياة البرية والبيئة.",
+    "source": "https://www.macaotourism.gov.mo/en/events/whatson/11748/",
+    "addedOn": "2026-11-24"
   }
 ]
