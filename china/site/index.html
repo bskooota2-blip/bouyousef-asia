@@ -899,6 +899,15 @@ body.gz-v010 #gzListing .gz-place-main .gz-metro-compact{margin-top:5px;}
   body.gz-v010 #gzListing .gz-place-actions{grid-column:1!important;order:2!important;}
   body.gz-v010 #gzListing .gz-place-main{grid-column:1!important;order:1!important;}
 }
+
+/* V120: remove Asia button/top language strip on China page and lift banner */
+body.by120-china-top-clean .by051-chrome .header-tools,
+body.by120-china-top-clean #gzTopbar,
+body.by120-china-top-clean #by046-actions{display:none!important;}
+body.by120-china-top-clean .by051-chrome .site-hero{padding-top:0!important;min-height:0!important;padding-bottom:10px!important;margin-top:0!important;}
+body.by120-china-top-clean .by051-chrome .approved-header.by41-compact-header,
+body.by120-china-top-clean .by051-chrome .approved-header{margin-top:0!important;display:block!important;}
+body.by120-china-top-clean .by051-chrome .page-shell{padding-top:0!important;margin-top:0!important;}
 </style><style id="v038-unified-city-place-cards">
 /* V038 – Unified non-Guangzhou place-card presentation; Guangzhou's #gzListing is untouched.
    All overrides are scoped to the existing other-cities place cards. */
@@ -1175,25 +1184,8 @@ body:not(.gz-v010):not(.gz-v008) #globalPrayer .qibla strong{line-height:1.1}
 <meta name="apple-mobile-web-app-title" content="الصبر"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="default"/>
 <meta property="og:site_name" content="الصبر"/><meta property="og:title" content="بويوسف الصبر – دليلك إلى الصين"/><meta property="og:image" content="https://bskooota2-blip.github.io/bouyousef/assets/ah-splash-original.png"/>
 
-<style id="ah-splash-single-v2-style">
-/* Only one browser-level splash; the OS controls the native installed-PWA splash. */
-#ahSplashOverlay{display:none;position:fixed;inset:0;z-index:2147483000;place-items:center;background:linear-gradient(140deg,#e7f5ff 0%,#fff 55%,#e8f2ff 100%);padding:16px;opacity:1;visibility:visible;transition:opacity .30s ease,visibility .30s ease}
-html.ah-splash-active #ahSplashOverlay{display:grid}
-#ahSplashOverlay.ah-splash-out{opacity:0;visibility:hidden;pointer-events:none}
-#ahSplashLogo{display:block;width:100%;max-width:min(76vw,470px);max-height:min(76vh,470px);height:auto;object-fit:contain;animation:ah-zoom-single-v2 1.55s cubic-bezier(.18,.65,.22,1) both}
-#ahSplashSkip{position:absolute;bottom:max(22px,env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);border:1px solid #8fbbd7;border-radius:100px;background:#fff;padding:8px 20px;color:#083963;font:inherit;font-weight:800;cursor:pointer}
-@keyframes ah-zoom-single-v2{from{opacity:0;transform:scale(.78)}to{opacity:1;transform:scale(1)}}
-@media(prefers-reduced-motion:reduce){#ahSplashLogo{animation:none}#ahSplashOverlay{transition:none}}
-</style>
-<script id="ah-splash-single-v2-early">
-/* Gate before rendering body to avoid a flash of the page followed by the logo. */
-(function(){'use strict';
-var standalone=!!(window.matchMedia&&window.matchMedia('(display-mode: standalone)').matches)||window.navigator.standalone===true;
-var reduced=!!(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches);
-var seen=false;try{seen=window.sessionStorage.getItem('ah_splash_seen_v2')==='1';}catch(e){}
-if(!standalone&&!reduced&&!seen){document.documentElement.classList.add('ah-splash-active');}
-})();
-</script><style id="by2-city-local-search-style">
+
+<style id="by2-city-local-search-style">
 .by2-city-local-search[hidden]{display:none!important}
 .by2-city-local-search{width:100%;max-width:1180px;margin:16px auto 18px;padding:14px 16px;border:1px solid #a9def8;border-radius:17px;background:#fff;box-shadow:0 4px 16px #105f9710;color:#083e6a}
 .by2-city-search-form{margin:0}.by2-city-search-heading{display:block;font-weight:900;font-size:17px;margin-bottom:10px}
@@ -1207,25 +1199,454 @@ if(!standalone&&!reduced&&!seen){document.documentElement.classList.add('ah-spla
 .by2-city-search-result-info{min-width:0;overflow-wrap:anywhere}.by2-city-search-result-info strong{display:block;font-size:14px}.by2-city-search-result-info small{display:block;font-size:11px;color:#52758c;margin-top:4px}
 .by2-city-search-open{flex-shrink:0;padding:8px 11px;font-size:12px}
 @media(max-width:650px){.by2-city-local-search{padding:11px;margin:12px auto}.by2-city-search-heading{font-size:15px}.by2-city-search-controls{gap:5px}.by2-city-search-controls input{padding:10px 7px;font-size:13px}.by2-city-search-controls button{padding:8px 9px;font-size:12px}.by2-city-search-results{grid-template-columns:1fr}}
-</style><link rel="stylesheet" href="../../shared/asia-nav-v060.css"></head><body><div id="ahSplashOverlay" role="group" aria-label="شعار الصبر" aria-live="off">
-<img id="ahSplashLogo" src="assets/ah-splash-original.png" alt="AH – صديقك في الصين" width="470" height="470" fetchpriority="high"/>
-<button id="ahSplashSkip" type="button">تخطي</button></div>
-<script id="ah-splash-single-v2-run">
-(function(){'use strict';
-var overlay=document.getElementById('ahSplashOverlay'),skip=document.getElementById('ahSplashSkip'),doc=document.documentElement;
-if(!overlay||!skip||!doc.classList.contains('ah-splash-active'))return;
-try{window.sessionStorage.setItem('ah_splash_seen_v2','1');}catch(e){}
-var closed=false,autoTimer=null,cleanupTimer=null;
-function close(){if(closed)return;closed=true;
-if(autoTimer!==null)window.clearTimeout(autoTimer);
-overlay.classList.add('ah-splash-out');
-cleanupTimer=window.setTimeout(function(){doc.classList.remove('ah-splash-active');overlay.remove();},310);
+</style><link rel="stylesheet" href="../../shared/asia-nav-v060.css">
+<style id="by118-china-home-cleanup">
+body.by118-china-home #by046-actions,
+body.by118-china-home #gzTopbar{display:none !important;}
+</style>
+
+<style id="by119-china-hide-top-lang">
+/* China-only: remove the header's separate language toolbar without deleting the underlying select. */
+html body .site-hero .header-tools .header-actions,
+html body .by051-chrome .site-hero .header-tools .header-actions,
+html body .site-hero .header-tools .lang-control,
+html body .by051-chrome .site-hero .header-tools .lang-control,
+html body .gz-topbar .gz-lang-pills { display:none !important; }
+/* Do not leave a blank full-height language strip on desktop. */
+@media(min-width:801px){html body .site-hero .header-tools:not(:has(.mobile-menu:not([hidden]))) {display:none!important;} }
+</style>
+
+<style id="by122-china-top-prayer-tighten">
+/* V122: remove empty top strip on China home and pull banner up */
+html body .site-hero .header-tools,
+html body .by051-chrome .site-hero .header-tools,
+html body #gzTopbar,
+html body .gz-topbar{display:none !important;}
+html body .site-hero,
+html body .by051-chrome .site-hero{padding-top:0 !important; padding-bottom:8px !important; min-height:0 !important;}
+html body .approved-header,
+html body .by051-chrome .approved-header{margin-top:0 !important;}
+html body .page-shell,
+html body .by051-page-shell{padding-top:0 !important; margin-top:0 !important;}
+/* V122: make prayer row denser and use empty spaces better */
+html body #globalPrayer .prayer{margin-top:0 !important; min-height:0 !important;}
+html body #globalPrayer .prayer-title{min-width:135px !important; padding:8px 8px !important; gap:4px !important; font-size:16px !important;}
+html body #globalPrayer .prayer-title select{width:118px !important; padding:4px !important; font-size:12px !important;}
+html body #globalPrayer .qibla{min-width:122px !important; padding:6px 8px !important; font-size:12px !important;}
+html body #globalPrayer .qibla b{font-size:15px !important;}
+html body #globalPrayer .prayer-cells{align-content:stretch !important;}
+html body #globalPrayer .prayer-item{padding:10px 4px !important; display:flex !important; flex-direction:column; justify-content:center;}
+html body #globalPrayer .prayer-item strong{font-size:13px !important;}
+html body #globalPrayer .prayer-item span{margin-top:4px !important; font-size:clamp(13px,1.35vw,18px) !important;}
+html body #globalPrayer .prayer-note{margin:-10px auto 16px !important;}
+@media (min-width:801px){
+  html body #globalPrayer .prayer{display:grid !important; grid-template-columns:138px 1fr 128px !important; align-items:stretch;}
+  html body #globalPrayer .prayer-title{order:3;}
+  html body #globalPrayer .prayer-cells{order:2;}
+  html body #globalPrayer .qibla{order:1;}
 }
-skip.addEventListener('click',close,{once:true});
-window.addEventListener('pagehide',function(){if(cleanupTimer!==null)window.clearTimeout(cleanupTimer);doc.classList.remove('ah-splash-active');},{once:true});
-autoTimer=window.setTimeout(close,2050);
-})();
-</script>
+@media (max-width:800px){
+  html body .site-hero{padding-bottom:6px !important;}
+  html body #globalPrayer .prayer{margin-top:2px !important;}
+}
+</style>
+
+<style id="by123-china-home-compact-banner">
+/* Cropped transparent vertical padding from the original banner asset. */
+body:not(.gz-v010):not(.gz-v008) .site-hero {
+  padding:0 0 5px !important;
+  margin:0 !important;
+  min-height:0 !important;
+}
+body:not(.gz-v010):not(.gz-v008) .site-hero .approved-header.by41-compact-header {
+  display:block !important;
+  width:min(calc(100% - 12px), 1050px) !important;
+  max-height:none !important;
+  height:auto !important;
+  margin:0 auto !important;
+  object-fit:contain !important;
+  box-shadow:none !important;
+}
+body:not(.gz-v010):not(.gz-v008) #globalPrayer {margin-top:0 !important;}
+body:not(.gz-v010):not(.gz-v008) #globalPrayer .prayer {margin:0 auto 4px !important;}
+@media(max-width:680px){
+ body:not(.gz-v010):not(.gz-v008) .site-hero .approved-header.by41-compact-header{width:calc(100% - 4px) !important;}
+}
+</style>
+
+<style id="by127-china-prayer-design">
+/* V127: the original live prayer calculator and selector, redesigned only on China home. */
+.by127-main-heading,.by127-help,.by127-city-label{display:none!important;}
+html body.by127-china-home #globalPrayer{width:min(100%,1230px)!important;margin:8px auto 10px!important;padding:0 9px!important;}
+html body.by127-china-home #globalPrayer .prayer{
+ display:grid!important;direction:rtl!important;grid-template-columns:minmax(0,1.55fr) minmax(215px,1fr)!important;
+ grid-template-rows:auto auto!important;align-items:stretch!important;gap:12px!important;
+ width:100%!important;max-width:none!important;margin:0!important;min-height:0!important;height:auto!important;
+ padding:13px!important;border:1.5px solid #a9d9f6!important;border-radius:21px!important;
+ background:linear-gradient(145deg,#f2faff,#eaf7ff)!important;overflow:visible!important;
+ box-shadow:0 5px 17px #105b8718!important;
+}
+html body.by127-china-home #globalPrayer .prayer-title{
+ grid-column:1/-1!important;grid-row:1!important;order:initial!important;
+ display:grid!important;grid-template-columns:minmax(0,1fr) minmax(170px,220px)!important;
+ grid-template-rows:auto auto!important;align-items:center!important;justify-items:stretch!important;
+ gap:3px 15px!important;text-align:right!important;min-width:0!important;
+ padding:3px 6px 9px!important;margin:0!important;border:0!important;border-bottom:1px solid #d2eafa!important;
+ border-radius:0!important;background:transparent!important;box-shadow:none!important;
+}
+html body.by127-china-home #globalPrayer .prayer-title > [data-i18n="prayerHeading"]{display:none!important;}
+html body.by127-china-home #globalPrayer .by127-main-heading{grid-column:1;grid-row:1;display:block!important;font-size:clamp(17px,2vw,22px)!important;line-height:1.45;color:#073e70;font-weight:900!important;}
+html body.by127-china-home #globalPrayer .by127-help{grid-column:1;grid-row:2;display:block!important;color:#557f9d;font-size:12px;line-height:1.4;font-weight:500;}
+html body.by127-china-home #globalPrayer .by127-city-label{grid-column:2;grid-row:1;display:block!important;font-size:11px;color:#477598;font-weight:800!important;}
+html body.by127-china-home #globalPrayer #prayerCity{grid-column:2;grid-row:2;display:block!important;width:100%!important;max-width:100%!important;min-height:39px!important;margin:0!important;padding:7px 12px!important;font-size:13px!important;font-weight:800;color:#073e70!important;background:white!important;border:1px solid #9ccbf0!important;border-radius:11px!important;cursor:pointer!important;}
+html body.by127-china-home #globalPrayer .prayer-cells{
+ grid-column:1!important;grid-row:2!important;order:initial!important;
+ display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;align-content:start!important;
+ gap:9px!important;min-width:0!important;width:100%!important;flex:none!important;
+ padding:12px!important;margin:0!important;border:1px solid #c4e3f8!important;
+ border-radius:16px!important;background:#fff!important;box-shadow:0 2px 8px #0a60920a!important;
+}
+html body.by127-china-home #globalPrayer .prayer-cells:before{content:"◷  مواقيت الصلاة";display:block;grid-column:1/-1;color:#083e71;font-size:15px;font-weight:900;text-align:right;margin-bottom:1px;}
+html body.by127-china-home #globalPrayer .prayer-item{
+ min-width:0!important;min-height:57px!important;padding:8px 4px!important;
+ margin:0!important;display:flex!important;flex-direction:column!important;justify-content:center!important;align-items:center!important;
+ border:0!important;border-radius:10px!important;background:#f0f8ff!important;
+}
+html body.by127-china-home #globalPrayer .prayer-item strong{font-size:11px!important;font-weight:700!important;line-height:1.5!important;color:#58809b!important;}
+html body.by127-china-home #globalPrayer .prayer-item span{font-size:clamp(12px,1.3vw,15px)!important;line-height:1.35!important;margin-top:3px!important;color:#073e70!important;font-weight:900!important;}
+html body.by127-china-home #globalPrayer .qibla{
+ grid-column:2!important;grid-row:2!important;order:initial!important;
+ display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;
+ min-width:0!important;min-height:170px!important;padding:12px!important;margin:0!important;gap:7px!important;
+ border:1px solid #c4e3f8!important;border-radius:16px!important;background:#fff!important;text-align:center!important;box-shadow:0 2px 8px #0a60920a!important;
+}
+html body.by127-china-home #globalPrayer .qibla b{font-size:15px!important;font-weight:900!important;color:#073e70!important;}
+html body.by127-china-home #globalPrayer .qibla .compass{width:88px!important;height:88px!important;margin:1px auto!important;border:4px solid #cba35b!important;}
+html body.by127-china-home #globalPrayer .qibla #qiblaValue{display:block!important;font-size:24px!important;line-height:1.1!important;color:#086aaf!important;font-weight:900!important;}
+html body.by127-china-home #globalPrayer .qibla:after{content:"اتجاه محسوب من الشمال الجغرافي";color:#63829c;font-size:10px;line-height:1.5;}
+html body.by127-china-home #globalPrayer .prayer-note{display:block!important;margin:7px 5px 0!important;max-width:none!important;padding:0 4px!important;text-align:center!important;font-size:10px!important;color:#6789a1!important;}
+html body.by127-china-home #globalPrayer .qibla small{display:none!important;}
+@media(max-width:720px){
+ html body.by127-china-home #globalPrayer .prayer{grid-template-columns:1fr!important;gap:8px!important;padding:10px!important;}
+ html body.by127-china-home #globalPrayer .prayer-title{grid-column:1!important;grid-template-columns:minmax(0,1fr) minmax(125px,44%)!important;gap:4px 8px!important;}
+ html body.by127-china-home #globalPrayer .by127-main-heading{font-size:16px!important;}
+ html body.by127-china-home #globalPrayer .by127-help{font-size:10px!important;}
+ html body.by127-china-home #globalPrayer #prayerCity{min-height:36px!important;font-size:12px!important;}
+ html body.by127-china-home #globalPrayer .prayer-cells{grid-column:1!important;grid-row:2!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:6px!important;padding:10px!important;}
+ html body.by127-china-home #globalPrayer .qibla{grid-column:1!important;grid-row:3!important;min-height:140px!important;}
+ html body.by127-china-home #globalPrayer .prayer-item{min-height:53px!important;}
+}
+</style>
+<style id="by133-prayer-screenshot-matching">
+/* V133 — screenshot matched panel, only on China main page / HK / Macau home */
+:root{--v133-blue:#073a70;--v133-stroke:#b4dcfb;--v133-bg:#ebf7ff}
+html body.by127-china-home #globalPrayer .prayer,html body #prayer-box.hk-v032-prayer,html body #prayer-box.mc-v040-prayer{
+ display:grid!important;direction:ltr!important;grid-template-columns:minmax(220px,28%) minmax(0,1fr) minmax(160px,22%)!important;grid-template-rows:auto!important;
+ gap:10px!important;align-items:stretch!important;padding:12px!important;margin:8px auto 10px!important;width:100%!important;
+ min-height:0!important;height:auto!important;border:1px solid var(--v133-stroke)!important;border-radius:21px!important;
+ background:var(--v133-bg)!important;overflow:visible!important;box-shadow:0 5px 15px #0b628315!important;
+}
+html body.by127-china-home #globalPrayer .prayer-title,html body #prayer-box .hk-v032-city,html body #prayer-box .mc-v040-city{
+ grid-column:1!important;grid-row:1!important;direction:rtl!important;display:flex!important;flex-direction:column!important;
+ justify-content:center!important;align-items:stretch!important;gap:7px!important;min-height:175px!important;
+ margin:0!important;padding:13px 12px!important;text-align:right!important;border:1px solid var(--v133-stroke)!important;
+ border-radius:16px!important;background:white!important;min-width:0!important;box-shadow:none!important;
+}
+html body.by127-china-home #globalPrayer .by127-main-heading,html body #prayer-box .by128-heading{
+ display:block!important;font-size:clamp(16px,1.65vw,22px)!important;line-height:1.45!important;color:var(--v133-blue)!important;
+ font-weight:900!important;text-align:right!important;
+}
+html body.by127-china-home #globalPrayer .by127-help,html body #prayer-box .by128-help{
+ display:block!important;font-size:11px!important;line-height:1.4!important;color:#68859c!important;text-align:right!important;
+}
+html body.by127-china-home #globalPrayer .by127-city-label,html body #prayer-box .by128-label{
+ display:block!important;font-size:11px!important;color:#527b9d!important;text-align:right!important;
+}
+html body.by127-china-home #globalPrayer .prayer-title>[data-i18n="prayerHeading"],
+html body #prayer-box .hk-v032-city>label:not(.by128-label),html body #prayer-box .mc-v040-city>label:not(.by128-label){display:none!important;}
+html body.by127-china-home #globalPrayer #prayerCity,html body #prayer-box .hk-v032-city select,html body #prayer-box .mc-v040-city select{
+ display:block!important;width:100%!important;max-width:none!important;min-height:37px!important;margin:0!important;
+ padding:7px 10px!important;text-align:right!important;background:white!important;color:#073a70!important;
+ border:1px solid #9ecdf6!important;border-radius:10px!important;font-size:13px!important;font-weight:800!important;
+}
+html body.by127-china-home #globalPrayer .prayer-cells,html body #prayer-box .hk-v032-times,html body #prayer-box .mc-v040-times{
+ grid-column:2!important;grid-row:1!important;order:initial!important;direction:rtl!important;display:grid!important;
+ grid-template-columns:repeat(3,minmax(0,1fr))!important;grid-template-rows:auto repeat(2,minmax(55px,1fr))!important;
+ align-content:stretch!important;gap:7px!important;min-height:175px!important;min-width:0!important;
+ padding:10px!important;margin:0!important;background:white!important;border:1px solid var(--v133-stroke)!important;
+ border-radius:16px!important;box-shadow:none!important;
+}
+html body.by127-china-home #globalPrayer .prayer-cells::before,html body #prayer-box .hk-v032-times::before,html body #prayer-box .mc-v040-times::before{
+ content:"◷ مواقيت الصلاة"!important;display:block!important;grid-column:1/-1!important;font-size:14px!important;
+ font-weight:900!important;color:var(--v133-blue)!important;text-align:right!important;margin:0!important;
+}
+html body.by127-china-home #globalPrayer .prayer-item,html body #prayer-box .hk-v032-time,html body #prayer-box .mc-v040-time{
+ display:flex!important;flex-direction:column!important;justify-content:center!important;align-items:center!important;
+ min-height:55px!important;padding:7px 3px!important;margin:0!important;gap:3px!important;
+ background:#eff8ff!important;border:0!important;border-radius:10px!important;
+}
+html body.by127-china-home #globalPrayer .prayer-item strong,html body #prayer-box .hk-v032-time span,html body #prayer-box .mc-v040-time span{
+ font-size:11px!important;font-weight:700!important;color:#5d829d!important;line-height:1.3!important;
+}
+html body.by127-china-home #globalPrayer .prayer-item span,html body #prayer-box .hk-v032-time b,html body #prayer-box .mc-v040-time b{
+ display:block!important;font-size:clamp(14px,1.5vw,18px)!important;font-weight:900!important;line-height:1.3!important;
+ color:#073669!important;direction:ltr!important;margin:0!important;white-space:nowrap!important;
+}
+html body.by127-china-home #globalPrayer .qibla,html body #prayer-box .hk-v032-compass,html body #prayer-box .mc-v040-compass{
+ grid-column:3!important;grid-row:1!important;order:initial!important;direction:rtl!important;
+ display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;
+ min-width:0!important;min-height:175px!important;gap:6px!important;padding:10px!important;margin:0!important;
+ background:white!important;border:1px solid var(--v133-stroke)!important;border-radius:16px!important;
+ text-align:center!important;box-shadow:none!important;
+}
+html body.by127-china-home #globalPrayer .qibla b,html body #prayer-box .hk-v032-compass strong,html body #prayer-box .mc-v040-compass h3{
+ font-size:15px!important;font-weight:900!important;color:var(--v133-blue)!important;margin:0!important;
+}
+html body.by127-china-home #globalPrayer .qibla .compass,html body #prayer-box .hk-v032-dial,html body #prayer-box .mc-v040-dial{
+ width:88px!important;height:88px!important;border:4px solid #cba35a!important;border-radius:50%!important;
+ background:radial-gradient(circle,#fff,#e6f4ff)!important;
+}
+html body.by127-china-home #globalPrayer #qiblaValue,html body #prayer-box #hk-v032-bearing,html body #prayer-box #mc-v040-qibla{
+ display:block!important;font-size:23px!important;line-height:1.1!important;font-weight:900!important;
+ color:#0669b4!important;margin:0!important;
+}
+html body.by127-china-home #globalPrayer .qibla::after{display:none!important;}
+html body.by127-china-home #globalPrayer .qibla small{display:none!important;}
+@media(max-width:820px){
+ html body.by127-china-home #globalPrayer .prayer,html body #prayer-box.hk-v032-prayer,html body #prayer-box.mc-v040-prayer{
+  grid-template-columns:minmax(0,1fr) minmax(125px,38%)!important;grid-template-rows:auto auto!important;gap:8px!important;padding:8px!important;
+ }
+ html body.by127-china-home #globalPrayer .prayer-title,html body #prayer-box .hk-v032-city,html body #prayer-box .mc-v040-city{
+  grid-column:1!important;grid-row:1!important;min-height:147px!important;
+ }
+ html body.by127-china-home #globalPrayer .qibla,html body #prayer-box .hk-v032-compass,html body #prayer-box .mc-v040-compass{
+  grid-column:2!important;grid-row:1!important;min-height:147px!important;
+ }
+ html body.by127-china-home #globalPrayer .prayer-cells,html body #prayer-box .hk-v032-times,html body #prayer-box .mc-v040-times{
+  grid-column:1/-1!important;grid-row:2!important;min-height:0!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;
+ }
+ html body.by127-china-home #globalPrayer .qibla .compass,html body #prayer-box .hk-v032-dial,html body #prayer-box .mc-v040-dial{
+  width:66px!important;height:66px!important;
+ }
+}
+</style>
+<style id="by134-cleanup-fixes">
+html body.by127-china-home #globalPrayer .visually-hidden[data-i18n="prayerCitySelect"]{display:none!important;}
+</style><style id="by136-prayer-city-text">
+/* V136: unified selector text only; country-home panels, with no other layout changes. */
+:root{--by136-font:Tahoma,"Segoe UI",Arial,sans-serif}
+html body.by127-china-home #globalPrayer .prayer-title,
+html body.by128-country-home .by128-smart-prayer .by128-city,
+html body #prayer-box .hk-v032-city,
+html body #prayer-box .mc-v040-city{
+  display:flex!important;flex-direction:column!important;
+  text-align:center!important;align-items:center!important;justify-content:center!important;
+  direction:rtl!important;gap:5px!important;
+}
+html body.by127-china-home #globalPrayer .by127-main-heading,
+html body.by128-country-home .by128-smart-prayer .by128-city>.by128-heading,
+html body #prayer-box .hk-v032-city>.by128-heading,
+html body #prayer-box .mc-v040-city>.by128-heading{
+  display:block!important;width:100%!important;max-width:100%!important;
+  font-family:var(--by136-font)!important;font-size:21px!important;font-weight:900!important;
+  color:#073a70!important;line-height:1.4!important;text-align:center!important;
+  margin:0!important;padding:0!important;letter-spacing:0!important;
+}
+html body.by127-china-home #globalPrayer .by127-help,
+html body.by128-country-home .by128-smart-prayer .by128-city>.by128-help,
+html body #prayer-box .hk-v032-city>.by128-help,
+html body #prayer-box .mc-v040-city>.by128-help{
+  display:block!important;width:100%!important;max-width:100%!important;
+  font-family:var(--by136-font)!important;font-size:11px!important;font-weight:400!important;
+  color:#63859f!important;line-height:1.6!important;text-align:center!important;
+  margin:0!important;padding:0!important;letter-spacing:0!important;
+}
+/* The selection dropdown follows the two approved lines. Keep the existing label for screen readers only. */
+html body.by127-china-home #globalPrayer .by127-city-label,
+html body.by127-china-home #globalPrayer .visually-hidden[data-i18n="prayerCitySelect"],
+html body.by128-country-home .by128-smart-prayer .by128-city>label,
+html body #prayer-box .hk-v032-city>label,
+html body #prayer-box .mc-v040-city>label{
+  position:absolute!important;width:1px!important;height:1px!important;padding:0!important;
+  margin:-1px!important;overflow:hidden!important;clip-path:inset(50%)!important;
+  white-space:nowrap!important;border:0!important;
+}
+html body.by127-china-home #globalPrayer #prayerCity,
+html body.by128-country-home .by128-smart-prayer .by128-city>select,
+html body #prayer-box .hk-v032-city>select,
+html body #prayer-box .mc-v040-city>select{
+  display:block!important;align-self:stretch!important;width:100%!important;max-width:100%!important;
+  margin:5px 0 0!important;min-height:37px!important;
+  font-family:var(--by136-font)!important;font-size:13px!important;
+}
+@media(max-width:560px){
+ html body.by127-china-home #globalPrayer .by127-main-heading,
+ html body.by128-country-home .by128-smart-prayer .by128-city>.by128-heading,
+ html body #prayer-box .hk-v032-city>.by128-heading,
+ html body #prayer-box .mc-v040-city>.by128-heading{font-size:17px!important;}
+ html body.by127-china-home #globalPrayer .by127-help,
+ html body.by128-country-home .by128-smart-prayer .by128-city>.by128-help,
+ html body #prayer-box .hk-v032-city>.by128-help,
+ html body #prayer-box .mc-v040-city>.by128-help{font-size:10px!important;}
+}
+</style>
+
+<style id="by138-single-bold-prayer-instruction">
+/* Only country-home prayer city picker. One bold centered instruction. */
+html body.by127-china-home #globalPrayer .prayer-title > .by127-main-heading,
+html body.by128-country-home .by128-smart-prayer .by128-city > .by128-heading,
+html body #prayer-box .hk-v032-city > .by128-heading,
+html body #prayer-box .mc-v040-city > .by128-heading {display:none!important;}
+
+html body.by127-china-home #globalPrayer .prayer-title > .by127-help,
+html body.by128-country-home .by128-smart-prayer .by128-city > .by128-help,
+html body #prayer-box .hk-v032-city > .by128-help,
+html body #prayer-box .mc-v040-city > .by128-help {
+ display:block!important;
+ width:100%!important;
+ font-family:Tahoma,"Segoe UI",Arial,sans-serif!important;
+ font-size:15px!important;
+ font-weight:900!important;
+ line-height:1.7!important;
+ color:#073a70!important;
+ text-align:center!important;
+ white-space:normal!important;
+ margin:0 auto 8px!important;
+ padding:0!important;
+}
+html body.by127-china-home #globalPrayer .prayer-title > .by127-city-label,
+html body.by128-country-home .by128-smart-prayer .by128-city > label,
+html body #prayer-box .hk-v032-city > .by128-label,
+html body #prayer-box .mc-v040-city > .by128-label {
+ display:none!important;
+}
+</style>
+
+<style id="by141-guangzhou-image-name-only">
+/* V141: exclusively Guangzhou city and Guangzhou section routes; China home and other cities unchanged */
+body.gz-v010.by141-guangzhou-only #gzOverview {
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr)!important;
+  grid-template-areas:"city"!important;
+  grid-template-rows:auto!important;
+  gap:0!important;
+  align-items:stretch!important;
+  margin-bottom:12px!important;
+}
+body.gz-v010.by141-guangzhou-only #gzOverview:before,
+body.gz-v010.by141-guangzhou-only #gzOverview:after {display:none!important;content:none!important;}
+body.gz-v010.by141-guangzhou-only #gzOverview #globalPrayer,
+body.gz-v010.by141-guangzhou-only #gzOverview .gz-qibla-panel {display:none!important;}
+body.gz-v010.by141-guangzhou-only #gzOverview .city-banner {
+  display:flex!important;
+  grid-area:city!important;
+  grid-column:1/-1!important;
+  grid-row:1!important;
+  width:100%!important;
+  max-width:none!important;
+  min-width:0!important;
+  min-height:150px!important;
+  max-height:none!important;
+  margin:0!important;
+  padding:12px 18px!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:14px!important;
+}
+body.gz-v010.by141-guangzhou-only #gzOverview .city-banner img {
+  display:block!important;
+  flex:0 0 auto!important;
+  width:200px!important;
+  max-width:38%!important;
+  height:130px!important;
+  object-fit:cover!important;
+}
+body.gz-v010.by141-guangzhou-only #gzOverview .city-banner .city-kicker {display:none!important;}
+@media (max-width:680px) {
+  body.gz-v010.by141-guangzhou-only #gzOverview .city-banner {
+    min-height:105px!important;
+    padding:9px 12px!important;
+    gap:9px!important;
+  }
+  body.gz-v010.by141-guangzhou-only #gzOverview .city-banner img {
+    width:125px!important;
+    max-width:39%!important;
+    height:88px!important;
+  }
+  body.gz-v010.by141-guangzhou-only #gzOverview .city-banner h1 {
+    font-size:clamp(23px,6vw,34px)!important;
+    white-space:normal!important;
+  }
+}
+</style>
+<style id="by145-guangzhou-layout-for-other-china-cities">
+
+/* V141: exclusively Guangzhou city and Guangzhou section routes; China home and other cities unchanged */
+body.gz-v010.by145-other-china-city #gzOverview {
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr)!important;
+  grid-template-areas:"city"!important;
+  grid-template-rows:auto!important;
+  gap:0!important;
+  align-items:stretch!important;
+  margin-bottom:12px!important;
+}
+body.gz-v010.by145-other-china-city #gzOverview:before,
+body.gz-v010.by145-other-china-city #gzOverview:after {display:none!important;content:none!important;}
+body.gz-v010.by145-other-china-city #gzOverview #globalPrayer,
+body.gz-v010.by145-other-china-city #gzOverview .gz-qibla-panel {display:none!important;}
+body.gz-v010.by145-other-china-city #gzOverview .city-banner {
+  display:flex!important;
+  grid-area:city!important;
+  grid-column:1/-1!important;
+  grid-row:1!important;
+  width:100%!important;
+  max-width:none!important;
+  min-width:0!important;
+  min-height:150px!important;
+  max-height:none!important;
+  margin:0!important;
+  padding:12px 18px!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:14px!important;
+}
+body.gz-v010.by145-other-china-city #gzOverview .city-banner img {
+  display:block!important;
+  flex:0 0 auto!important;
+  width:200px!important;
+  max-width:38%!important;
+  height:130px!important;
+  object-fit:cover!important;
+}
+body.gz-v010.by145-other-china-city #gzOverview .city-banner .city-kicker {display:none!important;}
+@media (max-width:680px) {
+  body.gz-v010.by145-other-china-city #gzOverview .city-banner {
+    min-height:105px!important;
+    padding:9px 12px!important;
+    gap:9px!important;
+  }
+  body.gz-v010.by145-other-china-city #gzOverview .city-banner img {
+    width:125px!important;
+    max-width:39%!important;
+    height:88px!important;
+  }
+  body.gz-v010.by145-other-china-city #gzOverview .city-banner h1 {
+    font-size:clamp(23px,6vw,34px)!important;
+    white-space:normal!important;
+  }
+}
+
+/* V145 applies only to city routes other than Guangzhou. The home and Guangzhou are untouched. */
+body.gz-v010.by145-other-china-city #by2CityLocalSearch,
+body.gz-v010.by145-other-china-city .by2-city-local-search {display:none!important;margin:0!important;padding:0!important;}
+/* A single search interface in the global icon row; keep data, filters and place listings untouched. */
+body.gz-v010.by145-other-china-city #by3OtherListing .gz-controls input[type="search"],
+body.gz-v010.by145-other-china-city #by3OtherListing .gz-controls input:not([type]) {display:none!important;}
+body.gz-v010.by145-other-china-city #gzOverview + #by060-nav {margin-top:0!important;}
+</style>
+</head><body>
+
 <div class="shade" id="shade"></div>
 <aside aria-label="الأقسام الأساسية" class="sidebar" id="sideNav"><button aria-label="إغلاق القائمة" class="mobile-close" data-i18n="menuClose" id="mobileClose" type="button">✕ إغلاق</button><details class="by417-city-picker" id="by417CityPicker" dir="rtl"><summary aria-label="فتح قائمة المدن"><span class="by417-city-symbol" aria-hidden="true"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.6"/></svg></span><span class="by417-city-title">اختر المدينة</span><span class="by417-city-arrow" aria-hidden="true">▾</span></summary><nav class="by417-city-list" aria-label="مدن الصين"><a href="#city/guangzhou" data-by417-city="guangzhou">غوانزو</a><a href="#city/shanghai" data-by417-city="shanghai">شنغهاي</a><a href="#city/beijing" data-by417-city="beijing">بكين</a><a href="#city/shenzhen" data-by417-city="shenzhen">شينزن</a><a href="#city/foshan" data-by417-city="foshan">فوشان</a><a href="#city/yiwu" data-by417-city="yiwu">إيوو</a><a href="#city/guilin" data-by417-city="guilin">قويلين</a><a href="#city/yangshuo" data-by417-city="yangshuo">يانغشوو</a><a href="#city/zhangjiajie" data-by417-city="zhangjiajie">جانغجياجيه</a><a href="#city/chongqing" data-by417-city="chongqing">تشونغتشينغ</a><a href="#city/hainan" data-by417-city="hainan">جزيرة هاينان</a></nav></details>
 <button class="nav-button" data-section="login" type="button"><span class="nav-emoji"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></svg></span><span class="nav-label" id="by33SidebarLoginLabel" data-i18n="nav_login">تسجيل الدخول</span></button>
@@ -1249,7 +1670,7 @@ autoTimer=window.setTimeout(close,2050);
 <button class="top-home" data-i18n="homeBack" hidden="" id="topHome" type="button">⌂ العودة إلى الرئيسية</button>
 <section aria-label="البحث داخل الموقع" class="search-panel" hidden="" id="searchPanel"><form id="searchForm" role="search"><label data-i18n="searchLabel" for="searchInput">ابحث عن مدينة أو قسم</label><div class="search-line"><input aria-controls="searchResults" autocomplete="off" id="searchInput" placeholder="ابحث عن مدينة أو قسم..." type="search"/><button data-i18n="searchButton" type="submit">بحث</button><button aria-label="إغلاق البحث" id="searchClose" type="button">✕</button></div></form><div aria-live="polite" class="search-results" id="searchResults"></div></section>
 </header>
-<section aria-label="مواقيت الصلاة والقبلة" id="globalPrayer"><div class="prayer"><div class="prayer-title"><span data-i18n="prayerHeading">🕌 مواقيت الصلاة</span><label class="visually-hidden" data-i18n="prayerCitySelect" for="prayerCity">مدينة الحساب</label><select aria-label="اختر مدينة مواقيت الصلاة" id="prayerCity"></select></div>
+<section aria-label="مواقيت الصلاة والقبلة" id="globalPrayer"><div class="prayer"><div class="prayer-title"><span data-i18n="prayerHeading">🕌 مواقيت الصلاة</span><span class="by127-help">اختر المدينة لعرض المواقيت واتجاه القبلة</span><label class="by127-city-label" for="prayerCity">المدينة المختارة</label><label class="visually-hidden" data-i18n="prayerCitySelect" for="prayerCity">اختر المدينة</label><select aria-label="اختر مدينة مواقيت الصلاة" id="prayerCity"></select></div>
 <div aria-live="polite" class="prayer-cells" id="prayerCells"></div><div class="qibla"><b data-i18n="qibla">القبلة</b><div aria-label="رسم يوضح زاوية القبلة من الشمال الجغرافي" class="compass"><span class="compass-n">ش</span><span class="compass-e">ق</span><span class="compass-w">غ</span><span class="compass-s">ج</span><span aria-hidden="true" class="compass-needle" id="compassNeedle">➤</span><span class="compass-hub"></span></div><strong id="qiblaValue">—</strong><small data-i18n="qiblaDisclaimer">سهم توضيحي بحسب الشمال الجغرافي، ليس بوصلة حية</small></div></div><p class="prayer-note" data-i18n="prayerNoteDefault" id="prayerNote">الأوقات فلكية تقديرية حسب المدينة وتوقيت الصين (UTC+8). راجع التقويم المحلي للصلاة.</p></section><main id="cityHome">
 <section id="by2WeatherHome" aria-labelledby="by2WeatherHeading" dir="rtl">
   <div class="by2-w-head">
@@ -1400,7 +1821,7 @@ const sections=[
 {id:'information',icon:'ℹ️',image:'information',ar:'معلومات المدينة',en:'City information',zh:'城市信息',descAr:'معلومات عامة ونصائح',descEn:'Information and tips',descZh:'城市信息与建议'}
 ];
 const locales={
- ar:{language:'اللغة',searchButton:'بحث',searchLabel:'ابحث عن مدينة أو قسم',searchPlaceholder:'ابحث عن مدينة أو قسم...',homeBack:'⌂ العودة إلى الرئيسية',menuClose:'✕ إغلاق',menuOpen:'☰ القائمة',chooseCity:'📍 اختر المدينة',contentNote:'اختر مدينة لاستعراض أقسامها والمواقع المتوفرة.',qiblaDisclaimer:'اتجاه جغرافي محسوب وليس بوصلة حية',nav_login:'تسجيل الدخول',nav_updates:'جديد التطبيق',nav_arrival:'بطاقة دخول الصين',nav_apps:'تطبيقات مهمة',nav_exchange:'صرف العملات',nav_store:'متجرنا',nav_exhibitions:'معارض الصين',prayerHeading:'🕌 مواقيت الصلاة',prayerCitySelect:'مدينة الحساب',qibla:'القبلة',backCity:'↩ العودة إلى أقسام المدينة',sectionHeading:'أقسام المدينة',cityKicker:'دليل المدينة',construction:'القسم قيد التجهيز. لم تُنقل بيانات المدن من بويوسف ٢.',serviceConstruction:'هذا القسم قيد التجهيز',none:'لا توجد نتائج مطابقة',hint:'ابحث عن مدينة أو قسم متاح',prayers:['الفجر','الشروق','الظهر','العصر','المغرب','العشاء'],prayerNote:(c,d)=>`أوقات فلكية تقديرية لـ${c} بتاريخ ${d} بتوقيت الصين UTC+8؛ قد تختلف عن التقاويم المحلية. القبلة زاوية محسوبة من الشمال الجغرافي وليست بوصلة حية.`},
+ ar:{language:'اللغة',searchButton:'بحث',searchLabel:'ابحث عن مدينة أو قسم',searchPlaceholder:'ابحث عن مدينة أو قسم...',homeBack:'⌂ العودة إلى الرئيسية',menuClose:'✕ إغلاق',menuOpen:'☰ القائمة',chooseCity:'📍 اختر المدينة',contentNote:'اختر مدينة لاستعراض أقسامها والمواقع المتوفرة.',qiblaDisclaimer:'اتجاه جغرافي محسوب وليس بوصلة حية',nav_login:'تسجيل الدخول',nav_updates:'جديد التطبيق',nav_arrival:'بطاقة دخول الصين',nav_apps:'تطبيقات مهمة',nav_exchange:'صرف العملات',nav_store:'متجرنا',nav_exhibitions:'معارض الصين',prayerHeading:'🕌 مواقيت الصلاة',prayerCitySelect:'المدينة المختارة',qibla:'القبلة',backCity:'↩ العودة إلى أقسام المدينة',sectionHeading:'أقسام المدينة',cityKicker:'دليل المدينة',construction:'القسم قيد التجهيز. لم تُنقل بيانات المدن من بويوسف ٢.',serviceConstruction:'هذا القسم قيد التجهيز',none:'لا توجد نتائج مطابقة',hint:'ابحث عن مدينة أو قسم متاح',prayers:['الفجر','الشروق','الظهر','العصر','المغرب','العشاء'],prayerNote:(c,d)=>`أوقات فلكية تقديرية لـ${c} بتاريخ ${d} بتوقيت الصين UTC+8؛ قد تختلف عن التقاويم المحلية. القبلة زاوية محسوبة من الشمال الجغرافي وليست بوصلة حية.`},
  en:{language:'Language',searchButton:'Search',searchLabel:'Search cities or sections',searchPlaceholder:'Search cities or sections...',homeBack:'⌂ Back to home',menuClose:'✕ Close',menuOpen:'☰ Menu',chooseCity:'📍 Choose a city',contentNote:'Choose a city to view its sections. Detailed listings are under preparation.',qiblaDisclaimer:'Computed geographic bearing, not a live compass',nav_updates:'What’s new',nav_arrival:'China arrival card',nav_apps:'Essential apps',nav_exchange:'Currency exchange',nav_store:'Our store',nav_exhibitions:'China exhibitions',prayerHeading:'🕌 Prayer times',prayerCitySelect:'Calculation city',qibla:'Qibla',backCity:'↩ Back to city sections',sectionHeading:'City sections',cityKicker:'City guide',construction:'This section is being prepared. Data from BouYousef 2 has not been copied.',serviceConstruction:'This section is under construction',none:'No matching results',hint:'Search available cities or sections',prayers:['Fajr','Sunrise','Dhuhr','Asr','Maghrib','Isha'],prayerNote:(c,d)=>`Approximate astronomical prayer times for ${c} on ${d} (China UTC+8); may differ from local timetables. Qibla is a computed bearing, not a live compass.`},
  zh:{language:'语言',searchButton:'搜索',searchLabel:'搜索城市或栏目',searchPlaceholder:'搜索城市或栏目...',homeBack:'⌂ 返回首页',menuClose:'✕ 关闭',menuOpen:'☰ 菜单',chooseCity:'📍 选择城市',contentNote:'选择城市查看栏目，详细内容正在准备中。',qiblaDisclaimer:'计算地理方位，非实时指南针',nav_login:'登录',nav_updates:'最新更新',nav_arrival:'中国入境卡',nav_apps:'常用应用',nav_exchange:'汇率换算',nav_store:'商店',nav_exhibitions:'中国展会',prayerHeading:'🕌 礼拜时间',prayerCitySelect:'计算城市',qibla:'朝向麦加',backCity:'↩ 返回城市栏目',sectionHeading:'城市栏目',cityKicker:'城市指南',construction:'栏目正在准备中。尚未从 بويوسف ٢ 复制资料。',serviceConstruction:'此栏目正在建设中',none:'没有匹配结果',hint:'搜索可用城市或栏目',prayers:['晨礼','日出','晌礼','晡礼','昏礼','宵礼'],prayerNote:(c,d)=>`${c} ${d} 中国时间（UTC+8）的估算礼拜时间，可能与当地时间表不同。朝向是计算方位，非实时指南针。`}
 };
@@ -1440,7 +1861,7 @@ function syncRoyalSidebarActive(route){
    if(active)el.setAttribute('aria-current','page');else el.removeAttribute('aria-current');
  });
 }
-function renderRoute(origin="initial"){state=stateFromHash();const inGz=(state.kind==='city'||state.kind==='section');document.body.classList.toggle('gz-v010',inGz);document.body.classList.toggle('by3-arrival-route',state.kind==='service'&&state.service==='arrival');document.body.classList.toggle('by34-apps-route',state.kind==='service'&&state.service==='apps');document.body.classList.toggle('by3-shenzhen-v022',inGz && state.city===3);document.body.classList.toggle('by3-foshan-v023',inGz && state.city===4);document.body.classList.toggle('by3-yiwu-v024',inGz && state.city===5);document.body.classList.toggle('by3-guilin-v025',inGz && state.city===6);document.body.classList.toggle('by3-yangshuo-v026',inGz && state.city===7);document.body.classList.toggle('by3-zhangjiajie-v027',inGz && state.city===8);document.body.classList.toggle('by3-chongqing-v028',inGz && state.city===9);document.body.classList.toggle('by3-hainan-v029',inGz && state.city===10);document.body.classList.toggle('by3-shanghai-v030',inGz && state.city===1);const prayerBlock=document.getElementById('globalPrayer');const cityDetail=document.getElementById('cityDetail');const banner=document.querySelector('#cityDetail .city-banner');const breadcrumbs=document.querySelector('#cityDetail .breadcrumbs');const home=document.getElementById('cityHome');const hero=document.querySelector('.site-hero');const searchPanel=document.getElementById('searchPanel');const gzTopbar=document.getElementById('gzTopbar');const gzSearchHost=document.getElementById('gzSearchHost');const searchToggle=document.getElementById('searchToggle');const overview=document.getElementById('gzOverview');const qibla=document.querySelector('.qibla');const qiblaPanel=document.getElementById('gzQiblaPanel');if(inGz){gzTopbar.hidden=false;if(searchPanel.parentElement!==gzSearchHost)gzSearchHost.append(searchPanel);searchPanel.hidden=false;searchToggle.hidden=true;if(prayerBlock.parentElement!==overview)overview.append(prayerBlock);if(banner.parentElement!==overview)overview.append(banner);if(qibla.parentElement!==qiblaPanel)qiblaPanel.append(qibla);}else{gzTopbar.hidden=true;if(searchPanel.parentElement!==hero)hero.append(searchPanel);searchToggle.hidden=false;if(searchToggle.getAttribute('aria-expanded')!=='true')searchPanel.hidden=true;if(qibla.parentElement!==document.querySelector('.prayer'))document.querySelector('.prayer').append(qibla);if(prayerBlock.previousElementSibling!==home)home.before(prayerBlock);if(banner.parentElement!==cityDetail)cityDetail.insertBefore(banner,breadcrumbs);}const isHome=state.kind==='home',isService=state.kind==='service';home.hidden=!isHome;document.getElementById('globalPrayer').hidden=isService;cityDetail.hidden=isHome||isService;document.getElementById('serviceDetail').hidden=!isService||['arrival','login','updates','apps','exchange','store','exhibitions'].includes(state.service);document.getElementById('by34EssentialAppsPage').hidden=!(isService&&state.service==='apps');document.getElementById('by35ExchangePage').hidden=!(isService&&state.service==='exchange');document.getElementById('by36StorePage').hidden=!(isService&&state.service==='store');document.getElementById('by37ExhibitionsPage').hidden=!(isService&&state.service==='exhibitions');document.getElementById('by33LoginPage').hidden=!(isService&&state.service==='login');document.getElementById('by33UpdatesPage').hidden=!(isService&&state.service==='updates');document.getElementById('by3ArrivalGuide').hidden=!(isService&&state.service==='arrival');document.getElementById('topHome').hidden=isHome;if(state.kind==='city'||state.kind==='section'){let city=cities[state.city];document.querySelectorAll('.prayer-title [data-i18n="prayerHeading"]').forEach(el=>el.setAttribute('data-active-city',cityName(state.city)));document.getElementById('selectedCityTitle').textContent=cityName(state.city);document.getElementById('selectedCityEnglish').textContent=city.en;document.getElementById('selectedCityImage').src='assets/'+city.slug+'.jpg';document.getElementById('selectedCityImage').alt=cityName(state.city);document.getElementById('cityKicker').textContent=t().cityKicker;if(inGz){const currentSectionId=state.section||'markets';const section=sections.find(s=>s.id===currentSectionId)||sections[0];document.getElementById('citySectionsArea').hidden=false;document.getElementById('sectionContentArea').hidden=state.kind!=='section';document.getElementById('sectionContentTitle').textContent=cityName(state.city)+' / '+sectionName(section);document.getElementById('sectionToCity').hidden=state.kind!=='section';}else{document.getElementById('citySectionsArea').hidden=state.kind==='section';document.getElementById('sectionContentArea').hidden=state.kind!=='section';document.getElementById('sectionToCity').hidden=state.kind!=='section';if(state.kind==='section'){const section=sections.find(s=>s.id===state.section);document.getElementById('sectionContentTitle').textContent=sectionName(section);document.getElementById('sectionConstruction').textContent=t().construction}}document.getElementById('prayerCity').value=String(state.city);renderPrayers()}if(isService){document.getElementById('serviceTitle').textContent=t()['nav_'+state.service];document.getElementById('serviceComing').textContent=t().serviceConstruction}createCards();if(typeof renderGuangzhouSection==='function')renderGuangzhouSection();if(typeof renderOtherCitiesSection==='function')renderOtherCitiesSection();syncGuangzhouBottomNav();syncGzLangPills();if(typeof window.by34Render==='function')window.by34Render(state);if(typeof window.by35ExchangeRender==='function')window.by35ExchangeRender();if(typeof window.by36StoreRender==='function')window.by36StoreRender(state);syncRoyalSidebarActive(state);menu(false);routeScroll(state,origin);previousRouteKey=routeKey(state)}
+function renderRoute(origin="initial"){state=stateFromHash();const inGz=(state.kind==='city'||state.kind==='section');document.body.classList.toggle('by141-guangzhou-only',inGz && state.city===0);document.body.classList.toggle('by145-other-china-city',inGz && state.city>0 && state.city<cities.length);document.body.classList.toggle('gz-v010',inGz);document.body.classList.toggle('by3-arrival-route',state.kind==='service'&&state.service==='arrival');document.body.classList.toggle('by34-apps-route',state.kind==='service'&&state.service==='apps');document.body.classList.toggle('by3-shenzhen-v022',inGz && state.city===3);document.body.classList.toggle('by3-foshan-v023',inGz && state.city===4);document.body.classList.toggle('by3-yiwu-v024',inGz && state.city===5);document.body.classList.toggle('by3-guilin-v025',inGz && state.city===6);document.body.classList.toggle('by3-yangshuo-v026',inGz && state.city===7);document.body.classList.toggle('by3-zhangjiajie-v027',inGz && state.city===8);document.body.classList.toggle('by3-chongqing-v028',inGz && state.city===9);document.body.classList.toggle('by3-hainan-v029',inGz && state.city===10);document.body.classList.toggle('by3-shanghai-v030',inGz && state.city===1);const prayerBlock=document.getElementById('globalPrayer');const cityDetail=document.getElementById('cityDetail');const banner=document.querySelector('#cityDetail .city-banner');const breadcrumbs=document.querySelector('#cityDetail .breadcrumbs');const home=document.getElementById('cityHome');const hero=document.querySelector('.site-hero');const searchPanel=document.getElementById('searchPanel');const gzTopbar=document.getElementById('gzTopbar');const gzSearchHost=document.getElementById('gzSearchHost');const searchToggle=document.getElementById('searchToggle');const overview=document.getElementById('gzOverview');const qibla=document.querySelector('.qibla');const qiblaPanel=document.getElementById('gzQiblaPanel');if(inGz){gzTopbar.hidden=false;if(searchPanel.parentElement!==gzSearchHost)gzSearchHost.append(searchPanel);searchPanel.hidden=false;searchToggle.hidden=true;if(prayerBlock.parentElement!==overview)overview.append(prayerBlock);if(banner.parentElement!==overview)overview.append(banner);if(qibla.parentElement!==qiblaPanel)qiblaPanel.append(qibla);}else{gzTopbar.hidden=true;if(searchPanel.parentElement!==hero)hero.append(searchPanel);searchToggle.hidden=false;if(searchToggle.getAttribute('aria-expanded')!=='true')searchPanel.hidden=true;if(qibla.parentElement!==document.querySelector('.prayer'))document.querySelector('.prayer').append(qibla);if(prayerBlock.previousElementSibling!==home)home.before(prayerBlock);if(banner.parentElement!==cityDetail)cityDetail.insertBefore(banner,breadcrumbs);}const isHome=state.kind==='home',isService=state.kind==='service';document.body.classList.toggle('by127-china-home',isHome);home.hidden=!isHome;document.getElementById('globalPrayer').hidden=isService;cityDetail.hidden=isHome||isService;document.getElementById('serviceDetail').hidden=!isService||['arrival','login','updates','apps','exchange','store','exhibitions'].includes(state.service);document.getElementById('by34EssentialAppsPage').hidden=!(isService&&state.service==='apps');document.getElementById('by35ExchangePage').hidden=!(isService&&state.service==='exchange');document.getElementById('by36StorePage').hidden=!(isService&&state.service==='store');document.getElementById('by37ExhibitionsPage').hidden=!(isService&&state.service==='exhibitions');document.getElementById('by33LoginPage').hidden=!(isService&&state.service==='login');document.getElementById('by33UpdatesPage').hidden=!(isService&&state.service==='updates');document.getElementById('by3ArrivalGuide').hidden=!(isService&&state.service==='arrival');document.getElementById('topHome').hidden=isHome;if(state.kind==='city'||state.kind==='section'){let city=cities[state.city];document.querySelectorAll('.prayer-title [data-i18n="prayerHeading"]').forEach(el=>el.setAttribute('data-active-city',cityName(state.city)));document.getElementById('selectedCityTitle').textContent=cityName(state.city);document.getElementById('selectedCityEnglish').textContent=city.en;document.getElementById('selectedCityImage').src='assets/'+city.slug+'.jpg';document.getElementById('selectedCityImage').alt=cityName(state.city);document.getElementById('cityKicker').textContent=t().cityKicker;if(inGz){const currentSectionId=state.section||'markets';const section=sections.find(s=>s.id===currentSectionId)||sections[0];document.getElementById('citySectionsArea').hidden=false;document.getElementById('sectionContentArea').hidden=state.kind!=='section';document.getElementById('sectionContentTitle').textContent=cityName(state.city)+' / '+sectionName(section);document.getElementById('sectionToCity').hidden=state.kind!=='section';}else{document.getElementById('citySectionsArea').hidden=state.kind==='section';document.getElementById('sectionContentArea').hidden=state.kind!=='section';document.getElementById('sectionToCity').hidden=state.kind!=='section';if(state.kind==='section'){const section=sections.find(s=>s.id===state.section);document.getElementById('sectionContentTitle').textContent=sectionName(section);document.getElementById('sectionConstruction').textContent=t().construction}}document.getElementById('prayerCity').value=String(state.city);renderPrayers()}if(isService){document.getElementById('serviceTitle').textContent=t()['nav_'+state.service];document.getElementById('serviceComing').textContent=t().serviceConstruction}createCards();if(typeof renderGuangzhouSection==='function')renderGuangzhouSection();if(typeof renderOtherCitiesSection==='function')renderOtherCitiesSection();syncGuangzhouBottomNav();syncGzLangPills();if(typeof window.by34Render==='function')window.by34Render(state);if(typeof window.by35ExchangeRender==='function')window.by35ExchangeRender();if(typeof window.by36StoreRender==='function')window.by36StoreRender(state);syncRoyalSidebarActive(state);menu(false);routeScroll(state,origin);previousRouteKey=routeKey(state)}
 function createCards(){const wrap=document.getElementById('sectionCards');wrap.replaceChildren();const inGz=(state.kind==='city'||state.kind==='section');const activeSection=inGz?(state.section||'markets'):state.section;const order=inGz?['markets','malls','dining','tourism','hotels','transport','mosques','information']:sections.map(s=>s.id);order.map(id=>sections.find(s=>s.id===id)).filter(Boolean).forEach(s=>{const b=document.createElement('button');b.type='button';b.className='section-card'+(activeSection===s.id?' active':'');b.dataset.sectionId=s.id;const img=document.createElement('img');img.src='assets/section-'+s.image+'.jpg';img.alt='';img.loading='lazy';const icon=document.createElement('span');icon.className='section-icon';icon.textContent=inGz?({markets:'🏪',malls:'🛍️',dining:'🍽️',tourism:'🏞️',hotels:'🏨',transport:'✈️🚆🚌',mosques:'🕌',information:'ℹ️'}[s.id]||s.icon):s.icon;if(inGz && s.id==='information'){b.classList.add('gz-information-important');const badge=document.createElement('span');badge.className='gz-important-badge';badge.textContent='مهم';b.append(badge)}const strong=document.createElement('strong');strong.textContent=sectionName(s);const small=document.createElement('small');small.textContent=s['desc'+(lang==='ar'?'Ar':lang==='en'?'En':'Zh')];b.append(img,icon,strong,small);b.addEventListener('click',()=>navigate({kind:'section',city:state.city||0,section:s.id}));wrap.append(b)})}
 function normalize(s){return String(s||'').normalize('NFKC').toLowerCase().replace(/[ً-ٰٟ]/g,'').replace(/\s+/g,' ').trim()}
 function search(open){const panel=document.getElementById('searchPanel');panel.hidden=!open;document.getElementById('searchToggle').setAttribute('aria-expanded',String(open));if(open){document.getElementById('searchInput').focus();searchNow()}}
@@ -1468,7 +1889,7 @@ window.addEventListener('popstate',onHistoryNavigation);window.addEventListener(
 translate();
 </script><script src="data/exhibitions-v037.js"></script><script src="data/exhibitions-v037-ui.js"></script>
 <script src="data/guangzhou.js?v=041233-shangheli-20261118"></script>
-<script src="data/favorites-v04121.js?v=041220"></script>
+<script src="data/place-share-v167.js?v=167"></script><script src="data/favorites-v04121.js?v=167"></script>
 <script src="data/guangzhou-ui.js?v=041241-newopen"></script>
 <script src="data/other-cities.js?v=041245-newopen"></script>
 <script src="data/other-cities-ui.js?v=041243-newopen"></script>
@@ -1559,4 +1980,30 @@ document.addEventListener('by2-language-changed',update);window.addEventListener
 })();
 </script>
 <script defer src="../../shared/asia-nav-v060.js"></script><script src="data/menu-order-v091.js" defer></script>
+
+<script id="by118-china-home-cleanup-script">
+(function(){
+  function applyChinaHomeCleanup(){
+    var path=(location.pathname||'');
+    var inChina = /\/china\/site\//.test(path) || /\bchina\b/.test(path);
+    if(!inChina) return;
+    var hash=(location.hash||'').trim();
+    var isHome = !hash || hash==='#' || hash==='#home' || hash==='#/' || hash==='#top';
+    document.body.classList.toggle('by118-china-home', isHome);
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',applyChinaHomeCleanup,{once:true});}
+  else {applyChinaHomeCleanup();}
+  window.addEventListener('hashchange',applyChinaHomeCleanup);
+})();
+</script>
+
+<script id="by120-china-top-clean-script">
+(function(){
+  function mark(){
+    var p=(location.pathname||'');
+    if(/\/china\/site\//.test(p)||/\bchina\b/.test(p)){document.body.classList.add('by120-china-top-clean');}
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',mark,{once:true});}else{mark();}
+})();
+</script>
 </body></html>

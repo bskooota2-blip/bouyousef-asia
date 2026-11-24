@@ -1,0 +1,95 @@
+/* V159: Keep Thailand city navigation on exactly ONE row.
+   Limited to city pages; does not alter the search engine or links. */
+html body.by146-thai-city .shell > main > #by060-nav,
+html body.by146-thai-city #by060-nav {
+  display:flex!important;
+  flex-direction:row!important;
+  flex-wrap:nowrap!important;
+  align-items:center!important;
+  justify-content:flex-start!important;
+  gap:5px!important;
+  overflow-x:auto!important;
+  overflow-y:hidden!important;
+  width:100%!important;
+  max-width:100%!important;
+  min-width:0!important;
+  padding:7px!important;
+  box-sizing:border-box!important;
+  scrollbar-width:thin;
+  overscroll-behavior-x:contain;
+  -webkit-overflow-scrolling:touch;
+}
+html body.by146-thai-city #by060-nav > .by060-link,
+html body.by146-thai-city #by060-nav > .by060-top,
+html body.by146-thai-city #by060-nav > .by146-cities {
+  flex:0 0 auto!important;
+  min-width:0!important;
+  height:41px!important;
+  min-height:41px!important;
+  margin:0!important;
+  padding:5px 6px!important;
+  gap:4px!important;
+  white-space:nowrap!important;
+  flex-direction:row!important;
+  font-size:11px!important;
+}
+html body.by146-thai-city #by060-nav .by060-icon {
+  flex:0 0 23px!important;
+  width:23px!important;
+  height:23px!important;
+  border-radius:8px!important;
+}
+html body.by146-thai-city #by060-nav .by060-icon svg {width:16px!important;height:16px!important}
+html body.by146-thai-city #by060-nav .by060-text {min-width:0!important}
+html body.by146-thai-city #by060-nav .by060-text strong {font-size:11px!important;white-space:nowrap!important}
+html body.by146-thai-city #by060-nav .by060-text small {font-size:9px!important;white-space:nowrap!important}
+html body.by146-thai-city #by060-nav > .by146-search {
+  flex:0 1 236px!important;
+  width:236px!important;
+  min-width:190px!important;
+  max-width:236px!important;
+  height:41px!important;
+  order:0!important;
+  margin:0!important;
+  gap:5px!important;
+  white-space:nowrap!important;
+}
+html body.by146-thai-city #by060-nav > .by146-search input {min-width:0!important;width:0!important;flex:1 1 auto!important;height:41px!important}
+html body.by146-thai-city #by060-nav > .by146-search button {flex:0 0 52px!important;width:52px!important;min-width:52px!important;height:41px!important}
+@media(max-width:950px){
+  html body.by146-thai-city #by060-nav > .by146-search {
+    flex:0 0 210px!important;
+    width:210px!important;
+    min-width:210px!important;
+  }
+}
+@media(max-width:750px){
+  /* Horizontal swipe rather than wrapping or shrinking all buttons. */
+  html body.by146-thai-city #by060-nav > .by146-search {
+    flex:0 0 220px!important;
+    width:220px!important;
+    min-width:220px!important;
+    max-width:220px!important;
+  }
+  html body.by146-thai-city #by060-nav > .by060-link,
+  html body.by146-thai-city #by060-nav > .by146-cities {
+    white-space:nowrap!important;
+    min-height:41px!important;
+  }
+}
+
+/* V161 — Let the city-local search consume the unused horizontal space.
+   Keep all other icons fixed-size and preserve the single-row navigation. */
+@media (min-width:751px) {
+  html body.by146-thai-city #by060-nav > .by146-search {
+    flex: 1 1 236px !important;
+    width: auto !important;
+    min-width: 190px !important;
+    max-width: none !important;
+  }
+  html body.by146-thai-city #by060-nav > .by146-search input {
+    flex: 1 1 0 !important;
+    min-width: 0 !important;
+    width: auto !important;
+  }
+}

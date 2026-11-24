@@ -1,0 +1,59 @@
+/* V158: Match the compact China navigation search shown in the approved screenshot.
+   Scope: Thailand city interiors only. Does not alter search logic or other countries. */
+@media (min-width: 751px) {
+  html body.by146-thai-city #by060-nav .by146-search {
+    box-sizing: border-box !important;
+    flex: 0 1 244px !important;
+    width: 244px !important;
+    min-width: 210px !important;
+    max-width: 244px !important;
+    height: 41px !important;
+    gap: 6px !important;
+    margin: 0 !important;
+    align-items: center !important;
+    direction: rtl !important;
+  }
+  html body.by146-thai-city #by060-nav .by146-search input {
+    box-sizing: border-box !important;
+    flex: 1 1 0 !important;
+    min-width: 0 !important;
+    width: auto !important;
+    height: 41px !important;
+    padding: 7px 10px !important;
+    font: 500 12px/1.4 Tahoma, 'Segoe UI', Arial, sans-serif !important;
+    border-radius: 11px !important;
+    text-align: right !important;
+  }
+  html body.by146-thai-city #by060-nav .by146-search button {
+    box-sizing: border-box !important;
+    flex: 0 0 56px !important;
+    width: 56px !important;
+    min-width: 56px !important;
+    height: 41px !important;
+    min-height: 41px !important;
+    padding: 6px 7px !important;
+    font: 800 12px/1.2 Tahoma, 'Segoe UI', Arial, sans-serif !important;
+    border-radius: 10px !important;
+  }
+}
+/* Small screens retain a full-width, usable city-local search field. */
+@media (max-width: 750px) {
+  html body.by146-thai-city #by060-nav .by146-search {
+    box-sizing: border-box !important;
+    flex: 1 1 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    gap: 6px !important;
+  }
+  html body.by146-thai-city #by060-nav .by146-search input {
+    min-width: 0 !important;
+    flex: 1 1 auto !important;
+  }
+  html body.by146-thai-city #by060-nav .by146-search button {
+    flex: 0 0 56px !important;
+    width: 56px !important;
+    min-width: 56px !important;
+    padding: 6px 7px !important;
+  }
+}

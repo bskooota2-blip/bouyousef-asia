@@ -26,8 +26,8 @@
 .mc-v040-compass,.mc-v040-city{display:flex;flex-direction:column;justify-content:center;align-items:center;padding:10px 8px;background:linear-gradient(180deg,#fff,#f0f8ff)}
 .mc-v040-compass{border-left:1px solid #c2dcee}.mc-v040-city{border-right:1px solid #c2dcee}.mc-v040-compass h3,.mc-v040-city label{margin:0 0 7px;font-size:16px;font-weight:900;color:#0a3f77;text-align:center;line-height:1.2}.mc-v040-city label{font-size:15px}
 .mc-v040-dial{position:relative;display:flex;align-items:center;justify-content:center;width:74px;height:74px;border-radius:50%;border:4px solid #d8b16a;background:radial-gradient(circle at 35% 35%,#fff,#e8f3fb);box-shadow:inset 0 1px 10px #abcce4}
-.mc-v040-dial .north{position:absolute;top:0;left:50%;transform:translateX(-50%);font-weight:900;font-size:11px;color:#9d2b36}.mc-v040-needle{display:block;color:#bb3545;font-size:31px;line-height:1;transform:rotate(calc(var(--qibla-angle,0deg) - 90deg));transform-origin:center}
-.mc-v040-dial .east,.mc-v040-dial .west,.mc-v040-dial .south{position:absolute;font-weight:900;font-size:11px;color:#0c4b83}.mc-v040-dial .east{right:8px;top:50%;transform:translateY(-50%)}.mc-v040-dial .west{left:8px;top:50%;transform:translateY(-50%)}.mc-v040-dial .south{bottom:0;left:50%;transform:translateX(-50%)}
+.mc-v040-dial .north,.mc-v040-dial .east,.mc-v040-dial .west,.mc-v040-dial .south{position:absolute;font-weight:900;font-size:11px;line-height:1;color:#0c4b83}.mc-v040-dial .north{top:0;left:50%;transform:translateX(-50%);color:#9d2b36}.mc-v040-needle{display:block;position:absolute;top:50%;left:50%;z-index:2;color:#bb3545;font-size:31px;line-height:1;transform:translate(-50%,-50%) rotate(calc(var(--qibla-angle,0deg) - 90deg));transform-origin:center center;pointer-events:none}
+.mc-v040-dial .east{right:8px;top:50%;transform:translateY(-50%)}.mc-v040-dial .west{left:8px;top:50%;transform:translateY(-50%)}.mc-v040-dial .south{bottom:0;left:50%;transform:translateX(-50%)}.mc-v040-hub{position:absolute;width:10px;height:10px;background:#0d5791;border:2px solid #fff;border-radius:50%;top:50%;left:50%;transform:translate(-50%,-50%);z-index:3}.mc-v040-kaaba{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);font-size:15px;line-height:1;z-index:1;filter:drop-shadow(0 1px 1px #ffffff)}
 .mc-v040-qibla-degree{margin-top:6px;font-size:15px;font-weight:900;color:#073f77;direction:ltr}
 .mc-v040-times{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));direction:rtl;background:#fff}
 .mc-v040-time{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:10px 4px;min-height:86px;border-left:1px solid #c2dcee;text-align:center}.mc-v040-time:last-child{border-left:none}.mc-v040-time span{display:block;font-size:14px;font-weight:900;color:#0b4b81;line-height:1.2}.mc-v040-time b{display:block;font-size:20px;direction:ltr;font-variant-numeric:tabular-nums;margin-top:5px;color:#042f5e}
@@ -38,7 +38,7 @@
 .mc-v040-weathergrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}
 .mc-v040-weatheritem{display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:0;gap:4px;min-height:102px;padding:9px 4px;background:linear-gradient(#fff,#e5f5ff);border:1px solid #a9d9f1;border-radius:17px;text-align:center}.mc-v040-weatheritem strong{font-size:13px}.mc-v040-weatheritem b{font-size:20px;direction:ltr}.mc-v040-weatheritem small{font-size:11px;color:#51778e}.mc-v040-weather-status{margin:7px 0 0;text-align:center;font-size:12px;color:#915438;min-height:0}
 @media(max-width:860px){.mc-v040-prayer{grid-template-columns:110px minmax(0,1fr) 125px}.mc-v040-city label{font-size:13px}.mc-v040-time span{font-size:11px}.mc-v040-time b{font-size:14px}}
-@media(max-width:680px){.mc-ah-banner{margin:10px 0}.mc-v040-prayer{grid-template-columns:95px minmax(0,1fr);min-height:0}.mc-v040-compass{grid-column:1;grid-row:1}.mc-v040-city{grid-column:2;grid-row:1}.mc-v040-times{grid-column:1/-1;grid-row:2;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid #c2dcee}.mc-v040-time{min-height:62px}.mc-v040-dial{width:58px;height:58px}.mc-v040-needle{font-size:25px}.mc-v040-weathergrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.mc-v040-weatheritem{min-height:91px}.mc-v040-weatherhead h2{font-size:18px}}
+@media(max-width:680px){.mc-ah-banner{margin:10px 0}.mc-v040-prayer{grid-template-columns:95px minmax(0,1fr);min-height:0}.mc-v040-compass{grid-column:1;grid-row:1}.mc-v040-city{grid-column:2;grid-row:1}.mc-v040-times{grid-column:1/-1;grid-row:2;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid #c2dcee}.mc-v040-time{min-height:62px}.mc-v040-dial{width:58px;height:58px}.mc-v040-needle{font-size:25px}.mc-v040-kaaba{font-size:12px;bottom:6px}.mc-v040-weathergrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.mc-v040-weatheritem{min-height:91px}.mc-v040-weatherhead h2{font-size:18px}}
 @media(max-width:350px){.mc-v040-weatheritem strong{font-size:11px}.mc-v040-time b{font-size:13px}}
 </style>
 <link data-by046-theme="guangzhou" href="../shared/guangzhou-unified-v046.css" rel="stylesheet"/><link href="../shared/home-main-v048.css" rel="stylesheet"/><link href="../shared/china-exact-shell-v051.css" rel="stylesheet"/>
@@ -70,9 +70,317 @@ body:not(.by051-active) main.home-shell > section.mc-ah-banner > img {
   width:calc(100% - 8px)!important;margin:2px auto 5px!important;
  }
 }
-</style><link rel="stylesheet" href="../shared/prayer-layout-v088.css"/></head><body class="v048-home-country by061-malaysia-style by061-country">
-<div class="asia-v019-navrow"><a aria-label="العودة إلى دليل آسيا" class="asia-v017-return" href="../index.html" target="_self"><span aria-hidden="true" class="asia-v017-symbol">🌏</span><span>دليل آسيا</span></a></div><button aria-label="فتح القائمة" class="home-mobile-menu" type="button">☰</button><div class="home-mobile-shade"></div><aside class="home-sidebar"><button aria-label="إغلاق" class="home-mobile-close" type="button">✕</button><div class="home-side-brand">🇲🇴 مكاو</div><a class="home-side-btn" href="#regions"><span class="home-side-emoji">📍</span>اختر المنطقة</a><a class="home-side-btn" href="#prayer-box"><span class="home-side-emoji">🕌</span>الصلاة والقبلة</a><a class="home-side-btn" href="#weather-box"><span class="home-side-emoji">🌤️</span>حالة الطقس</a><a class="home-side-btn" href="#search-start"><span class="home-side-emoji">🔎</span>بحث في الصفحة</a><a class="home-side-btn" href="#regions"><span class="home-side-emoji">🗺️</span>المناطق</a><a class="home-side-btn" href="../index.html"><span class="home-side-emoji">🌏</span>دليل آسيا</a></aside>
-<header class="top"><div class="wrap"><span class="brand">🇲🇴 بويوسف – دليلك إلى مكاو</span></div></header><main class="wrap home-shell"><section aria-label="بويوسف الصبر صديقك في مكاو" class="mc-ah-banner"><img alt="بويوسف الصبر – صديقك في مكاو ومعالم مكاو" fetchpriority="high" height="682" src="macau-ah-banner.webp" width="2048"/></section><section aria-label="مواقيت الصلاة والقبلة في مكاو" class="mc-v040-prayer" id="prayer-box"><div class="mc-v040-compass"><h3>القبلة</h3><div class="mc-v040-dial"><span class="north">ش</span><span class="east">ق</span><span class="west">غ</span><span class="south">ج</span><span class="mc-v040-needle" id="mc-v040-needle">➤</span></div><div class="mc-v040-qibla-degree" id="mc-v040-qibla">—°</div></div><div class="mc-v040-times"><div class="mc-v040-time"><span>الفجر</span><b id="mc-fajr">—</b></div><div class="mc-v040-time"><span>الشروق</span><b id="mc-sunrise">—</b></div><div class="mc-v040-time"><span>الظهر</span><b id="mc-dhuhr">—</b></div><div class="mc-v040-time"><span>العصر</span><b id="mc-asr">—</b></div><div class="mc-v040-time"><span>المغرب</span><b id="mc-maghrib">—</b></div><div class="mc-v040-time"><span>العشاء</span><b id="mc-isha">—</b></div></div><div class="mc-v040-city"><label for="mc-v040-prayercity">🕌 مواقيت الصلاة<br/>مدينة الحساب</label><select id="mc-v040-prayercity"><option value="peninsula">مكاو</option><option value="taipa">تايبا</option><option value="cotai">كوتاي</option><option value="coloane">كولوان</option></select></div></section><p aria-live="polite" class="mc-v040-status" id="mc-prayer-status" role="status"></p><section aria-label="حالة الطقس في مناطق مكاو" class="mc-v040-weather" id="weather-box"><div class="mc-v040-weatherhead"><h2>🌤️ حالة الطقس</h2><button id="mc-v040-weatherrefresh" type="button">↻ تحديث</button></div><div class="mc-v040-weathergrid"><div class="mc-v040-weatheritem"><strong>مكاو</strong><b data-mc-weather="peninsula">—</b><small data-mc-desc="peninsula">حالة الطقس</small></div><div class="mc-v040-weatheritem"><strong>تايبا</strong><b data-mc-weather="taipa">—</b><small data-mc-desc="taipa">حالة الطقس</small></div><div class="mc-v040-weatheritem"><strong>كوتاي</strong><b data-mc-weather="cotai">—</b><small data-mc-desc="cotai">حالة الطقس</small></div><div class="mc-v040-weatheritem"><strong>كولوان</strong><b data-mc-weather="coloane">—</b><small data-mc-desc="coloane">حالة الطقس</small></div></div><p aria-live="polite" class="mc-v040-weather-status" id="mc-v040-weatherstatus" role="status"></p></section><h2 class="v048-main-heading">اختر المنطقة</h2><section class="regions by061-country-cards" id="regions"><a aria-label="استكشف شبه جزيرة مكاو" class="region" href="macau-peninsula.html"><span class="mc-landmark-visual"><img alt="معالم شبه جزيرة مكاو مثل أطلال سانت بول وساحة سينادو وبرج مكاو" class="mc-region-photo" height="480" loading="lazy" src="assets/regions/macau-peninsula-main.png" width="480"/><span class="mc-landmark-chip">📍 أطلال سانت بول</span></span><div class="region-copy"><h2>شبه جزيرة مكاو</h2><small>Macau Peninsula · 澳門半島</small><p>أطلال سانت بول وساحة سينادو وبرج مكاو، مع الأسواق والمعالم التاريخية.</p><span class="count">74 مكانًا</span></div></a><a aria-label="استكشف تايبا" class="region" href="taipa.html"><span class="mc-landmark-visual"><img alt="معالم تايبا مثل بيوت تايبا والواجهة البحرية" class="mc-region-photo" height="480" loading="lazy" src="assets/regions/taipa-main.png" width="480"/><span class="mc-landmark-chip">📍 بيوت تايبا التراثية</span></span><div class="region-copy"><h2>تايبا</h2><small>Taipa · 氹仔</small><p>بيوت تايبا والقرية التراثية والكافيهات والمطاعم والأجواء البرتغالية.</p><span class="count">34 مكانًا</span></div></a><a aria-label="استكشف كوتاي" class="region" href="cotai.html"><span class="mc-landmark-visual"><img alt="معالم كوتاي مثل برج باريسيان وقنوات فينيشيان" class="mc-region-photo" height="480" loading="lazy" src="assets/regions/cotai-main.png" width="480"/><span class="mc-landmark-chip">📍 باريسيان وفينيشيان</span></span><div class="region-copy"><h2>كوتاي</h2><small>Cotai · 路氹</small><p>المنتجعات الكبرى والمجمعات الفاخرة والعروض الليلية وأجواء كوتاي المضيئة.</p><span class="count">71 مكانًا</span></div></a><a aria-label="استكشف كولوان" class="region" href="coloane.html"><span class="mc-landmark-visual"><img alt="معالم كولوان مثل كنيسة القديس فرنسيس وشاطئ هاك سا" class="mc-region-photo" height="480" loading="lazy" src="assets/regions/coloane-main.png" width="480"/><span class="mc-landmark-chip">📍 كنيسة القديس فرنسيس</span></span><div class="region-copy"><h2>كولوان</h2><small>Coloane · 路環</small><p>كنيسة القديس فرنسيس وشاطئ هاك سا والطبيعة الهادئة والواجهة الساحلية.</p><span class="count">16 مكانًا</span></div></a></section><div class="by061-main-search search-panel" id="search-start"><input class="search" id="q" placeholder="ابحث في جميع مناطق ماكاو..."/><p class="small" id="summary"></p><div class="items" id="results"></div></div><details class="by061-extra-info"><summary>معلومات عن الوجهة</summary><section class="hero"><h1>اكتشف مكاو 🇲🇴</h1><p>195 مكانًا ضمن أربع مناطق سياحية، مع أسواق ومولات ومطاعم بيتزا وفنادق ومعالم ومواصلات. البحث شامل لجميع المناطق.</p></section></details></main><footer class="wrap foot">بويوسف – دليل مكاو V040 | قائمة بحثية، وليست سجلًا نهائيًا موثقًا لكل الفروع</footer><script src="data.js"></script><script>function esc(s){return String(s??'').replace(/[&<>"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch]))}function card(p){let fav=localStorage.getItem('macau-fav-'+p.id)==='1';let loc=encodeURIComponent(p.name_en+' Macau');return `<article class="item"><h3>${esc(p.name_ar)}</h3><div class="en">${esc(p.name_en)}</div><div class="small">${esc(p.category)} | ${esc(p.area)}</div><p class="muted">${esc(p.notes)}</p><div class="actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${loc}">خرائط</a><button onclick="copyName(${p.id})">نسخ الاسم</button><button onclick="toggleFav(${p.id},this)">${fav?'♥ المفضلة':'♡ المفضلة'}</button></div></article>`}function copyName(id){let p=PLACES.find(x=>x.id===id);navigator.clipboard?.writeText(p.name_en)}function toggleFav(id,btn){let key='macau-fav-'+id;let v=localStorage.getItem(key)==='1';localStorage.setItem(key,v?'0':'1');btn.textContent=v?'♡ المفضلة':'♥ المفضلة'}const q=document.getElementById('q'),res=document.getElementById('results'),sum=document.getElementById('summary');q.addEventListener('input',()=>{let t=q.value.trim().toLocaleLowerCase();if(!t){res.innerHTML='';sum.textContent='اكتب اسم مكان أو المنطقة أو نوع النشاط';return}let hit=PLACES.filter(p=>[p.name_ar,p.name_en,p.name_zh,p.area,p.category].join(' ').toLocaleLowerCase().includes(t));sum.textContent=hit.length+' نتيجة';res.innerHTML=hit.map(card).join('')});sum.textContent='اكتب اسم مكان أو المنطقة أو نوع النشاط';</script><script id="mc-v040-prayer-weather-script">
+</style><link rel="stylesheet" href="../shared/prayer-layout-v088.css"/><link rel="stylesheet" href="../shared/prayer-guangzhou-v107-4.css"/><link rel="stylesheet" href="../shared/city-header-v107-5.css" data-layout="v107-5"/><meta name="bouyousef-layout-build" content="V107.6"/><style id="v1076-inline-layout">/* V107.6: Self-contained city header repair. Do not depend on browser loading a shared override. */
+body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer {
+ display:grid!important; direction:rtl!important; width:min(100%,1120px)!important;
+ max-width:1120px!important; height:auto!important; min-height:0!important;
+ grid-template-columns:minmax(0, 1.25fr) minmax(0, 1fr)!important;
+ grid-template-rows:auto auto!important; grid-template-areas:'city qibla' 'prayers prayers'!important;
+ gap:12px!important; align-items:stretch!important; overflow:visible!important;
+ margin:0 auto 14px!important; padding:0!important;
+}
+body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer > .city-banner {
+ grid-area:city!important; grid-row:1!important; grid-column:1!important;
+ min-width:0!important; width:100%!important; height:auto!important; min-height:172px!important;
+ display:flex!important; flex-direction:row!important; direction:rtl!important;
+ justify-content:center!important; align-items:center!important; gap:16px!important;
+ padding:16px!important; margin:0!important; overflow:visible!important;
+}
+body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer > .city-banner > img {
+ flex:0 1 148px!important; width:148px!important; min-width:0!important;
+ max-width:38%!important; height:118px!important; object-fit:cover!important;
+}
+body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer > .city-banner > div {
+ display:flex!important; flex:1 1 auto!important; flex-direction:column!important;
+ justify-content:center!important; align-items:center!important; min-width:0!important;
+ width:auto!important; max-width:none!important; height:auto!important; overflow:visible!important;
+ text-align:center!important; gap:5px!important;
+}
+body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer > .city-banner :is(.city-kicker,h1,p) {
+ writing-mode:horizontal-tb!important; text-orientation:mixed!important;
+ overflow-wrap:normal!important; word-break:keep-all!important; white-space:nowrap!important;
+ width:auto!important; max-width:100%!important; line-height:1.4!important;
+}
+body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer > .city-banner h1 {
+ font-size:clamp(24px, 3vw, 38px)!important; margin:0!important;
+}
+body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer > .city-banner p {
+ font-size:17px!important; margin:0!important; direction:ltr!important;
+}
+body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer > .gz-qibla-panel {
+ grid-area:qibla!important; grid-row:1!important; grid-column:2!important;
+ width:100%!important; min-width:0!important; height:auto!important;
+ min-height:172px!important; max-height:none!important; padding:8px!important;
+}
+body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer > #globalPrayer {
+ grid-area:prayers!important; grid-row:2!important; grid-column:1/-1!important;
+ min-width:0!important; width:100%!important; max-width:100%!important;
+ height:auto!important; min-height:135px!important; max-height:none!important;
+ overflow:hidden!important; padding:0!important;
+}
+body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer > #globalPrayer > .prayer {
+ min-height:135px!important; height:auto!important; max-height:none!important;
+ width:100%!important; display:flex!important; flex-direction:column!important;
+}
+body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer > #globalPrayer .prayer-cells.by4-times {
+ height:auto!important; min-height:76px!important; display:grid!important;
+ grid-template-columns:repeat(6,minmax(0,1fr))!important; width:100%!important;
+}
+body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer > #globalPrayer .prayer-item.by4-time {
+ min-height:70px!important; align-items:center!important; justify-content:center!important;
+}
+@media(max-width:700px) {
+ body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer {
+  grid-template-columns:minmax(0,1fr)!important;
+  grid-template-areas:'city' 'qibla' 'prayers'!important;
+  grid-template-rows:auto auto auto!important;
+ }
+ body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer > .city-banner {grid-column:1!important;grid-row:1!important;min-height:135px!important;gap:10px!important;padding:10px!important;}
+ body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer > .city-banner > img {flex-basis:100px!important;width:100px!important;height:96px!important;}
+ body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer > .gz-qibla-panel {grid-column:1!important;grid-row:2!important;min-height:135px!important;}
+ body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer > #globalPrayer {grid-column:1!important;grid-row:3!important;}
+ body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer > #globalPrayer .prayer-cells.by4-times {grid-template-columns:repeat(3,minmax(0,1fr))!important;}
+}
+</style><link rel="stylesheet" href="../shared/country-home-v128.css">
+
+<style id="by131-hongkong-macau-no-return-compact">
+/* V131: only the Hong Kong/Macau landing page; preserve all original content. */
+body > .asia-v019-navrow {display:none!important;height:0!important;min-height:0!important;margin:0!important;padding:0!important;border:0!important;}
+/* V051 dynamically creates this button after loading: remove it from flow. */
+body.by051-active .by051-chrome .by051-header-home,
+body .by051-header-home {display:none!important;visibility:hidden!important;height:0!important;min-height:0!important;max-height:0!important;margin:0!important;padding:0!important;border:0!important;}
+body.by051-active .by051-chrome .site-hero {min-height:0!important;margin-top:0!important;margin-bottom:0!important;padding-top:0!important;padding-bottom:0!important;}
+body.by051-active .by051-chrome .approved-header {margin-top:0!important;margin-bottom:5px!important;}
+body.by051-active .by051-chrome .by051-page-shell {padding-top:0!important;margin-top:0!important;}
+body.by128-country-home .by4-header.site-hero {min-height:0!important;margin-top:0!important;margin-bottom:0!important;padding-top:0!important;padding-bottom:0!important;}
+body.by128-country-home .by4-header .by4-banner {margin-top:0!important;margin-bottom:5px!important;}
+body.by128-country-home .by051-live-row {gap:4px!important;margin-top:3px!important;margin-bottom:5px!important;padding-top:0!important;padding-bottom:0!important;}
+body.by128-country-home .by128-smart-prayer {margin-top:4px!important;margin-bottom:5px!important;}
+body.by128-country-home #by4Weather {margin-top:4px!important;margin-bottom:5px!important;}
+body.by128-country-home #by060-nav {margin-top:4px!important;margin-bottom:6px!important;}
+body.by128-country-home #cities {margin-top:5px!important;}
+@media(max-width:700px) {
+ body.by051-active .by051-chrome .approved-header {margin-bottom:3px!important;}
+ body.by128-country-home .by051-live-row {gap:3px!important;margin-top:2px!important;margin-bottom:4px!important;}
+}
+</style>
+<style id="by133-prayer-screenshot-matching">
+/* V133 — screenshot matched panel, only on China main page / HK / Macau home */
+:root{--v133-blue:#073a70;--v133-stroke:#b4dcfb;--v133-bg:#ebf7ff}
+html body.by127-china-home #globalPrayer .prayer,html body #prayer-box.hk-v032-prayer,html body #prayer-box.mc-v040-prayer{
+ display:grid!important;direction:ltr!important;grid-template-columns:minmax(220px,28%) minmax(0,1fr) minmax(160px,22%)!important;grid-template-rows:auto!important;
+ gap:10px!important;align-items:stretch!important;padding:12px!important;margin:8px auto 10px!important;width:100%!important;
+ min-height:0!important;height:auto!important;border:1px solid var(--v133-stroke)!important;border-radius:21px!important;
+ background:var(--v133-bg)!important;overflow:visible!important;box-shadow:0 5px 15px #0b628315!important;
+}
+html body.by127-china-home #globalPrayer .prayer-title,html body #prayer-box .hk-v032-city,html body #prayer-box .mc-v040-city{
+ grid-column:1!important;grid-row:1!important;direction:rtl!important;display:flex!important;flex-direction:column!important;
+ justify-content:center!important;align-items:stretch!important;gap:7px!important;min-height:175px!important;
+ margin:0!important;padding:13px 12px!important;text-align:right!important;border:1px solid var(--v133-stroke)!important;
+ border-radius:16px!important;background:white!important;min-width:0!important;box-shadow:none!important;
+}
+html body.by127-china-home #globalPrayer .by127-main-heading,html body #prayer-box .by128-heading{
+ display:block!important;font-size:clamp(16px,1.65vw,22px)!important;line-height:1.45!important;color:var(--v133-blue)!important;
+ font-weight:900!important;text-align:right!important;
+}
+html body.by127-china-home #globalPrayer .by127-help,html body #prayer-box .by128-help{
+ display:block!important;font-size:11px!important;line-height:1.4!important;color:#68859c!important;text-align:right!important;
+}
+html body.by127-china-home #globalPrayer .by127-city-label,html body #prayer-box .by128-label{
+ display:block!important;font-size:11px!important;color:#527b9d!important;text-align:right!important;
+}
+html body.by127-china-home #globalPrayer .prayer-title>[data-i18n="prayerHeading"],
+html body #prayer-box .hk-v032-city>label:not(.by128-label),html body #prayer-box .mc-v040-city>label:not(.by128-label){display:none!important;}
+html body.by127-china-home #globalPrayer #prayerCity,html body #prayer-box .hk-v032-city select,html body #prayer-box .mc-v040-city select{
+ display:block!important;width:100%!important;max-width:none!important;min-height:37px!important;margin:0!important;
+ padding:7px 10px!important;text-align:right!important;background:white!important;color:#073a70!important;
+ border:1px solid #9ecdf6!important;border-radius:10px!important;font-size:13px!important;font-weight:800!important;
+}
+html body.by127-china-home #globalPrayer .prayer-cells,html body #prayer-box .hk-v032-times,html body #prayer-box .mc-v040-times{
+ grid-column:2!important;grid-row:1!important;order:initial!important;direction:rtl!important;display:grid!important;
+ grid-template-columns:repeat(3,minmax(0,1fr))!important;grid-template-rows:auto repeat(2,minmax(55px,1fr))!important;
+ align-content:stretch!important;gap:7px!important;min-height:175px!important;min-width:0!important;
+ padding:10px!important;margin:0!important;background:white!important;border:1px solid var(--v133-stroke)!important;
+ border-radius:16px!important;box-shadow:none!important;
+}
+html body.by127-china-home #globalPrayer .prayer-cells::before,html body #prayer-box .hk-v032-times::before,html body #prayer-box .mc-v040-times::before{
+ content:"◷ مواقيت الصلاة"!important;display:block!important;grid-column:1/-1!important;font-size:14px!important;
+ font-weight:900!important;color:var(--v133-blue)!important;text-align:right!important;margin:0!important;
+}
+html body.by127-china-home #globalPrayer .prayer-item,html body #prayer-box .hk-v032-time,html body #prayer-box .mc-v040-time{
+ display:flex!important;flex-direction:column!important;justify-content:center!important;align-items:center!important;
+ min-height:55px!important;padding:7px 3px!important;margin:0!important;gap:3px!important;
+ background:#eff8ff!important;border:0!important;border-radius:10px!important;
+}
+html body.by127-china-home #globalPrayer .prayer-item strong,html body #prayer-box .hk-v032-time span,html body #prayer-box .mc-v040-time span{
+ font-size:11px!important;font-weight:700!important;color:#5d829d!important;line-height:1.3!important;
+}
+html body.by127-china-home #globalPrayer .prayer-item span,html body #prayer-box .hk-v032-time b,html body #prayer-box .mc-v040-time b{
+ display:block!important;font-size:clamp(14px,1.5vw,18px)!important;font-weight:900!important;line-height:1.3!important;
+ color:#073669!important;direction:ltr!important;margin:0!important;white-space:nowrap!important;
+}
+html body.by127-china-home #globalPrayer .qibla,html body #prayer-box .hk-v032-compass,html body #prayer-box .mc-v040-compass{
+ grid-column:3!important;grid-row:1!important;order:initial!important;direction:rtl!important;
+ display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;
+ min-width:0!important;min-height:175px!important;gap:6px!important;padding:10px!important;margin:0!important;
+ background:white!important;border:1px solid var(--v133-stroke)!important;border-radius:16px!important;
+ text-align:center!important;box-shadow:none!important;
+}
+html body.by127-china-home #globalPrayer .qibla b,html body #prayer-box .hk-v032-compass strong,html body #prayer-box .mc-v040-compass h3{
+ font-size:15px!important;font-weight:900!important;color:var(--v133-blue)!important;margin:0!important;
+}
+html body.by127-china-home #globalPrayer .qibla .compass,html body #prayer-box .hk-v032-dial,html body #prayer-box .mc-v040-dial{
+ width:88px!important;height:88px!important;border:4px solid #cba35a!important;border-radius:50%!important;
+ background:radial-gradient(circle,#fff,#e6f4ff)!important;
+}
+html body.by127-china-home #globalPrayer #qiblaValue,html body #prayer-box #hk-v032-bearing,html body #prayer-box #mc-v040-qibla{
+ display:block!important;font-size:23px!important;line-height:1.1!important;font-weight:900!important;
+ color:#0669b4!important;margin:0!important;
+}
+html body.by127-china-home #globalPrayer .qibla::after{display:none!important;}
+html body.by127-china-home #globalPrayer .qibla small{display:none!important;}
+@media(max-width:820px){
+ html body.by127-china-home #globalPrayer .prayer,html body #prayer-box.hk-v032-prayer,html body #prayer-box.mc-v040-prayer{
+  grid-template-columns:minmax(0,1fr) minmax(125px,38%)!important;grid-template-rows:auto auto!important;gap:8px!important;padding:8px!important;
+ }
+ html body.by127-china-home #globalPrayer .prayer-title,html body #prayer-box .hk-v032-city,html body #prayer-box .mc-v040-city{
+  grid-column:1!important;grid-row:1!important;min-height:147px!important;
+ }
+ html body.by127-china-home #globalPrayer .qibla,html body #prayer-box .hk-v032-compass,html body #prayer-box .mc-v040-compass{
+  grid-column:2!important;grid-row:1!important;min-height:147px!important;
+ }
+ html body.by127-china-home #globalPrayer .prayer-cells,html body #prayer-box .hk-v032-times,html body #prayer-box .mc-v040-times{
+  grid-column:1/-1!important;grid-row:2!important;min-height:0!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;
+ }
+ html body.by127-china-home #globalPrayer .qibla .compass,html body #prayer-box .hk-v032-dial,html body #prayer-box .mc-v040-dial{
+  width:66px!important;height:66px!important;
+ }
+}
+</style>
+<style id="by134-city-panel-cleanup">
+html body #prayer-box .hk-v032-city img,
+html body #prayer-box .mc-v040-city img,
+html body #prayer-box .hk-v032-city picture,
+html body #prayer-box .mc-v040-city picture,
+html body #prayer-box .hk-v032-city a,
+html body #prayer-box .mc-v040-city a,
+html body #prayer-box .hk-v032-city button,
+html body #prayer-box .mc-v040-city button,
+html body #prayer-box .hk-v032-city .city-photo,
+html body #prayer-box .mc-v040-city .city-photo,
+html body #prayer-box .hk-v032-city .city-image,
+html body #prayer-box .mc-v040-city .city-image,
+html body #prayer-box .hk-v032-city .city-banner,
+html body #prayer-box .mc-v040-city .city-banner,
+html body #prayer-box .hk-v032-city .by4-city-card,
+html body #prayer-box .mc-v040-city .by4-city-card,
+html body #prayer-box .hk-v032-city [class*="photo"],
+html body #prayer-box .mc-v040-city [class*="photo"],
+html body #prayer-box .hk-v032-city [class*="image"],
+html body #prayer-box .mc-v040-city [class*="image"],
+html body #prayer-box .hk-v032-city [class*="banner"],
+html body #prayer-box .mc-v040-city [class*="banner"],
+html body #prayer-box .hk-v032-city [class*="guide"],
+html body #prayer-box .mc-v040-city [class*="guide"]{display:none!important;}
+/* keep selector panel minimal if stray name blocks appear */
+html body #prayer-box .hk-v032-city > :not(label):not(select),
+html body #prayer-box .mc-v040-city > :not(label):not(select){display:none!important;}
+</style><style id="by136-prayer-city-text">
+/* V136: unified selector text only; country-home panels, with no other layout changes. */
+:root{--by136-font:Tahoma,"Segoe UI",Arial,sans-serif}
+html body.by127-china-home #globalPrayer .prayer-title,
+html body.by128-country-home .by128-smart-prayer .by128-city,
+html body #prayer-box .hk-v032-city,
+html body #prayer-box .mc-v040-city{
+  display:flex!important;flex-direction:column!important;
+  text-align:center!important;align-items:center!important;justify-content:center!important;
+  direction:rtl!important;gap:5px!important;
+}
+html body.by127-china-home #globalPrayer .by127-main-heading,
+html body.by128-country-home .by128-smart-prayer .by128-city>.by128-heading,
+html body #prayer-box .hk-v032-city>.by128-heading,
+html body #prayer-box .mc-v040-city>.by128-heading{
+  display:block!important;width:100%!important;max-width:100%!important;
+  font-family:var(--by136-font)!important;font-size:21px!important;font-weight:900!important;
+  color:#073a70!important;line-height:1.4!important;text-align:center!important;
+  margin:0!important;padding:0!important;letter-spacing:0!important;
+}
+html body.by127-china-home #globalPrayer .by127-help,
+html body.by128-country-home .by128-smart-prayer .by128-city>.by128-help,
+html body #prayer-box .hk-v032-city>.by128-help,
+html body #prayer-box .mc-v040-city>.by128-help{
+  display:block!important;width:100%!important;max-width:100%!important;
+  font-family:var(--by136-font)!important;font-size:11px!important;font-weight:400!important;
+  color:#63859f!important;line-height:1.6!important;text-align:center!important;
+  margin:0!important;padding:0!important;letter-spacing:0!important;
+}
+/* The selection dropdown follows the two approved lines. Keep the existing label for screen readers only. */
+html body.by127-china-home #globalPrayer .by127-city-label,
+html body.by127-china-home #globalPrayer .visually-hidden[data-i18n="prayerCitySelect"],
+html body.by128-country-home .by128-smart-prayer .by128-city>label,
+html body #prayer-box .hk-v032-city>label,
+html body #prayer-box .mc-v040-city>label{
+  position:absolute!important;width:1px!important;height:1px!important;padding:0!important;
+  margin:-1px!important;overflow:hidden!important;clip-path:inset(50%)!important;
+  white-space:nowrap!important;border:0!important;
+}
+html body.by127-china-home #globalPrayer #prayerCity,
+html body.by128-country-home .by128-smart-prayer .by128-city>select,
+html body #prayer-box .hk-v032-city>select,
+html body #prayer-box .mc-v040-city>select{
+  display:block!important;align-self:stretch!important;width:100%!important;max-width:100%!important;
+  margin:5px 0 0!important;min-height:37px!important;
+  font-family:var(--by136-font)!important;font-size:13px!important;
+}
+@media(max-width:560px){
+ html body.by127-china-home #globalPrayer .by127-main-heading,
+ html body.by128-country-home .by128-smart-prayer .by128-city>.by128-heading,
+ html body #prayer-box .hk-v032-city>.by128-heading,
+ html body #prayer-box .mc-v040-city>.by128-heading{font-size:17px!important;}
+ html body.by127-china-home #globalPrayer .by127-help,
+ html body.by128-country-home .by128-smart-prayer .by128-city>.by128-help,
+ html body #prayer-box .hk-v032-city>.by128-help,
+ html body #prayer-box .mc-v040-city>.by128-help{font-size:10px!important;}
+}
+</style>
+
+<style id="by138-single-bold-prayer-instruction">
+/* Only country-home prayer city picker. One bold centered instruction. */
+html body.by127-china-home #globalPrayer .prayer-title > .by127-main-heading,
+html body.by128-country-home .by128-smart-prayer .by128-city > .by128-heading,
+html body #prayer-box .hk-v032-city > .by128-heading,
+html body #prayer-box .mc-v040-city > .by128-heading {display:none!important;}
+
+html body.by127-china-home #globalPrayer .prayer-title > .by127-help,
+html body.by128-country-home .by128-smart-prayer .by128-city > .by128-help,
+html body #prayer-box .hk-v032-city > .by128-help,
+html body #prayer-box .mc-v040-city > .by128-help {
+ display:block!important;
+ width:100%!important;
+ font-family:Tahoma,"Segoe UI",Arial,sans-serif!important;
+ font-size:15px!important;
+ font-weight:900!important;
+ line-height:1.7!important;
+ color:#073a70!important;
+ text-align:center!important;
+ white-space:normal!important;
+ margin:0 auto 8px!important;
+ padding:0!important;
+}
+html body.by127-china-home #globalPrayer .prayer-title > .by127-city-label,
+html body.by128-country-home .by128-smart-prayer .by128-city > label,
+html body #prayer-box .hk-v032-city > .by128-label,
+html body #prayer-box .mc-v040-city > .by128-label {
+ display:none!important;
+}
+</style>
+<link rel="stylesheet" href="../shared/weather-home-v140.css" data-scope="country-home-weather"/><script src="../shared/place-share-v167.js?v=167"></script></head><body class="v048-home-country by061-malaysia-style by061-country">
+<button aria-label="فتح القائمة" class="home-mobile-menu" type="button">☰</button><div class="home-mobile-shade"></div><aside class="home-sidebar"><button aria-label="إغلاق" class="home-mobile-close" type="button">✕</button><div class="home-side-brand">🇲🇴 مكاو</div><a class="home-side-btn" href="#regions"><span class="home-side-emoji">📍</span>اختر المنطقة</a><a class="home-side-btn" href="#prayer-box"><span class="home-side-emoji">🕌</span>الصلاة والقبلة</a><a class="home-side-btn" href="#weather-box"><span class="home-side-emoji">🌤️</span>حالة الطقس</a><a class="home-side-btn" href="#search-start"><span class="home-side-emoji">🔎</span>بحث في الصفحة</a><a class="home-side-btn" href="#regions"><span class="home-side-emoji">🗺️</span>المناطق</a><a class="home-side-btn" href="../index.html"><span class="home-side-emoji">🌏</span>دليل آسيا</a></aside>
+<header class="top"><div class="wrap"><span class="brand">🇲🇴 بويوسف – دليلك إلى مكاو</span></div></header><main class="wrap home-shell"><section aria-label="بويوسف الصبر صديقك في مكاو" class="mc-ah-banner"><img alt="بويوسف الصبر – صديقك في مكاو ومعالم مكاو" fetchpriority="high" height="622" src="macau-ah-banner.webp" width="2048"/></section><section aria-label="مواقيت الصلاة والقبلة في مكاو" class="mc-v040-prayer" id="prayer-box"><div class="mc-v040-compass"><h3>القبلة</h3><div class="mc-v040-dial"><span class="north">ش</span><span class="east">ق</span><span class="west">غ</span><span class="south">ج</span><span class="mc-v040-kaaba" aria-hidden="true">🕋</span><span class="mc-v040-needle" id="mc-v040-needle">➤</span><span class="mc-v040-hub" aria-hidden="true"></span></div><div class="mc-v040-qibla-degree" id="mc-v040-qibla">—°</div></div><div class="mc-v040-times"><div class="mc-v040-time"><span>الفجر</span><b id="mc-fajr">—</b></div><div class="mc-v040-time"><span>الشروق</span><b id="mc-sunrise">—</b></div><div class="mc-v040-time"><span>الظهر</span><b id="mc-dhuhr">—</b></div><div class="mc-v040-time"><span>العصر</span><b id="mc-asr">—</b></div><div class="mc-v040-time"><span>المغرب</span><b id="mc-maghrib">—</b></div><div class="mc-v040-time"><span>العشاء</span><b id="mc-isha">—</b></div></div><div class="mc-v040-city"><span class="by128-help">اختر المدينة لعرض المواقيت واتجاه القبلة</span><label class="by128-label" for="mc-v040-prayercity">المدينة المختارة</label><select id="mc-v040-prayercity"><option value="peninsula">مكاو</option><option value="taipa">تايبا</option><option value="cotai">كوتاي</option><option value="coloane">كولوان</option></select></div></section><p aria-live="polite" class="mc-v040-status" id="mc-prayer-status" role="status"></p><section class="by140-weather" id="weather-box" aria-label="حالة الطقس" dir="rtl">
+<div class="by2-w-head"><div><h2 class="by2-w-title">🌤️ حالة الطقس</h2></div><button aria-label="تحديث حالة الطقس" class="by2-w-refresh" id="mc-v040-weatherrefresh" type="button">🔄 تحديث</button></div>
+<div class="by2-w-controls"><button type="button" class="by2-w-arrow" data-by140-next aria-label="عرض المدن التالية">❮</button><div class="by2-w-track" id="by140-mc-weather-track" role="list" aria-label="بطاقات طقس المدن"><div class="by2-w-card" data-by140-card="peninsula"><strong class="by2-w-city">مكاو</strong><span class="by2-w-icon" aria-hidden="true">⛅</span><b class="by2-w-temp">—</b><small class="by2-w-desc" data-mc-desc="peninsula">حالة الطقس</small><b data-mc-weather="peninsula" data-by140-source hidden>—</b></div><div class="by2-w-card" data-by140-card="taipa"><strong class="by2-w-city">تايبا</strong><span class="by2-w-icon" aria-hidden="true">⛅</span><b class="by2-w-temp">—</b><small class="by2-w-desc" data-mc-desc="taipa">حالة الطقس</small><b data-mc-weather="taipa" data-by140-source hidden>—</b></div><div class="by2-w-card" data-by140-card="cotai"><strong class="by2-w-city">كوتاي</strong><span class="by2-w-icon" aria-hidden="true">⛅</span><b class="by2-w-temp">—</b><small class="by2-w-desc" data-mc-desc="cotai">حالة الطقس</small><b data-mc-weather="cotai" data-by140-source hidden>—</b></div><div class="by2-w-card" data-by140-card="coloane"><strong class="by2-w-city">كولوان</strong><span class="by2-w-icon" aria-hidden="true">⛅</span><b class="by2-w-temp">—</b><small class="by2-w-desc" data-mc-desc="coloane">حالة الطقس</small><b data-mc-weather="coloane" data-by140-source hidden>—</b></div></div><button type="button" class="by2-w-arrow" data-by140-prev aria-label="عرض المدن السابقة">❯</button></div>
+<p class="by2-w-status" id="mc-v040-weatherstatus" role="status" aria-live="polite"></p>
+</section><h2 class="v048-main-heading">اختر المنطقة</h2><section class="regions by061-country-cards" id="regions"><a aria-label="استكشف شبه جزيرة مكاو" class="region" href="macau-peninsula.html"><span class="mc-landmark-visual"><img alt="معالم شبه جزيرة مكاو مثل أطلال سانت بول وساحة سينادو وبرج مكاو" class="mc-region-photo" height="480" loading="lazy" src="assets/regions/macau-peninsula-main.png" width="480"/><span class="mc-landmark-chip">📍 أطلال سانت بول</span></span><div class="region-copy"><h2>شبه جزيرة مكاو</h2><small>Macau Peninsula · 澳門半島</small><p>أطلال سانت بول وساحة سينادو وبرج مكاو، مع الأسواق والمعالم التاريخية.</p><span class="count">74 مكانًا</span></div></a><a aria-label="استكشف تايبا" class="region" href="taipa.html"><span class="mc-landmark-visual"><img alt="معالم تايبا مثل بيوت تايبا والواجهة البحرية" class="mc-region-photo" height="480" loading="lazy" src="assets/regions/taipa-main.png" width="480"/><span class="mc-landmark-chip">📍 بيوت تايبا التراثية</span></span><div class="region-copy"><h2>تايبا</h2><small>Taipa · 氹仔</small><p>بيوت تايبا والقرية التراثية والكافيهات والمطاعم والأجواء البرتغالية.</p><span class="count">34 مكانًا</span></div></a><a aria-label="استكشف كوتاي" class="region" href="cotai.html"><span class="mc-landmark-visual"><img alt="معالم كوتاي مثل برج باريسيان وقنوات فينيشيان" class="mc-region-photo" height="480" loading="lazy" src="assets/regions/cotai-main.png" width="480"/><span class="mc-landmark-chip">📍 باريسيان وفينيشيان</span></span><div class="region-copy"><h2>كوتاي</h2><small>Cotai · 路氹</small><p>المنتجعات الكبرى والمجمعات الفاخرة والعروض الليلية وأجواء كوتاي المضيئة.</p><span class="count">71 مكانًا</span></div></a><a aria-label="استكشف كولوان" class="region" href="coloane.html"><span class="mc-landmark-visual"><img alt="معالم كولوان مثل كنيسة القديس فرنسيس وشاطئ هاك سا" class="mc-region-photo" height="480" loading="lazy" src="assets/regions/coloane-main.png" width="480"/><span class="mc-landmark-chip">📍 كنيسة القديس فرنسيس</span></span><div class="region-copy"><h2>كولوان</h2><small>Coloane · 路環</small><p>كنيسة القديس فرنسيس وشاطئ هاك سا والطبيعة الهادئة والواجهة الساحلية.</p><span class="count">16 مكانًا</span></div></a></section><div class="by061-main-search search-panel" id="search-start"><input class="search" id="q" placeholder="ابحث في جميع مناطق ماكاو..."/><p class="small" id="summary"></p><div class="items" id="results"></div></div><details class="by061-extra-info"><summary>معلومات عن الوجهة</summary><section class="hero"><h1>اكتشف مكاو 🇲🇴</h1><p>195 مكانًا ضمن أربع مناطق سياحية، مع أسواق ومولات ومطاعم بيتزا وفنادق ومعالم ومواصلات. البحث شامل لجميع المناطق.</p></section></details></main><footer class="wrap foot">بويوسف – دليل مكاو V040 | قائمة بحثية، وليست سجلًا نهائيًا موثقًا لكل الفروع</footer><script src="data.js"></script><script>function esc(s){return String(s??'').replace(/[&<>"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch]))}function card(p){let fav=localStorage.getItem('macau-fav-'+p.id)==='1';let loc=encodeURIComponent(p.name_en+' Macau');return `<article class="item"><h3>${esc(p.name_ar)}</h3><div class="en">${esc(p.name_en)}</div><div class="small">${esc(p.category)} | ${esc(p.area)}</div><p class="muted">${esc(p.notes)}</p><div class="actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${loc}">خرائط</a><button onclick="copyName(${p.id})">نسخ الاسم</button><button onclick="toggleFav(${p.id},this)">${fav?'♥ المفضلة':'♡ المفضلة'}</button>${window.BY167_SHARE.markup({ar:p.name_ar,en:p.name_en,local:p.name_zh,address:p.address_zh||p.address_en||p.address,city:p.area,country:"Macau"})}</div></article>`}function copyName(id){let p=PLACES.find(x=>x.id===id);navigator.clipboard?.writeText(p.name_en)}function toggleFav(id,btn){let key='macau-fav-'+id;let v=localStorage.getItem(key)==='1';localStorage.setItem(key,v?'0':'1');btn.textContent=v?'♡ المفضلة':'♥ المفضلة'}const q=document.getElementById('q'),res=document.getElementById('results'),sum=document.getElementById('summary');q.addEventListener('input',()=>{let t=q.value.trim().toLocaleLowerCase();if(!t){res.innerHTML='';sum.textContent='اكتب اسم مكان أو المنطقة أو نوع النشاط';return}let hit=PLACES.filter(p=>[p.name_ar,p.name_en,p.name_zh,p.area,p.category].join(' ').toLocaleLowerCase().includes(t));sum.textContent=hit.length+' نتيجة';res.innerHTML=hit.map(card).join('')});sum.textContent='اكتب اسم مكان أو المنطقة أو نوع النشاط';</script><script id="mc-v040-prayer-weather-script">
 (function(){
 var locations={peninsula:[22.1987,113.5439],taipa:[22.1569,113.5610],cotai:[22.1385,113.5689],coloane:[22.1161,113.5573]};
 var picker=document.getElementById('mc-v040-prayercity');
@@ -118,4 +426,5 @@ weatherButton.addEventListener('click',weather);weather();
 </script><script defer="True" src="../shared/home-main-v048.js"></script>
 <script>window.BY051_PAGE={"kind": "country", "country": "macau", "title": "مكاو", "countryRoot": "", "banner": "../shared/v051-banners/macau-index.webp", "places": [{"label": "شبه جزيرة مكاو", "href": "macau-peninsula.html"}, {"label": "تايبا", "href": "taipa.html"}, {"label": "كوتاي", "href": "cotai.html"}, {"label": "كولوان", "href": "coloane.html"}], "availableServices": []};</script>
 <script src="../shared/china-chrome-v051.js"></script>
-<script src="../shared/guangzhou-single-layout-v052.js"></script><script defer="" src="../shared/asia-nav-v060.js"></script><script defer src="../shared/prayer-layout-v088.js"></script></body></html>
+<script src="../shared/guangzhou-single-layout-v052.js"></script><script defer="" src="../shared/asia-nav-country-home-v165.js"></script><script defer src="../shared/prayer-layout-v088.js"></script><script defer src="../shared/prayer-guangzhou-v107-3.js"></script><script defer src="../shared/country-home-v128.js"></script>
+<script defer src="../shared/weather-home-v140.js"></script></body></html>

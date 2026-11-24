@@ -1,0 +1,27 @@
+(function(){'use strict';
+const regions={"hong-kong":{"hong-kong-island":["جزيرة هونغ كونغ","Hong Kong Island","assets/regions/hong-kong-island-main.png"],"kowloon":["كولون","Kowloon","assets/regions/kowloon-main.png"],"new-territories":["الأقاليم الجديدة","New Territories","assets/regions/new-territories-main.png"],"central":["سنترال","Central","assets/regions/central.jpg"],"causeway-bay":["كوزواي باي","Causeway Bay","assets/regions/causeway-bay.jpg"],"lantau":["لانتاو","Lantau","assets/regions/lantau.jpg"],"mong-kok":["مونغ كوك","Mong Kok","assets/regions/mong-kok.jpg"],"sha-tin":["شا تين","Sha Tin","assets/regions/sha-tin.jpg"],"tsim-sha-tsui":["تسيم شا تسوي","Tsim Sha Tsui","assets/regions/tsim-sha-tsui.jpg"]},"macau":{"macau-peninsula":["شبه جزيرة مكاو","Macau Peninsula","assets/regions/macau-peninsula-main.png"],"taipa":["تايبا","Taipa","assets/regions/taipa-main.png"],"cotai":["كوتاي","Cotai","assets/regions/cotai-main.png"],"coloane":["كولوان","Coloane","assets/regions/coloane-main.png"]}}, islands={"island-langkawi":["لنكاوي","Langkawi","assets/islands/langkawi.jpg",6.35,99.8],"island-penang":["بينانغ","Penang","assets/islands/penang.jpg",5.416,100.33],"island-redang":["ريدانغ","Redang","assets/islands/redang.jpg",5.78,103.0],"island-perhentian":["برهنتيان","Perhentian Islands","assets/islands/perhentian.jpg",5.9,102.73],"island-tioman":["تيومان","Tioman","assets/islands/tioman.jpg",2.79,104.17],"island-pangkor":["بانغكور","Pangkor","assets/islands/pangkor.jpg",4.22,100.55]};
+const conf=window.BY051_PAGE||{},slug=(conf.placeSlug||location.pathname.split('/').pop().replace(/\.html$/,''));
+if(conf.kind!=='city'||!['hong-kong','macau','malaysia'].includes(conf.country))return;
+const details=(regions[conf.country]||{})[slug] || (conf.country==='malaysia'?islands[slug]:null);
+if(!details)return;
+const [ar,en,img,lat,lon]=details;
+function city(){const c=document.createElement('div');c.className='by108-city';c.innerHTML='<img src="'+img+'" alt="'+ar+'"><div><span class="by108-kicker">دليل المدينة</span><strong>'+ar+'</strong><small lang="en">'+en+'</small></div>';return c;}
+function qiblaAngle(a,b){const rad=Math.PI/180,L=(21.4225-b)*rad,x=Math.sin(L),y=Math.cos(a*rad)*Math.tan(21.4225*rad)-Math.sin(a*rad)*Math.cos(L);return ((Math.atan2(x,y)/rad+360)%360).toFixed(1);}
+function islandHeader(){if(!Number.isFinite(lat)||!Number.isFinite(lon))return;
+ const wrap=document.createElement('section');wrap.className='by108-three';wrap.setAttribute('aria-label','معلومات المدينة والقبلة ومواقيت الصلاة');wrap.append(city());
+ const q=document.createElement('div');q.className='by108-qibla';q.innerHTML='<div class="by052-qibla"><div class="by1073-qibla-title">القبلة</div><div class="by1073-direction-dial" style="--by1073-bearing:'+qiblaAngle(lat,lon)+'deg"><span class="by1073-direction-needle">➤</span></div><strong>'+qiblaAngle(lat,lon)+'°</strong><small>اتجاه جغرافي محسوب من الشمال</small></div>';wrap.append(q);
+ const p=document.createElement('div');p.className='by108-prayer';p.innerHTML='<div class="by108-title">🕌 مواقيت الصلاة – '+ar+'</div><div class="by052-times">'+[['الفجر','Fajr'],['الشروق','Sunrise'],['الظهر','Dhuhr'],['العصر','Asr'],['المغرب','Maghrib'],['العشاء','Isha']].map(x=>'<span>'+x[0]+'<b data-by108-time="'+x[1]+'">—</b></span>').join('')+'</div>';wrap.append(p);
+ const target=document.querySelector('main.wrap')||document.querySelector('main');if(!target)return;
+ const info=target.querySelector('.by107-information');if(info)info.insertAdjacentElement('afterend',wrap);else target.prepend(wrap);
+ fetch('https://api.aladhan.com/v1/timings?latitude='+lat+'&longitude='+lon+'&method=3').then(r=>{if(!r.ok)throw Error('not available');return r.json()}).then(o=>{const t=o?.data?.timings||{};wrap.querySelectorAll('[data-by108-time]').forEach(e=>e.textContent=(t[e.dataset.by108Time]||'—').split(' ')[0]);}).catch(()=>{p.insertAdjacentHTML('beforeend','<small style="text-align:center">تعذر تحميل مواقيت الصلاة؛ تحقق من الاتصال</small>');});
+}
+function regionHeader(){const live=document.querySelector('.by052-live-widget');if(!live)return false;
+ const old=live.querySelector('.by052-prayer-grid'),times=old?.querySelector('.by052-times'),q=old?.querySelector('.by052-qibla');if(!times||!q)return false;
+ const wrap=document.createElement('section');wrap.className='by108-three';wrap.setAttribute('aria-label','معلومات المدينة والقبلة ومواقيت الصلاة');wrap.append(city());
+ const qbox=document.createElement('div');qbox.className='by108-qibla';qbox.append(q);wrap.append(qbox);
+ const p=document.createElement('div');p.className='by108-prayer';const h=document.createElement('div');h.className='by108-title';h.textContent='🕌 مواقيت الصلاة – '+ar;p.append(h,times);wrap.append(p);
+ live.parentElement.insertBefore(wrap,live);if(old)old.remove();return true;
+}
+function apply(){if(document.querySelector('.by108-three'))return true;if(islands[slug]&&conf.country==='malaysia'){islandHeader();return true;}return regionHeader();}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{if(!apply()){let n=0;const t=setInterval(()=>{if(apply()||++n>30)clearInterval(t)},150)}},{once:true});else apply();
+})();

@@ -1,0 +1,8 @@
+/* V163 - Thai city pages only. No extra scroll-to-top button. */
+body.by146-thai-city #by060-nav .by060-top,
+body.v072-guangzhou-source.by146-thai-city #by060-nav .by060-top,
+body.by146-thai-city .bottom-navigation #pageScrollTop,
+body.by146-thai-city button.up { display:none !important; }
+/* Make the city-info panel visible when activated without showing it by default. */
+body.by146-thai-city .by107-information:not([hidden]){display:block !important;}
+body.by146-thai-city .by107-information[hidden]{display:none !important;}

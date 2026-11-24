@@ -1,0 +1,91 @@
+/* V153: Bangkok V152 layout parity for the other six Thai city interiors only.
+ * The original place data, JS event handlers, images, sidebar, and original city banner remain unchanged.
+ * Bangkok itself does not load this stylesheet.
+ */
+html body.by153-bangkok-standard{overflow-x:clip!important}
+html body.by153-bangkok-standard>.shell>main>.by4-header{
+ display:block!important;position:relative!important;max-width:100%!important;
+ width:100%!important;min-width:0!important;margin:0!important;padding:0!important;
+ background:transparent!important;border:0!important;box-shadow:none!important
+}
+/* One original city portrait/name card, before one dynamic navigation strip. */
+html body.by153-bangkok-standard .by4-header>.gz-overview.by4-prayer{
+ position:relative!important;display:block!important;width:100%!important;max-width:100%!important;
+ height:auto!important;min-height:0!important;max-height:none!important;
+ margin:8px 0 12px!important;padding:0!important;border:0!important;
+ background:transparent!important;box-shadow:none!important;overflow:visible!important;
+ grid-template-columns:none!important;grid-template-rows:none!important;grid-template-areas:none!important
+}
+html body.by153-bangkok-standard .by4-header>.gz-overview.by4-prayer>.city-banner{
+ position:relative!important;display:flex!important;direction:rtl!important;
+ align-items:center!important;justify-content:flex-start!important;gap:18px!important;
+ grid-area:auto!important;grid-column:auto!important;grid-row:auto!important;
+ visibility:visible!important;opacity:1!important;transform:none!important;
+ width:100%!important;max-width:100%!important;box-sizing:border-box!important;
+ min-height:156px!important;height:auto!important;margin:0!important;padding:13px 20px!important;
+ border:1.5px solid #e3aa30!important;border-radius:22px!important;
+ background:linear-gradient(120deg,#f8fcff,#e5f5ff)!important;
+ box-shadow:0 3px 12px #155b8720!important;overflow:hidden!important
+}
+html body.by153-bangkok-standard .by4-header>.gz-overview.by4-prayer>.city-banner>img{
+ display:block!important;flex:0 0 160px!important;width:160px!important;
+ max-width:160px!important;height:126px!important;object-fit:cover!important;
+ border:1px solid #a7d7f5!important;border-radius:15px!important
+}
+html body.by153-bangkok-standard .by4-header>.gz-overview.by4-prayer>.city-banner>div{
+ min-width:0!important;display:flex!important;flex:1!important;flex-direction:column!important;
+ align-items:flex-start!important;justify-content:center!important;text-align:right!important;gap:3px!important
+}
+html body.by153-bangkok-standard .by4-header>.gz-overview.by4-prayer>.city-banner h1{
+ font:900 clamp(27px,3.6vw,44px)/1.2 Tahoma,'Segoe UI',Arial,sans-serif!important;
+ color:#06355e!important;margin:0!important;text-align:right!important
+}
+html body.by153-bangkok-standard .by4-header>.gz-overview.by4-prayer>.city-banner p{
+ font:800 clamp(13px,1.6vw,19px)/1.4 Tahoma,'Segoe UI',Arial,sans-serif!important;
+ color:#2b6590!important;margin:0!important;text-align:right!important
+}
+/* Prayer and qibla remain intact as data/logic but never appear in city interior header. */
+html body.by153-bangkok-standard .by4-header>.gz-overview.by4-prayer>.gz-qibla-panel,
+html body.by153-bangkok-standard .by4-header>.gz-overview.by4-prayer>#globalPrayer,
+html body.by153-bangkok-standard .by4-header>.by4-prayer-note{display:none!important}
+/* The nav is created by the existing asia-nav-v060.js and enhanced by guangzhou-city-v146.js.
+ * Keep one instance; never create a second #by149-bangkok-bar. */
+html body.by153-bangkok-standard #by060-nav{
+ position:relative!important;z-index:2!important;box-sizing:border-box!important;
+ width:100%!important;max-width:100%!important;min-width:0!important;
+ margin:8px 0 12px!important;padding:9px!important;display:flex!important;
+ flex-wrap:wrap!important;align-items:center!important;gap:7px!important;
+ border-radius:16px!important;border:1px solid #9bd5ff!important;
+ background:#e9f6ff!important
+}
+/* Preserve hidden original filter search for in-page JS, with no second visible box. */
+html body.by153-bangkok-standard #by4-local-search{display:none!important}
+html body.by153-bangkok-standard #by149-bangkok-bar,
+html body.by153-bangkok-standard .by149-hero,
+html body.by153-bangkok-standard .by4-language-switch,
+html body.by153-bangkok-standard .by4-lang-switch,
+html body.by153-bangkok-standard .by4-language-bar{display:none!important}
+/* Match Bangkok's section card grid and eliminate clipping behind the single native sidebar. */
+html body.by153-bangkok-standard>.shell>main>.grid.section-cards{
+ display:grid!important;grid-template-columns:repeat(auto-fit,minmax(190px,1fr))!important;
+ gap:12px!important;max-width:100%!important;width:100%!important;
+ min-width:0!important;box-sizing:border-box!important;margin:10px 0!important
+}
+html body.by153-bangkok-standard>.shell>main>.directory{
+ width:100%!important;max-width:100%!important;min-width:0!important
+}
+html body.by153-bangkok-standard .section-cards>.section-card{
+ min-width:0!important;max-width:100%!important;box-sizing:border-box!important;
+ overflow-wrap:anywhere!important
+}
+@media(max-width:700px){
+ html body.by153-bangkok-standard>.shell>main>.grid.section-cards{
+  grid-template-columns:repeat(2,minmax(0,1fr))!important
+ }
+ html body.by153-bangkok-standard .by4-header>.gz-overview.by4-prayer>.city-banner{
+  min-height:115px!important;padding:10px 12px!important;gap:11px!important
+ }
+ html body.by153-bangkok-standard .by4-header>.gz-overview.by4-prayer>.city-banner>img{
+  flex-basis:95px!important;width:95px!important;max-width:95px!important;height:95px!important
+ }
+}

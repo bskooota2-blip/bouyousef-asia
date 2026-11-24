@@ -1,0 +1,86 @@
+{
+  "1100": {
+    ".gz-overview.by4-prayer": {
+      "x": 10,
+      "y": 422,
+      "w": 902,
+      "h": 356,
+      "grid": "494.438px 395.547px",
+      "writingMode": "horizontal-tb"
+    },
+    ".gz-overview > .city-banner": {
+      "x": 418,
+      "y": 422,
+      "w": 494,
+      "h": 193,
+      "grid": "none",
+      "writingMode": "horizontal-tb"
+    },
+    ".gz-overview > .gz-qibla-panel": {
+      "x": 10,
+      "y": 422,
+      "w": 396,
+      "h": 193,
+      "grid": "none",
+      "writingMode": "horizontal-tb"
+    },
+    ".gz-overview > #globalPrayer": {
+      "x": 10,
+      "y": 627,
+      "w": 902,
+      "h": 139,
+      "grid": "none",
+      "writingMode": "horizontal-tb"
+    },
+    "#selectedCityTitle": {
+      "x": 701,
+      "y": 501,
+      "w": 91,
+      "h": 46,
+      "grid": "none",
+      "writingMode": "horizontal-tb"
+    }
+  },
+  "390": {
+    ".gz-overview.by4-prayer": {
+      "x": 8,
+      "y": 243,
+      "w": 374,
+      "h": 565,
+      "grid": "374px",
+      "writingMode": "horizontal-tb"
+    },
+    ".gz-overview > .city-banner": {
+      "x": 8,
+      "y": 243,
+      "w": 374,
+      "h": 135,
+      "grid": "none",
+      "writingMode": "horizontal-tb"
+    },
+    ".gz-overview > .gz-qibla-panel": {
+      "x": 8,
+      "y": 390,
+      "w": 374,
+      "h": 193,
+      "grid": "none",
+      "writingMode": "horizontal-tb"
+    },
+    ".gz-overview > #globalPrayer": {
+      "x": 8,
+      "y": 595,
+      "w": 374,
+      "h": 193,
+      "grid": "none",
+      "writingMode": "horizontal-tb"
+    },
+    "#selectedCityTitle": {
+      "x": 217,
+      "y": 299,
+      "w": 66,
+      "h": 34,
+      "grid": "none",
+      "writingMode": "horizontal-tb"
+    }
+  }
+}

@@ -1,0 +1,265 @@
+
+/* V107.3 – Match Guangzhou city header cards: prayer left, qibla center, city right. */
+:root{--by1073-gold:#d9a83f;--by1073-sky:#f6fcff;--by1073-sky2:#e4f4ff;--by1073-ink:#07345f;--by1073-note:#496e8b}
+
+/* 1) Thailand + Malaysia city pages (existing Guangzhou-style markup). */
+body .gz-overview.by4-prayer,
+body.by051-active .gz-overview.by4-prayer,
+body.v072-guangzhou-source .by4-header>.gz-overview.by4-prayer{
+  display:grid!important;
+  direction:ltr!important;
+  grid-template-columns:minmax(0,1.28fr) minmax(230px,.86fr) minmax(0,1.18fr)!important;
+  grid-template-rows:auto!important;
+  gap:16px!important;
+  width:100%!important;
+  max-width:1120px!important;
+  margin:0 auto!important;
+  min-height:0!important;
+  background:transparent!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  overflow:visible!important;
+  align-items:stretch!important;
+}
+body .gz-overview.by4-prayer>#globalPrayer,
+body .gz-overview.by4-prayer>.gz-qibla-panel,
+body .gz-overview.by4-prayer>.city-banner{
+  min-width:0!important;
+  width:100%!important;
+  max-width:100%!important;
+  min-height:175px!important;
+  border:1.8px solid var(--by1073-gold)!important;
+  border-radius:24px!important;
+  background:linear-gradient(120deg,#f8fcff,#e7f5ff)!important;
+  box-shadow:0 3px 8px #1e578514!important;
+  box-sizing:border-box!important;
+  overflow:hidden!important;
+}
+body .gz-overview.by4-prayer>#globalPrayer{grid-column:1!important;grid-row:1!important;margin:0!important;padding:0!important;}
+body .gz-overview.by4-prayer>.gz-qibla-panel{grid-column:2!important;grid-row:1!important;display:flex!important;align-items:center!important;justify-content:center!important;padding:0!important;background:linear-gradient(135deg,#f8fcff,#e9f7ff)!important;}
+body .gz-overview.by4-prayer>.city-banner{grid-column:3!important;grid-row:1!important;display:flex!important;flex-direction:row!important;direction:ltr!important;align-items:center!important;gap:22px!important;padding:17px!important;margin:0!important;text-align:right!important;background:linear-gradient(110deg,#f8fcff,#dbefff)!important;}
+body .gz-overview.by4-prayer>.city-banner img{width:clamp(160px,38%,240px)!important;height:135px!important;object-fit:cover!important;border-radius:18px!important;border:2px solid #fff!important;max-width:45%!important;margin:0!important;}
+body .gz-overview.by4-prayer>.city-banner>div{display:flex!important;flex-direction:column!important;justify-content:center!important;align-items:flex-start!important;gap:6px!important;direction:rtl!important;min-width:0!important;flex:1!important;}
+body .gz-overview.by4-prayer>.city-banner .city-kicker{font-size:14px!important;background:#e6f5ff!important;color:#12598e!important;padding:7px 14px!important;border-radius:20px!important;border:0!important;line-height:1.2!important;display:inline-block!important;}
+body .gz-overview.by4-prayer>.city-banner h1{font-size:clamp(28px,4vw,47px)!important;line-height:1.1!important;margin:6px 0 0!important;color:var(--by1073-ink)!important;font-weight:900!important;}
+body .gz-overview.by4-prayer>.city-banner p{margin:0!important;font-weight:700!important;color:#416b8d!important;font-size:18px!important;line-height:1.2!important;}
+body .gz-overview.by4-prayer .gz-qibla-panel .qibla,
+body .gz-overview.by4-prayer .gz-qibla-panel .by4-compass{
+  border:0!important;min-width:0!important;width:100%!important;min-height:175px!important;padding:12px 10px!important;display:grid!important;grid-template-columns:1fr 1fr!important;grid-template-rows:auto auto auto!important;align-items:center!important;gap:3px 8px!important;direction:ltr!important;text-align:center!important;background:transparent!important;box-shadow:none!important;
+}
+body .gz-overview.by4-prayer .gz-qibla-panel :is(.qibla-name,b,strong,h3):first-child{grid-column:2!important;grid-row:1!important;font-size:20px!important;color:#092f58!important;line-height:1.2!important;margin:0!important;}
+body .gz-overview.by4-prayer .gz-qibla-panel :is(.compass,.by4-dial){grid-column:1!important;grid-row:1/4!important;width:min(140px,100%)!important;height:auto!important;aspect-ratio:1!important;margin:0 auto!important;border:5px solid #caa256!important;border-radius:50%!important;background:radial-gradient(circle at 40% 35%,#fff 20%,#d8efff 100%)!important;box-shadow:0 3px 12px #116a9c2b,inset 0 0 0 2px #fff!important;display:block!important;position:relative!important;}
+body .gz-overview.by4-prayer .gz-qibla-panel :is(.direction,#by4-bearing,#hk-v032-bearing,.mc-v040-qibla-degree,strong.direction,strong#qiblaValue){grid-column:2!important;grid-row:2!important;font-size:32px!important;color:#0e4d8b!important;line-height:1.2!important;margin:0!important;font-weight:900!important;}
+body .gz-overview.by4-prayer .gz-qibla-panel small{grid-column:2!important;grid-row:3!important;font-size:11px!important;line-height:1.4!important;max-width:none!important;direction:rtl!important;color:#476a88!important;margin:0!important;}
+body .gz-overview.by4-prayer>#globalPrayer .prayer{height:100%!important;min-height:175px!important;max-height:none!important;border:0!important;border-radius:24px!important;background:transparent!important;display:flex!important;flex-direction:column!important;gap:0!important;box-shadow:none!important;overflow:hidden!important;margin:0!important;padding:0!important;}
+body .gz-overview.by4-prayer #globalPrayer .prayer-title{flex:0 0 auto!important;min-width:0!important;width:100%!important;height:auto!important;display:flex!important;flex-direction:row!important;justify-content:center!important;gap:12px!important;align-items:center!important;padding:15px 10px 8px!important;background:transparent!important;font-size:18px!important;font-weight:900!important;color:#07345f!important;text-align:center!important;line-height:1.3!important;direction:rtl!important;}
+body .gz-overview.by4-prayer #globalPrayer .prayer-title select,
+body .gz-overview.by4-prayer #globalPrayer .prayer-title small{display:none!important;}
+body .gz-overview.by4-prayer #globalPrayer .prayer-cells{flex:1!important;min-width:0!important;width:100%!important;display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr))!important;align-items:stretch!important;align-content:stretch!important;direction:rtl!important;padding:0 0 8px!important;}
+body .gz-overview.by4-prayer #globalPrayer .prayer-item{min-width:0!important;text-align:center!important;padding:12px 4px!important;border-left:1px solid #b9d7e9!important;display:flex!important;flex-direction:column!important;justify-content:center!important;gap:8px!important;}
+body .gz-overview.by4-prayer #globalPrayer .prayer-item:last-child{border-left:0!important;}
+body .gz-overview.by4-prayer #globalPrayer .prayer-item strong{font-size:14px!important;display:block!important;color:#063666!important;line-height:1.25!important;white-space:nowrap!important;}
+body .gz-overview.by4-prayer #globalPrayer .prayer-item span{display:block!important;font-weight:800!important;font-size:clamp(13px,1.5vw,20px)!important;font-variant-numeric:tabular-nums!important;direction:ltr!important;color:#07345f!important;line-height:1.2!important;}
+body .by4-prayer-note{max-width:1060px!important;margin:6px auto 20px!important;color:var(--by1073-note)!important;text-align:center!important;font-size:11px!important;padding:0 10px!important;}
+body .gz-overview.by4-prayer>#by4-city-prayer{display:none!important;}
+
+/* 2) Hong Kong + Macau country overview pages. */
+body :is(.hk-v032-prayer,.mc-v040-prayer){
+  display:grid!important;direction:ltr!important;grid-template-columns:minmax(0,1.28fr) minmax(230px,.86fr) minmax(0,1.18fr)!important;gap:16px!important;max-width:1120px!important;margin:0 auto!important;min-height:0!important;border:0!important;background:transparent!important;align-items:stretch!important;overflow:visible!important;
+}
+body :is(.hk-v032-prayer,.mc-v040-prayer)>:is(.hk-v032-times,.mc-v040-times,.hk-v032-compass,.mc-v040-compass,.hk-v032-city,.mc-v040-city){
+  min-width:0!important;width:100%!important;max-width:100%!important;min-height:175px!important;border:1.8px solid var(--by1073-gold)!important;border-radius:24px!important;background:linear-gradient(120deg,#f8fcff,#e7f5ff)!important;box-shadow:0 3px 8px #1e578514!important;box-sizing:border-box!important;overflow:hidden!important;
+}
+body :is(.hk-v032-prayer,.mc-v040-prayer)>:is(.hk-v032-times,.mc-v040-times){grid-column:1!important;grid-row:1!important;display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr))!important;align-items:stretch!important;padding:0 0 8px!important;direction:rtl!important;}
+body :is(.hk-v032-prayer,.mc-v040-prayer) .by1073-time-title{grid-column:1/-1!important;display:flex!important;justify-content:center!important;align-items:center!important;padding:15px 10px 8px!important;font-size:18px!important;font-weight:900!important;color:#07345f!important;line-height:1.3!important;text-align:center!important;direction:rtl!important;}
+body :is(.hk-v032-prayer,.mc-v040-prayer) :is(.hk-v032-time,.mc-v040-time){min-width:0!important;text-align:center!important;padding:12px 4px!important;border-left:1px solid #b9d7e9!important;display:flex!important;flex-direction:column!important;justify-content:center!important;gap:8px!important;background:transparent!important;}
+body :is(.hk-v032-prayer,.mc-v040-prayer) :is(.hk-v032-time,.mc-v040-time):last-child{border-left:0!important;}
+body :is(.hk-v032-prayer,.mc-v040-prayer) :is(.hk-v032-time,.mc-v040-time)>span{font-size:14px!important;font-weight:800!important;color:#063666!important;line-height:1.25!important;white-space:nowrap!important;}
+body :is(.hk-v032-prayer,.mc-v040-prayer) :is(.hk-v032-time,.mc-v040-time)>b{font-size:clamp(13px,1.5vw,20px)!important;font-weight:900!important;direction:ltr!important;color:#07345f!important;line-height:1.2!important;}
+body :is(.hk-v032-prayer,.mc-v040-prayer)>:is(.hk-v032-compass,.mc-v040-compass){grid-column:2!important;grid-row:1!important;display:grid!important;grid-template-columns:1fr 1fr!important;grid-template-rows:auto auto auto!important;align-items:center!important;gap:3px 8px!important;padding:12px 10px!important;text-align:center!important;background:linear-gradient(135deg,#f8fcff,#e9f7ff)!important;}
+body :is(.hk-v032-prayer,.mc-v040-prayer)>:is(.hk-v032-compass,.mc-v040-compass)>:is(strong,h3){grid-column:2!important;grid-row:1!important;font-size:20px!important;color:#092f58!important;line-height:1.2!important;margin:0!important;}
+body :is(.hk-v032-prayer,.mc-v040-prayer)>:is(.hk-v032-compass,.mc-v040-compass)>:is(.hk-v032-dial,.mc-v040-dial){grid-column:1!important;grid-row:1/4!important;width:min(140px,100%)!important;height:auto!important;aspect-ratio:1!important;margin:0 auto!important;border:5px solid #caa256!important;border-radius:50%!important;background:radial-gradient(circle at 40% 35%,#fff 20%,#d8efff 100%)!important;box-shadow:0 3px 12px #116a9c2b,inset 0 0 0 2px #fff!important;display:block!important;position:relative!important;}
+body :is(.hk-v032-prayer,.mc-v040-prayer)>:is(.hk-v032-compass,.mc-v040-compass)>:is(#hk-v032-bearing,.mc-v040-qibla-degree){grid-column:2!important;grid-row:2!important;font-size:32px!important;color:#0e4d8b!important;line-height:1.2!important;margin:0!important;font-weight:900!important;}
+body :is(.hk-v032-prayer,.mc-v040-prayer)>:is(.hk-v032-city,.mc-v040-city){grid-column:3!important;grid-row:1!important;display:flex!important;flex-direction:column!important;justify-content:center!important;align-items:stretch!important;gap:9px!important;padding:17px!important;background:linear-gradient(110deg,#f8fcff,#dbefff)!important;}
+body .by1073-city-visual{display:flex!important;flex-direction:row!important;direction:ltr!important;align-items:center!important;gap:22px!important;min-width:0!important;}
+body .by1073-city-image{width:clamp(160px,38%,240px)!important;height:135px!important;object-fit:cover!important;border-radius:18px!important;border:2px solid #fff!important;max-width:45%!important;flex-shrink:0!important;}
+body .by1073-city-copy{display:flex!important;flex-direction:column!important;justify-content:center!important;align-items:flex-start!important;gap:6px!important;direction:rtl!important;min-width:0!important;flex:1!important;}
+body .by1073-city-kicker{font-size:14px!important;background:#e6f5ff!important;color:#12598e!important;padding:7px 14px!important;border-radius:20px!important;line-height:1.2!important;display:inline-block!important;}
+body .by1073-city-title{font-size:clamp(28px,4vw,47px)!important;line-height:1.1!important;margin:6px 0 0!important;color:var(--by1073-ink)!important;font-weight:900!important;}
+body .by1073-city-copy small{margin:0!important;font-weight:700!important;color:#416b8d!important;font-size:18px!important;line-height:1.2!important;}
+body :is(.hk-v032-city,.mc-v040-city) label{font-size:12px!important;font-weight:800!important;color:#063f72!important;line-height:1.35!important;display:block!important;direction:rtl!important;text-align:right!important;}
+body :is(.hk-v032-city,.mc-v040-city) select{display:block!important;align-self:flex-end!important;max-width:160px!important;width:100%!important;padding:7px 8px!important;border:1px solid #96c9e7!important;border-radius:9px!important;background:#fff!important;color:#063f72!important;font:700 13px Tahoma,Arial,sans-serif!important;direction:rtl!important;}
+
+/* 3) Hong Kong + Macau region pages generated by shared layout scripts. */
+body.by051-active .by051-live-row .by052-live-widget{border:0!important;background:transparent!important;padding:0!important;gap:8px!important;}
+body.by051-active .by051-live-row .by052-prayer-grid{
+  display:grid!important;direction:ltr!important;grid-template-columns:minmax(0,1.28fr) minmax(230px,.86fr) minmax(0,1.18fr)!important;gap:16px!important;max-width:1120px!important;margin:0 auto!important;min-height:0!important;align-items:stretch!important;
+}
+body.by051-active .by051-live-row .by052-prayer-heading{display:none!important;}
+body.by051-active .by051-live-row .by052-prayer-grid>:is(.by052-times,.by052-qibla,.by088-region-city){min-width:0!important;width:100%!important;max-width:100%!important;min-height:175px!important;border:1.8px solid var(--by1073-gold)!important;border-radius:24px!important;background:linear-gradient(120deg,#f8fcff,#e7f5ff)!important;box-shadow:0 3px 8px #1e578514!important;box-sizing:border-box!important;overflow:hidden!important;}
+body.by051-active .by051-live-row .by052-prayer-grid>.by052-times{grid-column:1!important;grid-row:1!important;display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr))!important;align-items:stretch!important;padding:0 0 8px!important;direction:rtl!important;}
+body.by051-active .by051-live-row .by052-times .by1073-time-title{grid-column:1/-1!important;display:flex!important;justify-content:center!important;align-items:center!important;padding:15px 10px 8px!important;font-size:18px!important;font-weight:900!important;color:#07345f!important;line-height:1.3!important;text-align:center!important;direction:rtl!important;}
+body.by051-active .by051-live-row .by052-prayer-grid>.by052-times>span{min-width:0!important;text-align:center!important;padding:12px 4px!important;border-left:1px solid #b9d7e9!important;display:flex!important;flex-direction:column!important;justify-content:center!important;gap:8px!important;font-size:14px!important;color:#063666!important;line-height:1.25!important;white-space:nowrap!important;}
+body.by051-active .by051-live-row .by052-prayer-grid>.by052-times>span:last-child{border-left:0!important;}
+body.by051-active .by051-live-row .by052-prayer-grid>.by052-times>span>b{font-size:clamp(13px,1.5vw,20px)!important;font-weight:900!important;direction:ltr!important;color:#07345f!important;line-height:1.2!important;}
+body.by051-active .by051-live-row .by052-prayer-grid>.by052-qibla{grid-column:2!important;grid-row:1!important;display:grid!important;grid-template-columns:1fr 1fr!important;grid-template-rows:auto auto auto!important;align-items:center!important;gap:3px 8px!important;padding:12px 10px!important;text-align:center!important;background:linear-gradient(135deg,#f8fcff,#e9f7ff)!important;}
+body.by051-active .by051-live-row .by052-prayer-grid>.by052-qibla>.by1073-direction-dial{grid-column:1!important;grid-row:1/4!important;margin:0 auto!important;}
+body.by051-active .by051-live-row .by052-qibla>.by1073-qibla-title{grid-column:2!important;grid-row:1!important;font-size:20px!important;color:#092f58!important;font-weight:900!important;line-height:1.2!important;margin:0!important;}
+body.by051-active .by051-live-row .by052-qibla>strong{grid-column:2!important;grid-row:2!important;font-size:32px!important;color:#0e4d8b!important;line-height:1.2!important;margin:0!important;font-weight:900!important;}
+body.by051-active .by051-live-row .by052-qibla>small{grid-column:2!important;grid-row:3!important;font-size:11px!important;line-height:1.4!important;max-width:none!important;direction:rtl!important;color:#476a88!important;margin:0!important;}
+body.by051-active .by051-live-row .by052-prayer-grid>.by088-region-city{grid-column:3!important;grid-row:1!important;display:flex!important;flex-direction:column!important;justify-content:center!important;align-items:stretch!important;gap:9px!important;padding:17px!important;background:linear-gradient(110deg,#f8fcff,#dbefff)!important;text-align:right!important;}
+body.by051-active .by051-live-row .by088-region-city .by088-select,
+body.by051-active .by051-live-row .by088-region-city .by088-select-label{display:none!important;}
+body.by051-active .by051-live-row .by088-region-city strong:not(.by1073-city-title){display:none!important;}
+body .by1073-direction-dial{border:5px solid #caa256!important;border-radius:50%!important;width:140px!important;height:140px!important;display:grid!important;place-items:center!important;position:relative!important;background:radial-gradient(circle at 40% 35%,#fff 20%,#d8efff 100%)!important;box-shadow:0 3px 12px #116a9c2b,inset 0 0 0 2px #fff!important;flex-shrink:0!important;}
+body .by1073-direction-dial:before{content:'ش';position:absolute;top:4px;font-weight:900;font-size:11px;color:#c23c3c;}
+body .by1073-direction-needle{font-size:40px!important;color:#c33b34!important;display:inline-block!important;transform:rotate(var(--by1073-bearing,0deg))!important;line-height:1!important;}
+
+/* Responsive: top row city + qibla, bottom row prayers. */
+@media(max-width:980px){
+  body .gz-overview.by4-prayer,
+  body :is(.hk-v032-prayer,.mc-v040-prayer),
+  body.by051-active .by051-live-row .by052-prayer-grid{
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+    grid-template-rows:auto auto!important;
+    gap:12px!important;
+  }
+  body .gz-overview.by4-prayer>#globalPrayer,
+  body :is(.hk-v032-prayer,.mc-v040-prayer)>:is(.hk-v032-times,.mc-v040-times),
+  body.by051-active .by051-live-row .by052-prayer-grid>.by052-times{grid-column:1/-1!important;grid-row:2!important;}
+  body .gz-overview.by4-prayer>.gz-qibla-panel,
+  body :is(.hk-v032-prayer,.mc-v040-prayer)>:is(.hk-v032-compass,.mc-v040-compass),
+  body.by051-active .by051-live-row .by052-prayer-grid>.by052-qibla{grid-column:1!important;grid-row:1!important;}
+  body .gz-overview.by4-prayer>.city-banner,
+  body :is(.hk-v032-prayer,.mc-v040-prayer)>:is(.hk-v032-city,.mc-v040-city),
+  body.by051-active .by051-live-row .by052-prayer-grid>.by088-region-city{grid-column:2!important;grid-row:1!important;}
+}
+@media(max-width:680px){
+  body .gz-overview.by4-prayer,
+  body :is(.hk-v032-prayer,.mc-v040-prayer),
+  body.by051-active .by051-live-row .by052-prayer-grid{
+    grid-template-columns:1fr!important;
+    grid-template-rows:auto auto auto!important;
+  }
+  body .gz-overview.by4-prayer>#globalPrayer,
+  body .gz-overview.by4-prayer>.gz-qibla-panel,
+  body .gz-overview.by4-prayer>.city-banner,
+  body :is(.hk-v032-prayer,.mc-v040-prayer)>:is(.hk-v032-times,.mc-v040-times,.hk-v032-compass,.mc-v040-compass,.hk-v032-city,.mc-v040-city),
+  body.by051-active .by051-live-row .by052-prayer-grid>:is(.by052-times,.by052-qibla,.by088-region-city){grid-column:1!important;grid-row:auto!important;min-height:150px!important;}
+  body .gz-overview.by4-prayer #globalPrayer .prayer-cells,
+  body :is(.hk-v032-prayer,.mc-v040-prayer)>:is(.hk-v032-times,.mc-v040-times),
+  body.by051-active .by051-live-row .by052-prayer-grid>.by052-times{grid-template-columns:repeat(3,minmax(0,1fr))!important;}
+  body .gz-overview.by4-prayer>.city-banner,
+  body .by1073-city-visual{gap:14px!important;}
+  body .gz-overview.by4-prayer>.city-banner img,
+  body .by1073-city-image{width:110px!important;height:92px!important;max-width:38%!important;}
+  body .gz-overview.by4-prayer>.city-banner h1,
+  body .by1073-city-title{font-size:26px!important;}
+  body .by1073-direction-dial{width:105px!important;height:105px!important;}
+}
+
+
+/* V107.4: final, high-specificity override for legacy inline V072/V107.1 rules.
+   Explicit named areas + matching child areas prevents mixed grid placement. */
+body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer {
+  display:grid!important; direction:ltr!important;
+  grid-template-columns:minmax(0,1.38fr) minmax(230px,.86fr) minmax(275px,1.04fr)!important;
+  grid-template-areas:"prayers qibla city"!important;
+  grid-template-rows:auto!important;
+  gap:12px!important; align-items:stretch!important;
+  height:auto!important; min-height:0!important;
+}
+body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer > #globalPrayer {
+  grid-area:prayers!important;grid-column:1!important;grid-row:1!important;
+  height:auto!important;min-height:185px!important;max-height:none!important;
+  padding:0!important;overflow:hidden!important;
+  border:2px solid var(--by1073-gold)!important;
+  border-radius:22px!important;
+}
+body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer > .gz-qibla-panel {
+  grid-area:qibla!important;grid-column:2!important;grid-row:1!important;
+  height:auto!important;min-height:185px!important;
+  padding:0!important;overflow:hidden!important;
+}
+body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer > .city-banner {
+  grid-area:city!important;grid-column:3!important;grid-row:1!important;
+  height:auto!important;min-height:185px!important;
+  padding:14px!important;overflow:hidden!important;
+  display:flex!important;flex-direction:row!important;direction:ltr!important;
+  align-items:center!important;gap:12px!important;
+}
+body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer > .city-banner > img {
+  width:42%!important; max-width:160px!important; min-width:0!important;
+  height:118px!important;flex:0 1 auto!important;object-fit:cover!important;
+}
+body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer > .city-banner > div {
+  flex:1 1 0!important;min-width:0!important;max-width:100%!important;
+  width:auto!important;display:flex!important;flex-direction:column!important;
+  align-items:center!important;justify-content:center!important;text-align:center!important;
+  overflow-wrap:normal!important;word-break:normal!important;
+}
+body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer > .city-banner h1 {
+  font-size:clamp(23px,2.5vw,36px)!important;line-height:1.35!important;
+  overflow-wrap:normal!important;word-break:keep-all!important;
+  white-space:normal!important;writing-mode:horizontal-tb!important;
+}
+body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer > .city-banner p,
+body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer > .city-banner .city-kicker {
+  writing-mode:horizontal-tb!important;word-break:keep-all!important;
+  overflow-wrap:normal!important;white-space:normal!important;
+}
+body.v072-guangzhou-source .by4-header .gz-overview #globalPrayer > .prayer {
+  height:100%!important;min-height:185px!important;display:flex!important;
+  flex-direction:column!important;justify-content:flex-start!important;overflow:hidden!important;
+}
+body.v072-guangzhou-source .by4-header .gz-overview #globalPrayer .prayer-cells.by4-times {
+  display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr))!important;
+  min-height:110px!important;height:auto!important;flex:1 1 auto!important;
+  padding:4px 2px 12px!important;align-items:stretch!important;
+}
+body.v072-guangzhou-source .by4-header .gz-overview #globalPrayer .prayer-item.by4-time {
+  padding:8px 2px!important;display:flex!important;flex-direction:column!important;
+  align-items:center!important;justify-content:center!important;
+}
+body.v072-guangzhou-source .by4-header .gz-overview #globalPrayer .prayer-item.by4-time strong {
+  font-size:12px!important;white-space:nowrap!important;
+}
+body.v072-guangzhou-source .by4-header .gz-overview #globalPrayer .prayer-item.by4-time span {
+  font-size:15px!important;white-space:nowrap!important;
+}
+/* Layout adapts to AVAILABLE width; avoid squashing three cards on laptop screens. */
+@media(max-width:1550px){
+ body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer {
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+  grid-template-areas:"qibla city" "prayers prayers"!important;
+ }
+ body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer > .gz-qibla-panel {
+  grid-area:qibla!important;grid-column:1!important;grid-row:1!important;
+ }
+ body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer > .city-banner {
+  grid-area:city!important;grid-column:2!important;grid-row:1!important;
+ }
+ body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer > #globalPrayer {
+  grid-area:prayers!important;grid-column:1/-1!important;grid-row:2!important;
+ }
+}
+@media(max-width:700px){
+ body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer {
+  grid-template-columns:minmax(0,1fr)!important;
+  grid-template-areas:"city" "qibla" "prayers"!important;
+ }
+ body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer > .city-banner {
+  grid-area:city!important;grid-column:1!important;grid-row:1!important;min-height:155px!important;
+ }
+ body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer > .gz-qibla-panel {
+  grid-area:qibla!important;grid-column:1!important;grid-row:2!important;min-height:155px!important;
+ }
+ body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer > #globalPrayer {
+  grid-area:prayers!important;grid-column:1!important;grid-row:3!important;
+  height:auto!important;min-height:220px!important;
+ }
+ body.v072-guangzhou-source .by4-header .gz-overview #globalPrayer .prayer-cells.by4-times {
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+ }
+}

@@ -1,0 +1,27 @@
+/* V155 - remove empty top toolbar/line from all Thailand city pages and reclaim space */
+body.v072-guangzhou-source .by4-header > .by4-toolbar,
+body.by153-bangkok-standard .by4-header > .by4-toolbar{
+  display:none !important;
+  min-height:0 !important;
+  height:0 !important;
+  padding:0 !important;
+  margin:0 !important;
+  border:0 !important;
+  background:transparent !important;
+  box-shadow:none !important;
+  overflow:hidden !important;
+}
+body.v072-guangzhou-source .by4-header,
+body.by153-bangkok-standard .by4-header{
+  margin-top:0 !important;
+  padding-top:0 !important;
+}
+body.v072-guangzhou-source .by4-header > .by4-banner,
+body.by153-bangkok-standard .by4-header > .by4-banner{
+  margin-top:0 !important;
+  padding-top:0 !important;
+}
+body.v072-guangzhou-source .by4-header > .gz-overview.by4-prayer,
+body.by153-bangkok-standard .by4-header > .gz-overview.by4-prayer{
+  margin-top:0 !important;
+}

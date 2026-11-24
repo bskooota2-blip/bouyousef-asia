@@ -1,0 +1,39 @@
+/* V164 scoped to reconstructed regional pages; Bangkok base styles loaded unchanged. */
+html body.by164-master .shell>main>.by4-header>.gz-overview.by4-prayer{display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-template-areas:none!important;gap:10px!important;align-items:stretch!important;width:100%!important;margin:8px 0 12px!important;overflow:visible!important;height:auto!important;max-height:none!important}
+html body.by164-master .shell>main>.by4-header>.gz-overview.by4-prayer>.city-banner{display:flex!important;position:relative!important;grid-area:auto!important;min-width:0!important;width:100%!important;max-width:100%!important;min-height:140px!important;height:auto!important;overflow:hidden!important;align-items:center!important;justify-content:center!important;transform:none!important;visibility:visible!important;opacity:1!important;box-sizing:border-box!important}
+html body.by164-master .city-banner>div{min-width:0!important;overflow-wrap:anywhere!important}
+html body.by164-master .city-banner img{width:100px!important;max-width:40%!important;object-fit:cover!important;height:110px!important}
+html body.by164-master #selectedCityTitle{font-size:clamp(18px,2vw,30px)!important;line-height:1.25!important}
+html body.by164-master #selectedCityEnglish{font-size:12px!important;line-height:1.4!important;white-space:normal!important}
+html body.by164-master .shell>main>#by060-nav{display:flex!important;flex-wrap:nowrap!important;overflow-x:auto!important;overflow-y:hidden!important;max-width:100%!important;min-width:0!important;gap:5px!important;box-sizing:border-box!important;align-items:center!important}
+html body.by164-master #by060-nav>#by164-search{flex:1 1 260px!important;min-width:210px!important;max-width:none!important;display:flex!important;gap:5px!important;width:auto!important}
+html body.by164-master #by060-nav>#by164-search input{min-width:0!important;width:auto!important;flex:1!important}
+html body.by164-master #by060-nav>#by164-search button{width:auto!important;min-width:45px!important;flex:0 0 auto!important}
+html body.by164-master .section-cards>.section-card{cursor:pointer!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;min-height:105px!important;overflow-wrap:anywhere!important}
+html body.by164-master .section-cards>.section-card[aria-pressed=true]{outline:2px solid #009ad7!important;background:#e2f3ff!important}
+html body.by164-master .by164-tile-count{font-size:11px;color:#426980;display:block;margin-top:4px}
+html body.by164-master #by164-count{font-size:12px;color:#466e84;margin:6px 0}
+html body.by164-master #by164-results>.dir-section{display:block!important;width:100%!important;margin:12px 0!important;min-width:0!important}
+html body.by164-master #by164-results .places{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:9px!important}
+html body.by164-master #by164-results .place{display:flex!important;min-width:0!important;max-width:100%!important;overflow-wrap:anywhere!important}
+html body.by164-master #by164-results .by4-card-info{min-width:0!important;flex:1 1 auto!important}
+html body.by164-master #by164-results .by4-card-controls{min-width:0!important;flex:0 0 auto!important}
+html body.by164-master #by164-results .extra-filters{display:flex!important;flex-wrap:wrap!important;gap:6px!important;margin-bottom:10px!important}
+html body.by164-master .by164-original-notes{border:1px solid #a9d9ee;border-radius:16px;background:#f7fcff;margin:14px 0;padding:14px;overflow-wrap:anywhere;font-size:13px;color:#164563}
+html body.by164-master .by164-original-notes h2{font-size:16px;color:#064b76}
+html body.by164-master .by164-original-notes a{display:inline-block;margin:3px 8px;color:#03628d}
+html body.by164-master .by164-card-photo{display:block;max-width:100%;max-height:200px;object-fit:contain;border-radius:10px;margin-bottom:6px}
+html body.by164-master .by164-new{background:#d6f3ff!important;color:#075987!important}
+html body.by164-master [hidden]{display:none!important}
+html body.by164-master #by4-open-menu{display:none!important}
+html body.by164-master .by4-toolbar{display:none!important}
+
+@media(max-width:700px){html body.by164-master .by4-toolbar{display:flex!important;justify-content:flex-start!important}html body.by164-master #by4-open-menu{display:inline-flex!important}html body.by164-master #by060-nav>#by164-search{flex:0 0 245px!important}html body.by164-master #by164-results .place{flex-wrap:wrap!important}html body.by164-master #by164-results .by4-card-info{flex-basis:100%!important}html body.by164-master #by164-results .by4-card-controls{width:100%!important}html body.by164-master #by164-results .by4-card-actions{display:flex!important;flex-wrap:wrap!important;justify-content:flex-start!important}}
+
+@media(max-width:700px){html:has(body.by164-master){overflow-x:clip!important}html body.by164-master>.shell>aside.side:not(.by4-open){display:none!important;visibility:hidden!important}html body.by164-master>.shell>aside.side.by4-open{display:block!important;visibility:visible!important;transform:none!important}html body.by164-master>.shell>main{overflow-x:clip!important}}
+@media(max-width:700px){html body.by164-master #by164-results .place.by4-horizontal{display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:8px!important;position:relative!important;padding:10px!important}html body.by164-master #by164-results .by4-card-info,html body.by164-master #by164-results .by4-card-controls{position:static!important;inset:auto!important;transform:none!important;flex:0 0 auto!important;float:none!important;width:100%!important;max-width:100%!important;margin:0!important;box-sizing:border-box!important}html body.by164-master #by164-results .by4-card-actions{position:static!important;inset:auto!important;transform:none!important;width:100%!important;max-width:100%!important;justify-content:center!important}}
+
+/* V165: one city identity card, no prayer or compass panels, across all widths. */
+html body.by164-master .shell>main>.by4-header>.gz-overview.by4-prayer{grid-template-columns:minmax(0,1fr)!important;grid-template-areas:none!important;}
+html body.by164-master .shell>main>.by4-header>.gz-overview.by4-prayer>.city-banner{grid-column:1/-1!important;justify-content:center!important;}
+@media(max-width:700px){html body.by164-master .shell>main>.by4-header>.gz-overview.by4-prayer>.city-banner{min-height:110px!important;}}

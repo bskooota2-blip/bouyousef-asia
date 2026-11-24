@@ -288,5 +288,67 @@ if(cfg.country==='hong-kong'||cfg.country==='macau'){
 }
 
 // no duplicates; this layer deliberately does not alter datasets / search JavaScript.
+
+// V111: Single live sidebar. Some V090/V096 pages contributed a second
+// "جديد التطبيق" anchor. Deduplicate only rendered menu items, preserving
+// the first functional destination and every native page's underlying content.
+(function by111FixSidebar(){
+ const menu=chrome.querySelector('#by051-sideNav');
+ if(!menu)return;
+ const candidates=[...menu.children].filter(el=>el.matches('a,button'));
+ const normalized=el=>(el.querySelector('.nav-label')?.textContent||el.textContent||'').replace(/\s+/g,' ').trim();
+ const groups=new Map();
+ for(const el of candidates){
+  const text=normalized(el);
+  const key=/جديد التطبيق/.test(text)?'جديد التطبيق':null;
+  if(!key)continue;
+  const prior=groups.get(key);
+  if(!prior){groups.set(key,el);continue;}
+  const valid=e=>e.tagName==='A'&&!!e.getAttribute('href')&&!e.hasAttribute('aria-disabled');
+  if(!valid(prior)&&valid(el)){prior.remove();groups.set(key,el)}else{el.remove()}
+ }
+ menu.setAttribute('data-by111-single-sidebar','true');
+ const style=document.createElement('style');style.id='by111-sidebar-layout';
+ style.textContent=`
+ /* Reserve sidebar space ONCE for native body content, without changing cards. */
+ @media(min-width:901px){
+   body.by051-active{box-sizing:border-box!important;padding-right:220px!important;overflow-x:clip!important}
+   body.by051-active>.shell,body.by051-active>.wrap,
+   body.by051-active>main,body.by051-active>.home-shell,
+   body.by051-active>.content{box-sizing:border-box!important;max-width:100%!important;min-width:0!important;margin-right:0!important}
+   body.by051-active>.shell{display:block!important;grid-template-columns:none!important}
+   body.by051-active>.shell>main{width:100%!important;max-width:100%!important;min-width:0!important;box-sizing:border-box!important;margin:0!important}
+   body.by051-active .by051-chrome #by051-sideNav{position:fixed!important;right:0!important;left:auto!important;width:204px!important;max-width:204px!important;box-sizing:border-box!important}
+ }
+ @media(max-width:900px){body.by051-active{padding-right:0!important}}
+ .by051-chrome #by051-sideNav .by417-city-picker>summary,
+ .by051-chrome #by051-sideNav .nav-button,
+ .by051-chrome #by051-sideNav .by090-menu-link{box-sizing:border-box!important;min-width:0!important}
+ .by051-chrome #by051-sideNav .by417-city-picker .by417-city-title{min-width:0!important;white-space:normal!important}
+ .by051-chrome #by051-sideNav .by417-city-picker .by417-city-arrow{flex-shrink:0!important}
+ .by051-chrome #by051-sideNav .nav-label{min-width:0!important;overflow-wrap:break-word!important}
+ `;
+ document.head.append(style);
+})();
+
 document.body.insertBefore(chrome,document.body.firstChild);document.body.classList.add('by051-active');
+})();
+
+
+(function(){
+ function applyChinaHomeCleanup(){
+  var path=(location.pathname||'');
+  var inChina=/\/china\/site\//.test(path)||/\bchina\b/.test(path);
+  if(!inChina) return;
+  var hash=(location.hash||'').trim();
+  var isHome=!hash||hash==='#'||hash==='#home'||hash==='#/'||hash==='#top';
+  document.body.classList.toggle('by118-china-home', isHome);
+ }
+ if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',applyChinaHomeCleanup,{once:true});}
+ else{applyChinaHomeCleanup();}
+ window.addEventListener('hashchange',applyChinaHomeCleanup);
+ var style=document.createElement('style');
+ style.id='by118-china-home-cleanup';
+ style.textContent='body.by118-china-home #by046-actions,body.by118-china-home #gzTopbar{display:none !important;}';
+ document.head.appendChild(style);
 })();

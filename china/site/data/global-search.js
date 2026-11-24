@@ -24,8 +24,17 @@
    sections.forEach(s=>data.push({type:'section',city:i,section:s.id,name:s.ar,en:s.en,search:norm([c.ar,c.en,zhCity[i],s.ar,s.en,s.zh].join(' '))}));});
  serviceIds.forEach(id=>{data.push({type:'service',service:id,name:locales.ar['nav_'+id],en:locales.en['nav_'+id],search:norm([locales.ar['nav_'+id],locales.en['nav_'+id],locales.zh['nav_'+id]].join(' '))});});
  let priorFocus=null;
+ let citiesOnlyFromBar=false;
+ let guangzhouOnlyFromBar=false;
+ let cityOnlyFromBar=null;
  const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n;};
- function open(){priorFocus=document.activeElement;layer.hidden=false;btn.setAttribute('aria-expanded','true');document.body.classList.add('by3-search-modal-open');input.focus();render();}
+ function open(){
+ cityOnlyFromBar=Number.isInteger(window.BY145_SEARCH_CITY_FROM_NAV)?window.BY145_SEARCH_CITY_FROM_NAV:null;
+ window.BY145_SEARCH_CITY_FROM_NAV=null;
+ guangzhouOnlyFromBar=!!window.BY143_GUANGZHOU_ONLY_FROM_NAV;
+ window.BY143_GUANGZHOU_ONLY_FROM_NAV=false;
+ citiesOnlyFromBar=guangzhouOnlyFromBar||!!window.BY126_CITIES_ONLY_FROM_NAV;
+ window.BY126_CITIES_ONLY_FROM_NAV=false;priorFocus=document.activeElement;layer.hidden=false;btn.setAttribute('aria-expanded','true');document.body.classList.add('by3-search-modal-open');input.focus();render();}
  function close(){layer.hidden=true;btn.setAttribute('aria-expanded','false');document.body.classList.remove('by3-search-modal-open');(priorFocus?.isConnected?priorFocus:btn).focus();}
  function findMatches(q){const terms=norm(q).split(' ').filter(Boolean);if(!terms.length)return [];
   return data.filter(d=>terms.every(term=>d.search.includes(term))).sort((a,b)=>{
@@ -37,8 +46,8 @@
  const msg=(ar,en,zh)=>language()==='en'?en:language()==='zh'?zh:ar;
  const displayCity=i=>language()==='en'?cities[i].en:language()==='zh'?zhCity[i]:cities[i].ar;
  const displaySection=id=>{const sec=sections.find(s=>s.id===id);return sec?.[language()]||id};
- function render(){const q=input.value.trim();resultBox.replaceChildren();if(!q){count.textContent=msg('اكتب كلمة للبحث في المدن والأماكن والمطاعم والفنادق وغيرها.','Search cities, markets, restaurants, hotels and more.','搜索城市、市场、餐厅、酒店等。');return;}
-  const matches=findMatches(q);count.textContent=matches.length?msg('عدد النتائج: ','Results: ','结果数：')+matches.length+(matches.length>150?msg(' — تُعرض أول 150 نتيجة',' — first 150 shown',' — 仅显示前150条'):''):msg('لا توجد نتائج مطابقة.','No matching results.','没有匹配结果。');
+ function render(){const q=input.value.trim();resultBox.replaceChildren();if(!q){count.textContent=guangzhouOnlyFromBar?'ابحث في أماكن غوانزو فقط.':msg('اكتب كلمة للبحث في المدن والأماكن والمطاعم والفنادق وغيرها.','Search cities, markets, restaurants, hotels and more.','搜索城市、市场、餐厅、酒店等。');return;}
+  const matches=findMatches(q).filter(d=>cityOnlyFromBar!==null ? (d.city===cityOnlyFromBar && d.type!=='service') : (guangzhouOnlyFromBar ? (d.city===0 && d.type!=='service') : (!citiesOnlyFromBar || d.type!=='service')));count.textContent=matches.length?msg('عدد النتائج: ','Results: ','结果数：')+matches.length+(matches.length>150?msg(' — تُعرض أول 150 نتيجة',' — first 150 shown',' — 仅显示前150条'):''):msg('لا توجد نتائج مطابقة.','No matching results.','没有匹配结果。');
   if(!matches.length){resultBox.append(el('div','by3-global-search-empty',msg('جرّب اسمًا آخر بالعربية أو الإنجليزية أو الصينية.','Try a different name in Arabic, English or Chinese.','试试阿拉伯语、英语或中文名称。')));return;}
   matches.slice(0,150).forEach(d=>{
    const card=el('article','by3-global-result'),body=el('div','by3-global-result-main');

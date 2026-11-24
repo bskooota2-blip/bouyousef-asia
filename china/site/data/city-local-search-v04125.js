@@ -25,7 +25,7 @@
    return cities[route.city]||null;
  };
  function sync(){
-   const city=active();root.hidden=!city;
+   const city=active();root.hidden=true; /* V145: use only the city-scoped main icon-bar search; preserve index and its content. */
    if(!city)return;
    if(currentSlug!==city.slug){currentSlug=city.slug;input.value='';list.replaceChildren();status.textContent='';}
    heading.textContent='🔎 البحث داخل '+city.ar+' فقط';

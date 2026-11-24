@@ -61,11 +61,6 @@ footer{text-align:center;color:#67859b;padding:22px 10px;font-size:12px}.float-t
 @media(max-width:950px){.countries{grid-template-columns:repeat(2,minmax(0,260px))}}
 @media(max-width:700px){.countries{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.country{aspect-ratio:1 / 1;min-height:0!important;padding:6px!important}.country-art{height:auto!important;margin:0!important}.country h3{font-size:16px;line-height:1.2;margin:5px 0 0!important}.country .en{font-size:9px;margin:1px 0 2px!important}.country .status{top:9px;left:9px;font-size:9px;padding:1px 5px}}
 @media(max-width:370px){.countries{grid-template-columns:repeat(2,minmax(0,1fr))}.country{min-height:0!important}}
-
-/* V011: authentication entry in place of the portal heading */
-.login-trigger{display:inline-flex;align-items:center;justify-content:center;gap:7px;border:1px solid #4faee9;border-radius:12px;background:#0b457a;color:#fff;font-weight:800;font-size:14px;padding:10px 18px;box-shadow:0 4px 12px #0c6ea22a;cursor:pointer}.login-trigger:hover{background:#0876b7}
-.login-dialog{border:1px solid #91d8f9;border-radius:18px;padding:24px;max-width:min(420px,calc(100vw - 28px));width:100%;color:#0b3463;background:white;box-shadow:0 14px 50px #123a5f44;text-align:right}.login-dialog::backdrop{background:#082b48a8}.login-dialog h2{font-size:20px;margin:0 0 10px}.login-dialog p{font-size:14px;line-height:1.9;margin:0 0 18px}.login-close{border:1px solid #69bbea;border-radius:10px;padding:8px 18px;background:#e6f6ff;color:#0b3463;font-weight:bold;cursor:pointer}
-@media(max-width:700px){.login-trigger{font-size:13px;padding:8px 12px}}
 </style>
 
 <style id="asia-v018-splash-css">
@@ -78,25 +73,23 @@ footer{text-align:center;color:#67859b;padding:22px 10px;font-size:12px}.float-t
 @media(max-width:600px){#asia-v018-splash img{width:min(86vw,420px)!important}}
 </style>
 <link rel="stylesheet" href="shared/asia-nav-v060.css">
-<style id="by065-home-contacts-style">
-/* Contact cards exist only at the Asia main home (index.html). */
-.by065-home-contacts{display:flex;align-items:center;justify-content:center;gap:7px;flex-wrap:wrap;direction:ltr}
-.by065-home-contacts .by065-contact{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;min-width:70px;min-height:54px;padding:5px 8px;border:1px solid #a8d8f5;border-radius:12px;background:#f8fdff;box-shadow:0 2px 6px #075d9114;color:#063e68;text-decoration:none;font:800 11px/1.2 Tahoma,Arial,sans-serif}
-.by065-home-contacts .by065-contact span{font-size:20px;line-height:1.1}.by065-home-contacts .by065-contact:hover{background:#e3f5ff}
-@media(max-width:680px){.by065-home-contacts .by065-contact{min-width:61px;min-height:50px;padding:4px 5px;font-size:10px}}
+<style id="by113-home-banner-nav-polish">
+html[data-by071-portal] .hero{margin-top:14px;padding:0!important;border:none!important;background:transparent!important;box-shadow:none!important;border-radius:0!important;overflow:visible!important}
+html[data-by071-portal] .hero img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;border-radius:28px!important;box-shadow:none!important;background:transparent!important}
+html[data-by071-portal] #by060-nav{max-width:100%;margin:12px auto 8px;padding:8px 10px 9px;border-radius:18px;background:linear-gradient(180deg,#f3fbff 0%,#e8f6ff 100%);box-shadow:0 4px 16px rgba(11,102,147,.10)}
+html[data-by071-portal] #by060-nav .by060-link,html[data-by071-portal] #by060-nav .by060-top{min-height:44px;border-radius:13px}
+@media(max-width:700px){html[data-by071-portal] .hero img{border-radius:18px!important}html[data-by071-portal] #by060-nav{padding:7px 8px}}
 </style>
-</head>
+
+<style id="by116-service-action-css">
+.by116-service-action{display:inline-flex;align-items:center;justify-content:center;margin-top:9px;padding:8px 13px;border-radius:12px;color:white!important;background:#07538d;border:1px solid #0b83b9;text-decoration:none;font-size:13px;font-weight:800}
+.by116-service-action:hover{background:#077db6}
+</style></head>
 <body>
 <div id="asia-v018-splash" role="presentation" aria-hidden="true"><img src="assets/asia-ah-logo.png" alt="" width="1254" height="1254" fetchpriority="high" decoding="sync"></div>
 
 <div class="shell">
 <main class="main" id="home">
- <div class="topbar"><button type="button" class="login-trigger" onclick="window.location.href='login.html'" aria-label="تسجيل الدخول">🔐 تسجيل الدخول</button><div class="social by065-home-contacts" aria-label="وسائل التواصل الخاصة ببويوسف">
-<a class="by065-contact" href="https://www.snapchat.com/add/bskooota2" target="_blank" rel="noopener noreferrer" aria-label="Snapchat bskooota2"><span aria-hidden="true">👻</span><strong>Snapchat</strong></a>
-<a class="by065-contact" href="https://wa.me/96596745446" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp تواصل معنا"><span aria-hidden="true">☎️</span><strong>WhatsApp</strong></a>
-<a class="by065-contact" href="https://www.instagram.com/bskooota22/" target="_blank" rel="noopener noreferrer" aria-label="Instagram bskooota22"><span aria-hidden="true">◎</span><strong>Instagram</strong></a>
-<span class="by065-contact" title="WeChat: abdullah alsaber" aria-label="WeChat abdullah alsaber"><span aria-hidden="true">💬</span><strong>WeChat</strong></span>
-</div></div>
  <header class="hero"><img src="assets/asia-banner.png" alt="بويوسف الصبر – دليلك إلى آسيا، بانر AH للوجهات الخمس" width="2048" height="682"></header>
  <section class="section" id="countries">
  <div class="countries">
@@ -111,28 +104,23 @@ footer{text-align:center;color:#67859b;padding:22px 10px;font-size:12px}.float-t
    <div class="feature-grid">
      <article class="feature-card" id="updates">
        <img src="assets/updates-feature.webp" alt="مكبر صوت وإشارة جديد" loading="lazy">
-       <div class="feature-content"><h3>✨ جديد الموقع</h3><p>تابع آخر الإضافات والتحديثات في أدلة الدول.</p><details><summary>عرض الجديد</summary><p>النسخة الحالية: بويوسف 0، واجهة تجمع خمس وجهات آسيوية.</p></details></div>
+       <div class="feature-content"><h3>✨ جديد الموقع</h3><p>آخر إضافات الموقع في الدول والمدن</p><a class="by116-service-action" href="updates.html">فتح سجل التحديثات</a></div>
      </article>
      <article class="feature-card" id="currency">
        <img src="assets/currency-feature.webp" alt="عملات وآلة حاسبة" loading="lazy">
-       <div class="feature-content"><h3>💱 صرف العملات</h3><p>خدمة تحويل العملات ستُفعّل بعد اعتماد مصدر موثوق للأسعار.</p><span class="feature-soon">بانتظار التفعيل</span></div>
+       <div class="feature-content"><h3>💱 صرف العملات</h3><p>افتح حاسبة صرف العملات المعتمدة داخل صفحة الصين مباشرةً.</p><a class="by116-service-action" href="china/site/index.html#service/exchange">فتح صفحة صرف العملات</a></div>
      </article>
      <article class="feature-card" id="store">
        <img src="assets/store-feature.webp" alt="حقائب تسوق وهدايا" loading="lazy">
-       <div class="feature-content"><h3>🛍️ متجرنا</h3><p>بوابة المتجر، وسيتم ربطها بالمتجر المعتمد دون تغيير بياناته.</p><span class="feature-soon">بانتظار الربط</span></div>
+       <div class="feature-content"><h3>🛍️ متجرنا</h3><p>افتح متجرنا المعتمد داخل صفحة الصين مباشرةً.</p><a class="by116-service-action" href="china/site/index.html#service/store">فتح متجرنا</a></div>
      </article>
    </div>
  </section>
  <footer>© بويوسف الصبر · بويوسف 0 – دليلك إلى آسيا<br>نسخة تطويرية قابلة للتحديث والربط مع مواقع بويوسف</footer>
 </main>
 </div>
-<a class="float-store" href="#store" aria-label="الانتقال إلى متجرنا">🛍️ متجرنا</a>
+<a class="float-store" href="china/site/index.html#service/store" aria-label="فتح متجرنا">🛍️ متجرنا</a>
 
-<dialog class="login-dialog" id="loginDialog" aria-labelledby="loginTitle" dir="rtl">
-  <h2 id="loginTitle">🔐 تسجيل الدخول</h2>
-  <p>زر تسجيل الدخول جاهز في الواجهة. يلزم ربطه بنظام العضوية المعتمد قبل أن يتمكن الزائر من تسجيل الدخول فعليًا.</p>
-  <form method="dialog"><button class="login-close" type="submit">إغلاق</button></form>
-</dialog>
 <div class="search-overlay" id="searchOverlay" hidden onclick="closeSearch()"></div>
 <section class="search-dialog" id="searchDialog" role="dialog" aria-modal="true" aria-label="البحث في بويوسف 0" hidden>
  <div class="search-head"><strong>🔎 البحث في بويوسف 0</strong><button type="button" class="search-close" onclick="closeSearch()" aria-label="إغلاق البحث">✕</button></div>
@@ -163,9 +151,9 @@ const searchData=[
  {name:"🇲🇴 تايبا – Taipa",description:"مكاو، المطاعم والبيتزا",url:"macau/taipa.html"},
  {name:"🇲🇴 كوتاي – Cotai",description:"مكاو، الفنادق والعروض والمولات",url:"macau/cotai.html"},
  {name:"🇲🇴 كولوان – Coloane",description:"مكاو، الطبيعة والمطاعم",url:"macau/coloane.html"},
- {name:'✨ جديد الموقع',description:'آخر إضافات الموقع',url:'#updates'},
- {name:'💱 صرف العملات',description:'العملات ومعلومات التحويل',url:'#currency'},
- {name:'🛍️ متجرنا',description:'بوابة المتجر',url:'#store'}
+ {name:'✨ جديد الموقع',description:'آخر إضافات الموقع',url:'updates.html'},
+ {name:'💱 صرف العملات',description:'العملات ومعلومات التحويل',url:'china/site/index.html#service/exchange'},
+ {name:'🛍️ متجرنا',description:'بوابة المتجر',url:'china/site/index.html#service/store'}
 ];
 function norm(s){return s.toLowerCase().normalize('NFKD').replace(/[\u064b-\u065f\u0670]/g,'').replace(/[أإآ]/g,'ا').replace(/ى/g,'ي').replace(/ة/g,'ه').replace(/\s+/g,' ').trim()}
 function renderSearch(){const q=norm(document.getElementById('searchInput').value);const results=document.getElementById('searchResults');const found=searchData.filter(x=>!q||norm(x.name+' '+x.description).includes(q));results.replaceChildren();if(!found.length){const p=document.createElement('p');p.className='no-results';p.textContent='لا توجد نتائج مطابقة في فهرس الدول والمدن والمناطق.';results.append(p);return}found.forEach(item=>{const link=document.createElement('a');link.href=item.url;link.target='_self';if(item.external){link.target='_blank';link.rel='noopener noreferrer'}link.className='search-hit';const strong=document.createElement('strong');strong.textContent=item.name;const small=document.createElement('small');small.textContent=item.description;link.append(strong,small);if(item.onclick){link.addEventListener('click',e=>{e.preventDefault();closeSearch();window[item.onclick.replace(/\(\)$/,'')]?.();});}else{link.addEventListener('click',closeSearch);}results.append(link)})}
