@@ -10,14 +10,16 @@ const base=new URL(document.currentScript?.src||'',location.href);
 const login=new URL('../login.html',base);
 const showStatus=(el,msg)=>{if(el)el.textContent=msg};
 let authenticated=false,ready=false;
+window.BY071_AUTH_READY=false;
+const sessionKeys=[STORE,'bouyousef2_auth_session','bouyousef3_auth_session','bouyousef4_auth_session'];
 if(!portal){html.classList.add('by071-lock-pending');}
-function chooseSession(){for(const k of [STORE,'bouyousef3_auth_session','bouyousef4_auth_session']){try{const s=JSON.parse(localStorage.getItem(k)||'null');if(s?.refresh_token && s?.access_token)return s;}catch(_){}}return null;}
-function storeSession(s){for(const key of [STORE,'bouyousef3_auth_session','bouyousef4_auth_session'])try{localStorage.setItem(key,JSON.stringify(s))}catch(_){}}
+function chooseSession(){for(const k of sessionKeys){try{const s=JSON.parse(localStorage.getItem(k)||'null');if(s?.refresh_token && s?.access_token)return s;}catch(_){}}return null;}
+function storeSession(s){for(const key of sessionKeys)try{localStorage.setItem(key,JSON.stringify(s))}catch(_){}}
 async function api(path,method='GET',data=null,token=null){const headers={apikey:KEY};if(token)headers.Authorization='Bearer '+token;if(data)headers['Content-Type']='application/json';const r=await fetch(AUTH+path,{method,headers,cache:'no-store',body:data?JSON.stringify(data):undefined});if(!r.ok)throw new Error('HTTP '+r.status);return r.json();}
-async function validSession(){const s=chooseSession();if(!s)return false;
- try{const user=await api('/auth/v1/user','GET',null,s.access_token);if(user&&user.id)return true;}catch(_){}
- try{const n=await api('/auth/v1/token?grant_type=refresh_token','POST',{refresh_token:s.refresh_token});if(n?.access_token&&n?.user){storeSession(n);return true;}}catch(_){}
- return false;
+async function validSession(){const s=chooseSession();if(!s)return null;
+ try{const user=await api('/auth/v1/user','GET',null,s.access_token);if(user&&user.id){const verified={...s,user};storeSession(verified);return verified;}}catch(_){}
+ try{const n=await api('/auth/v1/token?grant_type=refresh_token','POST',{refresh_token:s.refresh_token});if(n?.access_token&&n?.user){storeSession(n);return n;}}catch(_){}
+ return null;
 }
 function targetLogin(url){const u=new URL(login.href);const dest=(url||location.href);if(dest&&dest.startsWith(location.origin))u.searchParams.set('next',dest);return u.href;}
 function lockPopup(destination=location.href,isPortal=false){
@@ -59,5 +61,5 @@ function complete(ok){authenticated=ok;ready=true;window.BY071_LOGGED_IN=ok;
  if(!ok&&!portal){if(document.body)lockPopup(location.href,false);else document.addEventListener('DOMContentLoaded',()=>lockPopup(location.href,false),{once:true});}
  if(ok){document.querySelector('#by071-locked')?.remove();}
 }
-validSession().then(complete,()=>complete(false));
+window.BY071_SESSION_PROMISE=validSession().catch(()=>null).then(s=>{window.BY071_AUTH_READY=true;complete(!!s);return s;});
 })();
