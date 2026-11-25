@@ -15,6 +15,7 @@ function shareCurrentPage(){
   return;
  }
  const message='شاهد هذه الصفحة في دليل آسيا – بويوسف الصبر:\n'+url;
+ if((navigator.userAgentData?.mobile===true||/Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent||'')||(/Mac/i.test(navigator.platform||navigator.userAgent||'')&&navigator.maxTouchPoints>1))){window.location.href='whatsapp://send?text='+encodeURIComponent(message);return;}
  const whatsappUrl='https://wa.me/?text='+encodeURIComponent(message);
  const popup=window.open(whatsappUrl,'_blank','noopener,noreferrer');
  if(!popup){window.location.href=whatsappUrl;}

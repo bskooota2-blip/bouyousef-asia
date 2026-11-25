@@ -17,7 +17,7 @@
      const key=c.slug+'|'+section+'|'+r.id;if(seen.has(key))continue;seen.add(key);
      const names=norm([r.ar,r.en,r.zh,r.searchAliases].flat(Infinity).filter(v=>typeof v==='string').join(' '));
      const sec=sections.find(s=>s.id===section)||{};
-     const search=norm(fields.map(k=>r[k]).flat(Infinity).concat(c.ar,c.en,zhCity[i],sec.ar,sec.en,sec.zh).filter(v=>typeof v==='string').join(' '));
+     const search=norm(fields.map(k=>r[k]).flat(Infinity).concat(c.ar,c.en,zhCity[i],sec.ar,sec.en,sec.zh,window.BY170?.words(r)||'',window.BY172?.words(window.BY172.key('china',c.slug,r.id))||'').filter(v=>typeof v==='string').join(' '));
      result.push({type:'place',city:i,slug:c.slug,section,id:String(r.id),name:r.ar,ar:r.ar,en:r.en||'',zh:r.zh||'',description:r.note||r.features||r.signatureDrink||'',names,search});
     }
    }

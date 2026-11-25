@@ -15,9 +15,9 @@ function url(p){
  const lines=['📍 '+names[0],...names.slice(1)];
  if(p.city)lines.push('المدينة: '+clean(p.city));
  lines.push('','العنوان: '+(addresses.length?addresses.join('\n'):'العنوان التفصيلي غير متوفر؛ استخدم اسم المكان والخريطة.'),'','🗺️ الموقع على الخريطة:',map,'','━━━━━━━━━━━━━━━','🌏 ننصحك باستخدام دليل بويوسف الصبر','دليلك السياحي والتجاري إلى آسيا، لاكتشاف الأسواق والمجمعات والمطاعم والفنادق والأماكن السياحية.','🔗 '+GUIDE,'✈️ رفيقك في السفر والتسوق');
- return 'https://wa.me/?text='+encodeURIComponent(lines.join('\n'));
+ return ((navigator.userAgentData?.mobile===true||/Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent||'')||(/Mac/i.test(navigator.platform||navigator.userAgent||'')&&navigator.maxTouchPoints>1))?'whatsapp://send?text=':'https://wa.me/?text=')+encodeURIComponent(lines.join('\n'));
 }
-function markup(p){const href=url(p);return href?'<a class="by167-share" data-by167-share="1" href="'+escape(href)+'" target="_blank" rel="noopener noreferrer" title="مشاركة عبر واتساب" aria-label="مشاركة '+escape(clean(p.ar)||clean(p.en)||clean(p.local))+' عبر واتساب">'+icon+'</a>':'';}
+function markup(p){const href=url(p);return href?'<a class="by167-share" data-by167-share="1" href="'+escape(href)+'"'+(href.startsWith('whatsapp://')?'':' target="_blank" rel="noopener noreferrer"')+' title="مشاركة عبر واتساب" aria-label="مشاركة '+escape(clean(p.ar)||clean(p.en)||clean(p.local))+' عبر واتساب">'+icon+'</a>':'';}
 function node(p){const t=document.createElement('template');t.innerHTML=markup(p);return t.content.firstElementChild;}
 window.BY167_SHARE=Object.freeze({url,markup,node});
 const style=document.createElement('style');style.id='by167-share-style';style.textContent=`

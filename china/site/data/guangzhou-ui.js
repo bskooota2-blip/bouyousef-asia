@@ -111,7 +111,7 @@
   const main=element('div','gz-place-main');
   // V041.23.7: Keep the source data untouched; compact Guangzhou cards display
   // only place names (AR/EN/ZH), verified opening year, compact metro and actions.
-  const suffixText=r.titleSuffixAr?' ('+r.titleSuffixAr+')':'';const arabicTitle=(lang==='ar'&&suffixText&&r.ar.endsWith(suffixText))?r.ar.slice(0,-suffixText.length):name(r);const heading=element('h3','',arabicTitle);if(lang==='ar'&&r.titleSuffixAr){const suffix=element('small','gz-title-suffix',suffixText);suffix.style.cssText='font-size:.64em;font-weight:700;color:#536f80;white-space:nowrap;margin-inline-start:6px;display:inline';heading.append(suffix)}const opening=openingText(r);if(opening){
+  const suffixText=r.titleSuffixAr?' ('+r.titleSuffixAr+')':'';const arabicTitle=(lang==='ar'&&suffixText&&r.ar.endsWith(suffixText))?r.ar.slice(0,-suffixText.length):name(r);const heading=element('h3','',arabicTitle);const recBadge=window.BY170?.node(r);if(recBadge)heading.prepend(recBadge);if(lang==='ar'&&r.titleSuffixAr){const suffix=element('small','gz-title-suffix',suffixText);suffix.style.cssText='font-size:.64em;font-weight:700;color:#536f80;white-space:nowrap;margin-inline-start:6px;display:inline';heading.append(suffix)}const opening=openingText(r);if(opening){
     const year=element('small','by2-opening-year','🗓️ '+opening);
     year.style.cssText='display:inline-flex;align-items:center;gap:4px;vertical-align:middle;max-width:100%;border:1px solid #9ed5fa;border-radius:9px;background:#eff9ff;padding:3px 9px;margin-inline-start:9px;margin-block:3px;color:#075b96;font-size:.7em;font-weight:750;line-height:1.55;white-space:normal';
     year.setAttribute('aria-label',opening);
@@ -183,9 +183,9 @@ function buildGuangzhouInformation(box){
   const active=(state.kind==='section'&&state.city===0);if(!active)return;
   const activeSectionId=state.section||'markets';if(lastSection!==activeSectionId){selectedFilter='الكل';selectedCafeTag='الكل';localSearch='';pageSize=12;lastSection=activeSectionId}
   const sectionMeta=sections.find(s=>s.id===activeSectionId)||sections[0];
-  const source=bySection(activeSectionId),filterNames=[...new Set(source.map(r=>subtypeFor(r,activeSectionId)).filter(Boolean))];
+  const source=bySection(activeSectionId).slice().sort(window.BY170.compare),filterNames=[...new Set(source.map(r=>subtypeFor(r,activeSectionId)).filter(Boolean))];
   const by3Target=window.BY3_GLOBAL_TARGET;
-  if(by3Target&&by3Target.city===0&&by3Target.section===activeSectionId){selectedFilter='الكل';selectedCafeTag='الكل';localSearch='';pageSize=Math.max(12,bySection(activeSectionId).findIndex(r=>String(r.id)===String(by3Target.id))+1);highlighted=by3Target.id;}
+  if(by3Target&&by3Target.city===0&&by3Target.section===activeSectionId){selectedFilter='الكل';selectedCafeTag='الكل';localSearch='';pageSize=Math.max(12,source.findIndex(r=>String(r.id)===String(by3Target.id))+1);highlighted=by3Target.id;}
 
   const panel=element('div','gz-panel');
   const head=element('div','gz-panel-head');
@@ -201,7 +201,7 @@ function buildGuangzhouInformation(box){
   returns.append(backCity,homeBtn);tools.append(returns);panel.append(tools);
   const controls=element('div','gz-controls'),input=element('input');input.type='search';input.placeholder=m.search;input.value=localSearch;input.setAttribute('aria-label',m.search);input.addEventListener('input',()=>{localSearch=input.value;pageSize=12;updateGrid()});
   controls.append(input);const pills=element('div','gz-pills');
-  for(const filter of ['الكل',...filterNames,'❤️ المفضلة']){const pill=element('button','gz-pill'+(selectedFilter===filter?' active':'')+(filter==='❤️ المفضلة'?' by2-fav-pill':''));pill.type='button';pill.setAttribute('aria-pressed',String(selectedFilter===filter));pill.append(element('span','gz-filter-icon',(filter==='❤️ المفضلة'?'♥':filterIcon(filter))),element('span','gz-filter-label',filter==='الكل'?m.all:(window.BY2_L10N?.term(filter)||filter)));pill.addEventListener('click',()=>{selectedFilter=filter;selectedCafeTag='الكل';pageSize=12;renderListings()});pills.append(pill)}
+  for(const filter of ['الكل',window.BY170.label,window.BY172.label,...filterNames,'❤️ المفضلة']){const pill=element('button','gz-pill'+(selectedFilter===filter?' active':'')+(filter==='❤️ المفضلة'?' by2-fav-pill':''));pill.type='button';pill.setAttribute('aria-pressed',String(selectedFilter===filter));pill.append(element('span','gz-filter-icon',(filter==='❤️ المفضلة'?'♥':filterIcon(filter))),element('span','gz-filter-label',filter==='الكل'?m.all:(window.BY2_L10N?.term(filter)||filter)));pill.addEventListener('click',()=>{selectedFilter=filter;selectedCafeTag='الكل';pageSize=12;renderListings()});pills.append(pill)}
   controls.append(pills);
   if(activeSectionId==='dining'&&selectedFilter==='الكافيهات'){
    const tagWrap=element('div','gz-cafe-tag-wrap');tagWrap.append(element('div','gz-cafe-tag-heading','☕ أنواع الكافيهات'));
@@ -225,7 +225,7 @@ function buildGuangzhouInformation(box){
   panel.append(controls);
   const counter=element('p','gz-count'),grid=element('div','gz-grid'),pager=element('div','gz-pagination');panel.append(counter,grid,pager);box.append(panel);
   if(activeSectionId==='information'){controls.hidden=true;counter.hidden=true;buildGuangzhouInformation(grid);return;}
-  function updateGrid(){const q=clean(localSearch);const filtered=source.filter(r=>(selectedFilter==='الكل'||(selectedFilter==='❤️ المفضلة'&&window.BY2_FAVORITES.isSaved('guangzhou',r.id))||subtypeFor(r,activeSectionId)===selectedFilter)&&(selectedCafeTag==='الكل'||(activeSectionId==='markets'&&selectedFilter==='أهم أسواق الملابس'?((Array.isArray(r.marketTags)&&r.marketTags.includes(selectedCafeTag))||/ملابس الأطفال|童装/.test(String(r.ar||'')+' '+String(r.zh||''))):(Array.isArray(r.cafeTags)&&r.cafeTags.includes(selectedCafeTag))))&&(!q||[r.ar,r.en,r.zh,r.addressZh,r.addressEn,r.metro,r.note,r.subtype,r.addressAr,...(r.searchAliases||[])].some(v=>clean(v).includes(q))));
+  function updateGrid(){const q=clean(localSearch);const filtered=source.filter(r=>(selectedFilter==='الكل'||(selectedFilter===window.BY170.label&&window.BY170.has(r))||(selectedFilter===window.BY172.label&&window.BY172.eligible(r)&&window.BY172.recommended(window.BY172.key('china','guangzhou',r.id)))||(selectedFilter==='❤️ المفضلة'&&window.BY2_FAVORITES.isSaved('guangzhou',r.id))||subtypeFor(r,activeSectionId)===selectedFilter)&&(selectedCafeTag==='الكل'||(activeSectionId==='markets'&&selectedFilter==='أهم أسواق الملابس'?((Array.isArray(r.marketTags)&&r.marketTags.includes(selectedCafeTag))||/ملابس الأطفال|童装/.test(String(r.ar||'')+' '+String(r.zh||''))):(Array.isArray(r.cafeTags)&&r.cafeTags.includes(selectedCafeTag))))&&(!q||[r.ar,r.en,r.zh,r.addressZh,r.addressEn,r.metro,r.note,r.subtype,r.addressAr,...(r.searchAliases||[]),window.BY170.words(r),window.BY172.words(window.BY172.key('china','guangzhou',r.id))].some(v=>clean(v).includes(q))));
    counter.textContent=m.found+': '+filtered.length;grid.replaceChildren();pager.replaceChildren();filtered.slice(0,pageSize).forEach(r=>grid.append(recordCard(r)));
    if(!filtered.length)grid.append(element('div','gz-empty',selectedFilter==='❤️ المفضلة'?(window.BY2_L10N?.term('لم تقم بإضافة أماكن إلى المفضلة بعد ❤️')||'لم تقم بإضافة أماكن إلى المفضلة بعد ❤️'):m.noResult));
    if(filtered.length>pageSize){const b=element('button','','شاهد المزيد'+' ('+(filtered.length-pageSize)+')');b.type='button';b.addEventListener('click',()=>{pageSize+=12;updateGrid()});pager.append(b)}

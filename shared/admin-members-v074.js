@@ -1,5 +1,5 @@
 (()=>{'use strict';
-const URL='https://nzukdiswtjrxitehkkak.supabase.co';
+const AUTH_URL='https://nzukdiswtjrxitehkkak.supabase.co';
 const KEY='sb_publishable_ZgUs-S8xlCKC62GQFZXpnQ_XwxRqwcO';
 const keys=['bouyousef_asia_auth_session','bouyousef2_auth_session','bouyousef4_auth_session','bouyousef3_auth_session'];
 const el=id=>document.getElementById(id);
@@ -8,22 +8,25 @@ const loginLink=el('loginCurrent');if(loginLink)loginLink.href=loginHref;
 let page=1,hasMore=false,all=[],token=null,busy=false;
 const sessionHelp=el('sessionHelp');
 const say=(s,kind='')=>{el('status').textContent=s;el('status').dataset.kind=kind};
-function readSessions(){const arr=[];for(const k of keys){try{const s=JSON.parse(localStorage.getItem(k)||'null');if(s?.access_token||s?.refresh_token)arr.push({key:k,session:s})}catch(_){}}return arr}
+function readSessions(){const arr=[];for(const k of keys){try{const s=JSON.parse(localStorage.getItem(k)||'null');if(s?.access_token||s?.refresh_token)arr.push({key:k,session:s})}catch(_){}}return arr;}
+async function timedFetch(url,options={}){const c=new AbortController();const timer=setTimeout(()=>c.abort(),12000);try{return await fetch(url,{...options,signal:c.signal});}catch(e){const err=Error(e.name==='AbortError'?'انتهت مهلة الاتصال بخدمة Supabase. تحقق من الإنترنت ثم أعد المحاولة.':'تعذر الاتصال بخدمة Supabase. افتح الموقع على HTTPS وتحقق من الإنترنت.');err.network=true;throw err;}finally{clearTimeout(timer);}}
+function persist(candidate,session){try{localStorage.setItem(candidate.key,JSON.stringify(session));localStorage.setItem(keys[0],JSON.stringify(session));}catch(_){}}
+
 async function refresh(candidate){
  // First use the active access token, to avoid consuming a refresh token unnecessarily.
  if(candidate.session.access_token){
-  try{const r=await fetch(URL+'/auth/v1/user',{headers:{apikey:KEY,Authorization:'Bearer '+candidate.session.access_token},cache:'no-store'});
-    if(r.ok){const u=await r.json();if(u?.id){el('currentAccount').textContent='الحساب المسجّل حاليًا: '+(u.email||'حساب Supabase');return candidate.session.access_token}}}catch(_){}
+  try{const r=await timedFetch(AUTH_URL+'/auth/v1/user',{headers:{apikey:KEY,Authorization:'Bearer '+candidate.session.access_token},cache:'no-store'});
+    if(r.ok){const u=await r.json();if(u?.id){persist(candidate,{...candidate.session,user:u});el('currentAccount').textContent='الحساب المسجّل حاليًا: '+(u.email||'حساب Supabase');return candidate.session.access_token}}}catch(e){if(e.network)throw e;}
  }
  if(!candidate.session.refresh_token)return null;
- const resp=await fetch(URL+'/auth/v1/token?grant_type=refresh_token',{method:'POST',headers:{'apikey':KEY,'Content-Type':'application/json'},body:JSON.stringify({refresh_token:candidate.session.refresh_token}),cache:'no-store'});
+ const resp=await timedFetch(AUTH_URL+'/auth/v1/token?grant_type=refresh_token',{method:'POST',headers:{'apikey':KEY,'Content-Type':'application/json'},body:JSON.stringify({refresh_token:candidate.session.refresh_token}),cache:'no-store'});
  if(!resp.ok)return null;const obj=await resp.json();if(!obj.access_token)return null;
- try{localStorage.setItem(candidate.key,JSON.stringify(obj))}catch(_){}
+ persist(candidate,obj);
  el('currentAccount').textContent='الحساب المسجّل حاليًا: '+(obj.user?.email||'حساب Supabase');
  return obj.access_token;
 }
 async function request(candidateToken,p){
- const r=await fetch(URL+'/functions/v1/admin-members?page='+p,{headers:{apikey:KEY,Authorization:'Bearer '+candidateToken},cache:'no-store'});
+ const r=await timedFetch(AUTH_URL+'/functions/v1/admin-members?page='+p,{headers:{apikey:KEY,Authorization:'Bearer '+candidateToken},cache:'no-store'});
  if(!r.ok){let code='HTTP '+r.status;try{code=(await r.json()).error||code}catch(_){}const err=new Error(code);err.status=r.status;throw err}
  return r.json();
 }
@@ -42,26 +45,31 @@ function date(v){if(!v)return '—';const d=new Date(v);return Number.isNaN(d.ge
 async function load(p=1){
  if(sessionHelp)sessionHelp.hidden=true;
  if(busy)return;busy=true;el('next').disabled=true;el('refresh').disabled=true;
- say('جارٍ تحميل بيانات الأعضاء…');
+ if(p===1){all=[];hasMore=false;render();}say('جارٍ تحميل بيانات الأعضاء…');
  try{
   let data;
-  if(!token){let forbidden=false,notReady=false;
-   for(const candidate of readSessions()){
-    const t=await refresh(candidate).catch(()=>null);if(!t)continue;
-    try{data=await request(t,p);token=t;break}
-    catch(e){if(e.status===403)forbidden=true;else if(e.status===404||e.status===503)notReady=true;}}
-   if(!data){if(sessionHelp){sessionHelp.hidden=false;sessionHelp.textContent=readSessions().length?'عُثر على بيانات جلسة سابقة، لكن لا توجد جلسة صالحة أو لم تؤكد الخدمة صلاحية المدير. يمكنك الدخول بالحساب الحالي مرة واحدة على رابط الموقع نفسه.':'لم يتم العثور على جلسة مسجّلة في هذا الموقع. إذا سجلت الدخول عبر رابط آخر، فجلسة المتصفح لا تنتقل تلقائيًا بين النطاقات. افتح تسجيل الدخول هنا باستخدام حسابك نفسه.';}throw Error(notReady?'وظيفة admin-members غير منشورة أو غير مهيأة في Supabase؛ لا تحتاج إلى إنشاء حساب جديد.':forbidden?'تم التعرف على حسابك، لكن صلاحية إدارة الأعضاء غير مفعّلة له في جدول by3_admin_members. لا تسجّل حسابًا جديدًا؛ فعّل صلاحية حسابك الحالي في Supabase.':'لم يُعثر على جلسة دخول صالحة في هذا الموقع. افتح تسجيل الدخول بحسابك الحالي.');}
+  if(location.protocol==='file:'){el('currentAccount').textContent='الصفحة مفتوحة كملف محلي';throw Error('افتح الموقع عبر رابط HTTPS نفسه الذي سجلت الدخول منه، وليس ملف HTML على الكمبيوتر.');}
+  if(!token){
+   const candidates=readSessions();
+   if(!candidates.length){el('currentAccount').textContent='لا توجد جلسة دخول في هذا النطاق';throw Error('سجّل الدخول بحسابك الحالي من الرابط أدناه. لا تنشئ حسابًا جديدًا.');}
+   // Never choose another account because the current one is not an administrator.
+   const candidate=candidates[0];el('currentAccount').textContent='جارٍ التحقق من جلسة الدخول الحالية…';
+   const t=await refresh(candidate);
+   if(!t){el('currentAccount').textContent='جلسة الحساب الحالية غير صالحة';throw Error('انتهت جلسة الحساب الحالي. سجّل الدخول مجددًا بنفس الحساب.');}
+   el('currentAccount').textContent+=' — تم التحقق من الجلسة';
+   say('تم التحقق من الحساب. جارٍ طلب قائمة الأعضاء من الخادم…');
+   data=await request(t,p);token=t;
   }else data=await request(token,p);
   const users=Array.isArray(data.users)?data.users:[];
   if(p===1)all=[];
   for(const u of users)if(!all.some(x=>x.id===u.id))all.push(u);
   page=p;hasMore=Boolean(data.has_more);render();
   say('تم جلب بيانات '+all.length+' عضو. يمكنك البحث في الأعضاء الذين تم تحميلهم.','ok');
- }catch(e){if(e.status===401){token=null;say('انتهت جلسة تسجيل الدخول. سجّل الدخول مجددًا بنفس حسابك الحالي.','error')}else if(e.status===403){say('حسابك مسجّل لكن صلاحية إدارة الأعضاء غير مفعّلة في Supabase. لا تنشئ حسابًا جديدًا.','error')}else if(e.status===404||e.status===503){say('وظيفة admin-members تحتاج إلى نشر أو ضبط في Supabase. حسابك الحالي لا يحتاج إلى إعادة تسجيل.','error')}else{say(String(e.message||e),'error')}}
+ }catch(e){if(e.status===401){token=null;say('انتهت جلسة تسجيل الدخول. سجّل الدخول مجددًا بنفس حسابك الحالي.','error')}else if(e.status===403){say('حسابك مسجّل لكن الخادم رفض صلاحية إدارة الأعضاء. تحقق من UUID حسابك في by3_admin_members. لا تنشئ حسابًا جديدًا.','error')}else if(e.status===404||e.status===503){say('وظيفة admin-members تحتاج إلى نشر أو ضبط في Supabase. رمز الاستجابة: '+e.status+' — '+e.message,'error')}else{say(String(e.message||e),'error')}}
  finally{busy=false;el('refresh').disabled=false;el('next').disabled=!hasMore;}
 }
 el('refresh').addEventListener('click',()=>{token=null;load(1)});
 el('next').addEventListener('click',()=>load(page+1));
 el('search').addEventListener('input',render);
-load(1);
+document.documentElement.dataset.by175Members='ready';load(1);
 })();
